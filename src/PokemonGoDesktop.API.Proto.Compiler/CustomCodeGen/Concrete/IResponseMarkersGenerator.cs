@@ -13,20 +13,20 @@ using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 
 namespace PokemonGoDesktop.API.Proto.Compiler
 {
-	public class IRequestMarkersGenerator : MessageMarkersGenerator
+	public class IResponseMarkersGenerator : MessageMarkersGenerator
 	{
 		/// <summary>
-		/// Creates a new request market code generator with the provided
-		/// request proto/file names.
+		/// Creates a new response market code generator with the provided
+		/// response proto/file names.
 		/// </summary>
-		/// <param name="requestFileNames"></param>
-		public IRequestMarkersGenerator(IEnumerable<string> requestFileNames)
-			: base(requestFileNames)
+		/// <param name="responseFileNames"></param>
+		public IResponseMarkersGenerator(IEnumerable<string> responseFileNames)
+			: base(responseFileNames)
 		{
 
 		}
 
-		protected override string markerInterfaceName { get { return "IRequestMessage"; } }
+		protected override string markerInterfaceName { get { return "IResponseMessage"; } }
 
 		protected override QualifiedNameSyntax networkMessageNamespace
 		{
@@ -34,21 +34,21 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 			{
 				return QualifiedName
 					(
-						QualifiedName
+						SyntaxFactory.QualifiedName
 						(
-							IdentifierName("Networking"),
-							IdentifierName("Requests")
+							SyntaxFactory.IdentifierName("Networking"),
+							SyntaxFactory.IdentifierName("Responses")
 						)
 						.WithDotToken
 						(
-							Token(SyntaxKind.DotToken)
+							SyntaxFactory.Token(SyntaxKind.DotToken)
 						),
 						IdentifierName
 						(
 							Identifier
 							(
 								TriviaList(),
-								"Messages",
+								"Responses",
 								TriviaList
 								(
 									LineFeed

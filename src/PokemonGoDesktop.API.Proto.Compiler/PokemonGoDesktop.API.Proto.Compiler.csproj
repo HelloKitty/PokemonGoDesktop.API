@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomCodeGen\Concrete\IRequestMarkersGenerator.cs" />
+    <Compile Include="CustomCodeGen\Concrete\IResponseMarkersGenerator.cs" />
+    <Compile Include="CustomCodeGen\Concrete\MessageMarkersGenerator.cs" />
     <Compile Include="CustomCodeGen\ICodeGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

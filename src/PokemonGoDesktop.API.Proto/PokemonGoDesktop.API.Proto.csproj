@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extended\IResponseMessage.cs" />
     <Compile Include="Extended\IRequestMessage.cs" />
     <Compile Include="Gen\ActivityType.cs" />
     <Compile Include="Gen\AddFortModifierMessage.cs" />
@@ -223,6 +224,7 @@
     <Compile Include="Gen\RequestClassExtended.cs" />
     <Compile Include="Gen\RequestEnvelope.cs" />
     <Compile Include="Gen\RequestType.cs" />
+    <Compile Include="Gen\ResponseClassExtended.cs" />
     <Compile Include="Gen\ResponseEnvelope.cs" />
     <Compile Include="Gen\ReviveAttributes.cs" />
     <Compile Include="Gen\SetAvatarMessage.cs" />

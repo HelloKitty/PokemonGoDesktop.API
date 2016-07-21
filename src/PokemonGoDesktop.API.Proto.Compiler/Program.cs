@@ -41,6 +41,16 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 
 			Console.WriteLine("Finished Generating classes from .proto with Protoc");
 
+			GenerateRequestMarkers();
+			GenerateResponseMarkers();
+
+			Console.WriteLine("Generated extended classes for Proto.");
+
+			Console.ReadKey();
+		}
+
+		private static void GenerateRequestMarkers()
+		{
 			IRequestMarkersGenerator requestMarketGenerator = null;
 
 			try
@@ -55,17 +65,38 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 
 			try
 			{
-				if(requestMarketGenerator != null)
+				if (requestMarketGenerator != null)
 					File.WriteAllText(@"Gen/RequestClassExtended.cs", requestMarketGenerator.Generate());
 			}
-			catch(Exception e)
+			catch (Exception e)
+			{
+				Console.WriteLine($"Error: {e.Message} StackTrace: {e.StackTrace}");
+			}
+		}
+
+		private static void GenerateResponseMarkers()
+		{
+			IResponseMarkersGenerator responseMarketGenerator = null;
+
+			try
+			{
+				//Make sure to pass in only the filenames and not the actual paths
+				responseMarketGenerator = new IResponseMarkersGenerator(Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(), @"Networking/Responses/")).Select(fp => Path.GetFileNameWithoutExtension(fp)));
+			}
+			catch (Exception e)
 			{
 				Console.WriteLine($"Error: {e.Message} StackTrace: {e.StackTrace}");
 			}
 
-			Console.WriteLine("Generated extended classes for Proto.");
-
-			Console.ReadKey();
+			try
+			{
+				if (responseMarketGenerator != null)
+					File.WriteAllText(@"Gen/ResponseClassExtended.cs", responseMarketGenerator.Generate());
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine($"Error: {e.Message} StackTrace: {e.StackTrace}");
+			}
 		}
 
 
