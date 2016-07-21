@@ -1,6 +1,6 @@
 # PokemonGODesktop.API
 
-PokemonGODesktop.API is a collection of net35 libraries and APIs that can be used to implement a fully functional desktop version of Pokemon Go. It's built on top of reverse engineered work from the community, based on the protobuf defintions ranging from python projects to .Net projects. PokemonGODesktop.API channels the entire community's into a push for a standalone version of the game.
+PokemonGODesktop.API is a collection of net35 libraries and APIs that can be used to implement a fully functional desktop version of Pokemon Go. It's built on top of reverse engineered work from the community, based on the protobuf defintions ranging from python projects to .Net projects. PokemonGODesktop.API channels the entire community's work into a push for a standalone version of the game.
 
 ## Attributions
 
