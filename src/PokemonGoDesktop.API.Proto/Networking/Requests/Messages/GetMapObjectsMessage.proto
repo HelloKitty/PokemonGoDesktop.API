@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Networking.Requests.Messages;
+package Networking.Requests.Messages;
 
 message GetMapObjectsMessage {
 	repeated uint64 cell_id = 1 [packed=true];

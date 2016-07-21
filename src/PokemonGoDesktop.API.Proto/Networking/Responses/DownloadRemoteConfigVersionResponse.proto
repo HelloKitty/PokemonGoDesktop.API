@@ -1,8 +1,8 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
 message DownloadRemoteConfigVersionResponse {
-	.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;
+	.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;
 	uint64 item_templates_timestamp_ms = 2; // Latest available?
 	uint64 asset_digest_timestamp_ms = 3;
 

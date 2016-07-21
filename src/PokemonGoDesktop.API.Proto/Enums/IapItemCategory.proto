@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Enums;
+package Enums;
 
 enum HoloIapItemCategory {
 	IAP_CATEGORY_NONE = 0;

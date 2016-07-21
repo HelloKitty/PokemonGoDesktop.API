@@ -1,11 +1,11 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
-import "POGOProtos/Data/PokemonData.proto";
+import "Data/PokemonData.proto";
 
 message UpgradePokemonResponse {
-	.POGOProtos.Networking.Responses.UpgradePokemonResponse.Result result = 1;
-	.POGOProtos.Data.PokemonData upgraded_pokemon = 2;
+	.Networking.Responses.UpgradePokemonResponse.Result result = 1;
+	.Data.PokemonData upgraded_pokemon = 2;
 
 	enum Result {
 		UNSET = 0;

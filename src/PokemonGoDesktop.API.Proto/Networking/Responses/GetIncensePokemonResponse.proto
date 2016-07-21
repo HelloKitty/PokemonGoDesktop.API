@@ -1,8 +1,8 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
 message GetIncensePokemonResponse {
-	.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;
+	.Networking.Responses.GetIncensePokemonResponse.Result result = 1;
 	int32 pokemon_type_id = 2; // TODO: PokemonType.proto or PokemonId.proto
 	double latitude = 3;
 	double longitude = 4;

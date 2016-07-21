@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Enums;
+package Enums;
 
 enum PokemonMove {
 	MOVE_UNSET = 0;

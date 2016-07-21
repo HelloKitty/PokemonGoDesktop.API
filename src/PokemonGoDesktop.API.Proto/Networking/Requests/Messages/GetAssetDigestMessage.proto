@@ -1,10 +1,10 @@
 syntax = "proto3";
-package POGOProtos.Networking.Requests.Messages;
+package Networking.Requests.Messages;
 
-import "POGOProtos/Enums/Platform.proto";
+import "Enums/Platform.proto";
 
 message GetAssetDigestMessage {
-	.POGOProtos.Enums.Platform platform = 1;
+	.Enums.Platform platform = 1;
 	string device_manufacturer = 2;
 	string device_model = 3;
 	string locale = 4;

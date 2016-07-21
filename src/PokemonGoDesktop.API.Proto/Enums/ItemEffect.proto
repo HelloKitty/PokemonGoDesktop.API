@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-package POGOProtos.Enums;
+package Enums;
 
 enum ItemEffect {
 	ITEM_EFFECT_NONE = 0;

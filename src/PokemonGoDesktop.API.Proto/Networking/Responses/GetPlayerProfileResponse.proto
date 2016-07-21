@@ -1,12 +1,12 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
-import "POGOProtos/Data/PlayerBadge.proto";
+import "Data/PlayerBadge.proto";
 
 message GetPlayerProfileResponse {
-	.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;
+	.Networking.Responses.GetPlayerProfileResponse.Result result = 1;
 	int64 start_time = 2;
-	repeated .POGOProtos.Data.PlayerBadge badges = 3;
+	repeated .Data.PlayerBadge badges = 3;
 
 	enum Result {
 		UNSET = 0;

@@ -1,8 +1,8 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
 message SetFavoritePokemonResponse {
-	.POGOProtos.Networking.Responses.SetFavoritePokemonResponse.Result result = 1;
+	.Networking.Responses.SetFavoritePokemonResponse.Result result = 1;
 
 	enum Result {
 		UNSET = 0;

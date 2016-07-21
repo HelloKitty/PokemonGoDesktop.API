@@ -1,12 +1,12 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
 // TODO: Might be incorrect, please test.
 message CheckCodenameAvailableResponse {
 	string codename = 1;
 	string user_message = 2;
 	bool is_assignable = 3;
-	.POGOProtos.Networking.Responses.CheckCodenameAvailableResponse.Status status = 4;
+	.Networking.Responses.CheckCodenameAvailableResponse.Status status = 4;
 
 	enum Status {
 		UNSET = 0;

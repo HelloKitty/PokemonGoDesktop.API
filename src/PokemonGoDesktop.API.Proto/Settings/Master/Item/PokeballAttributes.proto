@@ -1,10 +1,10 @@
 ﻿syntax = "proto3";
-package POGOProtos.Settings.Master.Item;
+package Settings.Master.Item;
 
-import "POGOProtos/Enums/ItemEffect.proto";
+import "Enums/ItemEffect.proto";
 
 message PokeballAttributes {
-	.POGOProtos.Enums.ItemEffect item_effect = 1;
+	.Enums.ItemEffect item_effect = 1;
 	float capture_multi = 2;
 	float capture_multi_effect = 3;
 	float item_effect_mod = 4;

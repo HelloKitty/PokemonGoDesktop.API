@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
-package POGOProtos.Networking.Responses;
+package Networking.Responses;
 
 message UseItemReviveResponse {
-	.POGOProtos.Networking.Responses.UseItemReviveResponse.Result result = 1;
+	.Networking.Responses.UseItemReviveResponse.Result result = 1;
 	int32 stamina = 2;
 
 	enum Result {

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Inventory;
+package Inventory;
 
 enum EggIncubatorType {
 	INCUBATOR_UNSET = 0;

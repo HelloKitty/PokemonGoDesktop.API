@@ -1,9 +1,9 @@
 ﻿syntax = "proto3";
-package POGOProtos.Networking.Requests.Messages;
+package Networking.Requests.Messages;
 
-import "POGOProtos/Inventory/ItemId.proto";
+import "Inventory/ItemId.proto";
 
 message UseItemReviveMessage {
-	.POGOProtos.Inventory.ItemId item_id = 1;
+	.Inventory.ItemId item_id = 1;
 	uint64 pokemon_id = 2;
 }
