@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Inventory/ItemId.proto";
-import "Inventory/ItemAward.proto";
+import "POGOProtos/Inventory/ItemId.proto";
+import "POGOProtos/Inventory/ItemAward.proto";
 
 message LevelUpRewardsResponse {
 	.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;

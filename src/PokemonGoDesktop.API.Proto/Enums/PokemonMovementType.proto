@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageEnums;
+package POGOProtos.Enums;
 
 enum PokemonMovementType {
 	MOVEMENT_STATIC = 0;

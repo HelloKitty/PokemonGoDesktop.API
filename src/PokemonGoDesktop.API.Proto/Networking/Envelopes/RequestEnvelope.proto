@@ -1,9 +1,9 @@
 syntax = "proto3";
-packageNetworking.Envelopes;
+package POGOProtos.Networking.Envelopes;
 
-import "Networking/Requests/Request.proto";
-import "Networking/Envelopes/AuthTicket.proto";
-import "Networking/Envelopes/Unknown6.proto";
+import "POGOProtos/Networking/Requests/Request.proto";
+import "POGOProtos/Networking/Envelopes/AuthTicket.proto";
+import "POGOProtos/Networking/Envelopes/Unknown6.proto";
 
 message RequestEnvelope {
 	int32 status_code = 1;

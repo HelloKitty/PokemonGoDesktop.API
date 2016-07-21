@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageData.Player;
+package POGOProtos.Data.Player;
 
 message PlayerCurrency {
 	int32 gems = 1;

@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-packageNetworking.Envelopes;
+package POGOProtos.Networking.Envelopes;
 
 message Unknown6 {
 	int32 unknown1 = 1; //6

@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageInventory;
+package POGOProtos.Inventory;
 
-import "Inventory/InventoryUpgrade.proto";
+import "POGOProtos/Inventory/InventoryUpgrade.proto";
 
 message InventoryUpgrades {
 	repeated InventoryUpgrade inventory_upgrades = 1;

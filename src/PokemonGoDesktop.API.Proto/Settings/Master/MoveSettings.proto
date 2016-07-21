@@ -1,8 +1,8 @@
 syntax = "proto3";
-packageSettings.Master;
+package POGOProtos.Settings.Master;
 
-import "Enums/PokemonType.proto";
-import "Enums/PokemonMovementType.proto";
+import "POGOProtos/Enums/PokemonType.proto";
+import "POGOProtos/Enums/PokemonMovementType.proto";
 
 message MoveSettings {
 	.POGOProtos.Enums.PokemonMovementType movement_id = 1;

@@ -1,10 +1,10 @@
 syntax = "proto3";
-packageSettings;
+package POGOProtos.Settings;
 
-import "Settings/FortSettings.proto";
-import "Settings/MapSettings.proto";
-import "Settings/LevelSettings.proto";
-import "Settings/InventorySettings.proto";
+import "POGOProtos/Settings/FortSettings.proto";
+import "POGOProtos/Settings/MapSettings.proto";
+import "POGOProtos/Settings/LevelSettings.proto";
+import "POGOProtos/Settings/InventorySettings.proto";
 
 message GlobalSettings {
 	.POGOProtos.Settings.FortSettings fort_settings = 2;

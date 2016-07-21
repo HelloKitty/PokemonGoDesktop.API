@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageNetworking.Requests.Messages;
+package POGOProtos.Networking.Requests.Messages;
 
-import "Inventory/ItemId.proto";
+import "POGOProtos/Inventory/ItemId.proto";
 
 message UseItemCaptureMessage {
 	.POGOProtos.Inventory.ItemId item_id = 1;

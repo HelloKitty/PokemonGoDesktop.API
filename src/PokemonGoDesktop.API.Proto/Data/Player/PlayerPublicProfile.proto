@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
-packageData.Player;
+package POGOProtos.Data.Player;
 
-import "Data/Player/PlayerAvatar.proto";
+import "POGOProtos/Data/Player/PlayerAvatar.proto";
 
 message PlayerPublicProfile {
 	string name = 1;

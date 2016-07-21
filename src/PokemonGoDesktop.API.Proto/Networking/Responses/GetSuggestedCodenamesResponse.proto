@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
 message GetSuggestedCodenamesResponse {
 	repeated string codenames = 1;

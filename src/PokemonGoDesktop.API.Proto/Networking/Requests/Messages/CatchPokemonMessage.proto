@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageNetworking.Requests.Messages;
+package POGOProtos.Networking.Requests.Messages;
 
 message CatchPokemonMessage {
 	fixed64 encounter_id = 1;

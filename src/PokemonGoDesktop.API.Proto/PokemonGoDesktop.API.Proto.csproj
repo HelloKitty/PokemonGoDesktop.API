@@ -40,9 +40,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gen\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Data\AssetDigestEntry.proto" />
     <None Include="Data\Battle\BattleAction.proto" />

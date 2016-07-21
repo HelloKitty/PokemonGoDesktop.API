@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Data/PokemonData.proto";
+import "POGOProtos/Data/PokemonData.proto";
 
 message UpgradePokemonResponse {
 	.POGOProtos.Networking.Responses.UpgradePokemonResponse.Result result = 1;

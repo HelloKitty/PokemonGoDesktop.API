@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageNetworking.Requests;
+package POGOProtos.Networking.Requests;
 
 // R = Response
 // M = Message

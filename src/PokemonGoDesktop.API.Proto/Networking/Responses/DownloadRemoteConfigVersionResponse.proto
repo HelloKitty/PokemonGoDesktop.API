@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
 message DownloadRemoteConfigVersionResponse {
 	.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;

@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageSettings.Master;
+package POGOProtos.Settings.Master;
 
 message EncounterSettings {
 	float spin_bonus_threshold = 1;

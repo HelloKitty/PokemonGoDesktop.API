@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
 message NicknamePokemonResponse {
 	.POGOProtos.Networking.Responses.NicknamePokemonResponse.Result result = 1;

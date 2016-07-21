@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageMap.Pokemon;
+package POGOProtos.Map.Pokemon;
 
-import "Enums/PokemonId.proto";
+import "POGOProtos/Enums/PokemonId.proto";
 
 message MapPokemon {
 	string spawn_point_id = 1;

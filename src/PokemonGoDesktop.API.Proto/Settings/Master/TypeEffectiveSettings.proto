@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageSettings.Master;
+package POGOProtos.Settings.Master;
 
-import "Enums/PokemonType.proto";
+import "POGOProtos/Enums/PokemonType.proto";
 
 message TypeEffectiveSettings {
 	repeated float attack_scalar = 1;

@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-packageNetworking.Requests.Messages;
+package POGOProtos.Networking.Requests.Messages;
 
 message FortRecallPokemonMessage {
 	string fort_id = 1;

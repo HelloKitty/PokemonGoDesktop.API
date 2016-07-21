@@ -1,8 +1,8 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Data/Battle/BattleLog.proto";
-import "Data/Battle/BattleParticipant.proto";
+import "POGOProtos/Data/Battle/BattleLog.proto";
+import "POGOProtos/Data/Battle/BattleParticipant.proto";
 
 message StartGymBattleResponse {
 	.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;

@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Networking/Responses/FortDetailsResponse.proto";
+import "POGOProtos/Networking/Responses/FortDetailsResponse.proto";
 
 message FortRecallPokemonResponse {
 	.POGOProtos.Networking.Responses.FortRecallPokemonResponse.Result result = 1;

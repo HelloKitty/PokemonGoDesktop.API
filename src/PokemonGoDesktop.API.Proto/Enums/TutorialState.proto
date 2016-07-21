@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageEnums;
+package POGOProtos.Enums;
 
 enum TutorialState {
 	LEGAL_SCREEN = 0;

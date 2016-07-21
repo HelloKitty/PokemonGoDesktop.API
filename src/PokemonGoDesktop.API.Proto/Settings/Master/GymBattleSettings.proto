@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageSettings.Master;
+package POGOProtos.Settings.Master;
 
 message GymBattleSettings {
 	float energy_per_sec = 1;

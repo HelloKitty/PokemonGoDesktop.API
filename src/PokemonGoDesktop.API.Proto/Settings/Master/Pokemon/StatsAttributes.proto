@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageSettings.Master.Pokemon;
+package POGOProtos.Settings.Master.Pokemon;
 
 message StatsAttributes {
 	int32 base_stamina = 1;

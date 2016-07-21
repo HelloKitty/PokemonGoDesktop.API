@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageSettings.Master;
+package POGOProtos.Settings.Master;
 
 message PokemonUpgradeSettings {
 	int32 upgrades_per_level = 1;

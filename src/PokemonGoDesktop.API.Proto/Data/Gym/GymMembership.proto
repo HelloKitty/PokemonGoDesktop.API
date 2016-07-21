@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
-packageData.Gym;
+package POGOProtos.Data.Gym;
 
-import "Data/PokemonData.proto";
-import "Data/Player/PlayerPublicProfile.proto";
+import "POGOProtos/Data/PokemonData.proto";
+import "POGOProtos/Data/Player/PlayerPublicProfile.proto";
 
 message GymMembership {
 	.POGOProtos.Data.PokemonData pokemon_data = 1;

@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
-packageSettings.Master.Item;
+package POGOProtos.Settings.Master.Item;
 
-import "Enums/ItemEffect.proto";
+import "POGOProtos/Enums/ItemEffect.proto";
 
 message FoodAttributes {
 	repeated POGOProtos.Enums.ItemEffect item_effect = 1;

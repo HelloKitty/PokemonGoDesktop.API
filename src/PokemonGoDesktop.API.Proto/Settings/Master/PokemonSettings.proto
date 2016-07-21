@@ -1,14 +1,14 @@
 syntax = "proto3";
-packageSettings.Master;
+package POGOProtos.Settings.Master;
 
-import "Enums/PokemonId.proto";
-import "Enums/PokemonClass.proto";
-import "Enums/PokemonType.proto";
-import "Enums/PokemonMove.proto";
-import "Enums/PokemonFamilyId.proto";
-import "Settings/Master/Pokemon/StatsAttributes.proto";
-import "Settings/Master/Pokemon/CameraAttributes.proto";
-import "Settings/Master/Pokemon/EncounterAttributes.proto";
+import "POGOProtos/Enums/PokemonId.proto";
+import "POGOProtos/Enums/PokemonClass.proto";
+import "POGOProtos/Enums/PokemonType.proto";
+import "POGOProtos/Enums/PokemonMove.proto";
+import "POGOProtos/Enums/PokemonFamilyId.proto";
+import "POGOProtos/Settings/Master/Pokemon/StatsAttributes.proto";
+import "POGOProtos/Settings/Master/Pokemon/CameraAttributes.proto";
+import "POGOProtos/Settings/Master/Pokemon/EncounterAttributes.proto";
 
 message PokemonSettings {
 	.POGOProtos.Enums.PokemonId pokemon_id = 1;

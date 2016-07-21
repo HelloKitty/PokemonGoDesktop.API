@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
-packageData.Gym;
+package POGOProtos.Data.Gym;
 
-import "Map/Fort/FortData.proto";
-import "Data/Gym/GymMembership.proto";
+import "POGOProtos/Map/Fort/FortData.proto";
+import "POGOProtos/Data/Gym/GymMembership.proto";
 
 message GymState {
 	.POGOProtos.Map.Fort.FortData fort_data = 1;

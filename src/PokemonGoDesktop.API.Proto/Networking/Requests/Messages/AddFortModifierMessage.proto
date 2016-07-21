@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageNetworking.Requests.Messages;
+package POGOProtos.Networking.Requests.Messages;
 
-import "Inventory/ItemId.proto";
+import "POGOProtos/Inventory/ItemId.proto";
 
 message AddFortModifierMessage {
 	.POGOProtos.Inventory.ItemId modifier_type = 1;

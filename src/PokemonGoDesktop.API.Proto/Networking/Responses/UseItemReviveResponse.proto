@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
 message UseItemReviveResponse {
 	.POGOProtos.Networking.Responses.UseItemReviveResponse.Result result = 1;

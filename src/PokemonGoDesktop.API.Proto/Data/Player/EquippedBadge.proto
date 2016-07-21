@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageData.Player;
+package POGOProtos.Data.Player;
 
-import "Enums/BadgeType.proto";
+import "POGOProtos/Enums/BadgeType.proto";
 
 message EquippedBadge {
 	.POGOProtos.Enums.BadgeType badge_type = 1;

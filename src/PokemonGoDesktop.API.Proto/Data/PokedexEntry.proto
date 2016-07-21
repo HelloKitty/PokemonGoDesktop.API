@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageData;
+package POGOProtos.Data;
 
 message PokedexEntry {
   int32 pokedex_entry_number = 1;

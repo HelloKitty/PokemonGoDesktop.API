@@ -1,12 +1,12 @@
 syntax = "proto3";
-packageMap.Fort;
+package POGOProtos.Map.Fort;
 
-import "Enums/PokemonId.proto";
-import "Enums/TeamColor.proto";
-import "Map/Fort/FortType.proto";
-import "Map/Fort/FortSponsor.proto";
-import "Map/Fort/FortRenderingType.proto";
-import "Map/Fort/FortLureInfo.proto";
+import "POGOProtos/Enums/PokemonId.proto";
+import "POGOProtos/Enums/TeamColor.proto";
+import "POGOProtos/Map/Fort/FortType.proto";
+import "POGOProtos/Map/Fort/FortSponsor.proto";
+import "POGOProtos/Map/Fort/FortRenderingType.proto";
+import "POGOProtos/Map/Fort/FortLureInfo.proto";
 
 message FortData {
 	string id = 1;

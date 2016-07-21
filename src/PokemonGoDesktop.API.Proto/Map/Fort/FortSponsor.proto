@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageMap.Fort;
+package POGOProtos.Map.Fort;
 
 enum FortSponsor {
 	UNSET_SPONSOR = 0;

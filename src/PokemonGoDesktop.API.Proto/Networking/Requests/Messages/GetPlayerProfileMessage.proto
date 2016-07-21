@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageNetworking.Requests.Messages;
+package POGOProtos.Networking.Requests.Messages;
 
 message GetPlayerProfileMessage {
 	string player_name = 1;

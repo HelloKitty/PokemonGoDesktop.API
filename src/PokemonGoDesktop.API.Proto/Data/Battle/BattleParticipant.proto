@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
-packageData.Battle;
+package POGOProtos.Data.Battle;
 
-import "Data/Battle/BattlePokemonInfo.proto";
-import "Data/Player/PlayerPublicProfile.proto";
+import "POGOProtos/Data/Battle/BattlePokemonInfo.proto";
+import "POGOProtos/Data/Player/PlayerPublicProfile.proto";
 
 message BattleParticipant {
 	.POGOProtos.Data.Battle.BattlePokemonInfo active_pokemon = 1;

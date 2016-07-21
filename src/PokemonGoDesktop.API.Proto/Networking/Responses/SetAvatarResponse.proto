@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Data/PlayerData.proto";
+import "POGOProtos/Data/PlayerData.proto";
 
 message SetAvatarResponse {
 	.POGOProtos.Networking.Responses.SetAvatarResponse.Status status = 1;

@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageData.Capture;
+package POGOProtos.Data.Capture;
 
-import "Enums/ActivityType.proto";
+import "POGOProtos/Enums/ActivityType.proto";
 
 message CaptureAward {
 	repeated .POGOProtos.Enums.ActivityType activity_type = 1;

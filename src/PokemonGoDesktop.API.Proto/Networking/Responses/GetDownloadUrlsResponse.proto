@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Data/DownloadUrlEntry.proto";
+import "POGOProtos/Data/DownloadUrlEntry.proto";
 
 // UNTESTED
 message GetDownloadUrlsResponse {

@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageData.Player;
+package POGOProtos.Data.Player;
 
-import "Enums/Gender.proto";
+import "POGOProtos/Enums/Gender.proto";
 
 message PlayerAvatar {
 	int32 skin = 2;

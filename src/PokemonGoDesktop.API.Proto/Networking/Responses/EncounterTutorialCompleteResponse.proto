@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
-packageNetworking.Responses;
+package POGOProtos.Networking.Responses;
 
-import "Data/PokemonData.proto";
-import "Data/Capture/CaptureAward.proto";
+import "POGOProtos/Data/PokemonData.proto";
+import "POGOProtos/Data/Capture/CaptureAward.proto";
 
 message EncounterTutorialCompleteResponse {
 	.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;

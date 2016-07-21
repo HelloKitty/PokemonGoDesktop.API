@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageNetworking.Requests.Messages;
+package POGOProtos.Networking.Requests.Messages;
 
-import "Inventory/ItemId.proto";
+import "POGOProtos/Inventory/ItemId.proto";
 
 message UseIncenseMessage {
 	.POGOProtos.Inventory.ItemId incense_type = 1;
