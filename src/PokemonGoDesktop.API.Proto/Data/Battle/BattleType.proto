@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-packageData.Battle;
+package POGOProtos.Data.Battle;
 
 enum BattleType {
 	BATTLE_TYPE_UNSET = 0;

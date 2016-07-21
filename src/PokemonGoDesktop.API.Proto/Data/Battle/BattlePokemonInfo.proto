@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
-packageData.Battle;
+package POGOProtos.Data.Battle;
 
-import "Data/PokemonData.proto";
+import "POGOProtos/Data/PokemonData.proto";
 
 message BattlePokemonInfo {
 	.POGOProtos.Data.PokemonData pokemon_data = 1;

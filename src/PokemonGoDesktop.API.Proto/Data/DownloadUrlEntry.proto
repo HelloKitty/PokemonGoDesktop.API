@@ -1,5 +1,5 @@
 syntax = "proto3";
-packageData;
+package POGOProtos.Data;
 
 message DownloadUrlEntry {
 	string asset_id = 1;

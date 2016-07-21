@@ -1,7 +1,7 @@
 syntax = "proto3";
-packageMap.Pokemon;
+package POGOProtos.Map.Pokemon;
 
-import "Data/PokemonData.proto";
+import "POGOProtos/Data/PokemonData.proto";
 
 message WildPokemon {
 	fixed64 encounter_id = 1;
