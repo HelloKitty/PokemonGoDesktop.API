@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
-package POGOProtos.Settings.Master.Item;
+packageSettings.Master.Item;
 
-import "POGOProtos/Inventory/EggIncubatorType.proto";
+import "Inventory/EggIncubatorType.proto";
 
 message EggIncubatorAttributes {
   .POGOProtos.Inventory.EggIncubatorType incubator_type = 1;

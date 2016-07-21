@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master;
+packageSettings.Master;
 
 message PlayerLevelSettings {
 	repeated int32 rank_num = 1;

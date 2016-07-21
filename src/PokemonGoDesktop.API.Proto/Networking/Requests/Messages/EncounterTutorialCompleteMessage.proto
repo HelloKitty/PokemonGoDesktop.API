@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
-package POGOProtos.Networking.Requests.Messages;
+packageNetworking.Requests.Messages;
 
-import "POGOProtos/Enums/PokemonId.proto";
+import "Enums/PokemonId.proto";
 
 message EncounterTutorialCompleteMessage {
 	.POGOProtos.Enums.PokemonId pokemon_id = 1;

@@ -1,21 +1,21 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+packageNetworking.Responses;
 
-import "POGOProtos/Settings/Master/ItemSettings.proto";
-import "POGOProtos/Settings/Master/MoveSettings.proto";
-import "POGOProtos/Settings/Master/BadgeSettings.proto";
-import "POGOProtos/Settings/Master/PokemonSettings.proto";
-import "POGOProtos/Settings/Master/MoveSequenceSettings.proto";
-import "POGOProtos/Settings/Master/TypeEffectiveSettings.proto";
-import "POGOProtos/Settings/Master/CameraSettings.proto";
-import "POGOProtos/Settings/Master/PlayerLevelSettings.proto";
-import "POGOProtos/Settings/Master/GymLevelSettings.proto";
-import "POGOProtos/Settings/Master/GymBattleSettings.proto";
-import "POGOProtos/Settings/Master/EncounterSettings.proto";
-import "POGOProtos/Settings/Master/IapItemDisplay.proto";
-import "POGOProtos/Settings/Master/IapSettings.proto";
-import "POGOProtos/Settings/Master/PokemonUpgradeSettings.proto";
-import "POGOProtos/Settings/Master/EquippedBadgeSettings.proto";
+import "Settings/Master/ItemSettings.proto";
+import "Settings/Master/MoveSettings.proto";
+import "Settings/Master/BadgeSettings.proto";
+import "Settings/Master/PokemonSettings.proto";
+import "Settings/Master/MoveSequenceSettings.proto";
+import "Settings/Master/TypeEffectiveSettings.proto";
+import "Settings/Master/CameraSettings.proto";
+import "Settings/Master/PlayerLevelSettings.proto";
+import "Settings/Master/GymLevelSettings.proto";
+import "Settings/Master/GymBattleSettings.proto";
+import "Settings/Master/EncounterSettings.proto";
+import "Settings/Master/IapItemDisplay.proto";
+import "Settings/Master/IapSettings.proto";
+import "Settings/Master/PokemonUpgradeSettings.proto";
+import "Settings/Master/EquippedBadgeSettings.proto";
 
 
 

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Data.Player;
+packageData.Player;
 
 message PlayerStats {
 	int32 level = 1;

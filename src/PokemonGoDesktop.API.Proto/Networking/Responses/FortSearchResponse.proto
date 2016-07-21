@@ -1,8 +1,8 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+packageNetworking.Responses;
 
-import "POGOProtos/Data/PokemonData.proto";
-import "POGOProtos/Inventory/ItemAward.proto";
+import "Data/PokemonData.proto";
+import "Inventory/ItemAward.proto";
 
 message FortSearchResponse {
 	.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;

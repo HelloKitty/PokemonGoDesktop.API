@@ -1,7 +1,7 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master.Pokemon;
+packageSettings.Master.Pokemon;
 
-import "POGOProtos/Enums/PokemonMovementType.proto";
+import "Enums/PokemonMovementType.proto";
 
 message EncounterAttributes {
 	float base_capture_rate = 1;

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Networking.Responses;
+packageNetworking.Responses;
 
 // TODO: Might be incorrect, please test.
 message CheckCodenameAvailableResponse {

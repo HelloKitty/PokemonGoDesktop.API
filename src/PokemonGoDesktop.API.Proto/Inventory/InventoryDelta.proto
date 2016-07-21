@@ -1,7 +1,7 @@
 syntax = "proto3";
-package POGOProtos.Inventory;
+packageInventory;
 
-import "POGOProtos/Inventory/InventoryItem.proto";
+import "Inventory/InventoryItem.proto";
 
 message InventoryDelta {
 	int64 original_timestamp_ms = 1;

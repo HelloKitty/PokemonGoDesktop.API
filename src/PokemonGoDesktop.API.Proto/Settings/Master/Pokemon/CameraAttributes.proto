@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master.Pokemon;
+packageSettings.Master.Pokemon;
 
 message CameraAttributes {
 	float disk_radius_m = 1;

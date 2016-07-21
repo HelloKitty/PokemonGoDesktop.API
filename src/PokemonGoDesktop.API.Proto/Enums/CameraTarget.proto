@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Enums;
+packageEnums;
 
 enum CameraTarget {
 	CAM_TARGET_ATTACKER = 0;

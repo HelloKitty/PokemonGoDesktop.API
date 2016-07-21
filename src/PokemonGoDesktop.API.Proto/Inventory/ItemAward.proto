@@ -1,7 +1,7 @@
 syntax = "proto3";
-package POGOProtos.Inventory;
+packageInventory;
 
-import "POGOProtos/Inventory/ItemId.proto";
+import "Inventory/ItemId.proto";
 
 message ItemAward {
 	.POGOProtos.Inventory.ItemId item_id = 1;

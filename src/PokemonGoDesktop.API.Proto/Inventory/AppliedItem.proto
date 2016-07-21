@@ -1,8 +1,8 @@
 syntax = "proto3";
-package POGOProtos.Inventory;
+packageInventory;
 
-import "POGOProtos/Inventory/ItemId.proto";
-import "POGOProtos/Inventory/ItemType.proto";
+import "Inventory/ItemId.proto";
+import "Inventory/ItemType.proto";
 
 message AppliedItem {
 	.POGOProtos.Inventory.ItemId item_id = 1;

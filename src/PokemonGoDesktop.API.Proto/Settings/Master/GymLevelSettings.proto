@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master;
+packageSettings.Master;
 
 message GymLevelSettings {
 	repeated int32 required_experience = 1;

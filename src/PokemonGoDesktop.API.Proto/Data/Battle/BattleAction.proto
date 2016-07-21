@@ -1,9 +1,9 @@
 ﻿syntax = "proto3";
-package POGOProtos.Data.Battle;
+packageData.Battle;
 
-import "POGOProtos/Data/Battle/BattleResults.proto";
-import "POGOProtos/Data/Battle/BattleActionType.proto";
-import "POGOProtos/Data/Battle/BattleParticipant.proto";
+import "Data/Battle/BattleResults.proto";
+import "Data/Battle/BattleActionType.proto";
+import "Data/Battle/BattleParticipant.proto";
 
 message BattleAction {
 	.POGOProtos.Data.Battle.BattleActionType Type = 1;

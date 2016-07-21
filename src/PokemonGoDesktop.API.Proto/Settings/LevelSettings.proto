@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Settings;
+packageSettings;
 
 message LevelSettings {
 	double trainer_cp_modifier = 2;

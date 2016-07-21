@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Networking.Requests.Messages;
+packageNetworking.Requests.Messages;
 
 message GetIncensePokemonMessage {
 	double player_latitude = 1;

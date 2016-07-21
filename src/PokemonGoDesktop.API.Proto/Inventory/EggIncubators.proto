@@ -1,7 +1,7 @@
 syntax = "proto3";
-package POGOProtos.Inventory;
+packageInventory;
 
-import "POGOProtos/Inventory/EggIncubator.proto";
+import "Inventory/EggIncubator.proto";
 
 message EggIncubators {
 	.POGOProtos.Inventory.EggIncubator egg_incubator = 1;

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Enums;
+packageEnums;
 
 enum PokemonType {
 	POKEMON_TYPE_NONE = 0;

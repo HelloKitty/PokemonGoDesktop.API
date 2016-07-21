@@ -1,5 +1,5 @@
 syntax = "proto3";
-package POGOProtos.Enums;
+packageEnums;
 
 enum BadgeType {
 	BADGE_UNSET = 0;

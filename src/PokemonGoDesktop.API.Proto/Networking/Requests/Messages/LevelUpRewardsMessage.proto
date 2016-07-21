@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-package POGOProtos.Networking.Requests.Messages;
+packageNetworking.Requests.Messages;
 
 message LevelUpRewardsMessage {
 	int32 level = 1;
