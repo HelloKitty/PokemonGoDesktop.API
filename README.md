@@ -1,6 +1,12 @@
 # PokemonGODesktop.API
 
-PokemonGODesktop.API is a collection of net35 libraries and APIs that can be used to implement a fully functional desktop version of Pokemon Go. It's built on top of reverse engineered work from the community, based on the protobuf defintions ranging from python projects to .Net projects. PokemonGODesktop.API channels the entire community's work into a push for a standalone version of the game.
+PokemonGODesktop.API is a collection of **net35** libraries and APIs that can be used to implement a fully functional desktop version of Pokemon Go. It's built on top of reverse engineered work from the community, based on the protobuf defintions ranging from python projects to .Net projects. PokemonGODesktop.API channels the entire community's work into a push for a standalone version of the game.
+
+## Project Overview
+
+[Proto Definitions](https://github.com/HelloKitty/PokemonGoDesktop.API/tree/master/src/PokemonGoDesktop.API.Proto): Contains the .proto definitions for serializable types and request/response message types. Additionally it contains the code generated Google.Protobuf classes that are actually compilable.
+
+[Proto Compiler](https://github.com/HelloKitty/PokemonGoDesktop.API/tree/master/src/PokemonGoDesktop.API.Proto.Compiler) Contains the source for the simple directory recursive argument builder that are needed to compile the .proto definitions with Protoc. Also invokes Protoc with those arguments generating the code in the **Gen** directory of the Proto project.
 
 ## Attributions
 
