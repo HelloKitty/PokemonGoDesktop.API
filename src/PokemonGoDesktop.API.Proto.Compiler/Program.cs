@@ -14,7 +14,10 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 			//Grabs all the proto file names
 			StringBuilder builder = new StringBuilder($"--csharp_out=Gen ");
 
-			foreach(string s in Directory.GetFiles(Directory.GetCurrentDirectory(), "*.proto", SearchOption.AllDirectories))
+			//Finds all the proto files in sub dirs.
+			IEnumerable<string> filePaths = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.proto", SearchOption.AllDirectories);
+
+			foreach (string s in filePaths)
 			{
 				Console.WriteLine($"Reading .proto at Path: {GetRelativePath(s, Directory.GetCurrentDirectory())}");
 
@@ -36,8 +39,36 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 				p.WaitForExit();
 			}
 
+			Console.WriteLine("Finished Generating classes from .proto with Protoc");
+
+			IRequestMarkersGenerator requestMarketGenerator = null;
+
+			try
+			{
+				//Make sure to pass in only the filenames and not the actual paths
+				requestMarketGenerator = new IRequestMarkersGenerator(Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(), @"Networking/Requests/Messages/")).Select(fp => Path.GetFileNameWithoutExtension(fp)));
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine($"Error: {e.Message} StackTrace: {e.StackTrace}");
+			}
+
+			try
+			{
+				if(requestMarketGenerator != null)
+					File.WriteAllText(@"Gen/RequestClassExtended.cs", requestMarketGenerator.Generate());
+			}
+			catch(Exception e)
+			{
+				Console.WriteLine($"Error: {e.Message} StackTrace: {e.StackTrace}");
+			}
+
+			Console.WriteLine("Generated extended classes for Proto.");
+
 			Console.ReadKey();
 		}
+
+
 
 		//From: http://stackoverflow.com/questions/703281/getting-path-relative-to-the-current-working-directory/703290#703290
 		static string GetRelativePath(string filespec, string folder)

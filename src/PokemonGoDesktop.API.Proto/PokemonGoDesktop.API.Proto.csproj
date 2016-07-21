@@ -30,9 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Google.Protobuf, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\Google.Protobuf\net35\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\..\lib\Protobuf\Unity\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extended\IRequestMessage.cs" />
     <Compile Include="Gen\ActivityType.cs" />
     <Compile Include="Gen\AddFortModifierMessage.cs" />
     <Compile Include="Gen\AddFortModifierResponse.cs" />
@@ -220,6 +220,7 @@
     <Compile Include="Gen\ReleasePokemonMessage.cs" />
     <Compile Include="Gen\ReleasePokemonResponse.cs" />
     <Compile Include="Gen\Request.cs" />
+    <Compile Include="Gen\RequestClassExtended.cs" />
     <Compile Include="Gen\RequestEnvelope.cs" />
     <Compile Include="Gen\RequestType.cs" />
     <Compile Include="Gen\ResponseEnvelope.cs" />
