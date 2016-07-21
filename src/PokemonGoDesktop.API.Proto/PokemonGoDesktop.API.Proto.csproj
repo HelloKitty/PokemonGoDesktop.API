@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE0A8FDB-6F2F-4FA2-B47F-E7512A558D48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PokemonGoDesktop.API.Proto</RootNamespace>
+    <AssemblyName>PokemonGoDesktop.API.Proto</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Data\AssetDigestEntry.proto" />
+    <None Include="Data\Battle\BattleAction.proto" />
+    <None Include="Data\Battle\BattleActionType.proto" />
+    <None Include="Data\Battle\BattleLog.proto" />
+    <None Include="Data\Battle\BattleParticipant.proto" />
+    <None Include="Data\Battle\BattlePokemonInfo.proto" />
+    <None Include="Data\Battle\BattleResults.proto" />
+    <None Include="Data\Battle\BattleState.proto" />
+    <None Include="Data\Battle\BattleType.proto" />
+    <None Include="Data\Capture\CaptureAward.proto" />
+    <None Include="Data\Capture\CaptureProbability.proto" />
+    <None Include="Data\DownloadUrlEntry.proto" />
+    <None Include="Data\Gym\GymMembership.proto" />
+    <None Include="Data\Gym\GymState.proto" />
+    <None Include="Data\PlayerBadge.proto" />
+    <None Include="Data\PlayerData.proto" />
+    <None Include="Data\Player\ContactSettings.proto" />
+    <None Include="Data\Player\Currency.proto" />
+    <None Include="Data\Player\DailyBonus.proto" />
+    <None Include="Data\Player\EquippedBadge.proto" />
+    <None Include="Data\Player\PlayerAvatar.proto" />
+    <None Include="Data\Player\PlayerCamera.proto" />
+    <None Include="Data\Player\PlayerCurrency.proto" />
+    <None Include="Data\Player\PlayerPublicProfile.proto" />
+    <None Include="Data\Player\PlayerStats.proto" />
+    <None Include="Data\PokedexEntry.proto" />
+    <None Include="Data\PokemonData.proto" />
+    <None Include="Enums\ActivityType.proto" />
+    <None Include="Enums\BadgeType.proto" />
+    <None Include="Enums\CameraInterpolation.proto" />
+    <None Include="Enums\CameraTarget.proto" />
+    <None Include="Enums\Gender.proto" />
+    <None Include="Enums\IapItemCategory.proto" />
+    <None Include="Enums\ItemCategory.proto" />
+    <None Include="Enums\ItemEffect.proto" />
+    <None Include="Enums\Platform.proto" />
+    <None Include="Enums\PokemonClass.proto" />
+    <None Include="Enums\PokemonFamilyId.proto" />
+    <None Include="Enums\PokemonId.proto" />
+    <None Include="Enums\PokemonMove.proto" />
+    <None Include="Enums\PokemonMovementType.proto" />
+    <None Include="Enums\PokemonType.proto" />
+    <None Include="Enums\TeamColor.proto" />
+    <None Include="Enums\TutorialState.proto" />
+    <None Include="Inventory\AppliedItem.proto" />
+    <None Include="Inventory\AppliedItems.proto" />
+    <None Include="Inventory\EggIncubator.proto" />
+    <None Include="Inventory\EggIncubators.proto" />
+    <None Include="Inventory\EggIncubatorType.proto" />
+    <None Include="Inventory\InventoryDelta.proto" />
+    <None Include="Inventory\InventoryItem.proto" />
+    <None Include="Inventory\InventoryItemData.proto" />
+    <None Include="Inventory\InventoryUpgrade.proto" />
+    <None Include="Inventory\InventoryUpgrades.proto" />
+    <None Include="Inventory\InventoryUpgradeType.proto" />
+    <None Include="Inventory\Item.proto" />
+    <None Include="Inventory\ItemAward.proto" />
+    <None Include="Inventory\ItemId.proto" />
+    <None Include="Inventory\ItemType.proto" />
+    <None Include="Inventory\PokemonFamily.proto" />
+    <None Include="Map\Fort\FortData.proto" />
+    <None Include="Map\Fort\FortLureInfo.proto" />
+    <None Include="Map\Fort\FortModifier.proto" />
+    <None Include="Map\Fort\FortRenderingType.proto" />
+    <None Include="Map\Fort\FortSponsor.proto" />
+    <None Include="Map\Fort\FortSummary.proto" />
+    <None Include="Map\Fort\FortType.proto" />
+    <None Include="Map\MapCell.proto" />
+    <None Include="Map\MapObjectsStatus.proto" />
+    <None Include="Map\Pokemon\MapPokemon.proto" />
+    <None Include="Map\Pokemon\NearbyPokemon.proto" />
+    <None Include="Map\Pokemon\WildPokemon.proto" />
+    <None Include="Map\SpawnPoint.proto" />
+    <None Include="Networking\Envelopes\AuthTicket.proto" />
+    <None Include="Networking\Envelopes\RequestEnvelope.proto" />
+    <None Include="Networking\Envelopes\ResponseEnvelope.proto" />
+    <None Include="Networking\Envelopes\Unknown6.proto" />
+    <None Include="Networking\Envelopes\Unknown6Response.proto" />
+    <None Include="Networking\Requests\Messages\AddFortModifierMessage.proto" />
+    <None Include="Networking\Requests\Messages\AttackGymMessage.proto" />
+    <None Include="Networking\Requests\Messages\CatchPokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\CheckAwardedBadgesMessage.proto" />
+    <None Include="Networking\Requests\Messages\CheckCodenameAvailableMessage.proto" />
+    <None Include="Networking\Requests\Messages\ClaimCodenameMessage.proto" />
+    <None Include="Networking\Requests\Messages\CollectDailyBonusMessage.proto" />
+    <None Include="Networking\Requests\Messages\CollectDailyDefenderBonusMessage.proto" />
+    <None Include="Networking\Requests\Messages\DiskEncounterMessage.proto" />
+    <None Include="Networking\Requests\Messages\DownloadItemTemplatesMessage.proto" />
+    <None Include="Networking\Requests\Messages\DownloadRemoteConfigVersionMessage.proto" />
+    <None Include="Networking\Requests\Messages\DownloadSettingsMessage.proto" />
+    <None Include="Networking\Requests\Messages\EchoMessage.proto" />
+    <None Include="Networking\Requests\Messages\EncounterMessage.proto" />
+    <None Include="Networking\Requests\Messages\EncounterTutorialCompleteMessage.proto" />
+    <None Include="Networking\Requests\Messages\EquipBadgeMessage.proto" />
+    <None Include="Networking\Requests\Messages\EvolvePokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\FortDeployPokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\FortDetailsMessage.proto" />
+    <None Include="Networking\Requests\Messages\FortRecallPokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\FortSearchMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetAssetDigestMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetDownloadUrlsMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetGymDetailsMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetHatchedEggsMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetIncensePokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetInventoryMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetMapObjectsMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetPlayerMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetPlayerProfileMessage.proto" />
+    <None Include="Networking\Requests\Messages\GetSuggestedCodenamesMessage.proto" />
+    <None Include="Networking\Requests\Messages\IncenseEncounterMessage.proto" />
+    <None Include="Networking\Requests\Messages\LevelUpRewardsMessage.proto" />
+    <None Include="Networking\Requests\Messages\MarkTutorialCompleteMessage.proto" />
+    <None Include="Networking\Requests\Messages\NicknamePokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\PlayerUpdateMessage.proto" />
+    <None Include="Networking\Requests\Messages\RecycleInventoryItemMessage.proto" />
+    <None Include="Networking\Requests\Messages\ReleasePokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\SetAvatarMessage.proto" />
+    <None Include="Networking\Requests\Messages\SetContactSettingsMessage.proto" />
+    <None Include="Networking\Requests\Messages\SetFavoritePokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\SetPlayerTeamMessage.proto" />
+    <None Include="Networking\Requests\Messages\StartGymBattleMessage.proto" />
+    <None Include="Networking\Requests\Messages\UpgradePokemonMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseIncenseMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseItemCaptureMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseItemEggIncubatorMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseItemGymMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseItemPotionMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseItemReviveMessage.proto" />
+    <None Include="Networking\Requests\Messages\UseItemXpBoostMessage.proto" />
+    <None Include="Networking\Requests\Request.proto" />
+    <None Include="Networking\Requests\RequestType.proto" />
+    <None Include="Networking\Responses\AddFortModifierResponse.proto" />
+    <None Include="Networking\Responses\AttackGymResponse.proto" />
+    <None Include="Networking\Responses\CatchPokemonResponse.proto" />
+    <None Include="Networking\Responses\CheckAwardedBadgesResponse.proto" />
+    <None Include="Networking\Responses\CheckCodenameAvailableResponse.proto" />
+    <None Include="Networking\Responses\ClaimCodenameResponse.proto" />
+    <None Include="Networking\Responses\CollectDailyBonusResponse.proto" />
+    <None Include="Networking\Responses\CollectDailyDefenderBonusResponse.proto" />
+    <None Include="Networking\Responses\DiskEncounterResponse.proto" />
+    <None Include="Networking\Responses\DownloadItemTemplatesResponse.proto" />
+    <None Include="Networking\Responses\DownloadRemoteConfigVersionResponse.proto" />
+    <None Include="Networking\Responses\DownloadSettingsResponse.proto" />
+    <None Include="Networking\Responses\EchoResponse.proto" />
+    <None Include="Networking\Responses\EncounterResponse.proto" />
+    <None Include="Networking\Responses\EncounterTutorialCompleteResponse.proto" />
+    <None Include="Networking\Responses\EquipBadgeResponse.proto" />
+    <None Include="Networking\Responses\EvolvePokemonResponse.proto" />
+    <None Include="Networking\Responses\FortDeployPokemonResponse.proto" />
+    <None Include="Networking\Responses\FortDetailsResponse.proto" />
+    <None Include="Networking\Responses\FortRecallPokemonResponse.proto" />
+    <None Include="Networking\Responses\FortSearchResponse.proto" />
+    <None Include="Networking\Responses\GetAssetDigestResponse.proto" />
+    <None Include="Networking\Responses\GetDownloadUrlsResponse.proto" />
+    <None Include="Networking\Responses\GetGymDetailsResponse.proto" />
+    <None Include="Networking\Responses\GetHatchedEggsResponse.proto" />
+    <None Include="Networking\Responses\GetIncensePokemonResponse.proto" />
+    <None Include="Networking\Responses\GetInventoryResponse.proto" />
+    <None Include="Networking\Responses\GetMapObjectsResponse.proto" />
+    <None Include="Networking\Responses\GetPlayerProfileResponse.proto" />
+    <None Include="Networking\Responses\GetPlayerResponse.proto" />
+    <None Include="Networking\Responses\GetSuggestedCodenamesResponse.proto" />
+    <None Include="Networking\Responses\IncenseEncounterResponse.proto" />
+    <None Include="Networking\Responses\LevelUpRewardsResponse.proto" />
+    <None Include="Networking\Responses\MarkTutorialCompleteResponse.proto" />
+    <None Include="Networking\Responses\NicknamePokemonResponse.proto" />
+    <None Include="Networking\Responses\PlayerUpdateResponse.proto" />
+    <None Include="Networking\Responses\RecycleInventoryItemResponse.proto" />
+    <None Include="Networking\Responses\ReleasePokemonResponse.proto" />
+    <None Include="Networking\Responses\SetAvatarResponse.proto" />
+    <None Include="Networking\Responses\SetContactSettingsResponse.proto" />
+    <None Include="Networking\Responses\SetFavoritePokemonResponse.proto" />
+    <None Include="Networking\Responses\SetPlayerTeamResponse.proto" />
+    <None Include="Networking\Responses\StartGymBattleResponse.proto" />
+    <None Include="Networking\Responses\UpgradePokemonResponse.proto" />
+    <None Include="Networking\Responses\UseIncenseResponse.proto" />
+    <None Include="Networking\Responses\UseItemCaptureResponse.proto" />
+    <None Include="Networking\Responses\UseItemEggIncubatorResponse.proto" />
+    <None Include="Networking\Responses\UseItemGymResponse.proto" />
+    <None Include="Networking\Responses\UseItemPotionResponse.proto" />
+    <None Include="Networking\Responses\UseItemReviveResponse.proto" />
+    <None Include="Networking\Responses\UseItemXpBoostResponse.proto" />
+    <None Include="Settings\DownloadSettingsAction.proto" />
+    <None Include="Settings\FortSettings.proto" />
+    <None Include="Settings\GlobalSettings.proto" />
+    <None Include="Settings\InventorySettings.proto" />
+    <None Include="Settings\LevelSettings.proto" />
+    <None Include="Settings\MapSettings.proto" />
+    <None Include="Settings\Master\BadgeSettings.proto" />
+    <None Include="Settings\Master\CameraSettings.proto" />
+    <None Include="Settings\Master\EncounterSettings.proto" />
+    <None Include="Settings\Master\EquippedBadgeSettings.proto" />
+    <None Include="Settings\Master\GymBattleSettings.proto" />
+    <None Include="Settings\Master\GymLevelSettings.proto" />
+    <None Include="Settings\Master\IapItemDisplay.proto" />
+    <None Include="Settings\Master\IapSettings.proto" />
+    <None Include="Settings\Master\ItemSettings.proto" />
+    <None Include="Settings\Master\Item\BattleAttributes.proto" />
+    <None Include="Settings\Master\Item\EggIncubatorAttributes.proto" />
+    <None Include="Settings\Master\Item\ExperienceBoostAttributes.proto" />
+    <None Include="Settings\Master\Item\FoodAttributes.proto" />
+    <None Include="Settings\Master\Item\FortModifierAttributes.proto" />
+    <None Include="Settings\Master\Item\IncenseAttributes.proto" />
+    <None Include="Settings\Master\Item\InventoryUpgradeAttributes.proto" />
+    <None Include="Settings\Master\Item\PokeballAttributes.proto" />
+    <None Include="Settings\Master\Item\PotionAttributes.proto" />
+    <None Include="Settings\Master\Item\ReviveAttributes.proto" />
+    <None Include="Settings\Master\MoveSequenceSettings.proto" />
+    <None Include="Settings\Master\MoveSettings.proto" />
+    <None Include="Settings\Master\PlayerLevelSettings.proto" />
+    <None Include="Settings\Master\PokemonSettings.proto" />
+    <None Include="Settings\Master\PokemonUpgradeSettings.proto" />
+    <None Include="Settings\Master\Pokemon\CameraAttributes.proto" />
+    <None Include="Settings\Master\Pokemon\EncounterAttributes.proto" />
+    <None Include="Settings\Master\Pokemon\StatsAttributes.proto" />
+    <None Include="Settings\Master\TypeEffectiveSettings.proto" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
