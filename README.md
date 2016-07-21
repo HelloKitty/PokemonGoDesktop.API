@@ -1,6 +1,12 @@
-# PokemonGoBotSharp
+# PokemonGODesktop.API
 
-PokemonGoBatSharp is a Pokemon Go HTTP/Packet bot built with .Net, C# and Protobuf-net. Built on top of reverse engineered work from the community, based on the protobuf defintions ranging from python projects to .Net projects PokemonGoBatSharp consolidates the entire community effort. The main purpose of this bot compared to others is to provide a higher-level, iterable, cleaner and low-barrier-to-entry packet/payload definitions using Protobuf-net. 
+PokemonGODesktop.API is a collection of net35 libraries and APIs that can be used to implement a fully functional desktop version of Pokemon Go. It's built on top of reverse engineered work from the community, based on the protobuf defintions ranging from python projects to .Net projects. PokemonGODesktop.API channels the entire community's into a push for a standalone version of the game.
+
+## Attributions
+
+Proto Definitions: https://github.com/AeonLucid/POGOProtos
+
+Auth/Request/Response Bot Logic: https://github.com/FeroxRev/Pokemon-Go-Rocket-API
 
 ## Setup
 
@@ -16,8 +22,8 @@ Available on a Nuget Feed: https://www.myget.org/F/hellokitty/api/v2 [![hellokit
 #### Linux/Mono - Unit Tests
 ||Debug x86|Debug x64|Release x86|Release x64|
 |:--:|:--:|:--:|:--:|:--:|:--:|
-|**master**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/HelloKitty/PokemonGoBotSharp.svg?branch=master)](https://travis-ci.org/HelloKitty/PokemonGoBotSharp) |
-|**dev**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/HelloKitty/PokemonGoBotSharp.svg?branch=dev)](https://travis-ci.org/HelloKitty/PokemonGoBotSharp)|
+|**master**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/HelloKitty/PokemonGoDesktop.API.svg?branch=master)](https://travis-ci.org/HelloKitty/PokemonGoDesktop.API) |
+|**dev**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/HelloKitty/PokemonGoDesktop.API.svg?branch=dev)](https://travis-ci.org/HelloKitty/PokemonGoDesktop.API)|
 
 #### Windows - Unit Tests
 
