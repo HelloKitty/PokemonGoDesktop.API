@@ -1,8 +1,8 @@
 syntax = "proto3";
-package POGOProtos.Data;
+packageData;
 
-import "POGOProtos/Enums/PokemonId.proto";
-import "POGOProtos/Enums/PokemonMove.proto";
+import "Enums/PokemonId.proto";
+import "Enums/PokemonMove.proto";
 
 message PokemonData {
 	fixed64 id = 1;

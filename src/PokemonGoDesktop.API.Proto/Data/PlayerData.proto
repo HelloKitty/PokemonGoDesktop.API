@@ -1,12 +1,12 @@
 syntax = "proto3";
-package POGOProtos.Data;
+packageData;
 
-import "POGOProtos/Enums/TutorialState.proto";
-import "POGOProtos/Data/Player/PlayerAvatar.proto";
-import "POGOProtos/Data/Player/DailyBonus.proto";
-import "POGOProtos/Data/Player/EquippedBadge.proto";
-import "POGOProtos/Data/Player/ContactSettings.proto";
-import "POGOProtos/Data/Player/Currency.proto";
+import "Enums/TutorialState.proto";
+import "Data/Player/PlayerAvatar.proto";
+import "Data/Player/DailyBonus.proto";
+import "Data/Player/EquippedBadge.proto";
+import "Data/Player/ContactSettings.proto";
+import "Data/Player/Currency.proto";
 
 message PlayerData {
 	int64 creation_timestamp_ms  = 1;

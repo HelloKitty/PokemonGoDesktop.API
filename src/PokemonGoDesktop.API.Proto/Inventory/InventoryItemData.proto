@@ -1,16 +1,16 @@
 syntax = "proto3";
-package POGOProtos.Inventory;
+packageInventory;
 
-import "POGOProtos/Inventory/Item.proto";
-import "POGOProtos/Inventory/AppliedItems.proto";
-import "POGOProtos/Inventory/EggIncubators.proto";
-import "POGOProtos/Inventory/PokemonFamily.proto";
-import "POGOProtos/Inventory/InventoryUpgrades.proto";
-import "POGOProtos/Data/PokemonData.proto";
-import "POGOProtos/Data/PokedexEntry.proto";
-import "POGOProtos/Data/Player/PlayerStats.proto";
-import "POGOProtos/Data/Player/PlayerCurrency.proto";
-import "POGOProtos/Data/Player/PlayerCamera.proto";
+import "Inventory/Item.proto";
+import "Inventory/AppliedItems.proto";
+import "Inventory/EggIncubators.proto";
+import "Inventory/PokemonFamily.proto";
+import "Inventory/InventoryUpgrades.proto";
+import "Data/PokemonData.proto";
+import "Data/PokedexEntry.proto";
+import "Data/Player/PlayerStats.proto";
+import "Data/Player/PlayerCurrency.proto";
+import "Data/Player/PlayerCamera.proto";
 
 message InventoryItemData {
 	.POGOProtos.Data.PokemonData pokemon_data = 1;
