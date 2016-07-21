@@ -1,0 +1,1 @@
+xbuild ./PokmonGoDesktop.API.sln /p:DebugSymbols=False
