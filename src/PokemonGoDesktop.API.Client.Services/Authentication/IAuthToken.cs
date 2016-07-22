@@ -7,24 +7,25 @@ using System.Text;
 namespace PokemonGoDesktop.API.Client.Services
 {
 	/// <summary>
+	/// Base contract for AuthTokens
 	/// Represents an authentication token that represents abstracted data
 	/// about an auth response.
 	/// </summary>
-	public class AuthToken : IAuthToken
+	public interface IAuthToken
 	{
 		/// <summary>
 		/// The type of the authentication.
 		/// </summary>
-		public AuthType TokenType { get; }
+		AuthType TokenType { get; }
 
 		/// <summary>
 		/// Indicates if the auth token is valid.
 		/// </summary>
-		public bool isValid { get; }
+		bool isValid { get; }
 
 		/// <summary>
 		/// String token ID issued by the authentication
 		/// </summary>
-		public string TokenID { get; }
+		string TokenID { get; }
 	}
 }
