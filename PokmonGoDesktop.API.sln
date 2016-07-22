@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonGoDesktop.API.Proto.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonGoDesktop.API.Common", "src\PokemonGoDesktop.API.Common\PokemonGoDesktop.API.Common.csproj", "{625FAECD-C92D-4B9E-9FA2-68AEF7DC3EC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DDF6458B-2F1C-4111-AEE3-8683935CA05D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE0A8FDB-6F2F-4FA2-B47F-E7512A558D48} = {DDF6458B-2F1C-4111-AEE3-8683935CA05D}
+		{C20F945B-9CB5-45CE-B6D2-BED043AA0BF6} = {DDF6458B-2F1C-4111-AEE3-8683935CA05D}
+		{3EADEE48-88EE-409B-A551-9F6E0DCDE119} = {DDF6458B-2F1C-4111-AEE3-8683935CA05D}
+		{625FAECD-C92D-4B9E-9FA2-68AEF7DC3EC6} = {DDF6458B-2F1C-4111-AEE3-8683935CA05D}
 	EndGlobalSection
 EndGlobal

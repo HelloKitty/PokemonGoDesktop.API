@@ -1,5 +1,6 @@
 ﻿using Easyception;
 using Networking.Envelopes;
+using Networking.Requests;
 using PokemonGoDesktop.API.Common;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,38 @@ namespace PokemonGoDesktop.API.Proto.Services
 	/// </summary>
 	public static class RequestEnvelopeExtensions
 	{
+		/// <summary>
+		/// Configures the <see cref="RequestEnvelope"/> with a <see cref="Request"/> message
+		/// </summary>
+		/// <param name="env">Request envelope instance.</param>
+		/// <param name="message"></param>
+		/// <returns>Reference to the provided and configured envelope.</returns>
+		public static RequestEnvelope WithMessage(this RequestEnvelope env, Request message)
+		{
+			Throw<ArgumentNullException>.If.IsNull(env)?.Now(nameof(env), "The provided envelop cannot be null during fluent configuration.");
+			Throw<ArgumentNullException>.If.IsNull(message)?.Now(nameof(message), $"The provided {nameof(Request)} is null and therefore invalid");
+
+			env.Requests.Add(message);
+			return env;
+		}
+
+		/// <summary>
+		/// Configures the <see cref="RequestEnvelope"/> with a multiple<see cref="Request"/> message
+		/// </summary>
+		/// <param name="env">Request envelope instance.</param>
+		/// <param name="messages"></param>
+		/// <returns>Reference to the provided and configured envelope.</returns>
+		public static RequestEnvelope WithMessage(this RequestEnvelope env, IEnumerable<Request> messages)
+		{
+			Throw<ArgumentNullException>.If.IsNull(env)?.Now(nameof(env), "The provided envelop cannot be null during fluent configuration.");
+			Throw<ArgumentNullException>.If.IsNull(messages)?.Now(nameof(messages), $"The provided {nameof(Request)} is null and therefore invalid");
+
+			if(messages.Count() > 0)
+				env.Requests.Add(messages);
+
+			return env;
+		}
+
 		/// <summary>
 		/// Configures the <see cref="RequestEnvelope"/> with the specified <paramref name="altitude"/>.
 		/// </summary>
