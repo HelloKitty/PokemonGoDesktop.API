@@ -8,6 +8,10 @@ PokemonGODesktop.API is a collection of **net35** libraries and APIs that can be
 
 [Proto Compiler](https://github.com/HelloKitty/PokemonGoDesktop.API/tree/master/src/PokemonGoDesktop.API.Proto.Compiler): Contains the source for the simple directory recursive argument builder that are needed to compile the .proto definitions with Protoc. Also invokes Protoc with those arguments generating the code in the **Gen** directory of the Proto project.
 
+[Proto Services](https://github.com/HelloKitty/PokemonGoDesktop.API/tree/master/src/PokemonGoDesktop.API.Proto.Services): Contains extensions for various important proto generated classes for Pokemon Go. Also implementing some services for creating or reading from commonly used proto classes in Pokemon Go.
+
+[Client Services](https://github.com/HelloKitty/PokemonGoDesktop.API/tree/master/src/PokemonGoDesktop.API.Client.Services): Contains interfaces, contracts and types important to building a Pokemon Go client. Including only the bare minimum. Contains nothing related to game logic.
+
 ## Attributions
 
 Proto Definitions: https://github.com/AeonLucid/POGOProtos
