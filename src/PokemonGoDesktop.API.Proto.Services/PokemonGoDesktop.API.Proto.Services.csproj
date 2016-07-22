@@ -36,7 +36,8 @@
       <HintPath>..\..\packages\Easyception.2.0.0\lib\net35\Easyception.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Google.Protobuf">
+    <Reference Include="Google.Protobuf, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Google.Protobuf\net35\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
