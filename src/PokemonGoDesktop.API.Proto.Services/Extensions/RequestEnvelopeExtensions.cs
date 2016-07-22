@@ -124,6 +124,9 @@ namespace PokemonGoDesktop.API.Proto.Services
 		{
 			Throw<ArgumentNullException>.If.IsNull(env)?.Now(nameof(env), "The provided envelop cannot be null during fluent configuration.");
 
+			//We must create the AuthInfo first
+			env.AuthInfo = new RequestEnvelope.Types.AuthInfo();
+
 			env.AuthInfo.Provider = authType.ToProtocolString();
 
 			//based on Rocket-API token building

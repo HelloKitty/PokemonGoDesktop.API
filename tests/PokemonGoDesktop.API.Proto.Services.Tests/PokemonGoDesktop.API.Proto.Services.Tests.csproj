@@ -46,12 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTests\RequestEnvelopeExtensionsTests.cs" />
     <Compile Include="UnitTests\RequestExtensionsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\PokemonGoDesktop.API.Common\PokemonGoDesktop.API.Common.csproj">
+      <Project>{625faecd-c92d-4b9e-9fa2-68aef7dc3ec6}</Project>
+      <Name>PokemonGoDesktop.API.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\PokemonGoDesktop.API.Proto.Services\PokemonGoDesktop.API.Proto.Services.csproj">
       <Project>{3eadee48-88ee-409b-a551-9f6e0dcde119}</Project>
       <Name>PokemonGoDesktop.API.Proto.Services</Name>
