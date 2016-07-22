@@ -6,8 +6,8 @@
     <title>PokemonGoDesktop.API.Client.Services</title>
     <authors>www.github.com/HelloKitty</authors>
     <owners>www.github.com/HelloKitty</owners>
-    <licenseUrl>https://github.com/Hello/Kitty/PokemonGoDesktop.API</licenseUrl>
-    <projectUrl>https://github.com/Hello/Kitty/PokemonGoDesktop.API</projectUrl>
+    <licenseUrl>https://github.com/HelloKitty/PokemonGoDesktop.API</licenseUrl>
+    <projectUrl>https://github.com/HelloKitty/PokemonGoDesktop.API</projectUrl>
     <description>Pokemon Go Desktop base client API.</description>
     <copyright>Copyright 2015-2016</copyright>
     <tags>Pokemon Go PokemonGO Proto Protobuf Protocolbuffers Protocol buffers Desktop API Client</tags>
