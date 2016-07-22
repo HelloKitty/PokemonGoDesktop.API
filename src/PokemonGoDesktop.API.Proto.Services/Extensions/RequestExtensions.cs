@@ -1,4 +1,5 @@
-﻿using Networking.Envelopes;
+﻿using Easyception;
+using Networking.Envelopes;
 using Networking.Requests;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace PokemonGoDesktop.API.Proto.Services
 		/// <returns></returns>
 		public static RequestEnvelope PackInEnvelope(this Request request)
 		{
+			Throw<ArgumentNullException>.If.IsNull(request)?.Now(nameof(request), "The provided request cannot be null for envelope packing.");
+
 			RequestEnvelope envelope = new RequestEnvelope();
 
 			//TODO: Check if this is null
