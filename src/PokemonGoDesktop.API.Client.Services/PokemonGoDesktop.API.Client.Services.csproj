@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3EADEE48-88EE-409B-A551-9F6E0DCDE119}</ProjectGuid>
+    <ProjectGuid>{64D310B0-7177-4294-8295-74DEE063CAB7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PokemonGoDesktop.API.Proto.Services</RootNamespace>
-    <AssemblyName>PokemonGoDesktop.API.Proto.Services</AssemblyName>
+    <RootNamespace>PokemonGoDesktop.API.Client.Services</RootNamespace>
+    <AssemblyName>PokemonGoDesktop.API.Client.Services</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,13 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Easyception, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Easyception.2.0.0\lib\net35\Easyception.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>..\..\lib\Google.Protobuf\net35\Google.Protobuf.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,23 +38,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builders\IRequestBuilderService.cs" />
-    <Compile Include="Extensions\RequestEnvelopeExtensions.cs" />
-    <Compile Include="Extensions\RequestExtensions.cs" />
+    <Compile Include="Authentication\AuthToken.cs" />
+    <Compile Include="Authentication\IUserAuthenticationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\IAuthableSession.cs" />
+    <Compile Include="Session\ISession.cs" />
+    <Compile Include="Session\SessionState.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PokemonGoDesktop.API.Common\PokemonGoDesktop.API.Common.csproj">
       <Project>{625faecd-c92d-4b9e-9fa2-68aef7dc3ec6}</Project>
       <Name>PokemonGoDesktop.API.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PokemonGoDesktop.API.Proto.Services\PokemonGoDesktop.API.Proto.Services.csproj">
+      <Project>{3eadee48-88ee-409b-a551-9f6e0dcde119}</Project>
+      <Name>PokemonGoDesktop.API.Proto.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PokemonGoDesktop.API.Proto\PokemonGoDesktop.API.Proto.csproj">
       <Project>{be0a8fdb-6f2f-4fa2-b47f-e7512a558d48}</Project>
       <Name>PokemonGoDesktop.API.Proto</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
