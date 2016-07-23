@@ -8,7 +8,7 @@ using System.Text;
 namespace PokemonGoDesktop.API.Proto.Services
 {
 	/// <summary>
-	/// Service that generates generates <see cref="Request"/>s.
+	/// Service that generates <see cref="Request"/>s.
 	/// See doc for what a Request is in this context.
 	/// </summary>
 	public interface IRequestBuilderService
