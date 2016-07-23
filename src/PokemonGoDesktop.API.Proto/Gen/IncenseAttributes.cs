@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/IncenseAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,11 +32,12 @@ namespace Settings.Master.Item {
             "c2Vjb25kcxgEIAEoBRItCiVtb3ZpbmdfdGltZV9iZXR3ZWVuX2VuY291bnRl",
             "cl9zZWNvbmRzGAUgASgFEjUKLWRpc3RhbmNlX3JlcXVpcmVkX2Zvcl9zaG9y",
             "dGVyX2ludGVydmFsX21ldGVycxgGIAEoBRIkChxwb2tlbW9uX2F0dHJhY3Rl",
-            "ZF9sZW5ndGhfc2VjGAcgASgFYgZwcm90bzM="));
+            "ZF9sZW5ndGhfc2VjGAcgASgFQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.IncenseAttributes), global::Settings.Master.Item.IncenseAttributes.Parser, new[]{ "IncenseLifetimeSeconds", "PokemonType", "PokemonIncenseTypeProbability", "StandingTimeBetweenEncountersSeconds", "MovingTimeBetweenEncounterSeconds", "DistanceRequiredForShorterIntervalMeters", "PokemonAttractedLengthSec" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.IncenseAttributes), global::PokemonGoDesktop.API.Proto.IncenseAttributes.Parser, new[]{ "IncenseLifetimeSeconds", "PokemonType", "PokemonIncenseTypeProbability", "StandingTimeBetweenEncountersSeconds", "MovingTimeBetweenEncounterSeconds", "DistanceRequiredForShorterIntervalMeters", "PokemonAttractedLengthSec" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +50,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<IncenseAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.IncenseAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.IncenseAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -88,10 +89,10 @@ namespace Settings.Master.Item {
 
     /// <summary>Field number for the "pokemon_type" field.</summary>
     public const int PokemonTypeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Enums.PokemonType> _repeated_pokemonType_codec
-        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::Enums.PokemonType) x);
-    private readonly pbc::RepeatedField<global::Enums.PokemonType> pokemonType_ = new pbc::RepeatedField<global::Enums.PokemonType>();
-    public pbc::RepeatedField<global::Enums.PokemonType> PokemonType {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.PokemonType> _repeated_pokemonType_codec
+        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.PokemonType) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonType> pokemonType_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonType>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonType> PokemonType {
       get { return pokemonType_; }
     }
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/CameraSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -35,11 +35,12 @@ namespace Settings.Master {
             "c2V0X2RlZ3JlZRgKIAMoAhIUCgxwaXRjaF9kZWdyZWUYCyADKAISGwoTcGl0",
             "Y2hfb2Zmc2V0X2RlZ3JlZRgMIAMoAhITCgtyb2xsX2RlZ3JlZRgNIAMoAhIX",
             "Cg9kaXN0YW5jZV9tZXRlcnMYDiADKAISFgoOaGVpZ2h0X3BlcmNlbnQYDyAD",
-            "KAISFgoOdmVydF9jdHJfcmF0aW8YECADKAJiBnByb3RvMw=="));
+            "KAISFgoOdmVydF9jdHJfcmF0aW8YECADKAJCHaoCGlBva2Vtb25Hb0Rlc2t0",
+            "b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.CameraTargetReflection.Descriptor, global::Enums.CameraInterpolationReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.CameraTargetReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CameraInterpolationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.CameraSettings), global::Settings.Master.CameraSettings.Parser, new[]{ "NextCamera", "Interpolation", "TargetType", "EaseInSpeed", "EastOutSpeed", "DurationSeconds", "WaitSeconds", "TransitionSeconds", "AngleDegree", "AngleOffsetDegree", "PitchDegree", "PitchOffsetDegree", "RollDegree", "DistanceMeters", "HeightPercent", "VertCtrRatio" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CameraSettings), global::PokemonGoDesktop.API.Proto.CameraSettings.Parser, new[]{ "NextCamera", "Interpolation", "TargetType", "EaseInSpeed", "EastOutSpeed", "DurationSeconds", "WaitSeconds", "TransitionSeconds", "AngleDegree", "AngleOffsetDegree", "PitchDegree", "PitchOffsetDegree", "RollDegree", "DistanceMeters", "HeightPercent", "VertCtrRatio" }, null, null, null)
           }));
     }
     #endregion
@@ -52,7 +53,7 @@ namespace Settings.Master {
     public static pb::MessageParser<CameraSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.CameraSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CameraSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -100,19 +101,19 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "interpolation" field.</summary>
     public const int InterpolationFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Enums.CameraInterpolation> _repeated_interpolation_codec
-        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::Enums.CameraInterpolation) x);
-    private readonly pbc::RepeatedField<global::Enums.CameraInterpolation> interpolation_ = new pbc::RepeatedField<global::Enums.CameraInterpolation>();
-    public pbc::RepeatedField<global::Enums.CameraInterpolation> Interpolation {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.CameraInterpolation> _repeated_interpolation_codec
+        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.CameraInterpolation) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.CameraInterpolation> interpolation_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.CameraInterpolation>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.CameraInterpolation> Interpolation {
       get { return interpolation_; }
     }
 
     /// <summary>Field number for the "target_type" field.</summary>
     public const int TargetTypeFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Enums.CameraTarget> _repeated_targetType_codec
-        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::Enums.CameraTarget) x);
-    private readonly pbc::RepeatedField<global::Enums.CameraTarget> targetType_ = new pbc::RepeatedField<global::Enums.CameraTarget>();
-    public pbc::RepeatedField<global::Enums.CameraTarget> TargetType {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.CameraTarget> _repeated_targetType_codec
+        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.CameraTarget) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.CameraTarget> targetType_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.CameraTarget>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.CameraTarget> TargetType {
       get { return targetType_; }
     }
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/MapSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,12 +29,12 @@ namespace Settings {
             "X21ldGVycxgDIAEoARIrCiNnZXRfbWFwX29iamVjdHNfbWluX3JlZnJlc2hf",
             "c2Vjb25kcxgEIAEoAhIrCiNnZXRfbWFwX29iamVjdHNfbWF4X3JlZnJlc2hf",
             "c2Vjb25kcxgFIAEoAhIrCiNnZXRfbWFwX29iamVjdHNfbWluX2Rpc3RhbmNl",
-            "X21ldGVycxgGIAEoAhIbChNnb29nbGVfbWFwc19hcGlfa2V5GAcgASgJYgZw",
-            "cm90bzM="));
+            "X21ldGVycxgGIAEoAhIbChNnb29nbGVfbWFwc19hcGlfa2V5GAcgASgJQh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.MapSettings), global::Settings.MapSettings.Parser, new[]{ "PokemonVisibleRange", "PokeNavRangeMeters", "EncounterRangeMeters", "GetMapObjectsMinRefreshSeconds", "GetMapObjectsMaxRefreshSeconds", "GetMapObjectsMinDistanceMeters", "GoogleMapsApiKey" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.MapSettings), global::PokemonGoDesktop.API.Proto.MapSettings.Parser, new[]{ "PokemonVisibleRange", "PokeNavRangeMeters", "EncounterRangeMeters", "GetMapObjectsMinRefreshSeconds", "GetMapObjectsMaxRefreshSeconds", "GetMapObjectsMinDistanceMeters", "GoogleMapsApiKey" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Settings {
     public static pb::MessageParser<MapSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.MapSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.MapSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

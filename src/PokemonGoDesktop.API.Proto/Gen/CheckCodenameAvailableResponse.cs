@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/CheckCodenameAvailableResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,11 +31,12 @@ namespace Networking.Responses {
             "b2RlbmFtZUF2YWlsYWJsZVJlc3BvbnNlLlN0YXR1cyKIAQoGU3RhdHVzEgkK",
             "BVVOU0VUEAASCwoHU1VDQ0VTUxABEhoKFkNPREVOQU1FX05PVF9BVkFJTEFC",
             "TEUQAhIWChJDT0RFTkFNRV9OT1RfVkFMSUQQAxIRCg1DVVJSRU5UX09XTkVS",
-            "EAQSHwobQ09ERU5BTUVfQ0hBTkdFX05PVF9BTExPV0VEEAViBnByb3RvMw=="));
+            "EAQSHwobQ09ERU5BTUVfQ0hBTkdFX05PVF9BTExPV0VEEAVCHaoCGlBva2Vt",
+            "b25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.CheckCodenameAvailableResponse), global::Networking.Responses.CheckCodenameAvailableResponse.Parser, new[]{ "Codename", "UserMessage", "IsAssignable", "Status" }, null, new[]{ typeof(global::Networking.Responses.CheckCodenameAvailableResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponse), global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponse.Parser, new[]{ "Codename", "UserMessage", "IsAssignable", "Status" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -51,7 +52,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<CheckCodenameAvailableResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.CheckCodenameAvailableResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -107,8 +108,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private global::Networking.Responses.CheckCodenameAvailableResponse.Types.Status status_ = 0;
-    public global::Networking.Responses.CheckCodenameAvailableResponse.Types.Status Status {
+    private global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponse.Types.Status status_ = 0;
+    public global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponse.Types.Status Status {
       get { return status_; }
       set {
         status_ = value;
@@ -220,7 +221,7 @@ namespace Networking.Responses {
             break;
           }
           case 32: {
-            status_ = (global::Networking.Responses.CheckCodenameAvailableResponse.Types.Status) input.ReadEnum();
+            status_ = (global::PokemonGoDesktop.API.Proto.CheckCodenameAvailableResponse.Types.Status) input.ReadEnum();
             break;
           }
         }

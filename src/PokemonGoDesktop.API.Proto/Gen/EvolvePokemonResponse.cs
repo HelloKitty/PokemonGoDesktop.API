@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/EvolvePokemonResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -33,11 +33,11 @@ namespace Networking.Responses {
             "B1NVQ0NFU1MQARIaChZGQUlMRURfUE9LRU1PTl9NSVNTSU5HEAISIQodRkFJ",
             "TEVEX0lOU1VGRklDSUVOVF9SRVNPVVJDRVMQAxIgChxGQUlMRURfUE9LRU1P",
             "Tl9DQU5OT1RfRVZPTFZFEAQSHgoaRkFJTEVEX1BPS0VNT05fSVNfREVQTE9Z",
-            "RUQQBWIGcHJvdG8z"));
+            "RUQQBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PokemonDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.EvolvePokemonResponse), global::Networking.Responses.EvolvePokemonResponse.Parser, new[]{ "Result", "EvolvedPokemonData", "ExperienceAwarded", "CandyAwarded" }, null, new[]{ typeof(global::Networking.Responses.EvolvePokemonResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EvolvePokemonResponse), global::PokemonGoDesktop.API.Proto.EvolvePokemonResponse.Parser, new[]{ "Result", "EvolvedPokemonData", "ExperienceAwarded", "CandyAwarded" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.EvolvePokemonResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<EvolvePokemonResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.EvolvePokemonResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EvolvePokemonResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -76,8 +76,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.EvolvePokemonResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.EvolvePokemonResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.EvolvePokemonResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.EvolvePokemonResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -86,8 +86,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "evolved_pokemon_data" field.</summary>
     public const int EvolvedPokemonDataFieldNumber = 2;
-    private global::Data.PokemonData evolvedPokemonData_;
-    public global::Data.PokemonData EvolvedPokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData evolvedPokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData EvolvedPokemonData {
       get { return evolvedPokemonData_; }
       set {
         evolvedPokemonData_ = value;
@@ -190,7 +190,7 @@ namespace Networking.Responses {
       }
       if (other.evolvedPokemonData_ != null) {
         if (evolvedPokemonData_ == null) {
-          evolvedPokemonData_ = new global::Data.PokemonData();
+          evolvedPokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         EvolvedPokemonData.MergeFrom(other.EvolvedPokemonData);
       }
@@ -210,12 +210,12 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.EvolvePokemonResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.EvolvePokemonResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
             if (evolvedPokemonData_ == null) {
-              evolvedPokemonData_ = new global::Data.PokemonData();
+              evolvedPokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(evolvedPokemonData_);
             break;

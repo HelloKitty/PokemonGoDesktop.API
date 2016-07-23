@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/EggIncubators.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,11 @@ namespace Inventory {
             "Ch1JbnZlbnRvcnkvRWdnSW5jdWJhdG9ycy5wcm90bxIJSW52ZW50b3J5GhxJ",
             "bnZlbnRvcnkvRWdnSW5jdWJhdG9yLnByb3RvIj8KDUVnZ0luY3ViYXRvcnMS",
             "LgoNZWdnX2luY3ViYXRvchgBIAEoCzIXLkludmVudG9yeS5FZ2dJbmN1YmF0",
-            "b3JiBnByb3RvMw=="));
+            "b3JCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.EggIncubatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.EggIncubatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.EggIncubators), global::Inventory.EggIncubators.Parser, new[]{ "EggIncubator" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EggIncubators), global::PokemonGoDesktop.API.Proto.EggIncubators.Parser, new[]{ "EggIncubator" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +43,7 @@ namespace Inventory {
     public static pb::MessageParser<EggIncubators> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.EggIncubatorsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EggIncubatorsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -66,8 +66,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "egg_incubator" field.</summary>
     public const int EggIncubatorFieldNumber = 1;
-    private global::Inventory.EggIncubator eggIncubator_;
-    public global::Inventory.EggIncubator EggIncubator {
+    private global::PokemonGoDesktop.API.Proto.EggIncubator eggIncubator_;
+    public global::PokemonGoDesktop.API.Proto.EggIncubator EggIncubator {
       get { return eggIncubator_; }
       set {
         eggIncubator_ = value;
@@ -120,7 +120,7 @@ namespace Inventory {
       }
       if (other.eggIncubator_ != null) {
         if (eggIncubator_ == null) {
-          eggIncubator_ = new global::Inventory.EggIncubator();
+          eggIncubator_ = new global::PokemonGoDesktop.API.Proto.EggIncubator();
         }
         EggIncubator.MergeFrom(other.EggIncubator);
       }
@@ -135,7 +135,7 @@ namespace Inventory {
             break;
           case 10: {
             if (eggIncubator_ == null) {
-              eggIncubator_ = new global::Inventory.EggIncubator();
+              eggIncubator_ = new global::PokemonGoDesktop.API.Proto.EggIncubator();
             }
             input.ReadMessage(eggIncubator_);
             break;

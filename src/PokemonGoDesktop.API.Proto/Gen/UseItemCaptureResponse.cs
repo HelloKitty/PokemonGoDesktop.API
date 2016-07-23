@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/UseItemCaptureResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Networking.Responses {
             "cmVSZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIEhkKEWl0ZW1fY2FwdHVyZV9t",
             "dWx0GAIgASgBEhYKDml0ZW1fZmxlZV9tdWx0GAMgASgBEhUKDXN0b3BfbW92",
             "ZW1lbnQYBCABKAgSEwoLc3RvcF9hdHRhY2sYBSABKAgSEgoKdGFyZ2V0X21h",
-            "eBgGIAEoCBITCgt0YXJnZXRfc2xvdxgHIAEoCGIGcHJvdG8z"));
+            "eBgGIAEoCBITCgt0YXJnZXRfc2xvdxgHIAEoCEIdqgIaUG9rZW1vbkdvRGVz",
+            "a3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.UseItemCaptureResponse), global::Networking.Responses.UseItemCaptureResponse.Parser, new[]{ "Success", "ItemCaptureMult", "ItemFleeMult", "StopMovement", "StopAttack", "TargetMax", "TargetSlow" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseItemCaptureResponse), global::PokemonGoDesktop.API.Proto.UseItemCaptureResponse.Parser, new[]{ "Success", "ItemCaptureMult", "ItemFleeMult", "StopMovement", "StopAttack", "TargetMax", "TargetSlow" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<UseItemCaptureResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.UseItemCaptureResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseItemCaptureResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

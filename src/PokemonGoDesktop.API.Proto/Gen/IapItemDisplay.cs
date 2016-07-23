@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/IapItemDisplay.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Settings.Master {
             "bnRvcnkvSXRlbUlkLnByb3RvIpQBCg5JYXBJdGVtRGlzcGxheRILCgNza3UY",
             "ASABKAkSLAoIY2F0ZWdvcnkYAiABKA4yGi5FbnVtcy5Ib2xvSWFwSXRlbUNh",
             "dGVnb3J5EhIKCnNvcnRfb3JkZXIYAyABKAUSIwoIaXRlbV9pZHMYBCADKA4y",
-            "ES5JbnZlbnRvcnkuSXRlbUlkEg4KBmNvdW50cxgFIAMoBWIGcHJvdG8z"));
+            "ES5JbnZlbnRvcnkuSXRlbUlkEg4KBmNvdW50cxgFIAMoBUIdqgIaUG9rZW1v",
+            "bkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.IapItemCategoryReflection.Descriptor, global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.IapItemCategoryReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.IapItemDisplay), global::Settings.Master.IapItemDisplay.Parser, new[]{ "Sku", "Category", "SortOrder", "ItemIds", "Counts" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.IapItemDisplay), global::PokemonGoDesktop.API.Proto.IapItemDisplay.Parser, new[]{ "Sku", "Category", "SortOrder", "ItemIds", "Counts" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Settings.Master {
     public static pb::MessageParser<IapItemDisplay> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.IapItemDisplayReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.IapItemDisplayReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -82,8 +83,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "category" field.</summary>
     public const int CategoryFieldNumber = 2;
-    private global::Enums.HoloIapItemCategory category_ = 0;
-    public global::Enums.HoloIapItemCategory Category {
+    private global::PokemonGoDesktop.API.Proto.HoloIapItemCategory category_ = 0;
+    public global::PokemonGoDesktop.API.Proto.HoloIapItemCategory Category {
       get { return category_; }
       set {
         category_ = value;
@@ -102,10 +103,10 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "item_ids" field.</summary>
     public const int ItemIdsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Inventory.ItemId> _repeated_itemIds_codec
-        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::Inventory.ItemId) x);
-    private readonly pbc::RepeatedField<global::Inventory.ItemId> itemIds_ = new pbc::RepeatedField<global::Inventory.ItemId>();
-    public pbc::RepeatedField<global::Inventory.ItemId> ItemIds {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.ItemId> _repeated_itemIds_codec
+        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.ItemId) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId> itemIds_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId> ItemIds {
       get { return itemIds_; }
     }
 
@@ -213,7 +214,7 @@ namespace Settings.Master {
             break;
           }
           case 16: {
-            category_ = (global::Enums.HoloIapItemCategory) input.ReadEnum();
+            category_ = (global::PokemonGoDesktop.API.Proto.HoloIapItemCategory) input.ReadEnum();
             break;
           }
           case 24: {

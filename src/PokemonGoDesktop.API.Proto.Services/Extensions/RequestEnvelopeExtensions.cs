@@ -1,6 +1,4 @@
 ﻿using Easyception;
-using Networking.Envelopes;
-using Networking.Requests;
 using PokemonGoDesktop.API.Common;
 using System;
 using System.Collections.Generic;

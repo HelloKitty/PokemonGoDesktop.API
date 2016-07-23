@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/PlayerBadge.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,11 @@ namespace Data {
             "cGUucHJvdG8igAEKC1BsYXllckJhZGdlEiQKCmJhZGdlX3R5cGUYASABKA4y",
             "EC5FbnVtcy5CYWRnZVR5cGUSDAoEcmFuaxgCIAEoBRITCgtzdGFydF92YWx1",
             "ZRgDIAEoBRIRCgllbmRfdmFsdWUYBCABKAUSFQoNY3VycmVudF92YWx1ZRgF",
-            "IAEoAWIGcHJvdG8z"));
+            "IAEoAUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.BadgeTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BadgeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.PlayerBadge), global::Data.PlayerBadge.Parser, new[]{ "BadgeType", "Rank", "StartValue", "EndValue", "CurrentValue" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerBadge), global::PokemonGoDesktop.API.Proto.PlayerBadge.Parser, new[]{ "BadgeType", "Rank", "StartValue", "EndValue", "CurrentValue" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Data {
     public static pb::MessageParser<PlayerBadge> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.PlayerBadgeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerBadgeReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +71,8 @@ namespace Data {
 
     /// <summary>Field number for the "badge_type" field.</summary>
     public const int BadgeTypeFieldNumber = 1;
-    private global::Enums.BadgeType badgeType_ = 0;
-    public global::Enums.BadgeType BadgeType {
+    private global::PokemonGoDesktop.API.Proto.BadgeType badgeType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.BadgeType BadgeType {
       get { return badgeType_; }
       set {
         badgeType_ = value;
@@ -224,7 +224,7 @@ namespace Data {
             input.SkipLastField();
             break;
           case 8: {
-            badgeType_ = (global::Enums.BadgeType) input.ReadEnum();
+            badgeType_ = (global::PokemonGoDesktop.API.Proto.BadgeType) input.ReadEnum();
             break;
           }
           case 16: {

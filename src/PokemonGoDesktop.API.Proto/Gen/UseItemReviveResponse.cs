@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/UseItemReviveResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,11 +29,12 @@ namespace Networking.Responses {
             "ZXMuVXNlSXRlbVJldml2ZVJlc3BvbnNlLlJlc3VsdBIPCgdzdGFtaW5hGAIg",
             "ASgFImgKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIUChBFUlJP",
             "Ul9OT19QT0tFTU9OEAISFAoQRVJST1JfQ0FOTk9UX1VTRRADEhoKFkVSUk9S",
-            "X0RFUExPWUVEX1RPX0ZPUlQQBGIGcHJvdG8z"));
+            "X0RFUExPWUVEX1RPX0ZPUlQQBEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEku",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.UseItemReviveResponse), global::Networking.Responses.UseItemReviveResponse.Parser, new[]{ "Result", "Stamina" }, null, new[]{ typeof(global::Networking.Responses.UseItemReviveResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseItemReviveResponse), global::PokemonGoDesktop.API.Proto.UseItemReviveResponse.Parser, new[]{ "Result", "Stamina" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.UseItemReviveResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -46,7 +47,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<UseItemReviveResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.UseItemReviveResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseItemReviveResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,8 +71,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.UseItemReviveResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.UseItemReviveResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.UseItemReviveResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.UseItemReviveResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -157,7 +158,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.UseItemReviveResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.UseItemReviveResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 16: {

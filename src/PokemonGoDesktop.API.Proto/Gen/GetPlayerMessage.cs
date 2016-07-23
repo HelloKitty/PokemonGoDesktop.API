@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/GetPlayerMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Networking.Requests.Messages {
           string.Concat(
             "CjNOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0dldFBsYXllck1lc3Nh",
             "Z2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2FnZXMiEgoQR2V0",
-            "UGxheWVyTWVzc2FnZWIGcHJvdG8z"));
+            "UGxheWVyTWVzc2FnZUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.GetPlayerMessage), global::Networking.Requests.Messages.GetPlayerMessage.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetPlayerMessage), global::PokemonGoDesktop.API.Proto.GetPlayerMessage.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<GetPlayerMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.GetPlayerMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetPlayerMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Pokemon {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Pokemon/CameraAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,11 @@ namespace Settings.Master.Pokemon {
             "dXRlcxIVCg1kaXNrX3JhZGl1c19tGAEgASgCEhkKEWN5bGluZGVyX3JhZGl1",
             "c19tGAIgASgCEhkKEWN5bGluZGVyX2hlaWdodF9tGAMgASgCEhkKEWN5bGlu",
             "ZGVyX2dyb3VuZF9tGAQgASgCEhsKE3Nob3VsZGVyX21vZGVfc2NhbGUYBSAB",
-            "KAJiBnByb3RvMw=="));
+            "KAJCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Pokemon.CameraAttributes), global::Settings.Master.Pokemon.CameraAttributes.Parser, new[]{ "DiskRadiusM", "CylinderRadiusM", "CylinderHeightM", "CylinderGroundM", "ShoulderModeScale" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CameraAttributes), global::PokemonGoDesktop.API.Proto.CameraAttributes.Parser, new[]{ "DiskRadiusM", "CylinderRadiusM", "CylinderHeightM", "CylinderGroundM", "ShoulderModeScale" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Settings.Master.Pokemon {
     public static pb::MessageParser<CameraAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Pokemon.CameraAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CameraAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

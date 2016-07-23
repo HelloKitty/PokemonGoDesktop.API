@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Fort {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Fort/FortModifier.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,11 @@ namespace Map.Fort {
             "bnRvcnkvSXRlbUlkLnByb3RvInUKDEZvcnRNb2RpZmllchIiCgdpdGVtX2lk",
             "GAEgASgOMhEuSW52ZW50b3J5Lkl0ZW1JZBIfChdleHBpcmF0aW9uX3RpbWVz",
             "dGFtcF9tcxgCIAEoAxIgChhkZXBsb3llcl9wbGF5ZXJfY29kZW5hbWUYAyAB",
-            "KAliBnByb3RvMw=="));
+            "KAlCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.Fort.FortModifier), global::Map.Fort.FortModifier.Parser, new[]{ "ItemId", "ExpirationTimestampMs", "DeployerPlayerCodename" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortModifier), global::PokemonGoDesktop.API.Proto.FortModifier.Parser, new[]{ "ItemId", "ExpirationTimestampMs", "DeployerPlayerCodename" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Map.Fort {
     public static pb::MessageParser<FortModifier> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.Fort.FortModifierReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortModifierReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,8 +69,8 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Inventory.ItemId itemId_ = 0;
-    public global::Inventory.ItemId ItemId {
+    private global::PokemonGoDesktop.API.Proto.ItemId itemId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -178,7 +178,7 @@ namespace Map.Fort {
             input.SkipLastField();
             break;
           case 8: {
-            itemId_ = (global::Inventory.ItemId) input.ReadEnum();
+            itemId_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 16: {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/EncounterResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -37,11 +37,12 @@ namespace Networking.Responses {
             "UxABEhcKE0VOQ09VTlRFUl9OT1RfRk9VTkQQAhIUChBFTkNPVU5URVJfQ0xP",
             "U0VEEAMSGgoWRU5DT1VOVEVSX1BPS0VNT05fRkxFRBAEEhoKFkVOQ09VTlRF",
             "Ul9OT1RfSU5fUkFOR0UQBRIeChpFTkNPVU5URVJfQUxSRUFEWV9IQVBQRU5F",
-            "RBAGEhoKFlBPS0VNT05fSU5WRU5UT1JZX0ZVTEwQB2IGcHJvdG8z"));
+            "RBAGEhoKFlBPS0VNT05fSU5WRU5UT1JZX0ZVTEwQB0IdqgIaUG9rZW1vbkdv",
+            "RGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Capture.CaptureProbabilityReflection.Descriptor, global::Map.Pokemon.WildPokemonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.CaptureProbabilityReflection.Descriptor, global::PokemonGoDesktop.API.Proto.WildPokemonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.EncounterResponse), global::Networking.Responses.EncounterResponse.Parser, new[]{ "WildPokemon", "Background", "Status", "CaptureProbability" }, null, new[]{ typeof(global::Networking.Responses.EncounterResponse.Types.Background), typeof(global::Networking.Responses.EncounterResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EncounterResponse), global::PokemonGoDesktop.API.Proto.EncounterResponse.Parser, new[]{ "WildPokemon", "Background", "Status", "CaptureProbability" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Background), typeof(global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -54,7 +55,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<EncounterResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.EncounterResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EncounterResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -80,8 +81,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "wild_pokemon" field.</summary>
     public const int WildPokemonFieldNumber = 1;
-    private global::Map.Pokemon.WildPokemon wildPokemon_;
-    public global::Map.Pokemon.WildPokemon WildPokemon {
+    private global::PokemonGoDesktop.API.Proto.WildPokemon wildPokemon_;
+    public global::PokemonGoDesktop.API.Proto.WildPokemon WildPokemon {
       get { return wildPokemon_; }
       set {
         wildPokemon_ = value;
@@ -90,8 +91,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "background" field.</summary>
     public const int BackgroundFieldNumber = 2;
-    private global::Networking.Responses.EncounterResponse.Types.Background background_ = 0;
-    public global::Networking.Responses.EncounterResponse.Types.Background Background {
+    private global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Background background_ = 0;
+    public global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Background Background {
       get { return background_; }
       set {
         background_ = value;
@@ -100,8 +101,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 3;
-    private global::Networking.Responses.EncounterResponse.Types.Status status_ = 0;
-    public global::Networking.Responses.EncounterResponse.Types.Status Status {
+    private global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Status status_ = 0;
+    public global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Status Status {
       get { return status_; }
       set {
         status_ = value;
@@ -110,8 +111,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "capture_probability" field.</summary>
     public const int CaptureProbabilityFieldNumber = 4;
-    private global::Data.Capture.CaptureProbability captureProbability_;
-    public global::Data.Capture.CaptureProbability CaptureProbability {
+    private global::PokemonGoDesktop.API.Proto.CaptureProbability captureProbability_;
+    public global::PokemonGoDesktop.API.Proto.CaptureProbability CaptureProbability {
       get { return captureProbability_; }
       set {
         captureProbability_ = value;
@@ -191,7 +192,7 @@ namespace Networking.Responses {
       }
       if (other.wildPokemon_ != null) {
         if (wildPokemon_ == null) {
-          wildPokemon_ = new global::Map.Pokemon.WildPokemon();
+          wildPokemon_ = new global::PokemonGoDesktop.API.Proto.WildPokemon();
         }
         WildPokemon.MergeFrom(other.WildPokemon);
       }
@@ -203,7 +204,7 @@ namespace Networking.Responses {
       }
       if (other.captureProbability_ != null) {
         if (captureProbability_ == null) {
-          captureProbability_ = new global::Data.Capture.CaptureProbability();
+          captureProbability_ = new global::PokemonGoDesktop.API.Proto.CaptureProbability();
         }
         CaptureProbability.MergeFrom(other.CaptureProbability);
       }
@@ -218,22 +219,22 @@ namespace Networking.Responses {
             break;
           case 10: {
             if (wildPokemon_ == null) {
-              wildPokemon_ = new global::Map.Pokemon.WildPokemon();
+              wildPokemon_ = new global::PokemonGoDesktop.API.Proto.WildPokemon();
             }
             input.ReadMessage(wildPokemon_);
             break;
           }
           case 16: {
-            background_ = (global::Networking.Responses.EncounterResponse.Types.Background) input.ReadEnum();
+            background_ = (global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Background) input.ReadEnum();
             break;
           }
           case 24: {
-            status_ = (global::Networking.Responses.EncounterResponse.Types.Status) input.ReadEnum();
+            status_ = (global::PokemonGoDesktop.API.Proto.EncounterResponse.Types.Status) input.ReadEnum();
             break;
           }
           case 34: {
             if (captureProbability_ == null) {
-              captureProbability_ = new global::Data.Capture.CaptureProbability();
+              captureProbability_ = new global::PokemonGoDesktop.API.Proto.CaptureProbability();
             }
             input.ReadMessage(captureProbability_);
             break;

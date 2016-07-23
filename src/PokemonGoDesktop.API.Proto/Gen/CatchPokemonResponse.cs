@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/CatchPokemonResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,11 +32,11 @@ namespace Networking.Responses {
             "BCABKAsyGi5EYXRhLkNhcHR1cmUuQ2FwdHVyZUF3YXJkImUKC0NhdGNoU3Rh",
             "dHVzEg8KC0NBVENIX0VSUk9SEAASEQoNQ0FUQ0hfU1VDQ0VTUxABEhAKDENB",
             "VENIX0VTQ0FQRRACEg4KCkNBVENIX0ZMRUUQAxIQCgxDQVRDSF9NSVNTRUQQ",
-            "BGIGcHJvdG8z"));
+            "BEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Capture.CaptureAwardReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.CaptureAwardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.CatchPokemonResponse), global::Networking.Responses.CatchPokemonResponse.Parser, new[]{ "Status", "MissPercent", "CapturedPokemonId", "CaptureAward" }, null, new[]{ typeof(global::Networking.Responses.CatchPokemonResponse.Types.CatchStatus) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CatchPokemonResponse), global::PokemonGoDesktop.API.Proto.CatchPokemonResponse.Parser, new[]{ "Status", "MissPercent", "CapturedPokemonId", "CaptureAward" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.CatchPokemonResponse.Types.CatchStatus) }, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<CatchPokemonResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.CatchPokemonResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CatchPokemonResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -75,8 +75,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
-    private global::Networking.Responses.CatchPokemonResponse.Types.CatchStatus status_ = 0;
-    public global::Networking.Responses.CatchPokemonResponse.Types.CatchStatus Status {
+    private global::PokemonGoDesktop.API.Proto.CatchPokemonResponse.Types.CatchStatus status_ = 0;
+    public global::PokemonGoDesktop.API.Proto.CatchPokemonResponse.Types.CatchStatus Status {
       get { return status_; }
       set {
         status_ = value;
@@ -105,8 +105,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "capture_award" field.</summary>
     public const int CaptureAwardFieldNumber = 4;
-    private global::Data.Capture.CaptureAward captureAward_;
-    public global::Data.Capture.CaptureAward CaptureAward {
+    private global::PokemonGoDesktop.API.Proto.CaptureAward captureAward_;
+    public global::PokemonGoDesktop.API.Proto.CaptureAward CaptureAward {
       get { return captureAward_; }
       set {
         captureAward_ = value;
@@ -195,7 +195,7 @@ namespace Networking.Responses {
       }
       if (other.captureAward_ != null) {
         if (captureAward_ == null) {
-          captureAward_ = new global::Data.Capture.CaptureAward();
+          captureAward_ = new global::PokemonGoDesktop.API.Proto.CaptureAward();
         }
         CaptureAward.MergeFrom(other.CaptureAward);
       }
@@ -209,7 +209,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            status_ = (global::Networking.Responses.CatchPokemonResponse.Types.CatchStatus) input.ReadEnum();
+            status_ = (global::PokemonGoDesktop.API.Proto.CatchPokemonResponse.Types.CatchStatus) input.ReadEnum();
             break;
           }
           case 17: {
@@ -222,7 +222,7 @@ namespace Networking.Responses {
           }
           case 34: {
             if (captureAward_ == null) {
-              captureAward_ = new global::Data.Capture.CaptureAward();
+              captureAward_ = new global::PokemonGoDesktop.API.Proto.CaptureAward();
             }
             input.ReadMessage(captureAward_);
             break;

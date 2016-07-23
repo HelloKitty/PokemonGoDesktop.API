@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattleResults.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,12 +29,12 @@ namespace Data.Battle {
             "dGF0ZRgBIAEoCzISLkRhdGEuR3ltLkd5bVN0YXRlEjEKCWF0dGFja2VycxgC",
             "IAMoCzIeLkRhdGEuQmF0dGxlLkJhdHRsZVBhcnRpY2lwYW50EiEKGXBsYXll",
             "cl9leHBlcmllbmNlX2F3YXJkZWQYAyADKAUSIAoYbmV4dF9kZWZlbmRlcl9w",
-            "b2tlbW9uX2lkGAQgASgDEhgKEGd5bV9wb2ludHNfZGVsdGEYBSABKAViBnBy",
-            "b3RvMw=="));
+            "b2tlbW9uX2lkGAQgASgDEhgKEGd5bV9wb2ludHNfZGVsdGEYBSABKAVCHaoC",
+            "GlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Gym.GymStateReflection.Descriptor, global::Data.Battle.BattleParticipantReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.GymStateReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleParticipantReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Battle.BattleResults), global::Data.Battle.BattleResults.Parser, new[]{ "GymState", "Attackers", "PlayerExperienceAwarded", "NextDefenderPokemonId", "GymPointsDelta" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.BattleResults), global::PokemonGoDesktop.API.Proto.BattleResults.Parser, new[]{ "GymState", "Attackers", "PlayerExperienceAwarded", "NextDefenderPokemonId", "GymPointsDelta" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Data.Battle {
     public static pb::MessageParser<BattleResults> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Battle.BattleResultsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.BattleResultsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -74,8 +74,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "gym_state" field.</summary>
     public const int GymStateFieldNumber = 1;
-    private global::Data.Gym.GymState gymState_;
-    public global::Data.Gym.GymState GymState {
+    private global::PokemonGoDesktop.API.Proto.GymState gymState_;
+    public global::PokemonGoDesktop.API.Proto.GymState GymState {
       get { return gymState_; }
       set {
         gymState_ = value;
@@ -84,10 +84,10 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "attackers" field.</summary>
     public const int AttackersFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Data.Battle.BattleParticipant> _repeated_attackers_codec
-        = pb::FieldCodec.ForMessage(18, global::Data.Battle.BattleParticipant.Parser);
-    private readonly pbc::RepeatedField<global::Data.Battle.BattleParticipant> attackers_ = new pbc::RepeatedField<global::Data.Battle.BattleParticipant>();
-    public pbc::RepeatedField<global::Data.Battle.BattleParticipant> Attackers {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.BattleParticipant> _repeated_attackers_codec
+        = pb::FieldCodec.ForMessage(18, global::PokemonGoDesktop.API.Proto.BattleParticipant.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleParticipant> attackers_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleParticipant>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleParticipant> Attackers {
       get { return attackers_; }
     }
 
@@ -192,7 +192,7 @@ namespace Data.Battle {
       }
       if (other.gymState_ != null) {
         if (gymState_ == null) {
-          gymState_ = new global::Data.Gym.GymState();
+          gymState_ = new global::PokemonGoDesktop.API.Proto.GymState();
         }
         GymState.MergeFrom(other.GymState);
       }
@@ -215,7 +215,7 @@ namespace Data.Battle {
             break;
           case 10: {
             if (gymState_ == null) {
-              gymState_ = new global::Data.Gym.GymState();
+              gymState_ = new global::PokemonGoDesktop.API.Proto.GymState();
             }
             input.ReadMessage(gymState_);
             break;

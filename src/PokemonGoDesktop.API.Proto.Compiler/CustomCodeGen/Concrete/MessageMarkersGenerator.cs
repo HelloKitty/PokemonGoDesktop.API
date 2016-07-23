@@ -20,9 +20,42 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 		protected IEnumerable<string> messageFileMessageNames { get; }
 
 		/// <summary>
-		/// Implementer should indicate the folder name, sub dir of Networking, the message types are in.
+		/// Indicates the namespace of the messages
 		/// </summary>
-		protected abstract QualifiedNameSyntax networkMessageNamespace { get; }
+		private QualifiedNameSyntax networkMessageNamespace
+		{
+			get
+			{
+				return QualifiedName
+					(
+						SyntaxFactory.QualifiedName
+						(
+							SyntaxFactory.IdentifierName(nameof(PokemonGoDesktop)),
+							SyntaxFactory.IdentifierName(nameof(API))
+						)
+						.WithDotToken
+						(
+							SyntaxFactory.Token(SyntaxKind.DotToken)
+						),
+						IdentifierName
+						(
+							Identifier
+							(
+								TriviaList(),
+								nameof(Proto),
+								TriviaList
+								(
+									LineFeed
+								)
+							)
+						)
+					)
+					.WithDotToken
+					(
+						Token(SyntaxKind.DotToken)
+					);
+			}
+		}
 
 		/// <summary>
 		/// Implementer should indicate the string name of the message/payload marker interface name.

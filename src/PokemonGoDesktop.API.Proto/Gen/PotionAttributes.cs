@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/PotionAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,12 +25,12 @@ namespace Settings.Master.Item {
           string.Concat(
             "CitTZXR0aW5ncy9NYXN0ZXIvSXRlbS9Qb3Rpb25BdHRyaWJ1dGVzLnByb3Rv",
             "EhRTZXR0aW5ncy5NYXN0ZXIuSXRlbSI7ChBQb3Rpb25BdHRyaWJ1dGVzEhMK",
-            "C3N0YV9wZXJjZW50GAEgASgCEhIKCnN0YV9hbW91bnQYAiABKAViBnByb3Rv",
-            "Mw=="));
+            "C3N0YV9wZXJjZW50GAEgASgCEhIKCnN0YV9hbW91bnQYAiABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.PotionAttributes), global::Settings.Master.Item.PotionAttributes.Parser, new[]{ "StaPercent", "StaAmount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PotionAttributes), global::PokemonGoDesktop.API.Proto.PotionAttributes.Parser, new[]{ "StaPercent", "StaAmount" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +43,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<PotionAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.PotionAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PotionAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

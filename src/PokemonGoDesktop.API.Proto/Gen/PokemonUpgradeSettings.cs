@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/PokemonUpgradeSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Settings.Master {
             "bxIPU2V0dGluZ3MuTWFzdGVyIoQBChZQb2tlbW9uVXBncmFkZVNldHRpbmdz",
             "EhoKEnVwZ3JhZGVzX3Blcl9sZXZlbBgBIAEoBRIjChthbGxvd2VkX2xldmVs",
             "c19hYm92ZV9wbGF5ZXIYAiABKAUSEgoKY2FuZHlfY29zdBgDIAMoBRIVCg1z",
-            "dGFyZHVzdF9jb3N0GAQgAygFYgZwcm90bzM="));
+            "dGFyZHVzdF9jb3N0GAQgAygFQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.PokemonUpgradeSettings), global::Settings.Master.PokemonUpgradeSettings.Parser, new[]{ "UpgradesPerLevel", "AllowedLevelsAbovePlayer", "CandyCost", "StardustCost" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettings), global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettings.Parser, new[]{ "UpgradesPerLevel", "AllowedLevelsAbovePlayer", "CandyCost", "StardustCost" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Settings.Master {
     public static pb::MessageParser<PokemonUpgradeSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.PokemonUpgradeSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/EggIncubatorType.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,10 +25,11 @@ namespace Inventory {
           string.Concat(
             "CiBJbnZlbnRvcnkvRWdnSW5jdWJhdG9yVHlwZS5wcm90bxIJSW52ZW50b3J5",
             "Kj8KEEVnZ0luY3ViYXRvclR5cGUSEwoPSU5DVUJBVE9SX1VOU0VUEAASFgoS",
-            "SU5DVUJBVE9SX0RJU1RBTkNFEAFiBnByb3RvMw=="));
+            "SU5DVUJBVE9SX0RJU1RBTkNFEAFCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJ",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Inventory.EggIncubatorType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.EggIncubatorType), }, null));
     }
     #endregion
 

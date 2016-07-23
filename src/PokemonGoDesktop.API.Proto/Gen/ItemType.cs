@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/ItemType.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -30,10 +30,11 @@ namespace Inventory {
             "EgoOSVRFTV9UWVBFX0ZPT0QQBhIUChBJVEVNX1RZUEVfQ0FNRVJBEAcSEgoO",
             "SVRFTV9UWVBFX0RJU0sQCBIXChNJVEVNX1RZUEVfSU5DVUJBVE9SEAkSFQoR",
             "SVRFTV9UWVBFX0lOQ0VOU0UQChIWChJJVEVNX1RZUEVfWFBfQk9PU1QQCxIf",
-            "ChtJVEVNX1RZUEVfSU5WRU5UT1JZX1VQR1JBREUQDGIGcHJvdG8z"));
+            "ChtJVEVNX1RZUEVfSU5WRU5UT1JZX1VQR1JBREUQDEIdqgIaUG9rZW1vbkdv",
+            "RGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Inventory.ItemType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.ItemType), }, null));
     }
     #endregion
 

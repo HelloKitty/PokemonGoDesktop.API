@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Enums {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Enums/CameraInterpolation.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,10 +27,11 @@ namespace Enums {
             "Q2FtZXJhSW50ZXJwb2xhdGlvbhISCg5DQU1fSU5URVJQX0NVVBAAEhUKEUNB",
             "TV9JTlRFUlBfTElORUFSEAESFQoRQ0FNX0lOVEVSUF9TTU9PVEgQAhIlCiFD",
             "QU1fSU5URVJQX1NNT09USF9ST1RfTElORUFSX01PVkUQAxIWChJDQU1fSU5U",
-            "RVJQX0RFUEVORFMQBGIGcHJvdG8z"));
+            "RVJQX0RFUEVORFMQBEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Enums.CameraInterpolation), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.CameraInterpolation), }, null));
     }
     #endregion
 

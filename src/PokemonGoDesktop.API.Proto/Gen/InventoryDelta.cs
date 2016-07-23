@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/InventoryDelta.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Inventory {
             "SW52ZW50b3J5L0ludmVudG9yeUl0ZW0ucHJvdG8ifAoOSW52ZW50b3J5RGVs",
             "dGESHQoVb3JpZ2luYWxfdGltZXN0YW1wX21zGAEgASgDEhgKEG5ld190aW1l",
             "c3RhbXBfbXMYAiABKAMSMQoPaW52ZW50b3J5X2l0ZW1zGAMgAygLMhguSW52",
-            "ZW50b3J5LkludmVudG9yeUl0ZW1iBnByb3RvMw=="));
+            "ZW50b3J5LkludmVudG9yeUl0ZW1CHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJ",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.InventoryItemReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.InventoryItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.InventoryDelta), global::Inventory.InventoryDelta.Parser, new[]{ "OriginalTimestampMs", "NewTimestampMs", "InventoryItems" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.InventoryDelta), global::PokemonGoDesktop.API.Proto.InventoryDelta.Parser, new[]{ "OriginalTimestampMs", "NewTimestampMs", "InventoryItems" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Inventory {
     public static pb::MessageParser<InventoryDelta> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.InventoryDeltaReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.InventoryDeltaReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -89,10 +90,10 @@ namespace Inventory {
 
     /// <summary>Field number for the "inventory_items" field.</summary>
     public const int InventoryItemsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Inventory.InventoryItem> _repeated_inventoryItems_codec
-        = pb::FieldCodec.ForMessage(26, global::Inventory.InventoryItem.Parser);
-    private readonly pbc::RepeatedField<global::Inventory.InventoryItem> inventoryItems_ = new pbc::RepeatedField<global::Inventory.InventoryItem>();
-    public pbc::RepeatedField<global::Inventory.InventoryItem> InventoryItems {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.InventoryItem> _repeated_inventoryItems_codec
+        = pb::FieldCodec.ForMessage(26, global::PokemonGoDesktop.API.Proto.InventoryItem.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.InventoryItem> inventoryItems_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.InventoryItem>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.InventoryItem> InventoryItems {
       get { return inventoryItems_; }
     }
 

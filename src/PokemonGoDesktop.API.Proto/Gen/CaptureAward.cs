@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Capture {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Capture/CaptureAward.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,12 +26,12 @@ namespace Data.Capture {
             "Ch9EYXRhL0NhcHR1cmUvQ2FwdHVyZUF3YXJkLnByb3RvEgxEYXRhLkNhcHR1",
             "cmUaGEVudW1zL0FjdGl2aXR5VHlwZS5wcm90byJnCgxDYXB0dXJlQXdhcmQS",
             "KgoNYWN0aXZpdHlfdHlwZRgBIAMoDjITLkVudW1zLkFjdGl2aXR5VHlwZRIK",
-            "CgJ4cBgCIAMoBRINCgVjYW5keRgDIAMoBRIQCghzdGFyZHVzdBgEIAMoBWIG",
-            "cHJvdG8z"));
+            "CgJ4cBgCIAMoBRINCgVjYW5keRgDIAMoBRIQCghzdGFyZHVzdBgEIAMoBUId",
+            "qgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.ActivityTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ActivityTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Capture.CaptureAward), global::Data.Capture.CaptureAward.Parser, new[]{ "ActivityType", "Xp", "Candy", "Stardust" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CaptureAward), global::PokemonGoDesktop.API.Proto.CaptureAward.Parser, new[]{ "ActivityType", "Xp", "Candy", "Stardust" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Data.Capture {
     public static pb::MessageParser<CaptureAward> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Capture.CaptureAwardReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CaptureAwardReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,10 +70,10 @@ namespace Data.Capture {
 
     /// <summary>Field number for the "activity_type" field.</summary>
     public const int ActivityTypeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Enums.ActivityType> _repeated_activityType_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Enums.ActivityType) x);
-    private readonly pbc::RepeatedField<global::Enums.ActivityType> activityType_ = new pbc::RepeatedField<global::Enums.ActivityType>();
-    public pbc::RepeatedField<global::Enums.ActivityType> ActivityType {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.ActivityType> _repeated_activityType_codec
+        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.ActivityType) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ActivityType> activityType_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ActivityType>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ActivityType> ActivityType {
       get { return activityType_; }
     }
 

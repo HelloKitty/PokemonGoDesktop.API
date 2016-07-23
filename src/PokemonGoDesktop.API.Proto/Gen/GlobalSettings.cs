@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/GlobalSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,11 +32,11 @@ namespace Settings {
             "bmdzEi8KDmxldmVsX3NldHRpbmdzGAQgASgLMhcuU2V0dGluZ3MuTGV2ZWxT",
             "ZXR0aW5ncxI3ChJpbnZlbnRvcnlfc2V0dGluZ3MYBSABKAsyGy5TZXR0aW5n",
             "cy5JbnZlbnRvcnlTZXR0aW5ncxIeChZtaW5pbXVtX2NsaWVudF92ZXJzaW9u",
-            "GAYgASgJYgZwcm90bzM="));
+            "GAYgASgJQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Settings.FortSettingsReflection.Descriptor, global::Settings.MapSettingsReflection.Descriptor, global::Settings.LevelSettingsReflection.Descriptor, global::Settings.InventorySettingsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.FortSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.MapSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.LevelSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventorySettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.GlobalSettings), global::Settings.GlobalSettings.Parser, new[]{ "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GlobalSettings), global::PokemonGoDesktop.API.Proto.GlobalSettings.Parser, new[]{ "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Settings {
     public static pb::MessageParser<GlobalSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.GlobalSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GlobalSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -76,8 +76,8 @@ namespace Settings {
 
     /// <summary>Field number for the "fort_settings" field.</summary>
     public const int FortSettingsFieldNumber = 2;
-    private global::Settings.FortSettings fortSettings_;
-    public global::Settings.FortSettings FortSettings {
+    private global::PokemonGoDesktop.API.Proto.FortSettings fortSettings_;
+    public global::PokemonGoDesktop.API.Proto.FortSettings FortSettings {
       get { return fortSettings_; }
       set {
         fortSettings_ = value;
@@ -86,8 +86,8 @@ namespace Settings {
 
     /// <summary>Field number for the "map_settings" field.</summary>
     public const int MapSettingsFieldNumber = 3;
-    private global::Settings.MapSettings mapSettings_;
-    public global::Settings.MapSettings MapSettings {
+    private global::PokemonGoDesktop.API.Proto.MapSettings mapSettings_;
+    public global::PokemonGoDesktop.API.Proto.MapSettings MapSettings {
       get { return mapSettings_; }
       set {
         mapSettings_ = value;
@@ -96,8 +96,8 @@ namespace Settings {
 
     /// <summary>Field number for the "level_settings" field.</summary>
     public const int LevelSettingsFieldNumber = 4;
-    private global::Settings.LevelSettings levelSettings_;
-    public global::Settings.LevelSettings LevelSettings {
+    private global::PokemonGoDesktop.API.Proto.LevelSettings levelSettings_;
+    public global::PokemonGoDesktop.API.Proto.LevelSettings LevelSettings {
       get { return levelSettings_; }
       set {
         levelSettings_ = value;
@@ -106,8 +106,8 @@ namespace Settings {
 
     /// <summary>Field number for the "inventory_settings" field.</summary>
     public const int InventorySettingsFieldNumber = 5;
-    private global::Settings.InventorySettings inventorySettings_;
-    public global::Settings.InventorySettings InventorySettings {
+    private global::PokemonGoDesktop.API.Proto.InventorySettings inventorySettings_;
+    public global::PokemonGoDesktop.API.Proto.InventorySettings InventorySettings {
       get { return inventorySettings_; }
       set {
         inventorySettings_ = value;
@@ -206,25 +206,25 @@ namespace Settings {
       }
       if (other.fortSettings_ != null) {
         if (fortSettings_ == null) {
-          fortSettings_ = new global::Settings.FortSettings();
+          fortSettings_ = new global::PokemonGoDesktop.API.Proto.FortSettings();
         }
         FortSettings.MergeFrom(other.FortSettings);
       }
       if (other.mapSettings_ != null) {
         if (mapSettings_ == null) {
-          mapSettings_ = new global::Settings.MapSettings();
+          mapSettings_ = new global::PokemonGoDesktop.API.Proto.MapSettings();
         }
         MapSettings.MergeFrom(other.MapSettings);
       }
       if (other.levelSettings_ != null) {
         if (levelSettings_ == null) {
-          levelSettings_ = new global::Settings.LevelSettings();
+          levelSettings_ = new global::PokemonGoDesktop.API.Proto.LevelSettings();
         }
         LevelSettings.MergeFrom(other.LevelSettings);
       }
       if (other.inventorySettings_ != null) {
         if (inventorySettings_ == null) {
-          inventorySettings_ = new global::Settings.InventorySettings();
+          inventorySettings_ = new global::PokemonGoDesktop.API.Proto.InventorySettings();
         }
         InventorySettings.MergeFrom(other.InventorySettings);
       }
@@ -242,28 +242,28 @@ namespace Settings {
             break;
           case 18: {
             if (fortSettings_ == null) {
-              fortSettings_ = new global::Settings.FortSettings();
+              fortSettings_ = new global::PokemonGoDesktop.API.Proto.FortSettings();
             }
             input.ReadMessage(fortSettings_);
             break;
           }
           case 26: {
             if (mapSettings_ == null) {
-              mapSettings_ = new global::Settings.MapSettings();
+              mapSettings_ = new global::PokemonGoDesktop.API.Proto.MapSettings();
             }
             input.ReadMessage(mapSettings_);
             break;
           }
           case 34: {
             if (levelSettings_ == null) {
-              levelSettings_ = new global::Settings.LevelSettings();
+              levelSettings_ = new global::PokemonGoDesktop.API.Proto.LevelSettings();
             }
             input.ReadMessage(levelSettings_);
             break;
           }
           case 42: {
             if (inventorySettings_ == null) {
-              inventorySettings_ = new global::Settings.InventorySettings();
+              inventorySettings_ = new global::PokemonGoDesktop.API.Proto.InventorySettings();
             }
             input.ReadMessage(inventorySettings_);
             break;

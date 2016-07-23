@@ -1,5 +1,4 @@
 ﻿using Google.Protobuf;
-using Networking.Envelopes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +19,7 @@ namespace PokemonGoDesktop.API.Proto.Services
 		/// <param name="responseEnvelope">Provided Response envelope.</param>
 		/// <returns>An instance of <typeparamref name="TResponseMessageType"/> or null if none contained.</returns>
 		TResponseMessageType ParseOne<TResponseMessageType>(ResponseEnvelope responseEnvelope)
-			where TResponseMessageType : IRequestMessage, IMessage<TResponseMessageType>, IMessage;
+			where TResponseMessageType : IRequestMessage, IMessage<TResponseMessageType>, IMessage, new(); //must have new to create the message
 
 		/// <summary>
 		/// Parses the provided <see cref="ResponseEnvelope"/> for all <typeparamref name="TResponseMessageType"/>s.
@@ -29,6 +28,6 @@ namespace PokemonGoDesktop.API.Proto.Services
 		/// <param name="responseEnvelope">Provided Response envelope.</param>
 		/// <returns>A collection of <typeparamref name="TResponseMessageType"/> or null if none contained.</returns>
 		IEnumerable<TResponseMessageType> ParseAll<TResponseMessageType>(ResponseEnvelope responseEnvelope)
-			where TResponseMessageType : IRequestMessage, IMessage<TResponseMessageType>, IMessage;
+			where TResponseMessageType : IRequestMessage, IMessage<TResponseMessageType>, IMessage, new(); //must have new to create the message
 	}
 }

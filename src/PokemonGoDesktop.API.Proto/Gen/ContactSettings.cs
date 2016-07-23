@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Player {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Player/ContactSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,12 +25,12 @@ namespace Data.Player {
           string.Concat(
             "CiFEYXRhL1BsYXllci9Db250YWN0U2V0dGluZ3MucHJvdG8SC0RhdGEuUGxh",
             "eWVyIlEKD0NvbnRhY3RTZXR0aW5ncxIdChVzZW5kX21hcmtldGluZ19lbWFp",
-            "bHMYASABKAgSHwoXc2VuZF9wdXNoX25vdGlmaWNhdGlvbnMYAiABKAhiBnBy",
-            "b3RvMw=="));
+            "bHMYASABKAgSHwoXc2VuZF9wdXNoX25vdGlmaWNhdGlvbnMYAiABKAhCHaoC",
+            "GlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Player.ContactSettings), global::Data.Player.ContactSettings.Parser, new[]{ "SendMarketingEmails", "SendPushNotifications" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.ContactSettings), global::PokemonGoDesktop.API.Proto.ContactSettings.Parser, new[]{ "SendMarketingEmails", "SendPushNotifications" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +43,7 @@ namespace Data.Player {
     public static pb::MessageParser<ContactSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Player.ContactSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.ContactSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

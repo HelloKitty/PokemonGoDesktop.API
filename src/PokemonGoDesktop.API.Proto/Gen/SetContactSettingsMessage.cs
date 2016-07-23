@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/SetContactSettingsMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests.Messages {
             "aW5nc01lc3NhZ2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2Fn",
             "ZXMaIURhdGEvUGxheWVyL0NvbnRhY3RTZXR0aW5ncy5wcm90byJTChlTZXRD",
             "b250YWN0U2V0dGluZ3NNZXNzYWdlEjYKEGNvbnRhY3Rfc2V0dGluZ3MYASAB",
-            "KAsyHC5EYXRhLlBsYXllci5Db250YWN0U2V0dGluZ3NiBnByb3RvMw=="));
+            "KAsyHC5EYXRhLlBsYXllci5Db250YWN0U2V0dGluZ3NCHaoCGlBva2Vtb25H",
+            "b0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Player.ContactSettingsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ContactSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.SetContactSettingsMessage), global::Networking.Requests.Messages.SetContactSettingsMessage.Parser, new[]{ "ContactSettings" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.SetContactSettingsMessage), global::PokemonGoDesktop.API.Proto.SetContactSettingsMessage.Parser, new[]{ "ContactSettings" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<SetContactSettingsMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.SetContactSettingsMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.SetContactSettingsMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -67,8 +68,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "contact_settings" field.</summary>
     public const int ContactSettingsFieldNumber = 1;
-    private global::Data.Player.ContactSettings contactSettings_;
-    public global::Data.Player.ContactSettings ContactSettings {
+    private global::PokemonGoDesktop.API.Proto.ContactSettings contactSettings_;
+    public global::PokemonGoDesktop.API.Proto.ContactSettings ContactSettings {
       get { return contactSettings_; }
       set {
         contactSettings_ = value;
@@ -121,7 +122,7 @@ namespace Networking.Requests.Messages {
       }
       if (other.contactSettings_ != null) {
         if (contactSettings_ == null) {
-          contactSettings_ = new global::Data.Player.ContactSettings();
+          contactSettings_ = new global::PokemonGoDesktop.API.Proto.ContactSettings();
         }
         ContactSettings.MergeFrom(other.ContactSettings);
       }
@@ -136,7 +137,7 @@ namespace Networking.Requests.Messages {
             break;
           case 10: {
             if (contactSettings_ == null) {
-              contactSettings_ = new global::Data.Player.ContactSettings();
+              contactSettings_ = new global::PokemonGoDesktop.API.Proto.ContactSettings();
             }
             input.ReadMessage(contactSettings_);
             break;

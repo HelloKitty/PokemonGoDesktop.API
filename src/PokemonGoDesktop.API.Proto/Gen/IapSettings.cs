@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/IapSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -30,11 +30,12 @@ namespace Settings.Master {
             "BRIlCh1kYWlseV9kZWZlbmRlcl9ib251c19jdXJyZW5jeRgEIAMoCRIiChpt",
             "aW5fdGltZV9iZXR3ZWVuX2NsYWltc19tcxgFIAEoAxIbChNkYWlseV9ib251",
             "c19lbmFibGVkGAYgASgIEiQKHGRhaWx5X2RlZmVuZGVyX2JvbnVzX2VuYWJs",
-            "ZWQYByABKAhiBnByb3RvMw=="));
+            "ZWQYByABKAhCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.IapSettings), global::Settings.Master.IapSettings.Parser, new[]{ "DailyBonusCoins", "DailyDefenderBonusPerPokemon", "DailyDefenderBonusMaxDefenders", "DailyDefenderBonusCurrency", "MinTimeBetweenClaimsMs", "DailyBonusEnabled", "DailyDefenderBonusEnabled" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.IapSettings), global::PokemonGoDesktop.API.Proto.IapSettings.Parser, new[]{ "DailyBonusCoins", "DailyDefenderBonusPerPokemon", "DailyDefenderBonusMaxDefenders", "DailyDefenderBonusCurrency", "MinTimeBetweenClaimsMs", "DailyBonusEnabled", "DailyDefenderBonusEnabled" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +48,7 @@ namespace Settings.Master {
     public static pb::MessageParser<IapSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.IapSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.IapSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

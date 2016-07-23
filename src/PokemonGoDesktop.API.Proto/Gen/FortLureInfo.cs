@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Fort {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Fort/FortLureInfo.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Map.Fort {
             "cy9Qb2tlbW9uSWQucHJvdG8igQEKDEZvcnRMdXJlSW5mbxIPCgdmb3J0X2lk",
             "GAEgASgJEhAKCHVua25vd24yGAIgASgBEisKEWFjdGl2ZV9wb2tlbW9uX2lk",
             "GAMgASgOMhAuRW51bXMuUG9rZW1vbklkEiEKGWx1cmVfZXhwaXJlc190aW1l",
-            "c3RhbXBfbXMYBCABKANiBnByb3RvMw=="));
+            "c3RhbXBfbXMYBCABKANCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.Fort.FortLureInfo), global::Map.Fort.FortLureInfo.Parser, new[]{ "FortId", "Unknown2", "ActivePokemonId", "LureExpiresTimestampMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortLureInfo), global::PokemonGoDesktop.API.Proto.FortLureInfo.Parser, new[]{ "FortId", "Unknown2", "ActivePokemonId", "LureExpiresTimestampMs" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Map.Fort {
     public static pb::MessageParser<FortLureInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.Fort.FortLureInfoReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortLureInfoReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -90,8 +91,8 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "active_pokemon_id" field.</summary>
     public const int ActivePokemonIdFieldNumber = 3;
-    private global::Enums.PokemonId activePokemonId_ = 0;
-    public global::Enums.PokemonId ActivePokemonId {
+    private global::PokemonGoDesktop.API.Proto.PokemonId activePokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId ActivePokemonId {
       get { return activePokemonId_; }
       set {
         activePokemonId_ = value;
@@ -209,7 +210,7 @@ namespace Map.Fort {
             break;
           }
           case 24: {
-            activePokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            activePokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 32: {

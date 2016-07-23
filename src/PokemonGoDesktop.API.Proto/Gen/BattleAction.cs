@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattleAction.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -36,12 +36,12 @@ namespace Data.Battle {
             "dHRsZVJlc3VsdHMSKgoiZGFtYWdlX3dpbmRvd3Nfc3RhcnRfdGltZXN0YW1w",
             "X21zcxgLIAEoAxIoCiBkYW1hZ2Vfd2luZG93c19lbmRfdGltZXN0YW1wX21z",
             "cxgMIAEoAxIzCgtwbGF5ZXJfbGVmdBgNIAEoCzIeLkRhdGEuQmF0dGxlLkJh",
-            "dHRsZVBhcnRpY2lwYW50EhkKEXRhcmdldF9wb2tlbW9uX2lkGA4gASgEYgZw",
-            "cm90bzM="));
+            "dHRsZVBhcnRpY2lwYW50EhkKEXRhcmdldF9wb2tlbW9uX2lkGA4gASgEQh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Battle.BattleResultsReflection.Descriptor, global::Data.Battle.BattleActionTypeReflection.Descriptor, global::Data.Battle.BattleParticipantReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BattleResultsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleActionTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleParticipantReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Battle.BattleAction), global::Data.Battle.BattleAction.Parser, new[]{ "Type", "ActionStartMs", "DurationMs", "EnergyDelta", "AttackerIndex", "TargetIndex", "ActivePokemonId", "PlayerJoined", "BattleResults", "DamageWindowsStartTimestampMss", "DamageWindowsEndTimestampMss", "PlayerLeft", "TargetPokemonId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.BattleAction), global::PokemonGoDesktop.API.Proto.BattleAction.Parser, new[]{ "Type", "ActionStartMs", "DurationMs", "EnergyDelta", "AttackerIndex", "TargetIndex", "ActivePokemonId", "PlayerJoined", "BattleResults", "DamageWindowsStartTimestampMss", "DamageWindowsEndTimestampMss", "PlayerLeft", "TargetPokemonId" }, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Data.Battle {
     public static pb::MessageParser<BattleAction> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Battle.BattleActionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.BattleActionReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -89,8 +89,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "Type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Data.Battle.BattleActionType type_ = 0;
-    public global::Data.Battle.BattleActionType Type {
+    private global::PokemonGoDesktop.API.Proto.BattleActionType type_ = 0;
+    public global::PokemonGoDesktop.API.Proto.BattleActionType Type {
       get { return type_; }
       set {
         type_ = value;
@@ -159,8 +159,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "player_joined" field.</summary>
     public const int PlayerJoinedFieldNumber = 9;
-    private global::Data.Battle.BattleParticipant playerJoined_;
-    public global::Data.Battle.BattleParticipant PlayerJoined {
+    private global::PokemonGoDesktop.API.Proto.BattleParticipant playerJoined_;
+    public global::PokemonGoDesktop.API.Proto.BattleParticipant PlayerJoined {
       get { return playerJoined_; }
       set {
         playerJoined_ = value;
@@ -169,8 +169,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "battle_results" field.</summary>
     public const int BattleResultsFieldNumber = 10;
-    private global::Data.Battle.BattleResults battleResults_;
-    public global::Data.Battle.BattleResults BattleResults {
+    private global::PokemonGoDesktop.API.Proto.BattleResults battleResults_;
+    public global::PokemonGoDesktop.API.Proto.BattleResults BattleResults {
       get { return battleResults_; }
       set {
         battleResults_ = value;
@@ -199,8 +199,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "player_left" field.</summary>
     public const int PlayerLeftFieldNumber = 13;
-    private global::Data.Battle.BattleParticipant playerLeft_;
-    public global::Data.Battle.BattleParticipant PlayerLeft {
+    private global::PokemonGoDesktop.API.Proto.BattleParticipant playerLeft_;
+    public global::PokemonGoDesktop.API.Proto.BattleParticipant PlayerLeft {
       get { return playerLeft_; }
       set {
         playerLeft_ = value;
@@ -392,13 +392,13 @@ namespace Data.Battle {
       }
       if (other.playerJoined_ != null) {
         if (playerJoined_ == null) {
-          playerJoined_ = new global::Data.Battle.BattleParticipant();
+          playerJoined_ = new global::PokemonGoDesktop.API.Proto.BattleParticipant();
         }
         PlayerJoined.MergeFrom(other.PlayerJoined);
       }
       if (other.battleResults_ != null) {
         if (battleResults_ == null) {
-          battleResults_ = new global::Data.Battle.BattleResults();
+          battleResults_ = new global::PokemonGoDesktop.API.Proto.BattleResults();
         }
         BattleResults.MergeFrom(other.BattleResults);
       }
@@ -410,7 +410,7 @@ namespace Data.Battle {
       }
       if (other.playerLeft_ != null) {
         if (playerLeft_ == null) {
-          playerLeft_ = new global::Data.Battle.BattleParticipant();
+          playerLeft_ = new global::PokemonGoDesktop.API.Proto.BattleParticipant();
         }
         PlayerLeft.MergeFrom(other.PlayerLeft);
       }
@@ -427,7 +427,7 @@ namespace Data.Battle {
             input.SkipLastField();
             break;
           case 8: {
-            type_ = (global::Data.Battle.BattleActionType) input.ReadEnum();
+            type_ = (global::PokemonGoDesktop.API.Proto.BattleActionType) input.ReadEnum();
             break;
           }
           case 16: {
@@ -456,14 +456,14 @@ namespace Data.Battle {
           }
           case 74: {
             if (playerJoined_ == null) {
-              playerJoined_ = new global::Data.Battle.BattleParticipant();
+              playerJoined_ = new global::PokemonGoDesktop.API.Proto.BattleParticipant();
             }
             input.ReadMessage(playerJoined_);
             break;
           }
           case 82: {
             if (battleResults_ == null) {
-              battleResults_ = new global::Data.Battle.BattleResults();
+              battleResults_ = new global::PokemonGoDesktop.API.Proto.BattleResults();
             }
             input.ReadMessage(battleResults_);
             break;
@@ -478,7 +478,7 @@ namespace Data.Battle {
           }
           case 106: {
             if (playerLeft_ == null) {
-              playerLeft_ = new global::Data.Battle.BattleParticipant();
+              playerLeft_ = new global::PokemonGoDesktop.API.Proto.BattleParticipant();
             }
             input.ReadMessage(playerLeft_);
             break;

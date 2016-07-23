@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/EquipBadgeMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Networking.Requests.Messages {
             "CjROZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0VxdWlwQmFkZ2VNZXNz",
             "YWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzGhVFbnVt",
             "cy9CYWRnZVR5cGUucHJvdG8iOQoRRXF1aXBCYWRnZU1lc3NhZ2USJAoKYmFk",
-            "Z2VfdHlwZRgBIAEoDjIQLkVudW1zLkJhZGdlVHlwZWIGcHJvdG8z"));
+            "Z2VfdHlwZRgBIAEoDjIQLkVudW1zLkJhZGdlVHlwZUIdqgIaUG9rZW1vbkdv",
+            "RGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.BadgeTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BadgeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.EquipBadgeMessage), global::Networking.Requests.Messages.EquipBadgeMessage.Parser, new[]{ "BadgeType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EquipBadgeMessage), global::PokemonGoDesktop.API.Proto.EquipBadgeMessage.Parser, new[]{ "BadgeType" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<EquipBadgeMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.EquipBadgeMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EquipBadgeMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -66,8 +67,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "badge_type" field.</summary>
     public const int BadgeTypeFieldNumber = 1;
-    private global::Enums.BadgeType badgeType_ = 0;
-    public global::Enums.BadgeType BadgeType {
+    private global::PokemonGoDesktop.API.Proto.BadgeType badgeType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.BadgeType BadgeType {
       get { return badgeType_; }
       set {
         badgeType_ = value;
@@ -131,7 +132,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            badgeType_ = (global::Enums.BadgeType) input.ReadEnum();
+            badgeType_ = (global::PokemonGoDesktop.API.Proto.BadgeType) input.ReadEnum();
             break;
           }
         }

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/MoveSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -34,12 +34,12 @@ namespace Settings.Master {
             "dHJhaW5lcl9sZXZlbF9taW4YCSABKAUSGQoRdHJhaW5lcl9sZXZlbF9tYXgY",
             "CiABKAUSEAoIdmZ4X25hbWUYCyABKAkSEwoLZHVyYXRpb25fbXMYDCABKAUS",
             "HgoWZGFtYWdlX3dpbmRvd19zdGFydF9tcxgNIAEoBRIcChRkYW1hZ2Vfd2lu",
-            "ZG93X2VuZF9tcxgOIAEoBRIUCgxlbmVyZ3lfZGVsdGEYDyABKAViBnByb3Rv",
-            "Mw=="));
+            "ZG93X2VuZF9tcxgOIAEoBRIUCgxlbmVyZ3lfZGVsdGEYDyABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonTypeReflection.Descriptor, global::Enums.PokemonMovementTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMovementTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.MoveSettings), global::Settings.Master.MoveSettings.Parser, new[]{ "MovementId", "AnimationId", "PokemonType", "Power", "AccuracyChance", "CriticalChance", "HealScalar", "StaminaLossScalar", "TrainerLevelMin", "TrainerLevelMax", "VfxName", "DurationMs", "DamageWindowStartMs", "DamageWindowEndMs", "EnergyDelta" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.MoveSettings), global::PokemonGoDesktop.API.Proto.MoveSettings.Parser, new[]{ "MovementId", "AnimationId", "PokemonType", "Power", "AccuracyChance", "CriticalChance", "HealScalar", "StaminaLossScalar", "TrainerLevelMin", "TrainerLevelMax", "VfxName", "DurationMs", "DamageWindowStartMs", "DamageWindowEndMs", "EnergyDelta" }, null, null, null)
           }));
     }
     #endregion
@@ -52,7 +52,7 @@ namespace Settings.Master {
     public static pb::MessageParser<MoveSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.MoveSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.MoveSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -89,8 +89,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "movement_id" field.</summary>
     public const int MovementIdFieldNumber = 1;
-    private global::Enums.PokemonMovementType movementId_ = 0;
-    public global::Enums.PokemonMovementType MovementId {
+    private global::PokemonGoDesktop.API.Proto.PokemonMovementType movementId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonMovementType MovementId {
       get { return movementId_; }
       set {
         movementId_ = value;
@@ -109,8 +109,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "pokemon_type" field.</summary>
     public const int PokemonTypeFieldNumber = 3;
-    private global::Enums.PokemonType pokemonType_ = 0;
-    public global::Enums.PokemonType PokemonType {
+    private global::PokemonGoDesktop.API.Proto.PokemonType pokemonType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonType PokemonType {
       get { return pokemonType_; }
       set {
         pokemonType_ = value;
@@ -462,7 +462,7 @@ namespace Settings.Master {
             input.SkipLastField();
             break;
           case 8: {
-            movementId_ = (global::Enums.PokemonMovementType) input.ReadEnum();
+            movementId_ = (global::PokemonGoDesktop.API.Proto.PokemonMovementType) input.ReadEnum();
             break;
           }
           case 16: {
@@ -470,7 +470,7 @@ namespace Settings.Master {
             break;
           }
           case 24: {
-            pokemonType_ = (global::Enums.PokemonType) input.ReadEnum();
+            pokemonType_ = (global::PokemonGoDesktop.API.Proto.PokemonType) input.ReadEnum();
             break;
           }
           case 37: {

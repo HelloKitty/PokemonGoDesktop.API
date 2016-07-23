@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/AssetDigestEntry.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Data {
             "ChtEYXRhL0Fzc2V0RGlnZXN0RW50cnkucHJvdG8SBERhdGEidwoQQXNzZXRE",
             "aWdlc3RFbnRyeRIQCghhc3NldF9pZBgBIAEoCRITCgtidW5kbGVfbmFtZRgC",
             "IAEoCRIPCgd2ZXJzaW9uGAMgASgDEhAKCGNoZWNrc3VtGAQgASgNEgwKBHNp",
-            "emUYBSABKAUSCwoDa2V5GAYgASgMYgZwcm90bzM="));
+            "emUYBSABKAUSCwoDa2V5GAYgASgMQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQ",
+            "SS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.AssetDigestEntry), global::Data.AssetDigestEntry.Parser, new[]{ "AssetId", "BundleName", "Version", "Checksum", "Size", "Key" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AssetDigestEntry), global::PokemonGoDesktop.API.Proto.AssetDigestEntry.Parser, new[]{ "AssetId", "BundleName", "Version", "Checksum", "Size", "Key" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Data {
     public static pb::MessageParser<AssetDigestEntry> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.AssetDigestEntryReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AssetDigestEntryReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

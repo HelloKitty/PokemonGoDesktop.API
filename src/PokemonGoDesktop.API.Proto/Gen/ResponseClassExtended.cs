@@ -1,6 +1,6 @@
 using PokemonGoDesktop.API.Proto;
 
-namespace Networking.Responses.Responses
+namespace PokemonGoDesktop.API.Proto
 {
     public sealed partial class AddFortModifierResponse : IResponseMessage
     {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/PokedexEntry.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Data {
             "dHJ5EhwKFHBva2VkZXhfZW50cnlfbnVtYmVyGAEgASgFEhkKEXRpbWVzX2Vu",
             "Y291bnRlcmVkGAIgASgFEhYKDnRpbWVzX2NhcHR1cmVkGAMgASgFEh4KFmV2",
             "b2x1dGlvbl9zdG9uZV9waWVjZXMYBCABKAUSGAoQZXZvbHV0aW9uX3N0b25l",
-            "cxgFIAEoBWIGcHJvdG8z"));
+            "cxgFIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.PokedexEntry), global::Data.PokedexEntry.Parser, new[]{ "PokedexEntryNumber", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokedexEntry), global::PokemonGoDesktop.API.Proto.PokedexEntry.Parser, new[]{ "PokedexEntryNumber", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Data {
     public static pb::MessageParser<PokedexEntry> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.PokedexEntryReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PokedexEntryReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

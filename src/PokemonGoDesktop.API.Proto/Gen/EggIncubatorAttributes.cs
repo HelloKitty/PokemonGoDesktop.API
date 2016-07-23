@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/EggIncubatorAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,11 @@ namespace Settings.Master.Item {
             "Y3ViYXRvclR5cGUucHJvdG8ieAoWRWdnSW5jdWJhdG9yQXR0cmlidXRlcxIz",
             "Cg5pbmN1YmF0b3JfdHlwZRgBIAEoDjIbLkludmVudG9yeS5FZ2dJbmN1YmF0",
             "b3JUeXBlEgwKBHVzZXMYAiABKAUSGwoTZGlzdGFuY2VfbXVsdGlwbGllchgD",
-            "IAEoAmIGcHJvdG8z"));
+            "IAEoAkIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.EggIncubatorTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.EggIncubatorTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.EggIncubatorAttributes), global::Settings.Master.Item.EggIncubatorAttributes.Parser, new[]{ "IncubatorType", "Uses", "DistanceMultiplier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EggIncubatorAttributes), global::PokemonGoDesktop.API.Proto.EggIncubatorAttributes.Parser, new[]{ "IncubatorType", "Uses", "DistanceMultiplier" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<EggIncubatorAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.EggIncubatorAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EggIncubatorAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,8 +70,8 @@ namespace Settings.Master.Item {
 
     /// <summary>Field number for the "incubator_type" field.</summary>
     public const int IncubatorTypeFieldNumber = 1;
-    private global::Inventory.EggIncubatorType incubatorType_ = 0;
-    public global::Inventory.EggIncubatorType IncubatorType {
+    private global::PokemonGoDesktop.API.Proto.EggIncubatorType incubatorType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.EggIncubatorType IncubatorType {
       get { return incubatorType_; }
       set {
         incubatorType_ = value;
@@ -179,7 +179,7 @@ namespace Settings.Master.Item {
             input.SkipLastField();
             break;
           case 8: {
-            incubatorType_ = (global::Inventory.EggIncubatorType) input.ReadEnum();
+            incubatorType_ = (global::PokemonGoDesktop.API.Proto.EggIncubatorType) input.ReadEnum();
             break;
           }
           case 16: {

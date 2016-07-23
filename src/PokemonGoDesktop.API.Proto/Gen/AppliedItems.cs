@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/AppliedItems.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Inventory {
           string.Concat(
             "ChxJbnZlbnRvcnkvQXBwbGllZEl0ZW1zLnByb3RvEglJbnZlbnRvcnkaG0lu",
             "dmVudG9yeS9BcHBsaWVkSXRlbS5wcm90byI0CgxBcHBsaWVkSXRlbXMSJAoE",
-            "aXRlbRgEIAMoCzIWLkludmVudG9yeS5BcHBsaWVkSXRlbWIGcHJvdG8z"));
+            "aXRlbRgEIAMoCzIWLkludmVudG9yeS5BcHBsaWVkSXRlbUIdqgIaUG9rZW1v",
+            "bkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.AppliedItemReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.AppliedItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.AppliedItems), global::Inventory.AppliedItems.Parser, new[]{ "Item" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AppliedItems), global::PokemonGoDesktop.API.Proto.AppliedItems.Parser, new[]{ "Item" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +43,7 @@ namespace Inventory {
     public static pb::MessageParser<AppliedItems> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.AppliedItemsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AppliedItemsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -65,10 +66,10 @@ namespace Inventory {
 
     /// <summary>Field number for the "item" field.</summary>
     public const int ItemFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Inventory.AppliedItem> _repeated_item_codec
-        = pb::FieldCodec.ForMessage(34, global::Inventory.AppliedItem.Parser);
-    private readonly pbc::RepeatedField<global::Inventory.AppliedItem> item_ = new pbc::RepeatedField<global::Inventory.AppliedItem>();
-    public pbc::RepeatedField<global::Inventory.AppliedItem> Item {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.AppliedItem> _repeated_item_codec
+        = pb::FieldCodec.ForMessage(34, global::PokemonGoDesktop.API.Proto.AppliedItem.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.AppliedItem> item_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.AppliedItem>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.AppliedItem> Item {
       get { return item_; }
     }
 

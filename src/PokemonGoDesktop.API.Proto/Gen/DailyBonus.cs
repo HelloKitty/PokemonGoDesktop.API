@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Player {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Player/DailyBonus.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Data.Player {
             "ChxEYXRhL1BsYXllci9EYWlseUJvbnVzLnByb3RvEgtEYXRhLlBsYXllciJj",
             "CgpEYWlseUJvbnVzEiMKG25leHRfY29sbGVjdGVkX3RpbWVzdGFtcF9tcxgB",
             "IAEoAxIwCihuZXh0X2RlZmVuZGVyX2JvbnVzX2NvbGxlY3RfdGltZXN0YW1w",
-            "X21zGAIgASgDYgZwcm90bzM="));
+            "X21zGAIgASgDQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Player.DailyBonus), global::Data.Player.DailyBonus.Parser, new[]{ "NextCollectedTimestampMs", "NextDefenderBonusCollectTimestampMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.DailyBonus), global::PokemonGoDesktop.API.Proto.DailyBonus.Parser, new[]{ "NextCollectedTimestampMs", "NextDefenderBonusCollectTimestampMs" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Data.Player {
     public static pb::MessageParser<DailyBonus> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Player.DailyBonusReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.DailyBonusReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

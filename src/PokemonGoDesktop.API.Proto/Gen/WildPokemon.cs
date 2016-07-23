@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Pokemon {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Pokemon/WildPokemon.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,11 +29,11 @@ namespace Map.Pokemon {
             "cxgCIAEoAxIQCghsYXRpdHVkZRgDIAEoARIRCglsb25naXR1ZGUYBCABKAES",
             "FgoOc3Bhd25fcG9pbnRfaWQYBSABKAkSJwoMcG9rZW1vbl9kYXRhGAcgASgL",
             "MhEuRGF0YS5Qb2tlbW9uRGF0YRIbChN0aW1lX3RpbGxfaGlkZGVuX21zGAsg",
-            "ASgFYgZwcm90bzM="));
+            "ASgFQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PokemonDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.Pokemon.WildPokemon), global::Map.Pokemon.WildPokemon.Parser, new[]{ "EncounterId", "LastModifiedTimestampMs", "Latitude", "Longitude", "SpawnPointId", "PokemonData", "TimeTillHiddenMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.WildPokemon), global::PokemonGoDesktop.API.Proto.WildPokemon.Parser, new[]{ "EncounterId", "LastModifiedTimestampMs", "Latitude", "Longitude", "SpawnPointId", "PokemonData", "TimeTillHiddenMs" }, null, null, null)
           }));
     }
     #endregion
@@ -46,7 +46,7 @@ namespace Map.Pokemon {
     public static pb::MessageParser<WildPokemon> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.Pokemon.WildPokemonReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.WildPokemonReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -125,8 +125,8 @@ namespace Map.Pokemon {
 
     /// <summary>Field number for the "pokemon_data" field.</summary>
     public const int PokemonDataFieldNumber = 7;
-    private global::Data.PokemonData pokemonData_;
-    public global::Data.PokemonData PokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData pokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData PokemonData {
       get { return pokemonData_; }
       set {
         pokemonData_ = value;
@@ -258,7 +258,7 @@ namespace Map.Pokemon {
       }
       if (other.pokemonData_ != null) {
         if (pokemonData_ == null) {
-          pokemonData_ = new global::Data.PokemonData();
+          pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         PokemonData.MergeFrom(other.PokemonData);
       }
@@ -296,7 +296,7 @@ namespace Map.Pokemon {
           }
           case 58: {
             if (pokemonData_ == null) {
-              pokemonData_ = new global::Data.PokemonData();
+              pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(pokemonData_);
             break;

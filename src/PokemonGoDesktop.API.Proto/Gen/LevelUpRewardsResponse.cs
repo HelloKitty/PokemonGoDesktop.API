@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/LevelUpRewardsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,11 +31,11 @@ namespace Networking.Responses {
             "dGVtc19hd2FyZGVkGAIgAygLMhQuSW52ZW50b3J5Lkl0ZW1Bd2FyZBIpCg5p",
             "dGVtc191bmxvY2tlZBgEIAMoDjIRLkludmVudG9yeS5JdGVtSWQiNQoGUmVz",
             "dWx0EgkKBVVOU0VUEAASCwoHU1VDQ0VTUxABEhMKD0FXQVJERURfQUxSRUFE",
-            "WRACYgZwcm90bzM="));
+            "WRACQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, global::Inventory.ItemAwardReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemAwardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.LevelUpRewardsResponse), global::Networking.Responses.LevelUpRewardsResponse.Parser, new[]{ "Result", "ItemsAwarded", "ItemsUnlocked" }, null, new[]{ typeof(global::Networking.Responses.LevelUpRewardsResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponse), global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponse.Parser, new[]{ "Result", "ItemsAwarded", "ItemsUnlocked" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<LevelUpRewardsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.LevelUpRewardsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -73,8 +73,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.LevelUpRewardsResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.LevelUpRewardsResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -83,19 +83,19 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "items_awarded" field.</summary>
     public const int ItemsAwardedFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Inventory.ItemAward> _repeated_itemsAwarded_codec
-        = pb::FieldCodec.ForMessage(18, global::Inventory.ItemAward.Parser);
-    private readonly pbc::RepeatedField<global::Inventory.ItemAward> itemsAwarded_ = new pbc::RepeatedField<global::Inventory.ItemAward>();
-    public pbc::RepeatedField<global::Inventory.ItemAward> ItemsAwarded {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.ItemAward> _repeated_itemsAwarded_codec
+        = pb::FieldCodec.ForMessage(18, global::PokemonGoDesktop.API.Proto.ItemAward.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemAward> itemsAwarded_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemAward>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemAward> ItemsAwarded {
       get { return itemsAwarded_; }
     }
 
     /// <summary>Field number for the "items_unlocked" field.</summary>
     public const int ItemsUnlockedFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Inventory.ItemId> _repeated_itemsUnlocked_codec
-        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::Inventory.ItemId) x);
-    private readonly pbc::RepeatedField<global::Inventory.ItemId> itemsUnlocked_ = new pbc::RepeatedField<global::Inventory.ItemId>();
-    public pbc::RepeatedField<global::Inventory.ItemId> ItemsUnlocked {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.ItemId> _repeated_itemsUnlocked_codec
+        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.ItemId) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId> itemsUnlocked_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId> ItemsUnlocked {
       get { return itemsUnlocked_; }
     }
 
@@ -166,7 +166,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.LevelUpRewardsResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.LevelUpRewardsResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {

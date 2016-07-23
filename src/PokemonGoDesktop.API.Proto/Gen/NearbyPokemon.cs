@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Pokemon {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Pokemon/NearbyPokemon.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,12 +26,12 @@ namespace Map.Pokemon {
             "Ch9NYXAvUG9rZW1vbi9OZWFyYnlQb2tlbW9uLnByb3RvEgtNYXAuUG9rZW1v",
             "bhoVRW51bXMvUG9rZW1vbklkLnByb3RvImcKDU5lYXJieVBva2Vtb24SJAoK",
             "cG9rZW1vbl9pZBgBIAEoDjIQLkVudW1zLlBva2Vtb25JZBIaChJkaXN0YW5j",
-            "ZV9pbl9tZXRlcnMYAiABKAISFAoMZW5jb3VudGVyX2lkGAMgASgGYgZwcm90",
-            "bzM="));
+            "ZV9pbl9tZXRlcnMYAiABKAISFAoMZW5jb3VudGVyX2lkGAMgASgGQh2qAhpQ",
+            "b2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.Pokemon.NearbyPokemon), global::Map.Pokemon.NearbyPokemon.Parser, new[]{ "PokemonId", "DistanceInMeters", "EncounterId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.NearbyPokemon), global::PokemonGoDesktop.API.Proto.NearbyPokemon.Parser, new[]{ "PokemonId", "DistanceInMeters", "EncounterId" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Map.Pokemon {
     public static pb::MessageParser<NearbyPokemon> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.Pokemon.NearbyPokemonReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.NearbyPokemonReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,8 +69,8 @@ namespace Map.Pokemon {
 
     /// <summary>Field number for the "pokemon_id" field.</summary>
     public const int PokemonIdFieldNumber = 1;
-    private global::Enums.PokemonId pokemonId_ = 0;
-    public global::Enums.PokemonId PokemonId {
+    private global::PokemonGoDesktop.API.Proto.PokemonId pokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId PokemonId {
       get { return pokemonId_; }
       set {
         pokemonId_ = value;
@@ -178,7 +178,7 @@ namespace Map.Pokemon {
             input.SkipLastField();
             break;
           case 8: {
-            pokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            pokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 21: {

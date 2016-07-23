@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/DownloadSettingsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Responses {
             "c2UucHJvdG8SFE5ldHdvcmtpbmcuUmVzcG9uc2VzGh1TZXR0aW5ncy9HbG9i",
             "YWxTZXR0aW5ncy5wcm90byJjChhEb3dubG9hZFNldHRpbmdzUmVzcG9uc2US",
             "DQoFZXJyb3IYASABKAkSDAoEaGFzaBgCIAEoCRIqCghzZXR0aW5ncxgDIAEo",
-            "CzIYLlNldHRpbmdzLkdsb2JhbFNldHRpbmdzYgZwcm90bzM="));
+            "CzIYLlNldHRpbmdzLkdsb2JhbFNldHRpbmdzQh2qAhpQb2tlbW9uR29EZXNr",
+            "dG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Settings.GlobalSettingsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.GlobalSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.DownloadSettingsResponse), global::Networking.Responses.DownloadSettingsResponse.Parser, new[]{ "Error", "Hash", "Settings" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.DownloadSettingsResponse), global::PokemonGoDesktop.API.Proto.DownloadSettingsResponse.Parser, new[]{ "Error", "Hash", "Settings" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<DownloadSettingsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.DownloadSettingsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.DownloadSettingsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -89,8 +90,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "settings" field.</summary>
     public const int SettingsFieldNumber = 3;
-    private global::Settings.GlobalSettings settings_;
-    public global::Settings.GlobalSettings Settings {
+    private global::PokemonGoDesktop.API.Proto.GlobalSettings settings_;
+    public global::PokemonGoDesktop.API.Proto.GlobalSettings Settings {
       get { return settings_; }
       set {
         settings_ = value;
@@ -167,7 +168,7 @@ namespace Networking.Responses {
       }
       if (other.settings_ != null) {
         if (settings_ == null) {
-          settings_ = new global::Settings.GlobalSettings();
+          settings_ = new global::PokemonGoDesktop.API.Proto.GlobalSettings();
         }
         Settings.MergeFrom(other.Settings);
       }
@@ -190,7 +191,7 @@ namespace Networking.Responses {
           }
           case 26: {
             if (settings_ == null) {
-              settings_ = new global::Settings.GlobalSettings();
+              settings_ = new global::PokemonGoDesktop.API.Proto.GlobalSettings();
             }
             input.ReadMessage(settings_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/InventoryItemData.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -41,11 +41,12 @@ namespace Inventory {
             "bnRvcnlVcGdyYWRlcxIuCg1hcHBsaWVkX2l0ZW1zGAggASgLMhcuSW52ZW50",
             "b3J5LkFwcGxpZWRJdGVtcxIwCg5lZ2dfaW5jdWJhdG9ycxgJIAEoCzIYLklu",
             "dmVudG9yeS5FZ2dJbmN1YmF0b3JzEjAKDnBva2Vtb25fZmFtaWx5GAogASgL",
-            "MhguSW52ZW50b3J5LlBva2Vtb25GYW1pbHliBnByb3RvMw=="));
+            "MhguSW52ZW50b3J5LlBva2Vtb25GYW1pbHlCHaoCGlBva2Vtb25Hb0Rlc2t0",
+            "b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemReflection.Descriptor, global::Inventory.AppliedItemsReflection.Descriptor, global::Inventory.EggIncubatorsReflection.Descriptor, global::Inventory.PokemonFamilyReflection.Descriptor, global::Inventory.InventoryUpgradesReflection.Descriptor, global::Data.PokemonDataReflection.Descriptor, global::Data.PokedexEntryReflection.Descriptor, global::Data.Player.PlayerStatsReflection.Descriptor, global::Data.Player.PlayerCurrencyReflection.Descriptor, global::Data.Player.PlayerCameraReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemReflection.Descriptor, global::PokemonGoDesktop.API.Proto.AppliedItemsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EggIncubatorsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonFamilyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventoryUpgradesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokedexEntryReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerStatsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerCurrencyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerCameraReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.InventoryItemData), global::Inventory.InventoryItemData.Parser, new[]{ "PokemonData", "Item", "PokedexEntry", "PlayerStats", "PlayerCurrency", "PlayerCamera", "InventoryUpgrades", "AppliedItems", "EggIncubators", "PokemonFamily" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.InventoryItemData), global::PokemonGoDesktop.API.Proto.InventoryItemData.Parser, new[]{ "PokemonData", "Item", "PokedexEntry", "PlayerStats", "PlayerCurrency", "PlayerCamera", "InventoryUpgrades", "AppliedItems", "EggIncubators", "PokemonFamily" }, null, null, null)
           }));
     }
     #endregion
@@ -58,7 +59,7 @@ namespace Inventory {
     public static pb::MessageParser<InventoryItemData> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.InventoryItemDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.InventoryItemDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -90,8 +91,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "pokemon_data" field.</summary>
     public const int PokemonDataFieldNumber = 1;
-    private global::Data.PokemonData pokemonData_;
-    public global::Data.PokemonData PokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData pokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData PokemonData {
       get { return pokemonData_; }
       set {
         pokemonData_ = value;
@@ -100,8 +101,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "item" field.</summary>
     public const int ItemFieldNumber = 2;
-    private global::Inventory.Item item_;
-    public global::Inventory.Item Item {
+    private global::PokemonGoDesktop.API.Proto.Item item_;
+    public global::PokemonGoDesktop.API.Proto.Item Item {
       get { return item_; }
       set {
         item_ = value;
@@ -110,8 +111,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "pokedex_entry" field.</summary>
     public const int PokedexEntryFieldNumber = 3;
-    private global::Data.PokedexEntry pokedexEntry_;
-    public global::Data.PokedexEntry PokedexEntry {
+    private global::PokemonGoDesktop.API.Proto.PokedexEntry pokedexEntry_;
+    public global::PokemonGoDesktop.API.Proto.PokedexEntry PokedexEntry {
       get { return pokedexEntry_; }
       set {
         pokedexEntry_ = value;
@@ -120,8 +121,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "player_stats" field.</summary>
     public const int PlayerStatsFieldNumber = 4;
-    private global::Data.Player.PlayerStats playerStats_;
-    public global::Data.Player.PlayerStats PlayerStats {
+    private global::PokemonGoDesktop.API.Proto.PlayerStats playerStats_;
+    public global::PokemonGoDesktop.API.Proto.PlayerStats PlayerStats {
       get { return playerStats_; }
       set {
         playerStats_ = value;
@@ -130,8 +131,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "player_currency" field.</summary>
     public const int PlayerCurrencyFieldNumber = 5;
-    private global::Data.Player.PlayerCurrency playerCurrency_;
-    public global::Data.Player.PlayerCurrency PlayerCurrency {
+    private global::PokemonGoDesktop.API.Proto.PlayerCurrency playerCurrency_;
+    public global::PokemonGoDesktop.API.Proto.PlayerCurrency PlayerCurrency {
       get { return playerCurrency_; }
       set {
         playerCurrency_ = value;
@@ -140,8 +141,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "player_camera" field.</summary>
     public const int PlayerCameraFieldNumber = 6;
-    private global::Data.Player.PlayerCamera playerCamera_;
-    public global::Data.Player.PlayerCamera PlayerCamera {
+    private global::PokemonGoDesktop.API.Proto.PlayerCamera playerCamera_;
+    public global::PokemonGoDesktop.API.Proto.PlayerCamera PlayerCamera {
       get { return playerCamera_; }
       set {
         playerCamera_ = value;
@@ -150,8 +151,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "inventory_upgrades" field.</summary>
     public const int InventoryUpgradesFieldNumber = 7;
-    private global::Inventory.InventoryUpgrades inventoryUpgrades_;
-    public global::Inventory.InventoryUpgrades InventoryUpgrades {
+    private global::PokemonGoDesktop.API.Proto.InventoryUpgrades inventoryUpgrades_;
+    public global::PokemonGoDesktop.API.Proto.InventoryUpgrades InventoryUpgrades {
       get { return inventoryUpgrades_; }
       set {
         inventoryUpgrades_ = value;
@@ -160,8 +161,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "applied_items" field.</summary>
     public const int AppliedItemsFieldNumber = 8;
-    private global::Inventory.AppliedItems appliedItems_;
-    public global::Inventory.AppliedItems AppliedItems {
+    private global::PokemonGoDesktop.API.Proto.AppliedItems appliedItems_;
+    public global::PokemonGoDesktop.API.Proto.AppliedItems AppliedItems {
       get { return appliedItems_; }
       set {
         appliedItems_ = value;
@@ -170,8 +171,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "egg_incubators" field.</summary>
     public const int EggIncubatorsFieldNumber = 9;
-    private global::Inventory.EggIncubators eggIncubators_;
-    public global::Inventory.EggIncubators EggIncubators {
+    private global::PokemonGoDesktop.API.Proto.EggIncubators eggIncubators_;
+    public global::PokemonGoDesktop.API.Proto.EggIncubators EggIncubators {
       get { return eggIncubators_; }
       set {
         eggIncubators_ = value;
@@ -180,8 +181,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "pokemon_family" field.</summary>
     public const int PokemonFamilyFieldNumber = 10;
-    private global::Inventory.PokemonFamily pokemonFamily_;
-    public global::Inventory.PokemonFamily PokemonFamily {
+    private global::PokemonGoDesktop.API.Proto.PokemonFamily pokemonFamily_;
+    public global::PokemonGoDesktop.API.Proto.PokemonFamily PokemonFamily {
       get { return pokemonFamily_; }
       set {
         pokemonFamily_ = value;
@@ -315,61 +316,61 @@ namespace Inventory {
       }
       if (other.pokemonData_ != null) {
         if (pokemonData_ == null) {
-          pokemonData_ = new global::Data.PokemonData();
+          pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         PokemonData.MergeFrom(other.PokemonData);
       }
       if (other.item_ != null) {
         if (item_ == null) {
-          item_ = new global::Inventory.Item();
+          item_ = new global::PokemonGoDesktop.API.Proto.Item();
         }
         Item.MergeFrom(other.Item);
       }
       if (other.pokedexEntry_ != null) {
         if (pokedexEntry_ == null) {
-          pokedexEntry_ = new global::Data.PokedexEntry();
+          pokedexEntry_ = new global::PokemonGoDesktop.API.Proto.PokedexEntry();
         }
         PokedexEntry.MergeFrom(other.PokedexEntry);
       }
       if (other.playerStats_ != null) {
         if (playerStats_ == null) {
-          playerStats_ = new global::Data.Player.PlayerStats();
+          playerStats_ = new global::PokemonGoDesktop.API.Proto.PlayerStats();
         }
         PlayerStats.MergeFrom(other.PlayerStats);
       }
       if (other.playerCurrency_ != null) {
         if (playerCurrency_ == null) {
-          playerCurrency_ = new global::Data.Player.PlayerCurrency();
+          playerCurrency_ = new global::PokemonGoDesktop.API.Proto.PlayerCurrency();
         }
         PlayerCurrency.MergeFrom(other.PlayerCurrency);
       }
       if (other.playerCamera_ != null) {
         if (playerCamera_ == null) {
-          playerCamera_ = new global::Data.Player.PlayerCamera();
+          playerCamera_ = new global::PokemonGoDesktop.API.Proto.PlayerCamera();
         }
         PlayerCamera.MergeFrom(other.PlayerCamera);
       }
       if (other.inventoryUpgrades_ != null) {
         if (inventoryUpgrades_ == null) {
-          inventoryUpgrades_ = new global::Inventory.InventoryUpgrades();
+          inventoryUpgrades_ = new global::PokemonGoDesktop.API.Proto.InventoryUpgrades();
         }
         InventoryUpgrades.MergeFrom(other.InventoryUpgrades);
       }
       if (other.appliedItems_ != null) {
         if (appliedItems_ == null) {
-          appliedItems_ = new global::Inventory.AppliedItems();
+          appliedItems_ = new global::PokemonGoDesktop.API.Proto.AppliedItems();
         }
         AppliedItems.MergeFrom(other.AppliedItems);
       }
       if (other.eggIncubators_ != null) {
         if (eggIncubators_ == null) {
-          eggIncubators_ = new global::Inventory.EggIncubators();
+          eggIncubators_ = new global::PokemonGoDesktop.API.Proto.EggIncubators();
         }
         EggIncubators.MergeFrom(other.EggIncubators);
       }
       if (other.pokemonFamily_ != null) {
         if (pokemonFamily_ == null) {
-          pokemonFamily_ = new global::Inventory.PokemonFamily();
+          pokemonFamily_ = new global::PokemonGoDesktop.API.Proto.PokemonFamily();
         }
         PokemonFamily.MergeFrom(other.PokemonFamily);
       }
@@ -384,70 +385,70 @@ namespace Inventory {
             break;
           case 10: {
             if (pokemonData_ == null) {
-              pokemonData_ = new global::Data.PokemonData();
+              pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(pokemonData_);
             break;
           }
           case 18: {
             if (item_ == null) {
-              item_ = new global::Inventory.Item();
+              item_ = new global::PokemonGoDesktop.API.Proto.Item();
             }
             input.ReadMessage(item_);
             break;
           }
           case 26: {
             if (pokedexEntry_ == null) {
-              pokedexEntry_ = new global::Data.PokedexEntry();
+              pokedexEntry_ = new global::PokemonGoDesktop.API.Proto.PokedexEntry();
             }
             input.ReadMessage(pokedexEntry_);
             break;
           }
           case 34: {
             if (playerStats_ == null) {
-              playerStats_ = new global::Data.Player.PlayerStats();
+              playerStats_ = new global::PokemonGoDesktop.API.Proto.PlayerStats();
             }
             input.ReadMessage(playerStats_);
             break;
           }
           case 42: {
             if (playerCurrency_ == null) {
-              playerCurrency_ = new global::Data.Player.PlayerCurrency();
+              playerCurrency_ = new global::PokemonGoDesktop.API.Proto.PlayerCurrency();
             }
             input.ReadMessage(playerCurrency_);
             break;
           }
           case 50: {
             if (playerCamera_ == null) {
-              playerCamera_ = new global::Data.Player.PlayerCamera();
+              playerCamera_ = new global::PokemonGoDesktop.API.Proto.PlayerCamera();
             }
             input.ReadMessage(playerCamera_);
             break;
           }
           case 58: {
             if (inventoryUpgrades_ == null) {
-              inventoryUpgrades_ = new global::Inventory.InventoryUpgrades();
+              inventoryUpgrades_ = new global::PokemonGoDesktop.API.Proto.InventoryUpgrades();
             }
             input.ReadMessage(inventoryUpgrades_);
             break;
           }
           case 66: {
             if (appliedItems_ == null) {
-              appliedItems_ = new global::Inventory.AppliedItems();
+              appliedItems_ = new global::PokemonGoDesktop.API.Proto.AppliedItems();
             }
             input.ReadMessage(appliedItems_);
             break;
           }
           case 74: {
             if (eggIncubators_ == null) {
-              eggIncubators_ = new global::Inventory.EggIncubators();
+              eggIncubators_ = new global::PokemonGoDesktop.API.Proto.EggIncubators();
             }
             input.ReadMessage(eggIncubators_);
             break;
           }
           case 82: {
             if (pokemonFamily_ == null) {
-              pokemonFamily_ = new global::Inventory.PokemonFamily();
+              pokemonFamily_ = new global::PokemonGoDesktop.API.Proto.PokemonFamily();
             }
             input.ReadMessage(pokemonFamily_);
             break;

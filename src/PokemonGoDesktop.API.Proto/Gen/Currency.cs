@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Player {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Player/Currency.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24,12 +24,12 @@ namespace Data.Player {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChpEYXRhL1BsYXllci9DdXJyZW5jeS5wcm90bxILRGF0YS5QbGF5ZXIiKAoI",
-            "Q3VycmVuY3kSDAoEbmFtZRgBIAEoCRIOCgZhbW91bnQYAiABKAViBnByb3Rv",
-            "Mw=="));
+            "Q3VycmVuY3kSDAoEbmFtZRgBIAEoCRIOCgZhbW91bnQYAiABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Player.Currency), global::Data.Player.Currency.Parser, new[]{ "Name", "Amount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.Currency), global::PokemonGoDesktop.API.Proto.Currency.Parser, new[]{ "Name", "Amount" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +42,7 @@ namespace Data.Player {
     public static pb::MessageParser<Currency> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Player.CurrencyReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CurrencyReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/EchoResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,11 @@ namespace Networking.Responses {
           string.Concat(
             "CidOZXR3b3JraW5nL1Jlc3BvbnNlcy9FY2hvUmVzcG9uc2UucHJvdG8SFE5l",
             "dHdvcmtpbmcuUmVzcG9uc2VzIh8KDEVjaG9SZXNwb25zZRIPCgdjb250ZXh0",
-            "GAEgASgJYgZwcm90bzM="));
+            "GAEgASgJQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.EchoResponse), global::Networking.Responses.EchoResponse.Parser, new[]{ "Context" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EchoResponse), global::PokemonGoDesktop.API.Proto.EchoResponse.Parser, new[]{ "Context" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +42,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<EchoResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.EchoResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EchoResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

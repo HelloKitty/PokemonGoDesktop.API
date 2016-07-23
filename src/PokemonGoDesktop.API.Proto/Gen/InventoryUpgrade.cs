@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/InventoryUpgrade.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Inventory {
             "VXBncmFkZVR5cGUucHJvdG8iiQEKEEludmVudG9yeVVwZ3JhZGUSIgoHaXRl",
             "bV9pZBgBIAEoDjIRLkludmVudG9yeS5JdGVtSWQSNQoMdXBncmFkZV90eXBl",
             "GAIgASgOMh8uSW52ZW50b3J5LkludmVudG9yeVVwZ3JhZGVUeXBlEhoKEmFk",
-            "ZGl0aW9uYWxfc3RvcmFnZRgDIAEoBWIGcHJvdG8z"));
+            "ZGl0aW9uYWxfc3RvcmFnZRgDIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5B",
+            "UEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, global::Inventory.InventoryUpgradeTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventoryUpgradeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.InventoryUpgrade), global::Inventory.InventoryUpgrade.Parser, new[]{ "ItemId", "UpgradeType", "AdditionalStorage" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.InventoryUpgrade), global::PokemonGoDesktop.API.Proto.InventoryUpgrade.Parser, new[]{ "ItemId", "UpgradeType", "AdditionalStorage" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Inventory {
     public static pb::MessageParser<InventoryUpgrade> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.InventoryUpgradeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.InventoryUpgradeReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,8 +71,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Inventory.ItemId itemId_ = 0;
-    public global::Inventory.ItemId ItemId {
+    private global::PokemonGoDesktop.API.Proto.ItemId itemId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -80,8 +81,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "upgrade_type" field.</summary>
     public const int UpgradeTypeFieldNumber = 2;
-    private global::Inventory.InventoryUpgradeType upgradeType_ = 0;
-    public global::Inventory.InventoryUpgradeType UpgradeType {
+    private global::PokemonGoDesktop.API.Proto.InventoryUpgradeType upgradeType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.InventoryUpgradeType UpgradeType {
       get { return upgradeType_; }
       set {
         upgradeType_ = value;
@@ -179,11 +180,11 @@ namespace Inventory {
             input.SkipLastField();
             break;
           case 8: {
-            itemId_ = (global::Inventory.ItemId) input.ReadEnum();
+            itemId_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 16: {
-            upgradeType_ = (global::Inventory.InventoryUpgradeType) input.ReadEnum();
+            upgradeType_ = (global::PokemonGoDesktop.API.Proto.InventoryUpgradeType) input.ReadEnum();
             break;
           }
           case 24: {

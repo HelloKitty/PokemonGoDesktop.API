@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Enums {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Enums/TeamColor.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24,11 +24,11 @@ namespace Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVFbnVtcy9UZWFtQ29sb3IucHJvdG8SBUVudW1zKjcKCVRlYW1Db2xvchIL",
-            "CgdORVVUUkFMEAASCAoEQkxVRRABEgcKA1JFRBACEgoKBllFTExPVxADYgZw",
-            "cm90bzM="));
+            "CgdORVVUUkFMEAASCAoEQkxVRRABEgcKA1JFRBACEgoKBllFTExPVxADQh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Enums.TeamColor), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.TeamColor), }, null));
     }
     #endregion
 

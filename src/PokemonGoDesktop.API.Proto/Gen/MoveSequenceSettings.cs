@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/MoveSequenceSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Settings.Master {
           string.Concat(
             "CipTZXR0aW5ncy9NYXN0ZXIvTW92ZVNlcXVlbmNlU2V0dGluZ3MucHJvdG8S",
             "D1NldHRpbmdzLk1hc3RlciIoChRNb3ZlU2VxdWVuY2VTZXR0aW5ncxIQCghz",
-            "ZXF1ZW5jZRgBIAMoCWIGcHJvdG8z"));
+            "ZXF1ZW5jZRgBIAMoCUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.MoveSequenceSettings), global::Settings.Master.MoveSequenceSettings.Parser, new[]{ "Sequence" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.MoveSequenceSettings), global::PokemonGoDesktop.API.Proto.MoveSequenceSettings.Parser, new[]{ "Sequence" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +43,7 @@ namespace Settings.Master {
     public static pb::MessageParser<MoveSequenceSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.MoveSequenceSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.MoveSequenceSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

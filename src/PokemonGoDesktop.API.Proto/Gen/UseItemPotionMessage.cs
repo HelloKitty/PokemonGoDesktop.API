@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/UseItemPotionMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests.Messages {
             "ZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzGhZJ",
             "bnZlbnRvcnkvSXRlbUlkLnByb3RvIk4KFFVzZUl0ZW1Qb3Rpb25NZXNzYWdl",
             "EiIKB2l0ZW1faWQYASABKA4yES5JbnZlbnRvcnkuSXRlbUlkEhIKCnBva2Vt",
-            "b25faWQYAiABKARiBnByb3RvMw=="));
+            "b25faWQYAiABKARCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.UseItemPotionMessage), global::Networking.Requests.Messages.UseItemPotionMessage.Parser, new[]{ "ItemId", "PokemonId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseItemPotionMessage), global::PokemonGoDesktop.API.Proto.UseItemPotionMessage.Parser, new[]{ "ItemId", "PokemonId" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<UseItemPotionMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.UseItemPotionMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseItemPotionMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -68,8 +69,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Inventory.ItemId itemId_ = 0;
-    public global::Inventory.ItemId ItemId {
+    private global::PokemonGoDesktop.API.Proto.ItemId itemId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -155,7 +156,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            itemId_ = (global::Inventory.ItemId) input.ReadEnum();
+            itemId_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 16: {

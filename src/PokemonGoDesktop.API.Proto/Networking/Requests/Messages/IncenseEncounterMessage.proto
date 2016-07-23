@@ -1,4 +1,5 @@
 syntax = "proto3";
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
 message IncenseEncounterMessage {

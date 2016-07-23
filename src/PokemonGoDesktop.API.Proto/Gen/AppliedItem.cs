@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/AppliedItem.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,12 +27,12 @@ namespace Inventory {
             "ZW50b3J5L0l0ZW1JZC5wcm90bxoYSW52ZW50b3J5L0l0ZW1UeXBlLnByb3Rv",
             "IoABCgtBcHBsaWVkSXRlbRIiCgdpdGVtX2lkGAEgASgOMhEuSW52ZW50b3J5",
             "Lkl0ZW1JZBImCglpdGVtX3R5cGUYAiABKA4yEy5JbnZlbnRvcnkuSXRlbVR5",
-            "cGUSEQoJZXhwaXJlX21zGAMgASgDEhIKCmFwcGxpZWRfbXMYBCABKANiBnBy",
-            "b3RvMw=="));
+            "cGUSEQoJZXhwaXJlX21zGAMgASgDEhIKCmFwcGxpZWRfbXMYBCABKANCHaoC",
+            "GlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, global::Inventory.ItemTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.AppliedItem), global::Inventory.AppliedItem.Parser, new[]{ "ItemId", "ItemType", "ExpireMs", "AppliedMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AppliedItem), global::PokemonGoDesktop.API.Proto.AppliedItem.Parser, new[]{ "ItemId", "ItemType", "ExpireMs", "AppliedMs" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Inventory {
     public static pb::MessageParser<AppliedItem> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.AppliedItemReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AppliedItemReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +71,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Inventory.ItemId itemId_ = 0;
-    public global::Inventory.ItemId ItemId {
+    private global::PokemonGoDesktop.API.Proto.ItemId itemId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -81,8 +81,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "item_type" field.</summary>
     public const int ItemTypeFieldNumber = 2;
-    private global::Inventory.ItemType itemType_ = 0;
-    public global::Inventory.ItemType ItemType {
+    private global::PokemonGoDesktop.API.Proto.ItemType itemType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemType ItemType {
       get { return itemType_; }
       set {
         itemType_ = value;
@@ -202,11 +202,11 @@ namespace Inventory {
             input.SkipLastField();
             break;
           case 8: {
-            itemId_ = (global::Inventory.ItemId) input.ReadEnum();
+            itemId_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 16: {
-            itemType_ = (global::Inventory.ItemType) input.ReadEnum();
+            itemType_ = (global::PokemonGoDesktop.API.Proto.ItemType) input.ReadEnum();
             break;
           }
           case 24: {

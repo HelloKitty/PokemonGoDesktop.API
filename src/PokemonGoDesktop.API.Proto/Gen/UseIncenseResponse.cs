@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/UseIncenseResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -30,11 +30,12 @@ namespace Networking.Responses {
             "UmVzdWx0Ei8KD2FwcGxpZWRfaW5jZW5zZRgCIAEoCzIWLkludmVudG9yeS5B",
             "cHBsaWVkSXRlbSJpCgZSZXN1bHQSCwoHVU5LTk9XThAAEgsKB1NVQ0NFU1MQ",
             "ARIaChZJTkNFTlNFX0FMUkVBRFlfQUNUSVZFEAISFQoRTk9ORV9JTl9JTlZF",
-            "TlRPUlkQAxISCg5MT0NBVElPTl9VTlNFVBAEYgZwcm90bzM="));
+            "TlRPUlkQAxISCg5MT0NBVElPTl9VTlNFVBAEQh2qAhpQb2tlbW9uR29EZXNr",
+            "dG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.AppliedItemReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.AppliedItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.UseIncenseResponse), global::Networking.Responses.UseIncenseResponse.Parser, new[]{ "Result", "AppliedIncense" }, null, new[]{ typeof(global::Networking.Responses.UseIncenseResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseIncenseResponse), global::PokemonGoDesktop.API.Proto.UseIncenseResponse.Parser, new[]{ "Result", "AppliedIncense" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.UseIncenseResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -47,7 +48,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<UseIncenseResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.UseIncenseResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseIncenseResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +72,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.UseIncenseResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.UseIncenseResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.UseIncenseResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.UseIncenseResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -81,8 +82,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "applied_incense" field.</summary>
     public const int AppliedIncenseFieldNumber = 2;
-    private global::Inventory.AppliedItem appliedIncense_;
-    public global::Inventory.AppliedItem AppliedIncense {
+    private global::PokemonGoDesktop.API.Proto.AppliedItem appliedIncense_;
+    public global::PokemonGoDesktop.API.Proto.AppliedItem AppliedIncense {
       get { return appliedIncense_; }
       set {
         appliedIncense_ = value;
@@ -147,7 +148,7 @@ namespace Networking.Responses {
       }
       if (other.appliedIncense_ != null) {
         if (appliedIncense_ == null) {
-          appliedIncense_ = new global::Inventory.AppliedItem();
+          appliedIncense_ = new global::PokemonGoDesktop.API.Proto.AppliedItem();
         }
         AppliedIncense.MergeFrom(other.AppliedIncense);
       }
@@ -161,12 +162,12 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.UseIncenseResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.UseIncenseResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
             if (appliedIncense_ == null) {
-              appliedIncense_ = new global::Inventory.AppliedItem();
+              appliedIncense_ = new global::PokemonGoDesktop.API.Proto.AppliedItem();
             }
             input.ReadMessage(appliedIncense_);
             break;

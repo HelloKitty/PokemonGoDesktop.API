@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattlePokemonInfo.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,11 @@ namespace Data.Battle {
             "YXR0bGUaFkRhdGEvUG9rZW1vbkRhdGEucHJvdG8ibAoRQmF0dGxlUG9rZW1v",
             "bkluZm8SJwoMcG9rZW1vbl9kYXRhGAEgASgLMhEuRGF0YS5Qb2tlbW9uRGF0",
             "YRIWCg5jdXJyZW50X2hlYWx0aBgCIAEoBRIWCg5jdXJyZW50X2VuZXJneRgD",
-            "IAEoBWIGcHJvdG8z"));
+            "IAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PokemonDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Battle.BattlePokemonInfo), global::Data.Battle.BattlePokemonInfo.Parser, new[]{ "PokemonData", "CurrentHealth", "CurrentEnergy" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.BattlePokemonInfo), global::PokemonGoDesktop.API.Proto.BattlePokemonInfo.Parser, new[]{ "PokemonData", "CurrentHealth", "CurrentEnergy" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Data.Battle {
     public static pb::MessageParser<BattlePokemonInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Battle.BattlePokemonInfoReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.BattlePokemonInfoReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,8 +69,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "pokemon_data" field.</summary>
     public const int PokemonDataFieldNumber = 1;
-    private global::Data.PokemonData pokemonData_;
-    public global::Data.PokemonData PokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData pokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData PokemonData {
       get { return pokemonData_; }
       set {
         pokemonData_ = value;
@@ -161,7 +161,7 @@ namespace Data.Battle {
       }
       if (other.pokemonData_ != null) {
         if (pokemonData_ == null) {
-          pokemonData_ = new global::Data.PokemonData();
+          pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         PokemonData.MergeFrom(other.PokemonData);
       }
@@ -182,7 +182,7 @@ namespace Data.Battle {
             break;
           case 10: {
             if (pokemonData_ == null) {
-              pokemonData_ = new global::Data.PokemonData();
+              pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(pokemonData_);
             break;

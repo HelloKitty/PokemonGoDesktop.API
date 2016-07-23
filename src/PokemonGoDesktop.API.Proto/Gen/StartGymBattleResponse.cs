@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/StartGymBattleResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -40,11 +40,12 @@ namespace Networking.Responses {
             "X1BPS0VNT05fRkFJTlRFRBAIEhoKFkVSUk9SX1RPT19NQU5ZX0JBVFRMRVMQ",
             "CRIaChZFUlJPUl9UT09fTUFOWV9QTEFZRVJTEAoSHAoYRVJST1JfR1lNX0JB",
             "VFRMRV9MT0NLT1VUEAsSJAogRVJST1JfUExBWUVSX0JFTE9XX01JTklNVU1f",
-            "TEVWRUwQDBIWChJFUlJPUl9OT1RfSU5fUkFOR0UQDWIGcHJvdG8z"));
+            "TEVWRUwQDBIWChJFUlJPUl9OT1RfSU5fUkFOR0UQDUIdqgIaUG9rZW1vbkdv",
+            "RGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Battle.BattleLogReflection.Descriptor, global::Data.Battle.BattleParticipantReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BattleLogReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleParticipantReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.StartGymBattleResponse), global::Networking.Responses.StartGymBattleResponse.Parser, new[]{ "Result", "BattleStartTimestampMs", "BattleEndTimestampMs", "BattleId", "Defender", "BattleLog" }, null, new[]{ typeof(global::Networking.Responses.StartGymBattleResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.StartGymBattleResponse), global::PokemonGoDesktop.API.Proto.StartGymBattleResponse.Parser, new[]{ "Result", "BattleStartTimestampMs", "BattleEndTimestampMs", "BattleId", "Defender", "BattleLog" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.StartGymBattleResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -57,7 +58,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<StartGymBattleResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.StartGymBattleResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.StartGymBattleResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -85,8 +86,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.StartGymBattleResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.StartGymBattleResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.StartGymBattleResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.StartGymBattleResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -125,8 +126,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "defender" field.</summary>
     public const int DefenderFieldNumber = 5;
-    private global::Data.Battle.BattleParticipant defender_;
-    public global::Data.Battle.BattleParticipant Defender {
+    private global::PokemonGoDesktop.API.Proto.BattleParticipant defender_;
+    public global::PokemonGoDesktop.API.Proto.BattleParticipant Defender {
       get { return defender_; }
       set {
         defender_ = value;
@@ -135,8 +136,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "battle_log" field.</summary>
     public const int BattleLogFieldNumber = 6;
-    private global::Data.Battle.BattleLog battleLog_;
-    public global::Data.Battle.BattleLog BattleLog {
+    private global::PokemonGoDesktop.API.Proto.BattleLog battleLog_;
+    public global::PokemonGoDesktop.API.Proto.BattleLog BattleLog {
       get { return battleLog_; }
       set {
         battleLog_ = value;
@@ -246,13 +247,13 @@ namespace Networking.Responses {
       }
       if (other.defender_ != null) {
         if (defender_ == null) {
-          defender_ = new global::Data.Battle.BattleParticipant();
+          defender_ = new global::PokemonGoDesktop.API.Proto.BattleParticipant();
         }
         Defender.MergeFrom(other.Defender);
       }
       if (other.battleLog_ != null) {
         if (battleLog_ == null) {
-          battleLog_ = new global::Data.Battle.BattleLog();
+          battleLog_ = new global::PokemonGoDesktop.API.Proto.BattleLog();
         }
         BattleLog.MergeFrom(other.BattleLog);
       }
@@ -266,7 +267,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.StartGymBattleResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.StartGymBattleResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 16: {
@@ -283,14 +284,14 @@ namespace Networking.Responses {
           }
           case 42: {
             if (defender_ == null) {
-              defender_ = new global::Data.Battle.BattleParticipant();
+              defender_ = new global::PokemonGoDesktop.API.Proto.BattleParticipant();
             }
             input.ReadMessage(defender_);
             break;
           }
           case 50: {
             if (battleLog_ == null) {
-              battleLog_ = new global::Data.Battle.BattleLog();
+              battleLog_ = new global::PokemonGoDesktop.API.Proto.BattleLog();
             }
             input.ReadMessage(battleLog_);
             break;

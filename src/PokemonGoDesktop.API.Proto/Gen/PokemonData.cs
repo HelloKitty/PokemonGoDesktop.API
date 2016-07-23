@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/PokemonData.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -40,12 +40,12 @@ namespace Data {
             "ZmVuZGVkGBggASgFEhgKEGVnZ19pbmN1YmF0b3JfaWQYGSABKAkSGAoQY3Jl",
             "YXRpb25fdGltZV9tcxgaIAEoBBIUCgxudW1fdXBncmFkZXMYGyABKAUSIAoY",
             "YWRkaXRpb25hbF9jcF9tdWx0aXBsaWVyGBwgASgFEhAKCGZhdm9yaXRlGB0g",
-            "ASgFEhAKCG5pY2tuYW1lGB4gASgJEhEKCWZyb21fZm9ydBgfIAEoBWIGcHJv",
-            "dG8z"));
+            "ASgFEhAKCG5pY2tuYW1lGB4gASgJEhEKCWZyb21fZm9ydBgfIAEoBUIdqgIa",
+            "UG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonIdReflection.Descriptor, global::Enums.PokemonMoveReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMoveReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.PokemonData), global::Data.PokemonData.Parser, new[]{ "Id", "PokemonId", "Cp", "Stamina", "StaminaMax", "Move1", "Move2", "DeployedFortId", "OwnerName", "IsEgg", "EggKmWalkedTarget", "EggKmWalkedStart", "Origin", "HeightM", "WeightKg", "IndividualAttack", "IndividualDefense", "IndividualStamina", "CpMultiplier", "Pokeball", "CapturedCellId", "BattlesAttacked", "BattlesDefended", "EggIncubatorId", "CreationTimeMs", "NumUpgrades", "AdditionalCpMultiplier", "Favorite", "Nickname", "FromFort" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonData), global::PokemonGoDesktop.API.Proto.PokemonData.Parser, new[]{ "Id", "PokemonId", "Cp", "Stamina", "StaminaMax", "Move1", "Move2", "DeployedFortId", "OwnerName", "IsEgg", "EggKmWalkedTarget", "EggKmWalkedStart", "Origin", "HeightM", "WeightKg", "IndividualAttack", "IndividualDefense", "IndividualStamina", "CpMultiplier", "Pokeball", "CapturedCellId", "BattlesAttacked", "BattlesDefended", "EggIncubatorId", "CreationTimeMs", "NumUpgrades", "AdditionalCpMultiplier", "Favorite", "Nickname", "FromFort" }, null, null, null)
           }));
     }
     #endregion
@@ -58,7 +58,7 @@ namespace Data {
     public static pb::MessageParser<PokemonData> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.PokemonDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -120,8 +120,8 @@ namespace Data {
 
     /// <summary>Field number for the "pokemon_id" field.</summary>
     public const int PokemonIdFieldNumber = 2;
-    private global::Enums.PokemonId pokemonId_ = 0;
-    public global::Enums.PokemonId PokemonId {
+    private global::PokemonGoDesktop.API.Proto.PokemonId pokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId PokemonId {
       get { return pokemonId_; }
       set {
         pokemonId_ = value;
@@ -160,8 +160,8 @@ namespace Data {
 
     /// <summary>Field number for the "move_1" field.</summary>
     public const int Move1FieldNumber = 6;
-    private global::Enums.PokemonMove move1_ = 0;
-    public global::Enums.PokemonMove Move1 {
+    private global::PokemonGoDesktop.API.Proto.PokemonMove move1_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonMove Move1 {
       get { return move1_; }
       set {
         move1_ = value;
@@ -170,8 +170,8 @@ namespace Data {
 
     /// <summary>Field number for the "move_2" field.</summary>
     public const int Move2FieldNumber = 7;
-    private global::Enums.PokemonMove move2_ = 0;
-    public global::Enums.PokemonMove Move2 {
+    private global::PokemonGoDesktop.API.Proto.PokemonMove move2_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonMove Move2 {
       get { return move2_; }
       set {
         move2_ = value;
@@ -817,7 +817,7 @@ namespace Data {
             break;
           }
           case 16: {
-            pokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            pokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 24: {
@@ -833,11 +833,11 @@ namespace Data {
             break;
           }
           case 48: {
-            move1_ = (global::Enums.PokemonMove) input.ReadEnum();
+            move1_ = (global::PokemonGoDesktop.API.Proto.PokemonMove) input.ReadEnum();
             break;
           }
           case 56: {
-            move2_ = (global::Enums.PokemonMove) input.ReadEnum();
+            move2_ = (global::PokemonGoDesktop.API.Proto.PokemonMove) input.ReadEnum();
             break;
           }
           case 64: {

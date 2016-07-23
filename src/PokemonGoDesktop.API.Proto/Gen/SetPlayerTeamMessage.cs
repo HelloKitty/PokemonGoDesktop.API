@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/SetPlayerTeamMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Networking.Requests.Messages {
             "CjdOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL1NldFBsYXllclRlYW1N",
             "ZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzGhVF",
             "bnVtcy9UZWFtQ29sb3IucHJvdG8iNgoUU2V0UGxheWVyVGVhbU1lc3NhZ2US",
-            "HgoEdGVhbRgBIAEoDjIQLkVudW1zLlRlYW1Db2xvcmIGcHJvdG8z"));
+            "HgoEdGVhbRgBIAEoDjIQLkVudW1zLlRlYW1Db2xvckIdqgIaUG9rZW1vbkdv",
+            "RGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.TeamColorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.TeamColorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.SetPlayerTeamMessage), global::Networking.Requests.Messages.SetPlayerTeamMessage.Parser, new[]{ "Team" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.SetPlayerTeamMessage), global::PokemonGoDesktop.API.Proto.SetPlayerTeamMessage.Parser, new[]{ "Team" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<SetPlayerTeamMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.SetPlayerTeamMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.SetPlayerTeamMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -66,8 +67,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "team" field.</summary>
     public const int TeamFieldNumber = 1;
-    private global::Enums.TeamColor team_ = 0;
-    public global::Enums.TeamColor Team {
+    private global::PokemonGoDesktop.API.Proto.TeamColor team_ = 0;
+    public global::PokemonGoDesktop.API.Proto.TeamColor Team {
       get { return team_; }
       set {
         team_ = value;
@@ -131,7 +132,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            team_ = (global::Enums.TeamColor) input.ReadEnum();
+            team_ = (global::PokemonGoDesktop.API.Proto.TeamColor) input.ReadEnum();
             break;
           }
         }

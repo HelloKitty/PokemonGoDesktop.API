@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Gym {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Gym/GymState.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Data.Gym {
             "L0ZvcnREYXRhLnByb3RvGhxEYXRhL0d5bS9HeW1NZW1iZXJzaGlwLnByb3Rv",
             "Il8KCEd5bVN0YXRlEiUKCWZvcnRfZGF0YRgBIAEoCzISLk1hcC5Gb3J0LkZv",
             "cnREYXRhEiwKC21lbWJlcnNoaXBzGAIgAygLMhcuRGF0YS5HeW0uR3ltTWVt",
-            "YmVyc2hpcGIGcHJvdG8z"));
+            "YmVyc2hpcEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Map.Fort.FortDataReflection.Descriptor, global::Data.Gym.GymMembershipReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.FortDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.GymMembershipReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Gym.GymState), global::Data.Gym.GymState.Parser, new[]{ "FortData", "Memberships" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GymState), global::PokemonGoDesktop.API.Proto.GymState.Parser, new[]{ "FortData", "Memberships" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Data.Gym {
     public static pb::MessageParser<GymState> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Gym.GymStateReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GymStateReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -68,8 +69,8 @@ namespace Data.Gym {
 
     /// <summary>Field number for the "fort_data" field.</summary>
     public const int FortDataFieldNumber = 1;
-    private global::Map.Fort.FortData fortData_;
-    public global::Map.Fort.FortData FortData {
+    private global::PokemonGoDesktop.API.Proto.FortData fortData_;
+    public global::PokemonGoDesktop.API.Proto.FortData FortData {
       get { return fortData_; }
       set {
         fortData_ = value;
@@ -78,10 +79,10 @@ namespace Data.Gym {
 
     /// <summary>Field number for the "memberships" field.</summary>
     public const int MembershipsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Data.Gym.GymMembership> _repeated_memberships_codec
-        = pb::FieldCodec.ForMessage(18, global::Data.Gym.GymMembership.Parser);
-    private readonly pbc::RepeatedField<global::Data.Gym.GymMembership> memberships_ = new pbc::RepeatedField<global::Data.Gym.GymMembership>();
-    public pbc::RepeatedField<global::Data.Gym.GymMembership> Memberships {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.GymMembership> _repeated_memberships_codec
+        = pb::FieldCodec.ForMessage(18, global::PokemonGoDesktop.API.Proto.GymMembership.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.GymMembership> memberships_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.GymMembership>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.GymMembership> Memberships {
       get { return memberships_; }
     }
 
@@ -135,7 +136,7 @@ namespace Data.Gym {
       }
       if (other.fortData_ != null) {
         if (fortData_ == null) {
-          fortData_ = new global::Map.Fort.FortData();
+          fortData_ = new global::PokemonGoDesktop.API.Proto.FortData();
         }
         FortData.MergeFrom(other.FortData);
       }
@@ -151,7 +152,7 @@ namespace Data.Gym {
             break;
           case 10: {
             if (fortData_ == null) {
-              fortData_ = new global::Map.Fort.FortData();
+              fortData_ = new global::PokemonGoDesktop.API.Proto.FortData();
             }
             input.ReadMessage(fortData_);
             break;

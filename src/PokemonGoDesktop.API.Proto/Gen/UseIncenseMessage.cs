@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/UseIncenseMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Networking.Requests.Messages {
             "CjROZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL1VzZUluY2Vuc2VNZXNz",
             "YWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzGhZJbnZl",
             "bnRvcnkvSXRlbUlkLnByb3RvIjwKEVVzZUluY2Vuc2VNZXNzYWdlEicKDGlu",
-            "Y2Vuc2VfdHlwZRgBIAEoDjIRLkludmVudG9yeS5JdGVtSWRiBnByb3RvMw=="));
+            "Y2Vuc2VfdHlwZRgBIAEoDjIRLkludmVudG9yeS5JdGVtSWRCHaoCGlBva2Vt",
+            "b25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.UseIncenseMessage), global::Networking.Requests.Messages.UseIncenseMessage.Parser, new[]{ "IncenseType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseIncenseMessage), global::PokemonGoDesktop.API.Proto.UseIncenseMessage.Parser, new[]{ "IncenseType" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<UseIncenseMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.UseIncenseMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseIncenseMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -66,8 +67,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "incense_type" field.</summary>
     public const int IncenseTypeFieldNumber = 1;
-    private global::Inventory.ItemId incenseType_ = 0;
-    public global::Inventory.ItemId IncenseType {
+    private global::PokemonGoDesktop.API.Proto.ItemId incenseType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId IncenseType {
       get { return incenseType_; }
       set {
         incenseType_ = value;
@@ -131,7 +132,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            incenseType_ = (global::Inventory.ItemId) input.ReadEnum();
+            incenseType_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
         }

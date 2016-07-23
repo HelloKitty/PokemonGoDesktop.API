@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/GymLevelSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,12 +26,12 @@ namespace Settings.Master {
             "CiZTZXR0aW5ncy9NYXN0ZXIvR3ltTGV2ZWxTZXR0aW5ncy5wcm90bxIPU2V0",
             "dGluZ3MuTWFzdGVyIncKEEd5bUxldmVsU2V0dGluZ3MSGwoTcmVxdWlyZWRf",
             "ZXhwZXJpZW5jZRgBIAMoBRIUCgxsZWFkZXJfc2xvdHMYAiADKAUSFQoNdHJh",
-            "aW5lcl9zbG90cxgDIAMoBRIZChFzZWFyY2hfcm9sbF9ib251cxgEIAMoBWIG",
-            "cHJvdG8z"));
+            "aW5lcl9zbG90cxgDIAMoBRIZChFzZWFyY2hfcm9sbF9ib251cxgEIAMoBUId",
+            "qgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.GymLevelSettings), global::Settings.Master.GymLevelSettings.Parser, new[]{ "RequiredExperience", "LeaderSlots", "TrainerSlots", "SearchRollBonus" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GymLevelSettings), global::PokemonGoDesktop.API.Proto.GymLevelSettings.Parser, new[]{ "RequiredExperience", "LeaderSlots", "TrainerSlots", "SearchRollBonus" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Settings.Master {
     public static pb::MessageParser<GymLevelSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.GymLevelSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GymLevelSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

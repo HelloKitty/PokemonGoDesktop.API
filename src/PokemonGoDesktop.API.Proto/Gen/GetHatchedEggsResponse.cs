@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetHatchedEggsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,12 +27,12 @@ namespace Networking.Responses {
             "LnByb3RvEhROZXR3b3JraW5nLlJlc3BvbnNlcyKOAQoWR2V0SGF0Y2hlZEVn",
             "Z3NSZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIEhYKCnBva2Vtb25faWQYAiAD",
             "KARCAhABEhoKEmV4cGVyaWVuY2VfYXdhcmRlZBgDIAMoBRIVCg1jYW5keV9h",
-            "d2FyZGVkGAQgAygFEhgKEHN0YXJkdXN0X2F3YXJkZWQYBSADKAViBnByb3Rv",
-            "Mw=="));
+            "d2FyZGVkGAQgAygFEhgKEHN0YXJkdXN0X2F3YXJkZWQYBSADKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetHatchedEggsResponse), global::Networking.Responses.GetHatchedEggsResponse.Parser, new[]{ "Success", "PokemonId", "ExperienceAwarded", "CandyAwarded", "StardustAwarded" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetHatchedEggsResponse), global::PokemonGoDesktop.API.Proto.GetHatchedEggsResponse.Parser, new[]{ "Success", "PokemonId", "ExperienceAwarded", "CandyAwarded", "StardustAwarded" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetHatchedEggsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetHatchedEggsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetHatchedEggsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

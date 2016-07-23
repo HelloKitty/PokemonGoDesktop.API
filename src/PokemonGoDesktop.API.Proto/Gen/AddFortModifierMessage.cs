@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/AddFortModifierMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Networking.Requests.Messages {
             "FkludmVudG9yeS9JdGVtSWQucHJvdG8ihgEKFkFkZEZvcnRNb2RpZmllck1l",
             "c3NhZ2USKAoNbW9kaWZpZXJfdHlwZRgBIAEoDjIRLkludmVudG9yeS5JdGVt",
             "SWQSDwoHZm9ydF9pZBgCIAEoCRIXCg9wbGF5ZXJfbGF0aXR1ZGUYAyABKAES",
-            "GAoQcGxheWVyX2xvbmdpdHVkZRgEIAEoAWIGcHJvdG8z"));
+            "GAoQcGxheWVyX2xvbmdpdHVkZRgEIAEoAUIdqgIaUG9rZW1vbkdvRGVza3Rv",
+            "cC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.AddFortModifierMessage), global::Networking.Requests.Messages.AddFortModifierMessage.Parser, new[]{ "ModifierType", "FortId", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AddFortModifierMessage), global::PokemonGoDesktop.API.Proto.AddFortModifierMessage.Parser, new[]{ "ModifierType", "FortId", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<AddFortModifierMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.AddFortModifierMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AddFortModifierMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +72,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "modifier_type" field.</summary>
     public const int ModifierTypeFieldNumber = 1;
-    private global::Inventory.ItemId modifierType_ = 0;
-    public global::Inventory.ItemId ModifierType {
+    private global::PokemonGoDesktop.API.Proto.ItemId modifierType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ModifierType {
       get { return modifierType_; }
       set {
         modifierType_ = value;
@@ -202,7 +203,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            modifierType_ = (global::Inventory.ItemId) input.ReadEnum();
+            modifierType_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 18: {

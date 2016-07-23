@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Pokemon {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Pokemon/StatsAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,11 @@ namespace Settings.Master.Pokemon {
             "dG8SF1NldHRpbmdzLk1hc3Rlci5Qb2tlbW9uIm4KD1N0YXRzQXR0cmlidXRl",
             "cxIUCgxiYXNlX3N0YW1pbmEYASABKAUSEwoLYmFzZV9hdHRhY2sYAiABKAUS",
             "FAoMYmFzZV9kZWZlbnNlGAMgASgFEhoKEmRvZGdlX2VuZXJneV9kZWx0YRgI",
-            "IAEoBWIGcHJvdG8z"));
+            "IAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Pokemon.StatsAttributes), global::Settings.Master.Pokemon.StatsAttributes.Parser, new[]{ "BaseStamina", "BaseAttack", "BaseDefense", "DodgeEnergyDelta" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.StatsAttributes), global::PokemonGoDesktop.API.Proto.StatsAttributes.Parser, new[]{ "BaseStamina", "BaseAttack", "BaseDefense", "DodgeEnergyDelta" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Settings.Master.Pokemon {
     public static pb::MessageParser<StatsAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Pokemon.StatsAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.StatsAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

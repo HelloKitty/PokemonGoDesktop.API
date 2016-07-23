@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/DownloadItemTemplatesResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -62,11 +62,12 @@ namespace Networking.Responses {
             "aW5ncy5NYXN0ZXIuSWFwU2V0dGluZ3MSQQoQcG9rZW1vbl91cGdyYWRlcxgS",
             "IAEoCzInLlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uVXBncmFkZVNldHRpbmdz",
             "Ej8KD2VxdWlwcGVkX2JhZGdlcxgTIAEoCzImLlNldHRpbmdzLk1hc3Rlci5F",
-            "cXVpcHBlZEJhZGdlU2V0dGluZ3NiBnByb3RvMw=="));
+            "cXVpcHBlZEJhZGdlU2V0dGluZ3NCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJ",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Settings.Master.ItemSettingsReflection.Descriptor, global::Settings.Master.MoveSettingsReflection.Descriptor, global::Settings.Master.BadgeSettingsReflection.Descriptor, global::Settings.Master.PokemonSettingsReflection.Descriptor, global::Settings.Master.MoveSequenceSettingsReflection.Descriptor, global::Settings.Master.TypeEffectiveSettingsReflection.Descriptor, global::Settings.Master.CameraSettingsReflection.Descriptor, global::Settings.Master.PlayerLevelSettingsReflection.Descriptor, global::Settings.Master.GymLevelSettingsReflection.Descriptor, global::Settings.Master.GymBattleSettingsReflection.Descriptor, global::Settings.Master.EncounterSettingsReflection.Descriptor, global::Settings.Master.IapItemDisplayReflection.Descriptor, global::Settings.Master.IapSettingsReflection.Descriptor, global::Settings.Master.PokemonUpgradeSettingsReflection.Descriptor, global::Settings.Master.EquippedBadgeSettingsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.MoveSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BadgeSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.MoveSequenceSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.TypeEffectiveSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CameraSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerLevelSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.GymLevelSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.GymBattleSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EncounterSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.IapItemDisplayReflection.Descriptor, global::PokemonGoDesktop.API.Proto.IapSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EquippedBadgeSettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.DownloadItemTemplatesResponse), global::Networking.Responses.DownloadItemTemplatesResponse.Parser, new[]{ "Success", "ItemTemplates", "TimestampMs" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate), global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate.Parser, new[]{ "TemplateId", "PokemonSettings", "ItemSettings", "MoveSettings", "MoveSequenceSettings", "TypeEffective", "BadgeSettings", "Camera", "PlayerLevel", "GymLevel", "BattleSettings", "EncounterSettings", "IapItemDisplay", "IapSettings", "PokemonUpgrades", "EquippedBadges" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse), global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Parser, new[]{ "Success", "ItemTemplates", "TimestampMs" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate), global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate.Parser, new[]{ "TemplateId", "PokemonSettings", "ItemSettings", "MoveSettings", "MoveSequenceSettings", "TypeEffective", "BadgeSettings", "Camera", "PlayerLevel", "GymLevel", "BattleSettings", "EncounterSettings", "IapItemDisplay", "IapSettings", "PokemonUpgrades", "EquippedBadges" }, null, null, null)})
           }));
     }
     #endregion
@@ -79,7 +80,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<DownloadItemTemplatesResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.DownloadItemTemplatesResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -114,10 +115,10 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "item_templates" field.</summary>
     public const int ItemTemplatesFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate> _repeated_itemTemplates_codec
-        = pb::FieldCodec.ForMessage(18, global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate.Parser);
-    private readonly pbc::RepeatedField<global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate> itemTemplates_ = new pbc::RepeatedField<global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate>();
-    public pbc::RepeatedField<global::Networking.Responses.DownloadItemTemplatesResponse.Types.ItemTemplate> ItemTemplates {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate> _repeated_itemTemplates_codec
+        = pb::FieldCodec.ForMessage(18, global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate> itemTemplates_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Types.ItemTemplate> ItemTemplates {
       get { return itemTemplates_; }
     }
 
@@ -230,7 +231,7 @@ namespace Networking.Responses {
         public static pb::MessageParser<ItemTemplate> Parser { get { return _parser; } }
 
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Networking.Responses.DownloadItemTemplatesResponse.Descriptor.NestedTypes[0]; }
+          get { return global::PokemonGoDesktop.API.Proto.DownloadItemTemplatesResponse.Descriptor.NestedTypes[0]; }
         }
 
         pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -278,8 +279,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "pokemon_settings" field.</summary>
         public const int PokemonSettingsFieldNumber = 2;
-        private global::Settings.Master.PokemonSettings pokemonSettings_;
-        public global::Settings.Master.PokemonSettings PokemonSettings {
+        private global::PokemonGoDesktop.API.Proto.PokemonSettings pokemonSettings_;
+        public global::PokemonGoDesktop.API.Proto.PokemonSettings PokemonSettings {
           get { return pokemonSettings_; }
           set {
             pokemonSettings_ = value;
@@ -288,8 +289,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "item_settings" field.</summary>
         public const int ItemSettingsFieldNumber = 3;
-        private global::Settings.Master.ItemSettings itemSettings_;
-        public global::Settings.Master.ItemSettings ItemSettings {
+        private global::PokemonGoDesktop.API.Proto.ItemSettings itemSettings_;
+        public global::PokemonGoDesktop.API.Proto.ItemSettings ItemSettings {
           get { return itemSettings_; }
           set {
             itemSettings_ = value;
@@ -298,8 +299,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "move_settings" field.</summary>
         public const int MoveSettingsFieldNumber = 4;
-        private global::Settings.Master.MoveSettings moveSettings_;
-        public global::Settings.Master.MoveSettings MoveSettings {
+        private global::PokemonGoDesktop.API.Proto.MoveSettings moveSettings_;
+        public global::PokemonGoDesktop.API.Proto.MoveSettings MoveSettings {
           get { return moveSettings_; }
           set {
             moveSettings_ = value;
@@ -308,8 +309,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "move_sequence_settings" field.</summary>
         public const int MoveSequenceSettingsFieldNumber = 5;
-        private global::Settings.Master.MoveSequenceSettings moveSequenceSettings_;
-        public global::Settings.Master.MoveSequenceSettings MoveSequenceSettings {
+        private global::PokemonGoDesktop.API.Proto.MoveSequenceSettings moveSequenceSettings_;
+        public global::PokemonGoDesktop.API.Proto.MoveSequenceSettings MoveSequenceSettings {
           get { return moveSequenceSettings_; }
           set {
             moveSequenceSettings_ = value;
@@ -318,8 +319,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "type_effective" field.</summary>
         public const int TypeEffectiveFieldNumber = 8;
-        private global::Settings.Master.TypeEffectiveSettings typeEffective_;
-        public global::Settings.Master.TypeEffectiveSettings TypeEffective {
+        private global::PokemonGoDesktop.API.Proto.TypeEffectiveSettings typeEffective_;
+        public global::PokemonGoDesktop.API.Proto.TypeEffectiveSettings TypeEffective {
           get { return typeEffective_; }
           set {
             typeEffective_ = value;
@@ -328,8 +329,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "badge_settings" field.</summary>
         public const int BadgeSettingsFieldNumber = 10;
-        private global::Settings.Master.BadgeSettings badgeSettings_;
-        public global::Settings.Master.BadgeSettings BadgeSettings {
+        private global::PokemonGoDesktop.API.Proto.BadgeSettings badgeSettings_;
+        public global::PokemonGoDesktop.API.Proto.BadgeSettings BadgeSettings {
           get { return badgeSettings_; }
           set {
             badgeSettings_ = value;
@@ -338,8 +339,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "camera" field.</summary>
         public const int CameraFieldNumber = 11;
-        private global::Settings.Master.CameraSettings camera_;
-        public global::Settings.Master.CameraSettings Camera {
+        private global::PokemonGoDesktop.API.Proto.CameraSettings camera_;
+        public global::PokemonGoDesktop.API.Proto.CameraSettings Camera {
           get { return camera_; }
           set {
             camera_ = value;
@@ -348,8 +349,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "player_level" field.</summary>
         public const int PlayerLevelFieldNumber = 12;
-        private global::Settings.Master.PlayerLevelSettings playerLevel_;
-        public global::Settings.Master.PlayerLevelSettings PlayerLevel {
+        private global::PokemonGoDesktop.API.Proto.PlayerLevelSettings playerLevel_;
+        public global::PokemonGoDesktop.API.Proto.PlayerLevelSettings PlayerLevel {
           get { return playerLevel_; }
           set {
             playerLevel_ = value;
@@ -358,8 +359,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "gym_level" field.</summary>
         public const int GymLevelFieldNumber = 13;
-        private global::Settings.Master.GymLevelSettings gymLevel_;
-        public global::Settings.Master.GymLevelSettings GymLevel {
+        private global::PokemonGoDesktop.API.Proto.GymLevelSettings gymLevel_;
+        public global::PokemonGoDesktop.API.Proto.GymLevelSettings GymLevel {
           get { return gymLevel_; }
           set {
             gymLevel_ = value;
@@ -368,8 +369,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "battle_settings" field.</summary>
         public const int BattleSettingsFieldNumber = 14;
-        private global::Settings.Master.GymBattleSettings battleSettings_;
-        public global::Settings.Master.GymBattleSettings BattleSettings {
+        private global::PokemonGoDesktop.API.Proto.GymBattleSettings battleSettings_;
+        public global::PokemonGoDesktop.API.Proto.GymBattleSettings BattleSettings {
           get { return battleSettings_; }
           set {
             battleSettings_ = value;
@@ -378,8 +379,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "encounter_settings" field.</summary>
         public const int EncounterSettingsFieldNumber = 15;
-        private global::Settings.Master.EncounterSettings encounterSettings_;
-        public global::Settings.Master.EncounterSettings EncounterSettings {
+        private global::PokemonGoDesktop.API.Proto.EncounterSettings encounterSettings_;
+        public global::PokemonGoDesktop.API.Proto.EncounterSettings EncounterSettings {
           get { return encounterSettings_; }
           set {
             encounterSettings_ = value;
@@ -388,8 +389,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "iap_item_display" field.</summary>
         public const int IapItemDisplayFieldNumber = 16;
-        private global::Settings.Master.IapItemDisplay iapItemDisplay_;
-        public global::Settings.Master.IapItemDisplay IapItemDisplay {
+        private global::PokemonGoDesktop.API.Proto.IapItemDisplay iapItemDisplay_;
+        public global::PokemonGoDesktop.API.Proto.IapItemDisplay IapItemDisplay {
           get { return iapItemDisplay_; }
           set {
             iapItemDisplay_ = value;
@@ -398,8 +399,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "iap_settings" field.</summary>
         public const int IapSettingsFieldNumber = 17;
-        private global::Settings.Master.IapSettings iapSettings_;
-        public global::Settings.Master.IapSettings IapSettings {
+        private global::PokemonGoDesktop.API.Proto.IapSettings iapSettings_;
+        public global::PokemonGoDesktop.API.Proto.IapSettings IapSettings {
           get { return iapSettings_; }
           set {
             iapSettings_ = value;
@@ -408,8 +409,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "pokemon_upgrades" field.</summary>
         public const int PokemonUpgradesFieldNumber = 18;
-        private global::Settings.Master.PokemonUpgradeSettings pokemonUpgrades_;
-        public global::Settings.Master.PokemonUpgradeSettings PokemonUpgrades {
+        private global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettings pokemonUpgrades_;
+        public global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettings PokemonUpgrades {
           get { return pokemonUpgrades_; }
           set {
             pokemonUpgrades_ = value;
@@ -418,8 +419,8 @@ namespace Networking.Responses {
 
         /// <summary>Field number for the "equipped_badges" field.</summary>
         public const int EquippedBadgesFieldNumber = 19;
-        private global::Settings.Master.EquippedBadgeSettings equippedBadges_;
-        public global::Settings.Master.EquippedBadgeSettings EquippedBadges {
+        private global::PokemonGoDesktop.API.Proto.EquippedBadgeSettings equippedBadges_;
+        public global::PokemonGoDesktop.API.Proto.EquippedBadgeSettings EquippedBadges {
           get { return equippedBadges_; }
           set {
             equippedBadges_ = value;
@@ -610,91 +611,91 @@ namespace Networking.Responses {
           }
           if (other.pokemonSettings_ != null) {
             if (pokemonSettings_ == null) {
-              pokemonSettings_ = new global::Settings.Master.PokemonSettings();
+              pokemonSettings_ = new global::PokemonGoDesktop.API.Proto.PokemonSettings();
             }
             PokemonSettings.MergeFrom(other.PokemonSettings);
           }
           if (other.itemSettings_ != null) {
             if (itemSettings_ == null) {
-              itemSettings_ = new global::Settings.Master.ItemSettings();
+              itemSettings_ = new global::PokemonGoDesktop.API.Proto.ItemSettings();
             }
             ItemSettings.MergeFrom(other.ItemSettings);
           }
           if (other.moveSettings_ != null) {
             if (moveSettings_ == null) {
-              moveSettings_ = new global::Settings.Master.MoveSettings();
+              moveSettings_ = new global::PokemonGoDesktop.API.Proto.MoveSettings();
             }
             MoveSettings.MergeFrom(other.MoveSettings);
           }
           if (other.moveSequenceSettings_ != null) {
             if (moveSequenceSettings_ == null) {
-              moveSequenceSettings_ = new global::Settings.Master.MoveSequenceSettings();
+              moveSequenceSettings_ = new global::PokemonGoDesktop.API.Proto.MoveSequenceSettings();
             }
             MoveSequenceSettings.MergeFrom(other.MoveSequenceSettings);
           }
           if (other.typeEffective_ != null) {
             if (typeEffective_ == null) {
-              typeEffective_ = new global::Settings.Master.TypeEffectiveSettings();
+              typeEffective_ = new global::PokemonGoDesktop.API.Proto.TypeEffectiveSettings();
             }
             TypeEffective.MergeFrom(other.TypeEffective);
           }
           if (other.badgeSettings_ != null) {
             if (badgeSettings_ == null) {
-              badgeSettings_ = new global::Settings.Master.BadgeSettings();
+              badgeSettings_ = new global::PokemonGoDesktop.API.Proto.BadgeSettings();
             }
             BadgeSettings.MergeFrom(other.BadgeSettings);
           }
           if (other.camera_ != null) {
             if (camera_ == null) {
-              camera_ = new global::Settings.Master.CameraSettings();
+              camera_ = new global::PokemonGoDesktop.API.Proto.CameraSettings();
             }
             Camera.MergeFrom(other.Camera);
           }
           if (other.playerLevel_ != null) {
             if (playerLevel_ == null) {
-              playerLevel_ = new global::Settings.Master.PlayerLevelSettings();
+              playerLevel_ = new global::PokemonGoDesktop.API.Proto.PlayerLevelSettings();
             }
             PlayerLevel.MergeFrom(other.PlayerLevel);
           }
           if (other.gymLevel_ != null) {
             if (gymLevel_ == null) {
-              gymLevel_ = new global::Settings.Master.GymLevelSettings();
+              gymLevel_ = new global::PokemonGoDesktop.API.Proto.GymLevelSettings();
             }
             GymLevel.MergeFrom(other.GymLevel);
           }
           if (other.battleSettings_ != null) {
             if (battleSettings_ == null) {
-              battleSettings_ = new global::Settings.Master.GymBattleSettings();
+              battleSettings_ = new global::PokemonGoDesktop.API.Proto.GymBattleSettings();
             }
             BattleSettings.MergeFrom(other.BattleSettings);
           }
           if (other.encounterSettings_ != null) {
             if (encounterSettings_ == null) {
-              encounterSettings_ = new global::Settings.Master.EncounterSettings();
+              encounterSettings_ = new global::PokemonGoDesktop.API.Proto.EncounterSettings();
             }
             EncounterSettings.MergeFrom(other.EncounterSettings);
           }
           if (other.iapItemDisplay_ != null) {
             if (iapItemDisplay_ == null) {
-              iapItemDisplay_ = new global::Settings.Master.IapItemDisplay();
+              iapItemDisplay_ = new global::PokemonGoDesktop.API.Proto.IapItemDisplay();
             }
             IapItemDisplay.MergeFrom(other.IapItemDisplay);
           }
           if (other.iapSettings_ != null) {
             if (iapSettings_ == null) {
-              iapSettings_ = new global::Settings.Master.IapSettings();
+              iapSettings_ = new global::PokemonGoDesktop.API.Proto.IapSettings();
             }
             IapSettings.MergeFrom(other.IapSettings);
           }
           if (other.pokemonUpgrades_ != null) {
             if (pokemonUpgrades_ == null) {
-              pokemonUpgrades_ = new global::Settings.Master.PokemonUpgradeSettings();
+              pokemonUpgrades_ = new global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettings();
             }
             PokemonUpgrades.MergeFrom(other.PokemonUpgrades);
           }
           if (other.equippedBadges_ != null) {
             if (equippedBadges_ == null) {
-              equippedBadges_ = new global::Settings.Master.EquippedBadgeSettings();
+              equippedBadges_ = new global::PokemonGoDesktop.API.Proto.EquippedBadgeSettings();
             }
             EquippedBadges.MergeFrom(other.EquippedBadges);
           }
@@ -713,105 +714,105 @@ namespace Networking.Responses {
               }
               case 18: {
                 if (pokemonSettings_ == null) {
-                  pokemonSettings_ = new global::Settings.Master.PokemonSettings();
+                  pokemonSettings_ = new global::PokemonGoDesktop.API.Proto.PokemonSettings();
                 }
                 input.ReadMessage(pokemonSettings_);
                 break;
               }
               case 26: {
                 if (itemSettings_ == null) {
-                  itemSettings_ = new global::Settings.Master.ItemSettings();
+                  itemSettings_ = new global::PokemonGoDesktop.API.Proto.ItemSettings();
                 }
                 input.ReadMessage(itemSettings_);
                 break;
               }
               case 34: {
                 if (moveSettings_ == null) {
-                  moveSettings_ = new global::Settings.Master.MoveSettings();
+                  moveSettings_ = new global::PokemonGoDesktop.API.Proto.MoveSettings();
                 }
                 input.ReadMessage(moveSettings_);
                 break;
               }
               case 42: {
                 if (moveSequenceSettings_ == null) {
-                  moveSequenceSettings_ = new global::Settings.Master.MoveSequenceSettings();
+                  moveSequenceSettings_ = new global::PokemonGoDesktop.API.Proto.MoveSequenceSettings();
                 }
                 input.ReadMessage(moveSequenceSettings_);
                 break;
               }
               case 66: {
                 if (typeEffective_ == null) {
-                  typeEffective_ = new global::Settings.Master.TypeEffectiveSettings();
+                  typeEffective_ = new global::PokemonGoDesktop.API.Proto.TypeEffectiveSettings();
                 }
                 input.ReadMessage(typeEffective_);
                 break;
               }
               case 82: {
                 if (badgeSettings_ == null) {
-                  badgeSettings_ = new global::Settings.Master.BadgeSettings();
+                  badgeSettings_ = new global::PokemonGoDesktop.API.Proto.BadgeSettings();
                 }
                 input.ReadMessage(badgeSettings_);
                 break;
               }
               case 90: {
                 if (camera_ == null) {
-                  camera_ = new global::Settings.Master.CameraSettings();
+                  camera_ = new global::PokemonGoDesktop.API.Proto.CameraSettings();
                 }
                 input.ReadMessage(camera_);
                 break;
               }
               case 98: {
                 if (playerLevel_ == null) {
-                  playerLevel_ = new global::Settings.Master.PlayerLevelSettings();
+                  playerLevel_ = new global::PokemonGoDesktop.API.Proto.PlayerLevelSettings();
                 }
                 input.ReadMessage(playerLevel_);
                 break;
               }
               case 106: {
                 if (gymLevel_ == null) {
-                  gymLevel_ = new global::Settings.Master.GymLevelSettings();
+                  gymLevel_ = new global::PokemonGoDesktop.API.Proto.GymLevelSettings();
                 }
                 input.ReadMessage(gymLevel_);
                 break;
               }
               case 114: {
                 if (battleSettings_ == null) {
-                  battleSettings_ = new global::Settings.Master.GymBattleSettings();
+                  battleSettings_ = new global::PokemonGoDesktop.API.Proto.GymBattleSettings();
                 }
                 input.ReadMessage(battleSettings_);
                 break;
               }
               case 122: {
                 if (encounterSettings_ == null) {
-                  encounterSettings_ = new global::Settings.Master.EncounterSettings();
+                  encounterSettings_ = new global::PokemonGoDesktop.API.Proto.EncounterSettings();
                 }
                 input.ReadMessage(encounterSettings_);
                 break;
               }
               case 130: {
                 if (iapItemDisplay_ == null) {
-                  iapItemDisplay_ = new global::Settings.Master.IapItemDisplay();
+                  iapItemDisplay_ = new global::PokemonGoDesktop.API.Proto.IapItemDisplay();
                 }
                 input.ReadMessage(iapItemDisplay_);
                 break;
               }
               case 138: {
                 if (iapSettings_ == null) {
-                  iapSettings_ = new global::Settings.Master.IapSettings();
+                  iapSettings_ = new global::PokemonGoDesktop.API.Proto.IapSettings();
                 }
                 input.ReadMessage(iapSettings_);
                 break;
               }
               case 146: {
                 if (pokemonUpgrades_ == null) {
-                  pokemonUpgrades_ = new global::Settings.Master.PokemonUpgradeSettings();
+                  pokemonUpgrades_ = new global::PokemonGoDesktop.API.Proto.PokemonUpgradeSettings();
                 }
                 input.ReadMessage(pokemonUpgrades_);
                 break;
               }
               case 154: {
                 if (equippedBadges_ == null) {
-                  equippedBadges_ = new global::Settings.Master.EquippedBadgeSettings();
+                  equippedBadges_ = new global::PokemonGoDesktop.API.Proto.EquippedBadgeSettings();
                 }
                 input.ReadMessage(equippedBadges_);
                 break;

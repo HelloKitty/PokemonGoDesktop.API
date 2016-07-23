@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Envelopes {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Envelopes/AuthTicket.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,12 +25,12 @@ namespace Networking.Envelopes {
           string.Concat(
             "CiVOZXR3b3JraW5nL0VudmVsb3Blcy9BdXRoVGlja2V0LnByb3RvEhROZXR3",
             "b3JraW5nLkVudmVsb3BlcyJFCgpBdXRoVGlja2V0Eg0KBXN0YXJ0GAEgASgM",
-            "EhsKE2V4cGlyZV90aW1lc3RhbXBfbXMYAiABKAQSCwoDZW5kGAMgASgMYgZw",
-            "cm90bzM="));
+            "EhsKE2V4cGlyZV90aW1lc3RhbXBfbXMYAiABKAQSCwoDZW5kGAMgASgMQh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Envelopes.AuthTicket), global::Networking.Envelopes.AuthTicket.Parser, new[]{ "Start", "ExpireTimestampMs", "End" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AuthTicket), global::PokemonGoDesktop.API.Proto.AuthTicket.Parser, new[]{ "Start", "ExpireTimestampMs", "End" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +43,7 @@ namespace Networking.Envelopes {
     public static pb::MessageParser<AuthTicket> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Envelopes.AuthTicketReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AuthTicketReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

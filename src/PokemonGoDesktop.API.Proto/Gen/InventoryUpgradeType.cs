@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/InventoryUpgradeType.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,10 +26,11 @@ namespace Inventory {
             "CiRJbnZlbnRvcnkvSW52ZW50b3J5VXBncmFkZVR5cGUucHJvdG8SCUludmVu",
             "dG9yeSpiChRJbnZlbnRvcnlVcGdyYWRlVHlwZRIRCg1VUEdSQURFX1VOU0VU",
             "EAASGQoVSU5DUkVBU0VfSVRFTV9TVE9SQUdFEAESHAoYSU5DUkVBU0VfUE9L",
-            "RU1PTl9TVE9SQUdFEAJiBnByb3RvMw=="));
+            "RU1PTl9TVE9SQUdFEAJCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Inventory.InventoryUpgradeType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.InventoryUpgradeType), }, null));
     }
     #endregion
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/PokeballAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Settings.Master.Item {
             "b3RvIooBChJQb2tlYmFsbEF0dHJpYnV0ZXMSJgoLaXRlbV9lZmZlY3QYASAB",
             "KA4yES5FbnVtcy5JdGVtRWZmZWN0EhUKDWNhcHR1cmVfbXVsdGkYAiABKAIS",
             "HAoUY2FwdHVyZV9tdWx0aV9lZmZlY3QYAyABKAISFwoPaXRlbV9lZmZlY3Rf",
-            "bW9kGAQgASgCYgZwcm90bzM="));
+            "bW9kGAQgASgCQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.ItemEffectReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemEffectReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.PokeballAttributes), global::Settings.Master.Item.PokeballAttributes.Parser, new[]{ "ItemEffect", "CaptureMulti", "CaptureMultiEffect", "ItemEffectMod" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokeballAttributes), global::PokemonGoDesktop.API.Proto.PokeballAttributes.Parser, new[]{ "ItemEffect", "CaptureMulti", "CaptureMultiEffect", "ItemEffectMod" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<PokeballAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.PokeballAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PokeballAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +72,8 @@ namespace Settings.Master.Item {
 
     /// <summary>Field number for the "item_effect" field.</summary>
     public const int ItemEffectFieldNumber = 1;
-    private global::Enums.ItemEffect itemEffect_ = 0;
-    public global::Enums.ItemEffect ItemEffect {
+    private global::PokemonGoDesktop.API.Proto.ItemEffect itemEffect_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemEffect ItemEffect {
       get { return itemEffect_; }
       set {
         itemEffect_ = value;
@@ -202,7 +203,7 @@ namespace Settings.Master.Item {
             input.SkipLastField();
             break;
           case 8: {
-            itemEffect_ = (global::Enums.ItemEffect) input.ReadEnum();
+            itemEffect_ = (global::PokemonGoDesktop.API.Proto.ItemEffect) input.ReadEnum();
             break;
           }
           case 21: {

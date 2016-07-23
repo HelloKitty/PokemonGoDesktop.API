@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/CheckAwardedBadgesResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,12 +27,12 @@ namespace Networking.Responses {
             "b25zZS5wcm90bxIUTmV0d29ya2luZy5SZXNwb25zZXMaFUVudW1zL0JhZGdl",
             "VHlwZS5wcm90byJ1ChpDaGVja0F3YXJkZWRCYWRnZXNSZXNwb25zZRIPCgdz",
             "dWNjZXNzGAEgASgIEigKDmF3YXJkZWRfYmFkZ2VzGAIgAygOMhAuRW51bXMu",
-            "QmFkZ2VUeXBlEhwKFGF3YXJkZWRfYmFkZ2VfbGV2ZWxzGAMgAygFYgZwcm90",
-            "bzM="));
+            "QmFkZ2VUeXBlEhwKFGF3YXJkZWRfYmFkZ2VfbGV2ZWxzGAMgAygFQh2qAhpQ",
+            "b2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.BadgeTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BadgeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.CheckAwardedBadgesResponse), global::Networking.Responses.CheckAwardedBadgesResponse.Parser, new[]{ "Success", "AwardedBadges", "AwardedBadgeLevels" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CheckAwardedBadgesResponse), global::PokemonGoDesktop.API.Proto.CheckAwardedBadgesResponse.Parser, new[]{ "Success", "AwardedBadges", "AwardedBadgeLevels" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<CheckAwardedBadgesResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.CheckAwardedBadgesResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CheckAwardedBadgesResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -80,10 +80,10 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "awarded_badges" field.</summary>
     public const int AwardedBadgesFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Enums.BadgeType> _repeated_awardedBadges_codec
-        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::Enums.BadgeType) x);
-    private readonly pbc::RepeatedField<global::Enums.BadgeType> awardedBadges_ = new pbc::RepeatedField<global::Enums.BadgeType>();
-    public pbc::RepeatedField<global::Enums.BadgeType> AwardedBadges {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.BadgeType> _repeated_awardedBadges_codec
+        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.BadgeType) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BadgeType> awardedBadges_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BadgeType>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BadgeType> AwardedBadges {
       get { return awardedBadges_; }
     }
 

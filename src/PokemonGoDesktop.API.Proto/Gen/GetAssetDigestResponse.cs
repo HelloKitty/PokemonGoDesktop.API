@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetAssetDigestResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Responses {
             "LnByb3RvEhROZXR3b3JraW5nLlJlc3BvbnNlcxobRGF0YS9Bc3NldERpZ2Vz",
             "dEVudHJ5LnByb3RvIlYKFkdldEFzc2V0RGlnZXN0UmVzcG9uc2USJgoGZGln",
             "ZXN0GAEgAygLMhYuRGF0YS5Bc3NldERpZ2VzdEVudHJ5EhQKDHRpbWVzdGFt",
-            "cF9tcxgCIAEoBGIGcHJvdG8z"));
+            "cF9tcxgCIAEoBEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.AssetDigestEntryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.AssetDigestEntryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetAssetDigestResponse), global::Networking.Responses.GetAssetDigestResponse.Parser, new[]{ "Digest", "TimestampMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetAssetDigestResponse), global::PokemonGoDesktop.API.Proto.GetAssetDigestResponse.Parser, new[]{ "Digest", "TimestampMs" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetAssetDigestResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetAssetDigestResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetAssetDigestResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -68,10 +69,10 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "digest" field.</summary>
     public const int DigestFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Data.AssetDigestEntry> _repeated_digest_codec
-        = pb::FieldCodec.ForMessage(10, global::Data.AssetDigestEntry.Parser);
-    private readonly pbc::RepeatedField<global::Data.AssetDigestEntry> digest_ = new pbc::RepeatedField<global::Data.AssetDigestEntry>();
-    public pbc::RepeatedField<global::Data.AssetDigestEntry> Digest {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.AssetDigestEntry> _repeated_digest_codec
+        = pb::FieldCodec.ForMessage(10, global::PokemonGoDesktop.API.Proto.AssetDigestEntry.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.AssetDigestEntry> digest_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.AssetDigestEntry>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.AssetDigestEntry> Digest {
       get { return digest_; }
     }
 

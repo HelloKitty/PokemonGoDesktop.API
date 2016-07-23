@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/PokemonSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -47,11 +47,12 @@ namespace Settings.Master {
             "GBEgASgOMhAuRW51bXMuUG9rZW1vbklkEhYKDmhlaWdodF9zdGRfZGV2GBIg",
             "ASgCEhYKDndlaWdodF9zdGRfZGV2GBMgASgCEhwKFGttX2Rpc3RhbmNlX3Rv",
             "X2hhdGNoGBQgASgCEikKCWZhbWlseV9pZBgVIAEoDjIWLkVudW1zLlBva2Vt",
-            "b25GYW1pbHlJZBIXCg9jYW5keV90b19ldm9sdmUYFiABKAViBnByb3RvMw=="));
+            "b25GYW1pbHlJZBIXCg9jYW5keV90b19ldm9sdmUYFiABKAVCHaoCGlBva2Vt",
+            "b25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonIdReflection.Descriptor, global::Enums.PokemonClassReflection.Descriptor, global::Enums.PokemonTypeReflection.Descriptor, global::Enums.PokemonMoveReflection.Descriptor, global::Enums.PokemonFamilyIdReflection.Descriptor, global::Settings.Master.Pokemon.StatsAttributesReflection.Descriptor, global::Settings.Master.Pokemon.CameraAttributesReflection.Descriptor, global::Settings.Master.Pokemon.EncounterAttributesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonClassReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMoveReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonFamilyIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.StatsAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CameraAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EncounterAttributesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.PokemonSettings), global::Settings.Master.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Class", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonSettings), global::PokemonGoDesktop.API.Proto.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Class", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve" }, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +65,7 @@ namespace Settings.Master {
     public static pb::MessageParser<PokemonSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.PokemonSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PokemonSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -107,8 +108,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "pokemon_id" field.</summary>
     public const int PokemonIdFieldNumber = 1;
-    private global::Enums.PokemonId pokemonId_ = 0;
-    public global::Enums.PokemonId PokemonId {
+    private global::PokemonGoDesktop.API.Proto.PokemonId pokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId PokemonId {
       get { return pokemonId_; }
       set {
         pokemonId_ = value;
@@ -127,8 +128,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 4;
-    private global::Enums.PokemonType type_ = 0;
-    public global::Enums.PokemonType Type {
+    private global::PokemonGoDesktop.API.Proto.PokemonType type_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonType Type {
       get { return type_; }
       set {
         type_ = value;
@@ -137,8 +138,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "type_2" field.</summary>
     public const int Type2FieldNumber = 5;
-    private global::Enums.PokemonType type2_ = 0;
-    public global::Enums.PokemonType Type2 {
+    private global::PokemonGoDesktop.API.Proto.PokemonType type2_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonType Type2 {
       get { return type2_; }
       set {
         type2_ = value;
@@ -147,8 +148,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "camera" field.</summary>
     public const int CameraFieldNumber = 6;
-    private global::Settings.Master.Pokemon.CameraAttributes camera_;
-    public global::Settings.Master.Pokemon.CameraAttributes Camera {
+    private global::PokemonGoDesktop.API.Proto.CameraAttributes camera_;
+    public global::PokemonGoDesktop.API.Proto.CameraAttributes Camera {
       get { return camera_; }
       set {
         camera_ = value;
@@ -157,8 +158,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "encounter" field.</summary>
     public const int EncounterFieldNumber = 7;
-    private global::Settings.Master.Pokemon.EncounterAttributes encounter_;
-    public global::Settings.Master.Pokemon.EncounterAttributes Encounter {
+    private global::PokemonGoDesktop.API.Proto.EncounterAttributes encounter_;
+    public global::PokemonGoDesktop.API.Proto.EncounterAttributes Encounter {
       get { return encounter_; }
       set {
         encounter_ = value;
@@ -167,8 +168,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "stats" field.</summary>
     public const int StatsFieldNumber = 8;
-    private global::Settings.Master.Pokemon.StatsAttributes stats_;
-    public global::Settings.Master.Pokemon.StatsAttributes Stats {
+    private global::PokemonGoDesktop.API.Proto.StatsAttributes stats_;
+    public global::PokemonGoDesktop.API.Proto.StatsAttributes Stats {
       get { return stats_; }
       set {
         stats_ = value;
@@ -177,19 +178,19 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "quick_moves" field.</summary>
     public const int QuickMovesFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Enums.PokemonMove> _repeated_quickMoves_codec
-        = pb::FieldCodec.ForEnum(74, x => (int) x, x => (global::Enums.PokemonMove) x);
-    private readonly pbc::RepeatedField<global::Enums.PokemonMove> quickMoves_ = new pbc::RepeatedField<global::Enums.PokemonMove>();
-    public pbc::RepeatedField<global::Enums.PokemonMove> QuickMoves {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.PokemonMove> _repeated_quickMoves_codec
+        = pb::FieldCodec.ForEnum(74, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.PokemonMove) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonMove> quickMoves_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonMove>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonMove> QuickMoves {
       get { return quickMoves_; }
     }
 
     /// <summary>Field number for the "cinematic_moves" field.</summary>
     public const int CinematicMovesFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Enums.PokemonMove> _repeated_cinematicMoves_codec
-        = pb::FieldCodec.ForEnum(82, x => (int) x, x => (global::Enums.PokemonMove) x);
-    private readonly pbc::RepeatedField<global::Enums.PokemonMove> cinematicMoves_ = new pbc::RepeatedField<global::Enums.PokemonMove>();
-    public pbc::RepeatedField<global::Enums.PokemonMove> CinematicMoves {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.PokemonMove> _repeated_cinematicMoves_codec
+        = pb::FieldCodec.ForEnum(82, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.PokemonMove) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonMove> cinematicMoves_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonMove>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonMove> CinematicMoves {
       get { return cinematicMoves_; }
     }
 
@@ -204,10 +205,10 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "evolution_ids" field.</summary>
     public const int EvolutionIdsFieldNumber = 12;
-    private static readonly pb::FieldCodec<global::Enums.PokemonId> _repeated_evolutionIds_codec
-        = pb::FieldCodec.ForEnum(98, x => (int) x, x => (global::Enums.PokemonId) x);
-    private readonly pbc::RepeatedField<global::Enums.PokemonId> evolutionIds_ = new pbc::RepeatedField<global::Enums.PokemonId>();
-    public pbc::RepeatedField<global::Enums.PokemonId> EvolutionIds {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.PokemonId> _repeated_evolutionIds_codec
+        = pb::FieldCodec.ForEnum(98, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.PokemonId) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonId> evolutionIds_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonId>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PokemonId> EvolutionIds {
       get { return evolutionIds_; }
     }
 
@@ -223,8 +224,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "class" field.</summary>
     public const int ClassFieldNumber = 14;
-    private global::Enums.PokemonClass class_ = 0;
-    public global::Enums.PokemonClass Class {
+    private global::PokemonGoDesktop.API.Proto.PokemonClass class_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonClass Class {
       get { return class_; }
       set {
         class_ = value;
@@ -253,8 +254,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "parent_pokemon_id" field.</summary>
     public const int ParentPokemonIdFieldNumber = 17;
-    private global::Enums.PokemonId parentPokemonId_ = 0;
-    public global::Enums.PokemonId ParentPokemonId {
+    private global::PokemonGoDesktop.API.Proto.PokemonId parentPokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId ParentPokemonId {
       get { return parentPokemonId_; }
       set {
         parentPokemonId_ = value;
@@ -293,8 +294,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "family_id" field.</summary>
     public const int FamilyIdFieldNumber = 21;
-    private global::Enums.PokemonFamilyId familyId_ = 0;
-    public global::Enums.PokemonFamilyId FamilyId {
+    private global::PokemonGoDesktop.API.Proto.PokemonFamilyId familyId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonFamilyId FamilyId {
       get { return familyId_; }
       set {
         familyId_ = value;
@@ -529,19 +530,19 @@ namespace Settings.Master {
       }
       if (other.camera_ != null) {
         if (camera_ == null) {
-          camera_ = new global::Settings.Master.Pokemon.CameraAttributes();
+          camera_ = new global::PokemonGoDesktop.API.Proto.CameraAttributes();
         }
         Camera.MergeFrom(other.Camera);
       }
       if (other.encounter_ != null) {
         if (encounter_ == null) {
-          encounter_ = new global::Settings.Master.Pokemon.EncounterAttributes();
+          encounter_ = new global::PokemonGoDesktop.API.Proto.EncounterAttributes();
         }
         Encounter.MergeFrom(other.Encounter);
       }
       if (other.stats_ != null) {
         if (stats_ == null) {
-          stats_ = new global::Settings.Master.Pokemon.StatsAttributes();
+          stats_ = new global::PokemonGoDesktop.API.Proto.StatsAttributes();
         }
         Stats.MergeFrom(other.Stats);
       }
@@ -589,7 +590,7 @@ namespace Settings.Master {
             input.SkipLastField();
             break;
           case 8: {
-            pokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            pokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 29: {
@@ -597,30 +598,30 @@ namespace Settings.Master {
             break;
           }
           case 32: {
-            type_ = (global::Enums.PokemonType) input.ReadEnum();
+            type_ = (global::PokemonGoDesktop.API.Proto.PokemonType) input.ReadEnum();
             break;
           }
           case 40: {
-            type2_ = (global::Enums.PokemonType) input.ReadEnum();
+            type2_ = (global::PokemonGoDesktop.API.Proto.PokemonType) input.ReadEnum();
             break;
           }
           case 50: {
             if (camera_ == null) {
-              camera_ = new global::Settings.Master.Pokemon.CameraAttributes();
+              camera_ = new global::PokemonGoDesktop.API.Proto.CameraAttributes();
             }
             input.ReadMessage(camera_);
             break;
           }
           case 58: {
             if (encounter_ == null) {
-              encounter_ = new global::Settings.Master.Pokemon.EncounterAttributes();
+              encounter_ = new global::PokemonGoDesktop.API.Proto.EncounterAttributes();
             }
             input.ReadMessage(encounter_);
             break;
           }
           case 66: {
             if (stats_ == null) {
-              stats_ = new global::Settings.Master.Pokemon.StatsAttributes();
+              stats_ = new global::PokemonGoDesktop.API.Proto.StatsAttributes();
             }
             input.ReadMessage(stats_);
             break;
@@ -650,7 +651,7 @@ namespace Settings.Master {
             break;
           }
           case 112: {
-            class_ = (global::Enums.PokemonClass) input.ReadEnum();
+            class_ = (global::PokemonGoDesktop.API.Proto.PokemonClass) input.ReadEnum();
             break;
           }
           case 125: {
@@ -662,7 +663,7 @@ namespace Settings.Master {
             break;
           }
           case 136: {
-            parentPokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            parentPokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 149: {
@@ -678,7 +679,7 @@ namespace Settings.Master {
             break;
           }
           case 168: {
-            familyId_ = (global::Enums.PokemonFamilyId) input.ReadEnum();
+            familyId_ = (global::PokemonGoDesktop.API.Proto.PokemonFamilyId) input.ReadEnum();
             break;
           }
           case 176: {

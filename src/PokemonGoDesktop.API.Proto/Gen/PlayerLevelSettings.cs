@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/PlayerLevelSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,12 +27,12 @@ namespace Settings.Master {
             "U2V0dGluZ3MuTWFzdGVyIp0BChNQbGF5ZXJMZXZlbFNldHRpbmdzEhAKCHJh",
             "bmtfbnVtGAEgAygFEhsKE3JlcXVpcmVkX2V4cGVyaWVuY2UYAiADKAUSFQoN",
             "Y3BfbXVsdGlwbGllchgDIAMoAhIcChRtYXhfZWdnX3BsYXllcl9sZXZlbBgE",
-            "IAEoBRIiChptYXhfZW5jb3VudGVyX3BsYXllcl9sZXZlbBgFIAEoBWIGcHJv",
-            "dG8z"));
+            "IAEoBRIiChptYXhfZW5jb3VudGVyX3BsYXllcl9sZXZlbBgFIAEoBUIdqgIa",
+            "UG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.PlayerLevelSettings), global::Settings.Master.PlayerLevelSettings.Parser, new[]{ "RankNum", "RequiredExperience", "CpMultiplier", "MaxEggPlayerLevel", "MaxEncounterPlayerLevel" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerLevelSettings), global::PokemonGoDesktop.API.Proto.PlayerLevelSettings.Parser, new[]{ "RankNum", "RequiredExperience", "CpMultiplier", "MaxEggPlayerLevel", "MaxEncounterPlayerLevel" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Settings.Master {
     public static pb::MessageParser<PlayerLevelSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.PlayerLevelSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerLevelSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

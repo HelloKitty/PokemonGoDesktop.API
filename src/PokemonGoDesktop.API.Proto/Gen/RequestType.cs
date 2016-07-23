@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/RequestType.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -59,11 +59,11 @@ namespace Networking.Requests {
             "vAUSGAoTREVCVUdfREVMRVRFX1BMQVlFUhC9BRIXChJTRklEQV9SRUdJU1RS",
             "QVRJT04QoAYSFQoQU0ZJREFfQUNUSU9OX0xPRxChBhIYChNTRklEQV9DRVJU",
             "SUZJQ0FUSU9OEKIGEhEKDFNGSURBX1VQREFURRCjBhIRCgxTRklEQV9BQ1RJ",
-            "T04QpAYSEQoMU0ZJREFfRE9XU0VSEKUGEhIKDVNGSURBX0NBUFRVUkUQpgZi",
-            "BnByb3RvMw=="));
+            "T04QpAYSEQoMU0ZJREFfRE9XU0VSEKUGEhIKDVNGSURBX0NBUFRVUkUQpgZC",
+            "HaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Networking.Requests.RequestType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.RequestType), }, null));
     }
     #endregion
 
