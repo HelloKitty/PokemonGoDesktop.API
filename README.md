@@ -25,7 +25,16 @@ To use this project you'll first need a couple of things:
 
 ## Builds
 
-Available on a Nuget Feed: https://www.myget.org/F/hellokitty/api/v2 [![hellokitty MyGet Build Status](https://www.myget.org/BuildSource/Badge/hellokitty?identifier=a8048ae0-adcd-4997-8862-c3f5fc6adf34)](https://www.myget.org/feed/Packages/hellokitty)
+Available on the official Nuget Feed:
+
+[Client Services](https://www.nuget.org/packages/PokemonGoDesktop.API.Client.Services/)
+
+[Proto](https://www.nuget.org/packages/PokemonGoDesktop.API.Proto/)
+
+[Proto Services](https://www.nuget.org/packages/PokemonGoDesktop.API.Proto.Services/)
+
+[Common](https://www.nuget.org/packages/PokemonGoDesktop.API.Common/)
+
 
 ##Tests
 
