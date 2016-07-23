@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/EncounterTutorialCompleteResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,11 +32,12 @@ namespace Networking.Responses {
             "X2RhdGEYAiABKAsyES5EYXRhLlBva2Vtb25EYXRhEjEKDWNhcHR1cmVfYXdh",
             "cmQYAyABKAsyGi5EYXRhLkNhcHR1cmUuQ2FwdHVyZUF3YXJkIjsKBlJlc3Vs",
             "dBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIZChVFUlJPUl9JTlZBTElEX1BP",
-            "S0VNT04QAmIGcHJvdG8z"));
+            "S0VNT04QAkIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PokemonDataReflection.Descriptor, global::Data.Capture.CaptureAwardReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CaptureAwardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.EncounterTutorialCompleteResponse), global::Networking.Responses.EncounterTutorialCompleteResponse.Parser, new[]{ "Result", "PokemonData", "CaptureAward" }, null, new[]{ typeof(global::Networking.Responses.EncounterTutorialCompleteResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponse), global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponse.Parser, new[]{ "Result", "PokemonData", "CaptureAward" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -49,7 +50,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<EncounterTutorialCompleteResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.EncounterTutorialCompleteResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -74,8 +75,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.EncounterTutorialCompleteResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.EncounterTutorialCompleteResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -84,8 +85,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "pokemon_data" field.</summary>
     public const int PokemonDataFieldNumber = 2;
-    private global::Data.PokemonData pokemonData_;
-    public global::Data.PokemonData PokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData pokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData PokemonData {
       get { return pokemonData_; }
       set {
         pokemonData_ = value;
@@ -94,8 +95,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "capture_award" field.</summary>
     public const int CaptureAwardFieldNumber = 3;
-    private global::Data.Capture.CaptureAward captureAward_;
-    public global::Data.Capture.CaptureAward CaptureAward {
+    private global::PokemonGoDesktop.API.Proto.CaptureAward captureAward_;
+    public global::PokemonGoDesktop.API.Proto.CaptureAward CaptureAward {
       get { return captureAward_; }
       set {
         captureAward_ = value;
@@ -169,13 +170,13 @@ namespace Networking.Responses {
       }
       if (other.pokemonData_ != null) {
         if (pokemonData_ == null) {
-          pokemonData_ = new global::Data.PokemonData();
+          pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         PokemonData.MergeFrom(other.PokemonData);
       }
       if (other.captureAward_ != null) {
         if (captureAward_ == null) {
-          captureAward_ = new global::Data.Capture.CaptureAward();
+          captureAward_ = new global::PokemonGoDesktop.API.Proto.CaptureAward();
         }
         CaptureAward.MergeFrom(other.CaptureAward);
       }
@@ -189,19 +190,19 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.EncounterTutorialCompleteResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
             if (pokemonData_ == null) {
-              pokemonData_ = new global::Data.PokemonData();
+              pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(pokemonData_);
             break;
           }
           case 26: {
             if (captureAward_ == null) {
-              captureAward_ = new global::Data.Capture.CaptureAward();
+              captureAward_ = new global::PokemonGoDesktop.API.Proto.CaptureAward();
             }
             input.ReadMessage(captureAward_);
             break;

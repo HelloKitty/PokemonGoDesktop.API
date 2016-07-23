@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/ReviveAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Settings.Master.Item {
           string.Concat(
             "CitTZXR0aW5ncy9NYXN0ZXIvSXRlbS9SZXZpdmVBdHRyaWJ1dGVzLnByb3Rv",
             "EhRTZXR0aW5ncy5NYXN0ZXIuSXRlbSInChBSZXZpdmVBdHRyaWJ1dGVzEhMK",
-            "C3N0YV9wZXJjZW50GAEgASgCYgZwcm90bzM="));
+            "C3N0YV9wZXJjZW50GAEgASgCQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.ReviveAttributes), global::Settings.Master.Item.ReviveAttributes.Parser, new[]{ "StaPercent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.ReviveAttributes), global::PokemonGoDesktop.API.Proto.ReviveAttributes.Parser, new[]{ "StaPercent" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +43,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<ReviveAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.ReviveAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.ReviveAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

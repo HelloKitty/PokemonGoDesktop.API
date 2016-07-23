@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/PokemonFamily.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Inventory {
             "Ch1JbnZlbnRvcnkvUG9rZW1vbkZhbWlseS5wcm90bxIJSW52ZW50b3J5GhtF",
             "bnVtcy9Qb2tlbW9uRmFtaWx5SWQucHJvdG8iSQoNUG9rZW1vbkZhbWlseRIp",
             "CglmYW1pbHlfaWQYASABKA4yFi5FbnVtcy5Qb2tlbW9uRmFtaWx5SWQSDQoF",
-            "Y2FuZHkYAiABKAViBnByb3RvMw=="));
+            "Y2FuZHkYAiABKAVCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonFamilyIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonFamilyIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.PokemonFamily), global::Inventory.PokemonFamily.Parser, new[]{ "FamilyId", "Candy" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonFamily), global::PokemonGoDesktop.API.Proto.PokemonFamily.Parser, new[]{ "FamilyId", "Candy" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Inventory {
     public static pb::MessageParser<PokemonFamily> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.PokemonFamilyReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PokemonFamilyReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -67,8 +68,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "family_id" field.</summary>
     public const int FamilyIdFieldNumber = 1;
-    private global::Enums.PokemonFamilyId familyId_ = 0;
-    public global::Enums.PokemonFamilyId FamilyId {
+    private global::PokemonGoDesktop.API.Proto.PokemonFamilyId familyId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonFamilyId FamilyId {
       get { return familyId_; }
       set {
         familyId_ = value;
@@ -154,7 +155,7 @@ namespace Inventory {
             input.SkipLastField();
             break;
           case 8: {
-            familyId_ = (global::Enums.PokemonFamilyId) input.ReadEnum();
+            familyId_ = (global::PokemonGoDesktop.API.Proto.PokemonFamilyId) input.ReadEnum();
             break;
           }
           case 16: {

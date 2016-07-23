@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/GetGymDetailsMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,12 +27,12 @@ namespace Networking.Requests.Messages {
             "ZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzIoYB",
             "ChRHZXRHeW1EZXRhaWxzTWVzc2FnZRIOCgZneW1faWQYASABKAkSFwoPcGxh",
             "eWVyX2xhdGl0dWRlGAIgASgBEhgKEHBsYXllcl9sb25naXR1ZGUYAyABKAES",
-            "FAoMZ3ltX2xhdGl0dWRlGAQgASgBEhUKDWd5bV9sb25naXR1ZGUYBSABKAFi",
-            "BnByb3RvMw=="));
+            "FAoMZ3ltX2xhdGl0dWRlGAQgASgBEhUKDWd5bV9sb25naXR1ZGUYBSABKAFC",
+            "HaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.GetGymDetailsMessage), global::Networking.Requests.Messages.GetGymDetailsMessage.Parser, new[]{ "GymId", "PlayerLatitude", "PlayerLongitude", "GymLatitude", "GymLongitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetGymDetailsMessage), global::PokemonGoDesktop.API.Proto.GetGymDetailsMessage.Parser, new[]{ "GymId", "PlayerLatitude", "PlayerLongitude", "GymLatitude", "GymLongitude" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<GetGymDetailsMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.GetGymDetailsMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetGymDetailsMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

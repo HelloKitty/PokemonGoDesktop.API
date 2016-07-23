@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/GetAssetDigestMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Networking.Requests.Messages {
             "RW51bXMvUGxhdGZvcm0ucHJvdG8ikgEKFUdldEFzc2V0RGlnZXN0TWVzc2Fn",
             "ZRIhCghwbGF0Zm9ybRgBIAEoDjIPLkVudW1zLlBsYXRmb3JtEhsKE2Rldmlj",
             "ZV9tYW51ZmFjdHVyZXIYAiABKAkSFAoMZGV2aWNlX21vZGVsGAMgASgJEg4K",
-            "BmxvY2FsZRgEIAEoCRITCgthcHBfdmVyc2lvbhgFIAEoDWIGcHJvdG8z"));
+            "BmxvY2FsZRgEIAEoCRITCgthcHBfdmVyc2lvbhgFIAEoDUIdqgIaUG9rZW1v",
+            "bkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PlatformReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PlatformReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.GetAssetDigestMessage), global::Networking.Requests.Messages.GetAssetDigestMessage.Parser, new[]{ "Platform", "DeviceManufacturer", "DeviceModel", "Locale", "AppVersion" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetAssetDigestMessage), global::PokemonGoDesktop.API.Proto.GetAssetDigestMessage.Parser, new[]{ "Platform", "DeviceManufacturer", "DeviceModel", "Locale", "AppVersion" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<GetAssetDigestMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.GetAssetDigestMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetAssetDigestMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -72,8 +73,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "platform" field.</summary>
     public const int PlatformFieldNumber = 1;
-    private global::Enums.Platform platform_ = 0;
-    public global::Enums.Platform Platform {
+    private global::PokemonGoDesktop.API.Proto.Platform platform_ = 0;
+    public global::PokemonGoDesktop.API.Proto.Platform Platform {
       get { return platform_; }
       set {
         platform_ = value;
@@ -225,7 +226,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            platform_ = (global::Enums.Platform) input.ReadEnum();
+            platform_ = (global::PokemonGoDesktop.API.Proto.Platform) input.ReadEnum();
             break;
           }
           case 18: {

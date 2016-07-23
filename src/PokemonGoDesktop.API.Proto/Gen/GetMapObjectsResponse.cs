@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetMapObjectsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Responses {
             "cHJvdG8SFE5ldHdvcmtpbmcuUmVzcG9uc2VzGhFNYXAvTWFwQ2VsbC5wcm90",
             "bxoaTWFwL01hcE9iamVjdHNTdGF0dXMucHJvdG8iXwoVR2V0TWFwT2JqZWN0",
             "c1Jlc3BvbnNlEh8KCW1hcF9jZWxscxgBIAMoCzIMLk1hcC5NYXBDZWxsEiUK",
-            "BnN0YXR1cxgCIAEoDjIVLk1hcC5NYXBPYmplY3RzU3RhdHVzYgZwcm90bzM="));
+            "BnN0YXR1cxgCIAEoDjIVLk1hcC5NYXBPYmplY3RzU3RhdHVzQh2qAhpQb2tl",
+            "bW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Map.MapCellReflection.Descriptor, global::Map.MapObjectsStatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.MapCellReflection.Descriptor, global::PokemonGoDesktop.API.Proto.MapObjectsStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetMapObjectsResponse), global::Networking.Responses.GetMapObjectsResponse.Parser, new[]{ "MapCells", "Status" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetMapObjectsResponse), global::PokemonGoDesktop.API.Proto.GetMapObjectsResponse.Parser, new[]{ "MapCells", "Status" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetMapObjectsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetMapObjectsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetMapObjectsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -68,17 +69,17 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "map_cells" field.</summary>
     public const int MapCellsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Map.MapCell> _repeated_mapCells_codec
-        = pb::FieldCodec.ForMessage(10, global::Map.MapCell.Parser);
-    private readonly pbc::RepeatedField<global::Map.MapCell> mapCells_ = new pbc::RepeatedField<global::Map.MapCell>();
-    public pbc::RepeatedField<global::Map.MapCell> MapCells {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.MapCell> _repeated_mapCells_codec
+        = pb::FieldCodec.ForMessage(10, global::PokemonGoDesktop.API.Proto.MapCell.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.MapCell> mapCells_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.MapCell>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.MapCell> MapCells {
       get { return mapCells_; }
     }
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 2;
-    private global::Map.MapObjectsStatus status_ = 0;
-    public global::Map.MapObjectsStatus Status {
+    private global::PokemonGoDesktop.API.Proto.MapObjectsStatus status_ = 0;
+    public global::PokemonGoDesktop.API.Proto.MapObjectsStatus Status {
       get { return status_; }
       set {
         status_ = value;
@@ -151,7 +152,7 @@ namespace Networking.Responses {
             break;
           }
           case 16: {
-            status_ = (global::Map.MapObjectsStatus) input.ReadEnum();
+            status_ = (global::PokemonGoDesktop.API.Proto.MapObjectsStatus) input.ReadEnum();
             break;
           }
         }

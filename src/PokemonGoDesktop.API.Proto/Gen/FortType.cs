@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Fort {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Fort/FortType.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24,10 +24,11 @@ namespace Map.Fort {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChdNYXAvRm9ydC9Gb3J0VHlwZS5wcm90bxIITWFwLkZvcnQqIwoIRm9ydFR5",
-            "cGUSBwoDR1lNEAASDgoKQ0hFQ0tQT0lOVBABYgZwcm90bzM="));
+            "cGUSBwoDR1lNEAASDgoKQ0hFQ0tQT0lOVBABQh2qAhpQb2tlbW9uR29EZXNr",
+            "dG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Map.Fort.FortType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.FortType), }, null));
     }
     #endregion
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/UseItemXpBoostResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,12 +31,12 @@ namespace Networking.Responses {
             "SW52ZW50b3J5LkFwcGxpZWRJdGVtcyKYAQoGUmVzdWx0EgkKBVVOU0VUEAAS",
             "CwoHU1VDQ0VTUxABEhsKF0VSUk9SX0lOVkFMSURfSVRFTV9UWVBFEAISIQod",
             "RVJST1JfWFBfQk9PU1RfQUxSRUFEWV9BQ1RJVkUQAxIcChhFUlJPUl9OT19J",
-            "VEVNU19SRU1BSU5JTkcQBBIYChRFUlJPUl9MT0NBVElPTl9VTlNFVBAFYgZw",
-            "cm90bzM="));
+            "VEVNU19SRU1BSU5JTkcQBBIYChRFUlJPUl9MT0NBVElPTl9VTlNFVBAFQh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.AppliedItemsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.AppliedItemsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.UseItemXpBoostResponse), global::Networking.Responses.UseItemXpBoostResponse.Parser, new[]{ "Result", "AppliedItems" }, null, new[]{ typeof(global::Networking.Responses.UseItemXpBoostResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponse), global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponse.Parser, new[]{ "Result", "AppliedItems" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<UseItemXpBoostResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.UseItemXpBoostResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -73,8 +73,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.UseItemXpBoostResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.UseItemXpBoostResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -83,8 +83,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "applied_items" field.</summary>
     public const int AppliedItemsFieldNumber = 2;
-    private global::Inventory.AppliedItems appliedItems_;
-    public global::Inventory.AppliedItems AppliedItems {
+    private global::PokemonGoDesktop.API.Proto.AppliedItems appliedItems_;
+    public global::PokemonGoDesktop.API.Proto.AppliedItems AppliedItems {
       get { return appliedItems_; }
       set {
         appliedItems_ = value;
@@ -149,7 +149,7 @@ namespace Networking.Responses {
       }
       if (other.appliedItems_ != null) {
         if (appliedItems_ == null) {
-          appliedItems_ = new global::Inventory.AppliedItems();
+          appliedItems_ = new global::PokemonGoDesktop.API.Proto.AppliedItems();
         }
         AppliedItems.MergeFrom(other.AppliedItems);
       }
@@ -163,12 +163,12 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.UseItemXpBoostResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.UseItemXpBoostResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
             if (appliedItems_ == null) {
-              appliedItems_ = new global::Inventory.AppliedItems();
+              appliedItems_ = new global::PokemonGoDesktop.API.Proto.AppliedItems();
             }
             input.ReadMessage(appliedItems_);
             break;

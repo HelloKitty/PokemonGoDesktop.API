@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Fort {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Fort/FortData.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -38,11 +38,12 @@ namespace Map.Fort {
             "JgoHc3BvbnNvchgPIAEoDjIVLk1hcC5Gb3J0LkZvcnRTcG9uc29yEjMKDnJl",
             "bmRlcmluZ190eXBlGBAgASgOMhsuTWFwLkZvcnQuRm9ydFJlbmRlcmluZ1R5",
             "cGUSHAoUYWN0aXZlX2ZvcnRfbW9kaWZpZXIYDCABKAwSKQoJbHVyZV9pbmZv",
-            "GA0gASgLMhYuTWFwLkZvcnQuRm9ydEx1cmVJbmZvYgZwcm90bzM="));
+            "GA0gASgLMhYuTWFwLkZvcnQuRm9ydEx1cmVJbmZvQh2qAhpQb2tlbW9uR29E",
+            "ZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonIdReflection.Descriptor, global::Enums.TeamColorReflection.Descriptor, global::Map.Fort.FortTypeReflection.Descriptor, global::Map.Fort.FortSponsorReflection.Descriptor, global::Map.Fort.FortRenderingTypeReflection.Descriptor, global::Map.Fort.FortLureInfoReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.TeamColorReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortSponsorReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortRenderingTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortLureInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.Fort.FortData), global::Map.Fort.FortData.Parser, new[]{ "Id", "LastModifiedTimestampMs", "Latitude", "Longitude", "Enabled", "Type", "OwnedByTeam", "GuardPokemonId", "GuardPokemonCp", "GymPoints", "IsInBattle", "CooldownCompleteTimestampMs", "Sponsor", "RenderingType", "ActiveFortModifier", "LureInfo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortData), global::PokemonGoDesktop.API.Proto.FortData.Parser, new[]{ "Id", "LastModifiedTimestampMs", "Latitude", "Longitude", "Enabled", "Type", "OwnedByTeam", "GuardPokemonId", "GuardPokemonCp", "GymPoints", "IsInBattle", "CooldownCompleteTimestampMs", "Sponsor", "RenderingType", "ActiveFortModifier", "LureInfo" }, null, null, null)
           }));
     }
     #endregion
@@ -55,7 +56,7 @@ namespace Map.Fort {
     public static pb::MessageParser<FortData> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.Fort.FortDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -143,8 +144,8 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 9;
-    private global::Map.Fort.FortType type_ = 0;
-    public global::Map.Fort.FortType Type {
+    private global::PokemonGoDesktop.API.Proto.FortType type_ = 0;
+    public global::PokemonGoDesktop.API.Proto.FortType Type {
       get { return type_; }
       set {
         type_ = value;
@@ -153,11 +154,11 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "owned_by_team" field.</summary>
     public const int OwnedByTeamFieldNumber = 5;
-    private global::Enums.TeamColor ownedByTeam_ = 0;
+    private global::PokemonGoDesktop.API.Proto.TeamColor ownedByTeam_ = 0;
     /// <summary>
     ///  Team that owns the gym
     /// </summary>
-    public global::Enums.TeamColor OwnedByTeam {
+    public global::PokemonGoDesktop.API.Proto.TeamColor OwnedByTeam {
       get { return ownedByTeam_; }
       set {
         ownedByTeam_ = value;
@@ -166,11 +167,11 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "guard_pokemon_id" field.</summary>
     public const int GuardPokemonIdFieldNumber = 6;
-    private global::Enums.PokemonId guardPokemonId_ = 0;
+    private global::PokemonGoDesktop.API.Proto.PokemonId guardPokemonId_ = 0;
     /// <summary>
     ///  Highest CP Pokemon at the gym
     /// </summary>
-    public global::Enums.PokemonId GuardPokemonId {
+    public global::PokemonGoDesktop.API.Proto.PokemonId GuardPokemonId {
       get { return guardPokemonId_; }
       set {
         guardPokemonId_ = value;
@@ -228,8 +229,8 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "sponsor" field.</summary>
     public const int SponsorFieldNumber = 15;
-    private global::Map.Fort.FortSponsor sponsor_ = 0;
-    public global::Map.Fort.FortSponsor Sponsor {
+    private global::PokemonGoDesktop.API.Proto.FortSponsor sponsor_ = 0;
+    public global::PokemonGoDesktop.API.Proto.FortSponsor Sponsor {
       get { return sponsor_; }
       set {
         sponsor_ = value;
@@ -238,8 +239,8 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "rendering_type" field.</summary>
     public const int RenderingTypeFieldNumber = 16;
-    private global::Map.Fort.FortRenderingType renderingType_ = 0;
-    public global::Map.Fort.FortRenderingType RenderingType {
+    private global::PokemonGoDesktop.API.Proto.FortRenderingType renderingType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.FortRenderingType RenderingType {
       get { return renderingType_; }
       set {
         renderingType_ = value;
@@ -261,8 +262,8 @@ namespace Map.Fort {
 
     /// <summary>Field number for the "lure_info" field.</summary>
     public const int LureInfoFieldNumber = 13;
-    private global::Map.Fort.FortLureInfo lureInfo_;
-    public global::Map.Fort.FortLureInfo LureInfo {
+    private global::PokemonGoDesktop.API.Proto.FortLureInfo lureInfo_;
+    public global::PokemonGoDesktop.API.Proto.FortLureInfo LureInfo {
       get { return lureInfo_; }
       set {
         lureInfo_ = value;
@@ -495,7 +496,7 @@ namespace Map.Fort {
       }
       if (other.lureInfo_ != null) {
         if (lureInfo_ == null) {
-          lureInfo_ = new global::Map.Fort.FortLureInfo();
+          lureInfo_ = new global::PokemonGoDesktop.API.Proto.FortLureInfo();
         }
         LureInfo.MergeFrom(other.LureInfo);
       }
@@ -525,11 +526,11 @@ namespace Map.Fort {
             break;
           }
           case 40: {
-            ownedByTeam_ = (global::Enums.TeamColor) input.ReadEnum();
+            ownedByTeam_ = (global::PokemonGoDesktop.API.Proto.TeamColor) input.ReadEnum();
             break;
           }
           case 48: {
-            guardPokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            guardPokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 56: {
@@ -541,7 +542,7 @@ namespace Map.Fort {
             break;
           }
           case 72: {
-            type_ = (global::Map.Fort.FortType) input.ReadEnum();
+            type_ = (global::PokemonGoDesktop.API.Proto.FortType) input.ReadEnum();
             break;
           }
           case 80: {
@@ -558,7 +559,7 @@ namespace Map.Fort {
           }
           case 106: {
             if (lureInfo_ == null) {
-              lureInfo_ = new global::Map.Fort.FortLureInfo();
+              lureInfo_ = new global::PokemonGoDesktop.API.Proto.FortLureInfo();
             }
             input.ReadMessage(lureInfo_);
             break;
@@ -568,11 +569,11 @@ namespace Map.Fort {
             break;
           }
           case 120: {
-            sponsor_ = (global::Map.Fort.FortSponsor) input.ReadEnum();
+            sponsor_ = (global::PokemonGoDesktop.API.Proto.FortSponsor) input.ReadEnum();
             break;
           }
           case 128: {
-            renderingType_ = (global::Map.Fort.FortRenderingType) input.ReadEnum();
+            renderingType_ = (global::PokemonGoDesktop.API.Proto.FortRenderingType) input.ReadEnum();
             break;
           }
         }

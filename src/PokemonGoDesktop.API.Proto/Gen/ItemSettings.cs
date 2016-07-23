@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/ItemSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -54,11 +54,12 @@ namespace Settings.Master {
             "c2VBdHRyaWJ1dGVzEkMKDWVnZ19pbmN1YmF0b3IYDiABKAsyLC5TZXR0aW5n",
             "cy5NYXN0ZXIuSXRlbS5FZ2dJbmN1YmF0b3JBdHRyaWJ1dGVzEkMKDWZvcnRf",
             "bW9kaWZpZXIYDyABKAsyLC5TZXR0aW5ncy5NYXN0ZXIuSXRlbS5Gb3J0TW9k",
-            "aWZpZXJBdHRyaWJ1dGVzYgZwcm90bzM="));
+            "aWZpZXJBdHRyaWJ1dGVzQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.ItemCategoryReflection.Descriptor, global::Inventory.ItemIdReflection.Descriptor, global::Inventory.ItemTypeReflection.Descriptor, global::Settings.Master.Item.FoodAttributesReflection.Descriptor, global::Settings.Master.Item.PotionAttributesReflection.Descriptor, global::Settings.Master.Item.ReviveAttributesReflection.Descriptor, global::Settings.Master.Item.BattleAttributesReflection.Descriptor, global::Settings.Master.Item.IncenseAttributesReflection.Descriptor, global::Settings.Master.Item.PokeballAttributesReflection.Descriptor, global::Settings.Master.Item.FortModifierAttributesReflection.Descriptor, global::Settings.Master.Item.EggIncubatorAttributesReflection.Descriptor, global::Settings.Master.Item.ExperienceBoostAttributesReflection.Descriptor, global::Settings.Master.Item.InventoryUpgradeAttributesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemCategoryReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FoodAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PotionAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ReviveAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.IncenseAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokeballAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortModifierAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EggIncubatorAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ExperienceBoostAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventoryUpgradeAttributesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.ItemSettings), global::Settings.Master.ItemSettings.Parser, new[]{ "ItemId", "ItemType", "Category", "DropFreq", "DropTrainerLevel", "Pokeball", "Potion", "Revive", "Battle", "Food", "InventoryUpgrade", "XpBoost", "Incense", "EggIncubator", "FortModifier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.ItemSettings), global::PokemonGoDesktop.API.Proto.ItemSettings.Parser, new[]{ "ItemId", "ItemType", "Category", "DropFreq", "DropTrainerLevel", "Pokeball", "Potion", "Revive", "Battle", "Food", "InventoryUpgrade", "XpBoost", "Incense", "EggIncubator", "FortModifier" }, null, null, null)
           }));
     }
     #endregion
@@ -71,7 +72,7 @@ namespace Settings.Master {
     public static pb::MessageParser<ItemSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.ItemSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.ItemSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -108,8 +109,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Inventory.ItemId itemId_ = 0;
-    public global::Inventory.ItemId ItemId {
+    private global::PokemonGoDesktop.API.Proto.ItemId itemId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -118,8 +119,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "item_type" field.</summary>
     public const int ItemTypeFieldNumber = 2;
-    private global::Inventory.ItemType itemType_ = 0;
-    public global::Inventory.ItemType ItemType {
+    private global::PokemonGoDesktop.API.Proto.ItemType itemType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemType ItemType {
       get { return itemType_; }
       set {
         itemType_ = value;
@@ -128,8 +129,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "category" field.</summary>
     public const int CategoryFieldNumber = 3;
-    private global::Enums.ItemCategory category_ = 0;
-    public global::Enums.ItemCategory Category {
+    private global::PokemonGoDesktop.API.Proto.ItemCategory category_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemCategory Category {
       get { return category_; }
       set {
         category_ = value;
@@ -158,8 +159,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "pokeball" field.</summary>
     public const int PokeballFieldNumber = 6;
-    private global::Settings.Master.Item.PokeballAttributes pokeball_;
-    public global::Settings.Master.Item.PokeballAttributes Pokeball {
+    private global::PokemonGoDesktop.API.Proto.PokeballAttributes pokeball_;
+    public global::PokemonGoDesktop.API.Proto.PokeballAttributes Pokeball {
       get { return pokeball_; }
       set {
         pokeball_ = value;
@@ -168,8 +169,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "potion" field.</summary>
     public const int PotionFieldNumber = 7;
-    private global::Settings.Master.Item.PotionAttributes potion_;
-    public global::Settings.Master.Item.PotionAttributes Potion {
+    private global::PokemonGoDesktop.API.Proto.PotionAttributes potion_;
+    public global::PokemonGoDesktop.API.Proto.PotionAttributes Potion {
       get { return potion_; }
       set {
         potion_ = value;
@@ -178,8 +179,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "revive" field.</summary>
     public const int ReviveFieldNumber = 8;
-    private global::Settings.Master.Item.ReviveAttributes revive_;
-    public global::Settings.Master.Item.ReviveAttributes Revive {
+    private global::PokemonGoDesktop.API.Proto.ReviveAttributes revive_;
+    public global::PokemonGoDesktop.API.Proto.ReviveAttributes Revive {
       get { return revive_; }
       set {
         revive_ = value;
@@ -188,8 +189,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "battle" field.</summary>
     public const int BattleFieldNumber = 9;
-    private global::Settings.Master.Item.BattleAttributes battle_;
-    public global::Settings.Master.Item.BattleAttributes Battle {
+    private global::PokemonGoDesktop.API.Proto.BattleAttributes battle_;
+    public global::PokemonGoDesktop.API.Proto.BattleAttributes Battle {
       get { return battle_; }
       set {
         battle_ = value;
@@ -198,8 +199,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "food" field.</summary>
     public const int FoodFieldNumber = 10;
-    private global::Settings.Master.Item.FoodAttributes food_;
-    public global::Settings.Master.Item.FoodAttributes Food {
+    private global::PokemonGoDesktop.API.Proto.FoodAttributes food_;
+    public global::PokemonGoDesktop.API.Proto.FoodAttributes Food {
       get { return food_; }
       set {
         food_ = value;
@@ -208,8 +209,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "inventory_upgrade" field.</summary>
     public const int InventoryUpgradeFieldNumber = 11;
-    private global::Settings.Master.Item.InventoryUpgradeAttributes inventoryUpgrade_;
-    public global::Settings.Master.Item.InventoryUpgradeAttributes InventoryUpgrade {
+    private global::PokemonGoDesktop.API.Proto.InventoryUpgradeAttributes inventoryUpgrade_;
+    public global::PokemonGoDesktop.API.Proto.InventoryUpgradeAttributes InventoryUpgrade {
       get { return inventoryUpgrade_; }
       set {
         inventoryUpgrade_ = value;
@@ -218,8 +219,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "xp_boost" field.</summary>
     public const int XpBoostFieldNumber = 12;
-    private global::Settings.Master.Item.ExperienceBoostAttributes xpBoost_;
-    public global::Settings.Master.Item.ExperienceBoostAttributes XpBoost {
+    private global::PokemonGoDesktop.API.Proto.ExperienceBoostAttributes xpBoost_;
+    public global::PokemonGoDesktop.API.Proto.ExperienceBoostAttributes XpBoost {
       get { return xpBoost_; }
       set {
         xpBoost_ = value;
@@ -228,8 +229,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "incense" field.</summary>
     public const int IncenseFieldNumber = 13;
-    private global::Settings.Master.Item.IncenseAttributes incense_;
-    public global::Settings.Master.Item.IncenseAttributes Incense {
+    private global::PokemonGoDesktop.API.Proto.IncenseAttributes incense_;
+    public global::PokemonGoDesktop.API.Proto.IncenseAttributes Incense {
       get { return incense_; }
       set {
         incense_ = value;
@@ -238,8 +239,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "egg_incubator" field.</summary>
     public const int EggIncubatorFieldNumber = 14;
-    private global::Settings.Master.Item.EggIncubatorAttributes eggIncubator_;
-    public global::Settings.Master.Item.EggIncubatorAttributes EggIncubator {
+    private global::PokemonGoDesktop.API.Proto.EggIncubatorAttributes eggIncubator_;
+    public global::PokemonGoDesktop.API.Proto.EggIncubatorAttributes EggIncubator {
       get { return eggIncubator_; }
       set {
         eggIncubator_ = value;
@@ -248,8 +249,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "fort_modifier" field.</summary>
     public const int FortModifierFieldNumber = 15;
-    private global::Settings.Master.Item.FortModifierAttributes fortModifier_;
-    public global::Settings.Master.Item.FortModifierAttributes FortModifier {
+    private global::PokemonGoDesktop.API.Proto.FortModifierAttributes fortModifier_;
+    public global::PokemonGoDesktop.API.Proto.FortModifierAttributes FortModifier {
       get { return fortModifier_; }
       set {
         fortModifier_ = value;
@@ -443,61 +444,61 @@ namespace Settings.Master {
       }
       if (other.pokeball_ != null) {
         if (pokeball_ == null) {
-          pokeball_ = new global::Settings.Master.Item.PokeballAttributes();
+          pokeball_ = new global::PokemonGoDesktop.API.Proto.PokeballAttributes();
         }
         Pokeball.MergeFrom(other.Pokeball);
       }
       if (other.potion_ != null) {
         if (potion_ == null) {
-          potion_ = new global::Settings.Master.Item.PotionAttributes();
+          potion_ = new global::PokemonGoDesktop.API.Proto.PotionAttributes();
         }
         Potion.MergeFrom(other.Potion);
       }
       if (other.revive_ != null) {
         if (revive_ == null) {
-          revive_ = new global::Settings.Master.Item.ReviveAttributes();
+          revive_ = new global::PokemonGoDesktop.API.Proto.ReviveAttributes();
         }
         Revive.MergeFrom(other.Revive);
       }
       if (other.battle_ != null) {
         if (battle_ == null) {
-          battle_ = new global::Settings.Master.Item.BattleAttributes();
+          battle_ = new global::PokemonGoDesktop.API.Proto.BattleAttributes();
         }
         Battle.MergeFrom(other.Battle);
       }
       if (other.food_ != null) {
         if (food_ == null) {
-          food_ = new global::Settings.Master.Item.FoodAttributes();
+          food_ = new global::PokemonGoDesktop.API.Proto.FoodAttributes();
         }
         Food.MergeFrom(other.Food);
       }
       if (other.inventoryUpgrade_ != null) {
         if (inventoryUpgrade_ == null) {
-          inventoryUpgrade_ = new global::Settings.Master.Item.InventoryUpgradeAttributes();
+          inventoryUpgrade_ = new global::PokemonGoDesktop.API.Proto.InventoryUpgradeAttributes();
         }
         InventoryUpgrade.MergeFrom(other.InventoryUpgrade);
       }
       if (other.xpBoost_ != null) {
         if (xpBoost_ == null) {
-          xpBoost_ = new global::Settings.Master.Item.ExperienceBoostAttributes();
+          xpBoost_ = new global::PokemonGoDesktop.API.Proto.ExperienceBoostAttributes();
         }
         XpBoost.MergeFrom(other.XpBoost);
       }
       if (other.incense_ != null) {
         if (incense_ == null) {
-          incense_ = new global::Settings.Master.Item.IncenseAttributes();
+          incense_ = new global::PokemonGoDesktop.API.Proto.IncenseAttributes();
         }
         Incense.MergeFrom(other.Incense);
       }
       if (other.eggIncubator_ != null) {
         if (eggIncubator_ == null) {
-          eggIncubator_ = new global::Settings.Master.Item.EggIncubatorAttributes();
+          eggIncubator_ = new global::PokemonGoDesktop.API.Proto.EggIncubatorAttributes();
         }
         EggIncubator.MergeFrom(other.EggIncubator);
       }
       if (other.fortModifier_ != null) {
         if (fortModifier_ == null) {
-          fortModifier_ = new global::Settings.Master.Item.FortModifierAttributes();
+          fortModifier_ = new global::PokemonGoDesktop.API.Proto.FortModifierAttributes();
         }
         FortModifier.MergeFrom(other.FortModifier);
       }
@@ -511,15 +512,15 @@ namespace Settings.Master {
             input.SkipLastField();
             break;
           case 8: {
-            itemId_ = (global::Inventory.ItemId) input.ReadEnum();
+            itemId_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 16: {
-            itemType_ = (global::Inventory.ItemType) input.ReadEnum();
+            itemType_ = (global::PokemonGoDesktop.API.Proto.ItemType) input.ReadEnum();
             break;
           }
           case 24: {
-            category_ = (global::Enums.ItemCategory) input.ReadEnum();
+            category_ = (global::PokemonGoDesktop.API.Proto.ItemCategory) input.ReadEnum();
             break;
           }
           case 37: {
@@ -532,70 +533,70 @@ namespace Settings.Master {
           }
           case 50: {
             if (pokeball_ == null) {
-              pokeball_ = new global::Settings.Master.Item.PokeballAttributes();
+              pokeball_ = new global::PokemonGoDesktop.API.Proto.PokeballAttributes();
             }
             input.ReadMessage(pokeball_);
             break;
           }
           case 58: {
             if (potion_ == null) {
-              potion_ = new global::Settings.Master.Item.PotionAttributes();
+              potion_ = new global::PokemonGoDesktop.API.Proto.PotionAttributes();
             }
             input.ReadMessage(potion_);
             break;
           }
           case 66: {
             if (revive_ == null) {
-              revive_ = new global::Settings.Master.Item.ReviveAttributes();
+              revive_ = new global::PokemonGoDesktop.API.Proto.ReviveAttributes();
             }
             input.ReadMessage(revive_);
             break;
           }
           case 74: {
             if (battle_ == null) {
-              battle_ = new global::Settings.Master.Item.BattleAttributes();
+              battle_ = new global::PokemonGoDesktop.API.Proto.BattleAttributes();
             }
             input.ReadMessage(battle_);
             break;
           }
           case 82: {
             if (food_ == null) {
-              food_ = new global::Settings.Master.Item.FoodAttributes();
+              food_ = new global::PokemonGoDesktop.API.Proto.FoodAttributes();
             }
             input.ReadMessage(food_);
             break;
           }
           case 90: {
             if (inventoryUpgrade_ == null) {
-              inventoryUpgrade_ = new global::Settings.Master.Item.InventoryUpgradeAttributes();
+              inventoryUpgrade_ = new global::PokemonGoDesktop.API.Proto.InventoryUpgradeAttributes();
             }
             input.ReadMessage(inventoryUpgrade_);
             break;
           }
           case 98: {
             if (xpBoost_ == null) {
-              xpBoost_ = new global::Settings.Master.Item.ExperienceBoostAttributes();
+              xpBoost_ = new global::PokemonGoDesktop.API.Proto.ExperienceBoostAttributes();
             }
             input.ReadMessage(xpBoost_);
             break;
           }
           case 106: {
             if (incense_ == null) {
-              incense_ = new global::Settings.Master.Item.IncenseAttributes();
+              incense_ = new global::PokemonGoDesktop.API.Proto.IncenseAttributes();
             }
             input.ReadMessage(incense_);
             break;
           }
           case 114: {
             if (eggIncubator_ == null) {
-              eggIncubator_ = new global::Settings.Master.Item.EggIncubatorAttributes();
+              eggIncubator_ = new global::PokemonGoDesktop.API.Proto.EggIncubatorAttributes();
             }
             input.ReadMessage(eggIncubator_);
             break;
           }
           case 122: {
             if (fortModifier_ == null) {
-              fortModifier_ = new global::Settings.Master.Item.FortModifierAttributes();
+              fortModifier_ = new global::PokemonGoDesktop.API.Proto.FortModifierAttributes();
             }
             input.ReadMessage(fortModifier_);
             break;

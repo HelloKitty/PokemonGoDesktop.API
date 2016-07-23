@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/SpawnPoint.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24,11 +24,12 @@ namespace Map {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRNYXAvU3Bhd25Qb2ludC5wcm90bxIDTWFwIjEKClNwYXduUG9pbnQSEAoI",
-            "bGF0aXR1ZGUYAiABKAESEQoJbG9uZ2l0dWRlGAMgASgBYgZwcm90bzM="));
+            "bGF0aXR1ZGUYAiABKAESEQoJbG9uZ2l0dWRlGAMgASgBQh2qAhpQb2tlbW9u",
+            "R29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.SpawnPoint), global::Map.SpawnPoint.Parser, new[]{ "Latitude", "Longitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.SpawnPoint), global::PokemonGoDesktop.API.Proto.SpawnPoint.Parser, new[]{ "Latitude", "Longitude" }, null, null, null)
           }));
     }
     #endregion
@@ -41,7 +42,7 @@ namespace Map {
     public static pb::MessageParser<SpawnPoint> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.SpawnPointReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.SpawnPointReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Request.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests {
             "bmcuUmVxdWVzdHMaJU5ldHdvcmtpbmcvUmVxdWVzdHMvUmVxdWVzdFR5cGUu",
             "cHJvdG8iWgoHUmVxdWVzdBI2CgxyZXF1ZXN0X3R5cGUYASABKA4yIC5OZXR3",
             "b3JraW5nLlJlcXVlc3RzLlJlcXVlc3RUeXBlEhcKD3JlcXVlc3RfbWVzc2Fn",
-            "ZRgCIAEoDGIGcHJvdG8z"));
+            "ZRgCIAEoDEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Networking.Requests.RequestTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.RequestTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Request), global::Networking.Requests.Request.Parser, new[]{ "RequestType", "RequestMessage" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.Request), global::PokemonGoDesktop.API.Proto.Request.Parser, new[]{ "RequestType", "RequestMessage" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests {
     public static pb::MessageParser<Request> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.RequestReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.RequestReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -68,8 +69,8 @@ namespace Networking.Requests {
 
     /// <summary>Field number for the "request_type" field.</summary>
     public const int RequestTypeFieldNumber = 1;
-    private global::Networking.Requests.RequestType requestType_ = 0;
-    public global::Networking.Requests.RequestType RequestType {
+    private global::PokemonGoDesktop.API.Proto.RequestType requestType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.RequestType RequestType {
       get { return requestType_; }
       set {
         requestType_ = value;
@@ -155,7 +156,7 @@ namespace Networking.Requests {
             input.SkipLastField();
             break;
           case 8: {
-            requestType_ = (global::Networking.Requests.RequestType) input.ReadEnum();
+            requestType_ = (global::PokemonGoDesktop.API.Proto.RequestType) input.ReadEnum();
             break;
           }
           case 18: {

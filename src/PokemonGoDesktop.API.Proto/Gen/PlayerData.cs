@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/PlayerData.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -37,11 +37,11 @@ namespace Data {
             "YmFkZ2UYDCABKAsyGi5EYXRhLlBsYXllci5FcXVpcHBlZEJhZGdlEjYKEGNv",
             "bnRhY3Rfc2V0dGluZ3MYDSABKAsyHC5EYXRhLlBsYXllci5Db250YWN0U2V0",
             "dGluZ3MSKQoKY3VycmVuY2llcxgOIAMoCzIVLkRhdGEuUGxheWVyLkN1cnJl",
-            "bmN5YgZwcm90bzM="));
+            "bmN5Qh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.TutorialStateReflection.Descriptor, global::Data.Player.PlayerAvatarReflection.Descriptor, global::Data.Player.DailyBonusReflection.Descriptor, global::Data.Player.EquippedBadgeReflection.Descriptor, global::Data.Player.ContactSettingsReflection.Descriptor, global::Data.Player.CurrencyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.TutorialStateReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerAvatarReflection.Descriptor, global::PokemonGoDesktop.API.Proto.DailyBonusReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EquippedBadgeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ContactSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CurrencyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.PlayerData), global::Data.PlayerData.Parser, new[]{ "CreationTimestampMs", "Username", "Team", "TutorialState", "Avatar", "MaxPokemonStorage", "MaxItemStorage", "DailyBonus", "EquippedBadge", "ContactSettings", "Currencies" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerData), global::PokemonGoDesktop.API.Proto.PlayerData.Parser, new[]{ "CreationTimestampMs", "Username", "Team", "TutorialState", "Avatar", "MaxPokemonStorage", "MaxItemStorage", "DailyBonus", "EquippedBadge", "ContactSettings", "Currencies" }, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Data {
     public static pb::MessageParser<PlayerData> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.PlayerDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -117,17 +117,17 @@ namespace Data {
 
     /// <summary>Field number for the "tutorial_state" field.</summary>
     public const int TutorialStateFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Enums.TutorialState> _repeated_tutorialState_codec
-        = pb::FieldCodec.ForEnum(58, x => (int) x, x => (global::Enums.TutorialState) x);
-    private readonly pbc::RepeatedField<global::Enums.TutorialState> tutorialState_ = new pbc::RepeatedField<global::Enums.TutorialState>();
-    public pbc::RepeatedField<global::Enums.TutorialState> TutorialState {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.TutorialState> _repeated_tutorialState_codec
+        = pb::FieldCodec.ForEnum(58, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.TutorialState) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.TutorialState> tutorialState_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.TutorialState>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.TutorialState> TutorialState {
       get { return tutorialState_; }
     }
 
     /// <summary>Field number for the "avatar" field.</summary>
     public const int AvatarFieldNumber = 8;
-    private global::Data.Player.PlayerAvatar avatar_;
-    public global::Data.Player.PlayerAvatar Avatar {
+    private global::PokemonGoDesktop.API.Proto.PlayerAvatar avatar_;
+    public global::PokemonGoDesktop.API.Proto.PlayerAvatar Avatar {
       get { return avatar_; }
       set {
         avatar_ = value;
@@ -156,8 +156,8 @@ namespace Data {
 
     /// <summary>Field number for the "daily_bonus" field.</summary>
     public const int DailyBonusFieldNumber = 11;
-    private global::Data.Player.DailyBonus dailyBonus_;
-    public global::Data.Player.DailyBonus DailyBonus {
+    private global::PokemonGoDesktop.API.Proto.DailyBonus dailyBonus_;
+    public global::PokemonGoDesktop.API.Proto.DailyBonus DailyBonus {
       get { return dailyBonus_; }
       set {
         dailyBonus_ = value;
@@ -166,8 +166,8 @@ namespace Data {
 
     /// <summary>Field number for the "equipped_badge" field.</summary>
     public const int EquippedBadgeFieldNumber = 12;
-    private global::Data.Player.EquippedBadge equippedBadge_;
-    public global::Data.Player.EquippedBadge EquippedBadge {
+    private global::PokemonGoDesktop.API.Proto.EquippedBadge equippedBadge_;
+    public global::PokemonGoDesktop.API.Proto.EquippedBadge EquippedBadge {
       get { return equippedBadge_; }
       set {
         equippedBadge_ = value;
@@ -176,8 +176,8 @@ namespace Data {
 
     /// <summary>Field number for the "contact_settings" field.</summary>
     public const int ContactSettingsFieldNumber = 13;
-    private global::Data.Player.ContactSettings contactSettings_;
-    public global::Data.Player.ContactSettings ContactSettings {
+    private global::PokemonGoDesktop.API.Proto.ContactSettings contactSettings_;
+    public global::PokemonGoDesktop.API.Proto.ContactSettings ContactSettings {
       get { return contactSettings_; }
       set {
         contactSettings_ = value;
@@ -186,10 +186,10 @@ namespace Data {
 
     /// <summary>Field number for the "currencies" field.</summary>
     public const int CurrenciesFieldNumber = 14;
-    private static readonly pb::FieldCodec<global::Data.Player.Currency> _repeated_currencies_codec
-        = pb::FieldCodec.ForMessage(114, global::Data.Player.Currency.Parser);
-    private readonly pbc::RepeatedField<global::Data.Player.Currency> currencies_ = new pbc::RepeatedField<global::Data.Player.Currency>();
-    public pbc::RepeatedField<global::Data.Player.Currency> Currencies {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.Currency> _repeated_currencies_codec
+        = pb::FieldCodec.ForMessage(114, global::PokemonGoDesktop.API.Proto.Currency.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.Currency> currencies_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.Currency>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.Currency> Currencies {
       get { return currencies_; }
     }
 
@@ -329,7 +329,7 @@ namespace Data {
       tutorialState_.Add(other.tutorialState_);
       if (other.avatar_ != null) {
         if (avatar_ == null) {
-          avatar_ = new global::Data.Player.PlayerAvatar();
+          avatar_ = new global::PokemonGoDesktop.API.Proto.PlayerAvatar();
         }
         Avatar.MergeFrom(other.Avatar);
       }
@@ -341,19 +341,19 @@ namespace Data {
       }
       if (other.dailyBonus_ != null) {
         if (dailyBonus_ == null) {
-          dailyBonus_ = new global::Data.Player.DailyBonus();
+          dailyBonus_ = new global::PokemonGoDesktop.API.Proto.DailyBonus();
         }
         DailyBonus.MergeFrom(other.DailyBonus);
       }
       if (other.equippedBadge_ != null) {
         if (equippedBadge_ == null) {
-          equippedBadge_ = new global::Data.Player.EquippedBadge();
+          equippedBadge_ = new global::PokemonGoDesktop.API.Proto.EquippedBadge();
         }
         EquippedBadge.MergeFrom(other.EquippedBadge);
       }
       if (other.contactSettings_ != null) {
         if (contactSettings_ == null) {
-          contactSettings_ = new global::Data.Player.ContactSettings();
+          contactSettings_ = new global::PokemonGoDesktop.API.Proto.ContactSettings();
         }
         ContactSettings.MergeFrom(other.ContactSettings);
       }
@@ -386,7 +386,7 @@ namespace Data {
           }
           case 66: {
             if (avatar_ == null) {
-              avatar_ = new global::Data.Player.PlayerAvatar();
+              avatar_ = new global::PokemonGoDesktop.API.Proto.PlayerAvatar();
             }
             input.ReadMessage(avatar_);
             break;
@@ -401,21 +401,21 @@ namespace Data {
           }
           case 90: {
             if (dailyBonus_ == null) {
-              dailyBonus_ = new global::Data.Player.DailyBonus();
+              dailyBonus_ = new global::PokemonGoDesktop.API.Proto.DailyBonus();
             }
             input.ReadMessage(dailyBonus_);
             break;
           }
           case 98: {
             if (equippedBadge_ == null) {
-              equippedBadge_ = new global::Data.Player.EquippedBadge();
+              equippedBadge_ = new global::PokemonGoDesktop.API.Proto.EquippedBadge();
             }
             input.ReadMessage(equippedBadge_);
             break;
           }
           case 106: {
             if (contactSettings_ == null) {
-              contactSettings_ = new global::Data.Player.ContactSettings();
+              contactSettings_ = new global::PokemonGoDesktop.API.Proto.ContactSettings();
             }
             input.ReadMessage(contactSettings_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Enums {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Enums/PokemonId.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -69,10 +69,11 @@ namespace Enums {
             "QUJVVE8QjAESDQoIS0FCVVRPUFMQjQESDwoKQUVST0RBQ1RZTBCOARIMCgdT",
             "Tk9STEFYEI8BEg0KCEFSVElDVU5PEJABEgsKBlpBUERPUxCRARIMCgdNT0xU",
             "UkVTEJIBEgwKB0RSQVRJTkkQkwESDgoJRFJBR09OQUlSEJQBEg4KCURSQUdP",
-            "TklURRCVARILCgZNRVdUV08QlgESCAoDTUVXEJcBYgZwcm90bzM="));
+            "TklURRCVARILCgZNRVdUV08QlgESCAoDTUVXEJcBQh2qAhpQb2tlbW9uR29E",
+            "ZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Enums.PokemonId), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.PokemonId), }, null));
     }
     #endregion
 

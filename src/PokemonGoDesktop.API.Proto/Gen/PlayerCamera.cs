@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Player {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Player/PlayerCamera.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24,12 +24,12 @@ namespace Data.Player {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5EYXRhL1BsYXllci9QbGF5ZXJDYW1lcmEucHJvdG8SC0RhdGEuUGxheWVy",
-            "IikKDFBsYXllckNhbWVyYRIZChFpc19kZWZhdWx0X2NhbWVyYRgBIAEoCGIG",
-            "cHJvdG8z"));
+            "IikKDFBsYXllckNhbWVyYRIZChFpc19kZWZhdWx0X2NhbWVyYRgBIAEoCEId",
+            "qgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Player.PlayerCamera), global::Data.Player.PlayerCamera.Parser, new[]{ "IsDefaultCamera" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerCamera), global::PokemonGoDesktop.API.Proto.PlayerCamera.Parser, new[]{ "IsDefaultCamera" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +42,7 @@ namespace Data.Player {
     public static pb::MessageParser<PlayerCamera> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Player.PlayerCameraReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerCameraReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

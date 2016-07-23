@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/IncenseEncounterMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Networking.Requests.Messages {
             "CjpOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0luY2Vuc2VFbmNvdW50",
             "ZXJNZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2Vz",
             "IksKF0luY2Vuc2VFbmNvdW50ZXJNZXNzYWdlEhQKDGVuY291bnRlcl9pZBgB",
-            "IAEoAxIaChJlbmNvdW50ZXJfbG9jYXRpb24YAiABKAliBnByb3RvMw=="));
+            "IAEoAxIaChJlbmNvdW50ZXJfbG9jYXRpb24YAiABKAlCHaoCGlBva2Vtb25H",
+            "b0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.IncenseEncounterMessage), global::Networking.Requests.Messages.IncenseEncounterMessage.Parser, new[]{ "EncounterId", "EncounterLocation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.IncenseEncounterMessage), global::PokemonGoDesktop.API.Proto.IncenseEncounterMessage.Parser, new[]{ "EncounterId", "EncounterLocation" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<IncenseEncounterMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.IncenseEncounterMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.IncenseEncounterMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/EncounterTutorialCompleteMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests.Messages {
             "aWFsQ29tcGxldGVNZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3Rz",
             "Lk1lc3NhZ2VzGhVFbnVtcy9Qb2tlbW9uSWQucHJvdG8iSAogRW5jb3VudGVy",
             "VHV0b3JpYWxDb21wbGV0ZU1lc3NhZ2USJAoKcG9rZW1vbl9pZBgBIAEoDjIQ",
-            "LkVudW1zLlBva2Vtb25JZGIGcHJvdG8z"));
+            "LkVudW1zLlBva2Vtb25JZEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.EncounterTutorialCompleteMessage), global::Networking.Requests.Messages.EncounterTutorialCompleteMessage.Parser, new[]{ "PokemonId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteMessage), global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteMessage.Parser, new[]{ "PokemonId" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<EncounterTutorialCompleteMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.EncounterTutorialCompleteMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EncounterTutorialCompleteMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -67,8 +68,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "pokemon_id" field.</summary>
     public const int PokemonIdFieldNumber = 1;
-    private global::Enums.PokemonId pokemonId_ = 0;
-    public global::Enums.PokemonId PokemonId {
+    private global::PokemonGoDesktop.API.Proto.PokemonId pokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId PokemonId {
       get { return pokemonId_; }
       set {
         pokemonId_ = value;
@@ -132,7 +133,7 @@ namespace Networking.Requests.Messages {
             input.SkipLastField();
             break;
           case 8: {
-            pokemonId_ = (global::Enums.PokemonId) input.ReadEnum();
+            pokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
         }

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Pokemon {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Pokemon/EncounterAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,11 +31,12 @@ namespace Settings.Master.Pokemon {
             "X2hlaWdodF9tGAQgASgCEh8KF2NvbGxpc2lvbl9oZWFkX3JhZGl1c19tGAUg",
             "ASgCEjEKDW1vdmVtZW50X3R5cGUYBiABKA4yGi5FbnVtcy5Qb2tlbW9uTW92",
             "ZW1lbnRUeXBlEhgKEG1vdmVtZW50X3RpbWVyX3MYByABKAISEwoLanVtcF90",
-            "aW1lX3MYCCABKAISFgoOYXR0YWNrX3RpbWVyX3MYCSABKAJiBnByb3RvMw=="));
+            "aW1lX3MYCCABKAISFgoOYXR0YWNrX3RpbWVyX3MYCSABKAJCHaoCGlBva2Vt",
+            "b25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonMovementTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonMovementTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Pokemon.EncounterAttributes), global::Settings.Master.Pokemon.EncounterAttributes.Parser, new[]{ "BaseCaptureRate", "BaseFleeRate", "CollisionRadiusM", "CollisionHeightM", "CollisionHeadRadiusM", "MovementType", "MovementTimerS", "JumpTimeS", "AttackTimerS" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EncounterAttributes), global::PokemonGoDesktop.API.Proto.EncounterAttributes.Parser, new[]{ "BaseCaptureRate", "BaseFleeRate", "CollisionRadiusM", "CollisionHeightM", "CollisionHeadRadiusM", "MovementType", "MovementTimerS", "JumpTimeS", "AttackTimerS" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +49,7 @@ namespace Settings.Master.Pokemon {
     public static pb::MessageParser<EncounterAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Pokemon.EncounterAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EncounterAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -129,8 +130,8 @@ namespace Settings.Master.Pokemon {
 
     /// <summary>Field number for the "movement_type" field.</summary>
     public const int MovementTypeFieldNumber = 6;
-    private global::Enums.PokemonMovementType movementType_ = 0;
-    public global::Enums.PokemonMovementType MovementType {
+    private global::PokemonGoDesktop.API.Proto.PokemonMovementType movementType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonMovementType MovementType {
       get { return movementType_; }
       set {
         movementType_ = value;
@@ -340,7 +341,7 @@ namespace Settings.Master.Pokemon {
             break;
           }
           case 48: {
-            movementType_ = (global::Enums.PokemonMovementType) input.ReadEnum();
+            movementType_ = (global::PokemonGoDesktop.API.Proto.PokemonMovementType) input.ReadEnum();
             break;
           }
           case 61: {

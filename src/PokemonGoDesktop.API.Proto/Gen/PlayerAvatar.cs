@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Player {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Player/PlayerAvatar.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,11 @@ namespace Data.Player {
             "GAIgASgFEgwKBGhhaXIYAyABKAUSDQoFc2hpcnQYBCABKAUSDQoFcGFudHMY",
             "BSABKAUSCwoDaGF0GAYgASgFEg0KBXNob2VzGAcgASgFEh0KBmdlbmRlchgI",
             "IAEoDjINLkVudW1zLkdlbmRlchIMCgRleWVzGAkgASgFEhAKCGJhY2twYWNr",
-            "GAogASgFYgZwcm90bzM="));
+            "GAogASgFQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.GenderReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.GenderReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Player.PlayerAvatar), global::Data.Player.PlayerAvatar.Parser, new[]{ "Skin", "Hair", "Shirt", "Pants", "Hat", "Shoes", "Gender", "Eyes", "Backpack" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerAvatar), global::PokemonGoDesktop.API.Proto.PlayerAvatar.Parser, new[]{ "Skin", "Hair", "Shirt", "Pants", "Hat", "Shoes", "Gender", "Eyes", "Backpack" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Data.Player {
     public static pb::MessageParser<PlayerAvatar> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Player.PlayerAvatarReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerAvatarReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -136,8 +136,8 @@ namespace Data.Player {
 
     /// <summary>Field number for the "gender" field.</summary>
     public const int GenderFieldNumber = 8;
-    private global::Enums.Gender gender_ = 0;
-    public global::Enums.Gender Gender {
+    private global::PokemonGoDesktop.API.Proto.Gender gender_ = 0;
+    public global::PokemonGoDesktop.API.Proto.Gender Gender {
       get { return gender_; }
       set {
         gender_ = value;
@@ -341,7 +341,7 @@ namespace Data.Player {
             break;
           }
           case 64: {
-            gender_ = (global::Enums.Gender) input.ReadEnum();
+            gender_ = (global::PokemonGoDesktop.API.Proto.Gender) input.ReadEnum();
             break;
           }
           case 72: {

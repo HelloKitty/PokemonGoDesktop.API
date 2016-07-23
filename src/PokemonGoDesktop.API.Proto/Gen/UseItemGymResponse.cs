@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/UseItemGymResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Networking.Responses {
             "c2USPwoGcmVzdWx0GAEgASgOMi8uTmV0d29ya2luZy5SZXNwb25zZXMuVXNl",
             "SXRlbUd5bVJlc3BvbnNlLlJlc3VsdBISCgp1cGRhdGVkX2dwGAIgASgDIk4K",
             "BlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIUChBFUlJPUl9DQU5O",
-            "T1RfVVNFEAISFgoSRVJST1JfTk9UX0lOX1JBTkdFEANiBnByb3RvMw=="));
+            "T1RfVVNFEAISFgoSRVJST1JfTk9UX0lOX1JBTkdFEANCHaoCGlBva2Vtb25H",
+            "b0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.UseItemGymResponse), global::Networking.Responses.UseItemGymResponse.Parser, new[]{ "Result", "UpdatedGp" }, null, new[]{ typeof(global::Networking.Responses.UseItemGymResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.UseItemGymResponse), global::PokemonGoDesktop.API.Proto.UseItemGymResponse.Parser, new[]{ "Result", "UpdatedGp" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.UseItemGymResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<UseItemGymResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.UseItemGymResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.UseItemGymResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,8 +70,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.UseItemGymResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.UseItemGymResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.UseItemGymResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.UseItemGymResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -159,7 +160,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.UseItemGymResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.UseItemGymResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 16: {

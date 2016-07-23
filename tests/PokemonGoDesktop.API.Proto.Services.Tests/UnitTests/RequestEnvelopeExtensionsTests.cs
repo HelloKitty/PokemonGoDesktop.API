@@ -1,6 +1,4 @@
-﻿using Networking.Envelopes;
-using Networking.Requests;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using PokemonGoDesktop.API.Common;
 using PokemonGoDesktop.API.Proto;
 using System;

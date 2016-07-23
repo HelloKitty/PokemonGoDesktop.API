@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/Item.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,12 +25,12 @@ namespace Inventory {
           string.Concat(
             "ChRJbnZlbnRvcnkvSXRlbS5wcm90bxIJSW52ZW50b3J5GhZJbnZlbnRvcnkv",
             "SXRlbUlkLnByb3RvIkkKBEl0ZW0SIgoHaXRlbV9pZBgBIAEoDjIRLkludmVu",
-            "dG9yeS5JdGVtSWQSDQoFY291bnQYAiABKAUSDgoGdW5zZWVuGAMgASgIYgZw",
-            "cm90bzM="));
+            "dG9yeS5JdGVtSWQSDQoFY291bnQYAiABKAUSDgoGdW5zZWVuGAMgASgIQh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.Item), global::Inventory.Item.Parser, new[]{ "ItemId", "Count", "Unseen" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.Item), global::PokemonGoDesktop.API.Proto.Item.Parser, new[]{ "ItemId", "Count", "Unseen" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +43,7 @@ namespace Inventory {
     public static pb::MessageParser<Item> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.ItemReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.ItemReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -68,8 +68,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Inventory.ItemId itemId_ = 0;
-    public global::Inventory.ItemId ItemId {
+    private global::PokemonGoDesktop.API.Proto.ItemId itemId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -177,7 +177,7 @@ namespace Inventory {
             input.SkipLastField();
             break;
           case 8: {
-            itemId_ = (global::Inventory.ItemId) input.ReadEnum();
+            itemId_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 16: {

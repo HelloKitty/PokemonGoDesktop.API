@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/SetAvatarResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,11 +29,12 @@ namespace Networking.Responses {
             "d29ya2luZy5SZXNwb25zZXMuU2V0QXZhdGFyUmVzcG9uc2UuU3RhdHVzEiUK",
             "C3BsYXllcl9kYXRhGAIgASgLMhAuRGF0YS5QbGF5ZXJEYXRhIkUKBlN0YXR1",
             "cxIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIWChJBVkFUQVJfQUxSRUFEWV9T",
-            "RVQQAhILCgdGQUlMVVJFEANiBnByb3RvMw=="));
+            "RVQQAhILCgdGQUlMVVJFEANCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlBy",
+            "b3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PlayerDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PlayerDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.SetAvatarResponse), global::Networking.Responses.SetAvatarResponse.Parser, new[]{ "Status", "PlayerData" }, null, new[]{ typeof(global::Networking.Responses.SetAvatarResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.SetAvatarResponse), global::PokemonGoDesktop.API.Proto.SetAvatarResponse.Parser, new[]{ "Status", "PlayerData" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.SetAvatarResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -46,7 +47,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<SetAvatarResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.SetAvatarResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.SetAvatarResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,8 +71,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
-    private global::Networking.Responses.SetAvatarResponse.Types.Status status_ = 0;
-    public global::Networking.Responses.SetAvatarResponse.Types.Status Status {
+    private global::PokemonGoDesktop.API.Proto.SetAvatarResponse.Types.Status status_ = 0;
+    public global::PokemonGoDesktop.API.Proto.SetAvatarResponse.Types.Status Status {
       get { return status_; }
       set {
         status_ = value;
@@ -80,8 +81,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "player_data" field.</summary>
     public const int PlayerDataFieldNumber = 2;
-    private global::Data.PlayerData playerData_;
-    public global::Data.PlayerData PlayerData {
+    private global::PokemonGoDesktop.API.Proto.PlayerData playerData_;
+    public global::PokemonGoDesktop.API.Proto.PlayerData PlayerData {
       get { return playerData_; }
       set {
         playerData_ = value;
@@ -146,7 +147,7 @@ namespace Networking.Responses {
       }
       if (other.playerData_ != null) {
         if (playerData_ == null) {
-          playerData_ = new global::Data.PlayerData();
+          playerData_ = new global::PokemonGoDesktop.API.Proto.PlayerData();
         }
         PlayerData.MergeFrom(other.PlayerData);
       }
@@ -160,12 +161,12 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            status_ = (global::Networking.Responses.SetAvatarResponse.Types.Status) input.ReadEnum();
+            status_ = (global::PokemonGoDesktop.API.Proto.SetAvatarResponse.Types.Status) input.ReadEnum();
             break;
           }
           case 18: {
             if (playerData_ == null) {
-              playerData_ = new global::Data.PlayerData();
+              playerData_ = new global::PokemonGoDesktop.API.Proto.PlayerData();
             }
             input.ReadMessage(playerData_);
             break;

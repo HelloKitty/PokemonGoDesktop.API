@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/FortDetailsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -34,11 +34,12 @@ namespace Networking.Responses {
             "eF9zdGFtaW5hGAggASgFEiAKBHR5cGUYCSABKA4yEi5NYXAuRm9ydC5Gb3J0",
             "VHlwZRIQCghsYXRpdHVkZRgKIAEoARIRCglsb25naXR1ZGUYCyABKAESEwoL",
             "ZGVzY3JpcHRpb24YDCABKAkSKQoJbW9kaWZpZXJzGA0gAygLMhYuTWFwLkZv",
-            "cnQuRm9ydE1vZGlmaWVyYgZwcm90bzM="));
+            "cnQuRm9ydE1vZGlmaWVyQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PokemonDataReflection.Descriptor, global::Enums.TeamColorReflection.Descriptor, global::Map.Fort.FortTypeReflection.Descriptor, global::Map.Fort.FortModifierReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.TeamColorReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortModifierReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.FortDetailsResponse), global::Networking.Responses.FortDetailsResponse.Parser, new[]{ "FortId", "TeamColor", "PokemonData", "Name", "ImageUrls", "Fp", "Stamina", "MaxStamina", "Type", "Latitude", "Longitude", "Description", "Modifiers" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortDetailsResponse), global::PokemonGoDesktop.API.Proto.FortDetailsResponse.Parser, new[]{ "FortId", "TeamColor", "PokemonData", "Name", "ImageUrls", "Fp", "Stamina", "MaxStamina", "Type", "Latitude", "Longitude", "Description", "Modifiers" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +52,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<FortDetailsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.FortDetailsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortDetailsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -96,8 +97,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "team_color" field.</summary>
     public const int TeamColorFieldNumber = 2;
-    private global::Enums.TeamColor teamColor_ = 0;
-    public global::Enums.TeamColor TeamColor {
+    private global::PokemonGoDesktop.API.Proto.TeamColor teamColor_ = 0;
+    public global::PokemonGoDesktop.API.Proto.TeamColor TeamColor {
       get { return teamColor_; }
       set {
         teamColor_ = value;
@@ -106,8 +107,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "pokemon_data" field.</summary>
     public const int PokemonDataFieldNumber = 3;
-    private global::Data.PokemonData pokemonData_;
-    public global::Data.PokemonData PokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData pokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData PokemonData {
       get { return pokemonData_; }
       set {
         pokemonData_ = value;
@@ -165,8 +166,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 9;
-    private global::Map.Fort.FortType type_ = 0;
-    public global::Map.Fort.FortType Type {
+    private global::PokemonGoDesktop.API.Proto.FortType type_ = 0;
+    public global::PokemonGoDesktop.API.Proto.FortType Type {
       get { return type_; }
       set {
         type_ = value;
@@ -205,10 +206,10 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "modifiers" field.</summary>
     public const int ModifiersFieldNumber = 13;
-    private static readonly pb::FieldCodec<global::Map.Fort.FortModifier> _repeated_modifiers_codec
-        = pb::FieldCodec.ForMessage(106, global::Map.Fort.FortModifier.Parser);
-    private readonly pbc::RepeatedField<global::Map.Fort.FortModifier> modifiers_ = new pbc::RepeatedField<global::Map.Fort.FortModifier>();
-    public pbc::RepeatedField<global::Map.Fort.FortModifier> Modifiers {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.FortModifier> _repeated_modifiers_codec
+        = pb::FieldCodec.ForMessage(106, global::PokemonGoDesktop.API.Proto.FortModifier.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortModifier> modifiers_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortModifier>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortModifier> Modifiers {
       get { return modifiers_; }
     }
 
@@ -362,7 +363,7 @@ namespace Networking.Responses {
       }
       if (other.pokemonData_ != null) {
         if (pokemonData_ == null) {
-          pokemonData_ = new global::Data.PokemonData();
+          pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         PokemonData.MergeFrom(other.PokemonData);
       }
@@ -406,12 +407,12 @@ namespace Networking.Responses {
             break;
           }
           case 16: {
-            teamColor_ = (global::Enums.TeamColor) input.ReadEnum();
+            teamColor_ = (global::PokemonGoDesktop.API.Proto.TeamColor) input.ReadEnum();
             break;
           }
           case 26: {
             if (pokemonData_ == null) {
-              pokemonData_ = new global::Data.PokemonData();
+              pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(pokemonData_);
             break;
@@ -437,7 +438,7 @@ namespace Networking.Responses {
             break;
           }
           case 72: {
-            type_ = (global::Map.Fort.FortType) input.ReadEnum();
+            type_ = (global::PokemonGoDesktop.API.Proto.FortType) input.ReadEnum();
             break;
           }
           case 81: {

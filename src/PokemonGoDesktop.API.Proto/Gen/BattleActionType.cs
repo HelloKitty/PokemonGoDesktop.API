@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattleActionType.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,10 +29,11 @@ namespace Data.Battle {
             "X1NQRUNJQUxfQVRUQUNLEAMSFwoTQUNUSU9OX1NXQVBfUE9LRU1PThAEEhAK",
             "DEFDVElPTl9GQUlOVBAFEhYKEkFDVElPTl9QTEFZRVJfSk9JThAGEhYKEkFD",
             "VElPTl9QTEFZRVJfUVVJVBAHEhIKDkFDVElPTl9WSUNUT1JZEAgSEQoNQUNU",
-            "SU9OX0RFRkVBVBAJEhQKEEFDVElPTl9USU1FRF9PVVQQCmIGcHJvdG8z"));
+            "SU9OX0RFRkVBVBAJEhQKEEFDVElPTl9USU1FRF9PVVQQCkIdqgIaUG9rZW1v",
+            "bkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Data.Battle.BattleActionType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.BattleActionType), }, null));
     }
     #endregion
 

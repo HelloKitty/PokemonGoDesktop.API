@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetPlayerProfileResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,11 +29,12 @@ namespace Networking.Responses {
             "dWx0GAEgASgOMjUuTmV0d29ya2luZy5SZXNwb25zZXMuR2V0UGxheWVyUHJv",
             "ZmlsZVJlc3BvbnNlLlJlc3VsdBISCgpzdGFydF90aW1lGAIgASgDEiEKBmJh",
             "ZGdlcxgDIAMoCzIRLkRhdGEuUGxheWVyQmFkZ2UiIAoGUmVzdWx0EgkKBVVO",
-            "U0VUEAASCwoHU1VDQ0VTUxABYgZwcm90bzM="));
+            "U0VUEAASCwoHU1VDQ0VTUxABQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PlayerBadgeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PlayerBadgeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetPlayerProfileResponse), global::Networking.Responses.GetPlayerProfileResponse.Parser, new[]{ "Result", "StartTime", "Badges" }, null, new[]{ typeof(global::Networking.Responses.GetPlayerProfileResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponse), global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponse.Parser, new[]{ "Result", "StartTime", "Badges" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -46,7 +47,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetPlayerProfileResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetPlayerProfileResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +72,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.GetPlayerProfileResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.GetPlayerProfileResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -91,10 +92,10 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "badges" field.</summary>
     public const int BadgesFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Data.PlayerBadge> _repeated_badges_codec
-        = pb::FieldCodec.ForMessage(26, global::Data.PlayerBadge.Parser);
-    private readonly pbc::RepeatedField<global::Data.PlayerBadge> badges_ = new pbc::RepeatedField<global::Data.PlayerBadge>();
-    public pbc::RepeatedField<global::Data.PlayerBadge> Badges {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.PlayerBadge> _repeated_badges_codec
+        = pb::FieldCodec.ForMessage(26, global::PokemonGoDesktop.API.Proto.PlayerBadge.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PlayerBadge> badges_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PlayerBadge>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.PlayerBadge> Badges {
       get { return badges_; }
     }
 
@@ -172,7 +173,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.GetPlayerProfileResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.GetPlayerProfileResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 16: {

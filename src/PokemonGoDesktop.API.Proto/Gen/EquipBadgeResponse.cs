@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/EquipBadgeResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,12 +29,12 @@ namespace Networking.Responses {
             "GAEgASgOMi8uTmV0d29ya2luZy5SZXNwb25zZXMuRXF1aXBCYWRnZVJlc3Bv",
             "bnNlLlJlc3VsdBIsCghlcXVpcHBlZBgCIAEoCzIaLkRhdGEuUGxheWVyLkVx",
             "dWlwcGVkQmFkZ2UiSAoGUmVzdWx0EgkKBVVOU0VUEAASCwoHU1VDQ0VTUxAB",
-            "EhMKD0NPT0xET1dOX0FDVElWRRACEhEKDU5PVF9RVUFMSUZJRUQQA2IGcHJv",
-            "dG8z"));
+            "EhMKD0NPT0xET1dOX0FDVElWRRACEhEKDU5PVF9RVUFMSUZJRUQQA0IdqgIa",
+            "UG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Player.EquippedBadgeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.EquippedBadgeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.EquipBadgeResponse), global::Networking.Responses.EquipBadgeResponse.Parser, new[]{ "Result", "Equipped" }, null, new[]{ typeof(global::Networking.Responses.EquipBadgeResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EquipBadgeResponse), global::PokemonGoDesktop.API.Proto.EquipBadgeResponse.Parser, new[]{ "Result", "Equipped" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.EquipBadgeResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<EquipBadgeResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.EquipBadgeResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EquipBadgeResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,8 +71,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.EquipBadgeResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.EquipBadgeResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.EquipBadgeResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.EquipBadgeResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -81,8 +81,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "equipped" field.</summary>
     public const int EquippedFieldNumber = 2;
-    private global::Data.Player.EquippedBadge equipped_;
-    public global::Data.Player.EquippedBadge Equipped {
+    private global::PokemonGoDesktop.API.Proto.EquippedBadge equipped_;
+    public global::PokemonGoDesktop.API.Proto.EquippedBadge Equipped {
       get { return equipped_; }
       set {
         equipped_ = value;
@@ -147,7 +147,7 @@ namespace Networking.Responses {
       }
       if (other.equipped_ != null) {
         if (equipped_ == null) {
-          equipped_ = new global::Data.Player.EquippedBadge();
+          equipped_ = new global::PokemonGoDesktop.API.Proto.EquippedBadge();
         }
         Equipped.MergeFrom(other.Equipped);
       }
@@ -161,12 +161,12 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.EquipBadgeResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.EquipBadgeResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
             if (equipped_ == null) {
-              equipped_ = new global::Data.Player.EquippedBadge();
+              equipped_ = new global::PokemonGoDesktop.API.Proto.EquippedBadge();
             }
             input.ReadMessage(equipped_);
             break;

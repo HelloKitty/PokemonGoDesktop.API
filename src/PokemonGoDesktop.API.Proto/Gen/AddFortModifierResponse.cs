@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/AddFortModifierResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Networking.Responses {
           string.Concat(
             "CjJOZXR3b3JraW5nL1Jlc3BvbnNlcy9BZGRGb3J0TW9kaWZpZXJSZXNwb25z",
             "ZS5wcm90bxIUTmV0d29ya2luZy5SZXNwb25zZXMiGQoXQWRkRm9ydE1vZGlm",
-            "aWVyUmVzcG9uc2ViBnByb3RvMw=="));
+            "aWVyUmVzcG9uc2VCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.AddFortModifierResponse), global::Networking.Responses.AddFortModifierResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AddFortModifierResponse), global::PokemonGoDesktop.API.Proto.AddFortModifierResponse.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<AddFortModifierResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.AddFortModifierResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AddFortModifierResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

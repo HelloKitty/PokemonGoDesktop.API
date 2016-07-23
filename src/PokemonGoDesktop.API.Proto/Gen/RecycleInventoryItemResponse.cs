@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/RecycleInventoryItemResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,11 +29,12 @@ namespace Networking.Responses {
             "b3JraW5nLlJlc3BvbnNlcy5SZWN5Y2xlSW52ZW50b3J5SXRlbVJlc3BvbnNl",
             "LlJlc3VsdBIRCgluZXdfY291bnQYAiABKAUiYgoGUmVzdWx0EgkKBVVOU0VU",
             "EAASCwoHU1VDQ0VTUxABEhsKF0VSUk9SX05PVF9FTk9VR0hfQ09QSUVTEAIS",
-            "IwofRVJST1JfQ0FOTk9UX1JFQ1lDTEVfSU5DVUJBVE9SUxADYgZwcm90bzM="));
+            "IwofRVJST1JfQ0FOTk9UX1JFQ1lDTEVfSU5DVUJBVE9SUxADQh2qAhpQb2tl",
+            "bW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.RecycleInventoryItemResponse), global::Networking.Responses.RecycleInventoryItemResponse.Parser, new[]{ "Result", "NewCount" }, null, new[]{ typeof(global::Networking.Responses.RecycleInventoryItemResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponse), global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponse.Parser, new[]{ "Result", "NewCount" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -46,7 +47,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<RecycleInventoryItemResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.RecycleInventoryItemResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,8 +71,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.RecycleInventoryItemResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.RecycleInventoryItemResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -157,7 +158,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.RecycleInventoryItemResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.RecycleInventoryItemResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 16: {

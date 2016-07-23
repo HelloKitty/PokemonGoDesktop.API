@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/CatchPokemonMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29,11 +29,12 @@ namespace Networking.Requests.Messages {
             "CHBva2ViYWxsGAIgASgFEh8KF25vcm1hbGl6ZWRfcmV0aWNsZV9zaXplGAMg",
             "ASgBEhgKEHNwYXduX3BvaW50X2d1aWQYBCABKAkSEwoLaGl0X3Bva2Vtb24Y",
             "BSABKAgSFQoNc3Bpbl9tb2RpZmllchgGIAEoARIfChdub3JtYWxpemVkX2hp",
-            "dF9wb3NpdGlvbhgHIAEoAWIGcHJvdG8z"));
+            "dF9wb3NpdGlvbhgHIAEoAUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.CatchPokemonMessage), global::Networking.Requests.Messages.CatchPokemonMessage.Parser, new[]{ "EncounterId", "Pokeball", "NormalizedReticleSize", "SpawnPointGuid", "HitPokemon", "SpinModifier", "NormalizedHitPosition" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CatchPokemonMessage), global::PokemonGoDesktop.API.Proto.CatchPokemonMessage.Parser, new[]{ "EncounterId", "Pokeball", "NormalizedReticleSize", "SpawnPointGuid", "HitPokemon", "SpinModifier", "NormalizedHitPosition" }, null, null, null)
           }));
     }
     #endregion
@@ -46,7 +47,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<CatchPokemonMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.CatchPokemonMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CatchPokemonMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

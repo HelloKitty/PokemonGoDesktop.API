@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/LevelSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Settings {
           string.Concat(
             "ChxTZXR0aW5ncy9MZXZlbFNldHRpbmdzLnByb3RvEghTZXR0aW5ncyJRCg1M",
             "ZXZlbFNldHRpbmdzEhsKE3RyYWluZXJfY3BfbW9kaWZpZXIYAiABKAESIwob",
-            "dHJhaW5lcl9kaWZmaWN1bHR5X21vZGlmaWVyGAMgASgBYgZwcm90bzM="));
+            "dHJhaW5lcl9kaWZmaWN1bHR5X21vZGlmaWVyGAMgASgBQh2qAhpQb2tlbW9u",
+            "R29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.LevelSettings), global::Settings.LevelSettings.Parser, new[]{ "TrainerCpModifier", "TrainerDifficultyModifier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.LevelSettings), global::PokemonGoDesktop.API.Proto.LevelSettings.Parser, new[]{ "TrainerCpModifier", "TrainerDifficultyModifier" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +43,7 @@ namespace Settings {
     public static pb::MessageParser<LevelSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.LevelSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.LevelSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

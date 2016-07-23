@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/MarkTutorialCompleteResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Responses {
             "c3BvbnNlLnByb3RvEhROZXR3b3JraW5nLlJlc3BvbnNlcxoVRGF0YS9QbGF5",
             "ZXJEYXRhLnByb3RvIlYKHE1hcmtUdXRvcmlhbENvbXBsZXRlUmVzcG9uc2US",
             "DwoHc3VjY2VzcxgBIAEoCBIlCgtwbGF5ZXJfZGF0YRgCIAEoCzIQLkRhdGEu",
-            "UGxheWVyRGF0YWIGcHJvdG8z"));
+            "UGxheWVyRGF0YUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PlayerDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PlayerDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.MarkTutorialCompleteResponse), global::Networking.Responses.MarkTutorialCompleteResponse.Parser, new[]{ "Success", "PlayerData" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.MarkTutorialCompleteResponse), global::PokemonGoDesktop.API.Proto.MarkTutorialCompleteResponse.Parser, new[]{ "Success", "PlayerData" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<MarkTutorialCompleteResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.MarkTutorialCompleteResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.MarkTutorialCompleteResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -78,8 +79,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "player_data" field.</summary>
     public const int PlayerDataFieldNumber = 2;
-    private global::Data.PlayerData playerData_;
-    public global::Data.PlayerData PlayerData {
+    private global::PokemonGoDesktop.API.Proto.PlayerData playerData_;
+    public global::PokemonGoDesktop.API.Proto.PlayerData PlayerData {
       get { return playerData_; }
       set {
         playerData_ = value;
@@ -144,7 +145,7 @@ namespace Networking.Responses {
       }
       if (other.playerData_ != null) {
         if (playerData_ == null) {
-          playerData_ = new global::Data.PlayerData();
+          playerData_ = new global::PokemonGoDesktop.API.Proto.PlayerData();
         }
         PlayerData.MergeFrom(other.PlayerData);
       }
@@ -163,7 +164,7 @@ namespace Networking.Responses {
           }
           case 18: {
             if (playerData_ == null) {
-              playerData_ = new global::Data.PlayerData();
+              playerData_ = new global::PokemonGoDesktop.API.Proto.PlayerData();
             }
             input.ReadMessage(playerData_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/EncounterSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Settings.Master {
             "b251c190aHJlc2hvbGQYASABKAISIQoZZXhjZWxsZW50X3Rocm93X3RocmVz",
             "aG9sZBgCIAEoAhIdChVncmVhdF90aHJvd190aHJlc2hvbGQYAyABKAISHAoU",
             "bmljZV90aHJvd190aHJlc2hvbGQYBCABKAISGwoTbWlsZXN0b25lX3RocmVz",
-            "aG9sZBgFIAEoBWIGcHJvdG8z"));
+            "aG9sZBgFIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.EncounterSettings), global::Settings.Master.EncounterSettings.Parser, new[]{ "SpinBonusThreshold", "ExcellentThrowThreshold", "GreatThrowThreshold", "NiceThrowThreshold", "MilestoneThreshold" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EncounterSettings), global::PokemonGoDesktop.API.Proto.EncounterSettings.Parser, new[]{ "SpinBonusThreshold", "ExcellentThrowThreshold", "GreatThrowThreshold", "NiceThrowThreshold", "MilestoneThreshold" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Settings.Master {
     public static pb::MessageParser<EncounterSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.EncounterSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EncounterSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

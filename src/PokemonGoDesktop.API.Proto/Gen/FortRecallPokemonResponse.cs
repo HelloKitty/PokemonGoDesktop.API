@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/FortRecallPokemonResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,11 +32,11 @@ namespace Networking.Responses {
             "cy5Gb3J0RGV0YWlsc1Jlc3BvbnNlInQKBlJlc3VsdBIRCg1OT19SRVNVTFRf",
             "U0VUEAASCwoHU1VDQ0VTUxABEhYKEkVSUk9SX05PVF9JTl9SQU5HRRACEh0K",
             "GUVSUk9SX1BPS0VNT05fTk9UX09OX0ZPUlQQAxITCg9FUlJPUl9OT19QTEFZ",
-            "RVIQBGIGcHJvdG8z"));
+            "RVIQBEIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Networking.Responses.FortDetailsResponseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.FortDetailsResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.FortRecallPokemonResponse), global::Networking.Responses.FortRecallPokemonResponse.Parser, new[]{ "Result", "FortDetails" }, null, new[]{ typeof(global::Networking.Responses.FortRecallPokemonResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponse), global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponse.Parser, new[]{ "Result", "FortDetails" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<FortRecallPokemonResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.FortRecallPokemonResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -73,8 +73,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.FortRecallPokemonResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.FortRecallPokemonResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -83,8 +83,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "fort_details" field.</summary>
     public const int FortDetailsFieldNumber = 2;
-    private global::Networking.Responses.FortDetailsResponse fortDetails_;
-    public global::Networking.Responses.FortDetailsResponse FortDetails {
+    private global::PokemonGoDesktop.API.Proto.FortDetailsResponse fortDetails_;
+    public global::PokemonGoDesktop.API.Proto.FortDetailsResponse FortDetails {
       get { return fortDetails_; }
       set {
         fortDetails_ = value;
@@ -149,7 +149,7 @@ namespace Networking.Responses {
       }
       if (other.fortDetails_ != null) {
         if (fortDetails_ == null) {
-          fortDetails_ = new global::Networking.Responses.FortDetailsResponse();
+          fortDetails_ = new global::PokemonGoDesktop.API.Proto.FortDetailsResponse();
         }
         FortDetails.MergeFrom(other.FortDetails);
       }
@@ -163,12 +163,12 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.FortRecallPokemonResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.FortRecallPokemonResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 18: {
             if (fortDetails_ == null) {
-              fortDetails_ = new global::Networking.Responses.FortDetailsResponse();
+              fortDetails_ = new global::PokemonGoDesktop.API.Proto.FortDetailsResponse();
             }
             input.ReadMessage(fortDetails_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetInventoryResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Responses {
             "cm90bxIUTmV0d29ya2luZy5SZXNwb25zZXMaHkludmVudG9yeS9JbnZlbnRv",
             "cnlEZWx0YS5wcm90byJbChRHZXRJbnZlbnRvcnlSZXNwb25zZRIPCgdzdWNj",
             "ZXNzGAEgASgIEjIKD2ludmVudG9yeV9kZWx0YRgCIAEoCzIZLkludmVudG9y",
-            "eS5JbnZlbnRvcnlEZWx0YWIGcHJvdG8z"));
+            "eS5JbnZlbnRvcnlEZWx0YUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.InventoryDeltaReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.InventoryDeltaReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetInventoryResponse), global::Networking.Responses.GetInventoryResponse.Parser, new[]{ "Success", "InventoryDelta" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetInventoryResponse), global::PokemonGoDesktop.API.Proto.GetInventoryResponse.Parser, new[]{ "Success", "InventoryDelta" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetInventoryResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetInventoryResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetInventoryResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -78,8 +79,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "inventory_delta" field.</summary>
     public const int InventoryDeltaFieldNumber = 2;
-    private global::Inventory.InventoryDelta inventoryDelta_;
-    public global::Inventory.InventoryDelta InventoryDelta {
+    private global::PokemonGoDesktop.API.Proto.InventoryDelta inventoryDelta_;
+    public global::PokemonGoDesktop.API.Proto.InventoryDelta InventoryDelta {
       get { return inventoryDelta_; }
       set {
         inventoryDelta_ = value;
@@ -144,7 +145,7 @@ namespace Networking.Responses {
       }
       if (other.inventoryDelta_ != null) {
         if (inventoryDelta_ == null) {
-          inventoryDelta_ = new global::Inventory.InventoryDelta();
+          inventoryDelta_ = new global::PokemonGoDesktop.API.Proto.InventoryDelta();
         }
         InventoryDelta.MergeFrom(other.InventoryDelta);
       }
@@ -163,7 +164,7 @@ namespace Networking.Responses {
           }
           case 18: {
             if (inventoryDelta_ == null) {
-              inventoryDelta_ = new global::Inventory.InventoryDelta();
+              inventoryDelta_ = new global::PokemonGoDesktop.API.Proto.InventoryDelta();
             }
             input.ReadMessage(inventoryDelta_);
             break;

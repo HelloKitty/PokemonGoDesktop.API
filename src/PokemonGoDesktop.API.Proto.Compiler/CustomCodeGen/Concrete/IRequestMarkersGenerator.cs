@@ -27,40 +27,5 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 		}
 
 		protected override string markerInterfaceName { get { return "IRequestMessage"; } }
-
-		protected override QualifiedNameSyntax networkMessageNamespace
-		{
-			get
-			{
-				return QualifiedName
-					(
-						QualifiedName
-						(
-							IdentifierName("Networking"),
-							IdentifierName("Requests")
-						)
-						.WithDotToken
-						(
-							Token(SyntaxKind.DotToken)
-						),
-						IdentifierName
-						(
-							Identifier
-							(
-								TriviaList(),
-								"Messages",
-								TriviaList
-								(
-									LineFeed
-								)
-							)
-						)
-					)
-					.WithDotToken
-					(
-						Token(SyntaxKind.DotToken)
-					);
-			}
-		}
 	}
 }

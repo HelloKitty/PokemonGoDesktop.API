@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Inventory {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Inventory/InventoryItem.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Inventory {
             "bnZlbnRvcnkvSW52ZW50b3J5SXRlbURhdGEucHJvdG8igwEKDUludmVudG9y",
             "eUl0ZW0SHQoVbW9kaWZpZWRfdGltZXN0YW1wX21zGAEgASgDEhgKEGRlbGV0",
             "ZWRfaXRlbV9rZXkYAiABKAMSOQoTaW52ZW50b3J5X2l0ZW1fZGF0YRgDIAEo",
-            "CzIcLkludmVudG9yeS5JbnZlbnRvcnlJdGVtRGF0YWIGcHJvdG8z"));
+            "CzIcLkludmVudG9yeS5JbnZlbnRvcnlJdGVtRGF0YUIdqgIaUG9rZW1vbkdv",
+            "RGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.InventoryItemDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.InventoryItemDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Inventory.InventoryItem), global::Inventory.InventoryItem.Parser, new[]{ "ModifiedTimestampMs", "DeletedItemKey", "InventoryItemData" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.InventoryItem), global::PokemonGoDesktop.API.Proto.InventoryItem.Parser, new[]{ "ModifiedTimestampMs", "DeletedItemKey", "InventoryItemData" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Inventory {
     public static pb::MessageParser<InventoryItem> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Inventory.InventoryItemReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.InventoryItemReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -89,8 +90,8 @@ namespace Inventory {
 
     /// <summary>Field number for the "inventory_item_data" field.</summary>
     public const int InventoryItemDataFieldNumber = 3;
-    private global::Inventory.InventoryItemData inventoryItemData_;
-    public global::Inventory.InventoryItemData InventoryItemData {
+    private global::PokemonGoDesktop.API.Proto.InventoryItemData inventoryItemData_;
+    public global::PokemonGoDesktop.API.Proto.InventoryItemData InventoryItemData {
       get { return inventoryItemData_; }
       set {
         inventoryItemData_ = value;
@@ -167,7 +168,7 @@ namespace Inventory {
       }
       if (other.inventoryItemData_ != null) {
         if (inventoryItemData_ == null) {
-          inventoryItemData_ = new global::Inventory.InventoryItemData();
+          inventoryItemData_ = new global::PokemonGoDesktop.API.Proto.InventoryItemData();
         }
         InventoryItemData.MergeFrom(other.InventoryItemData);
       }
@@ -190,7 +191,7 @@ namespace Inventory {
           }
           case 26: {
             if (inventoryItemData_ == null) {
-              inventoryItemData_ = new global::Inventory.InventoryItemData();
+              inventoryItemData_ = new global::PokemonGoDesktop.API.Proto.InventoryItemData();
             }
             input.ReadMessage(inventoryItemData_);
             break;

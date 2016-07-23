@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/DownloadUrlEntry.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Data {
           string.Concat(
             "ChtEYXRhL0Rvd25sb2FkVXJsRW50cnkucHJvdG8SBERhdGEiUQoQRG93bmxv",
             "YWRVcmxFbnRyeRIQCghhc3NldF9pZBgBIAEoCRILCgN1cmwYAiABKAkSDAoE",
-            "c2l6ZRgDIAEoBRIQCghjaGVja3N1bRgEIAEoDWIGcHJvdG8z"));
+            "c2l6ZRgDIAEoBRIQCghjaGVja3N1bRgEIAEoDUIdqgIaUG9rZW1vbkdvRGVz",
+            "a3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.DownloadUrlEntry), global::Data.DownloadUrlEntry.Parser, new[]{ "AssetId", "Url", "Size", "Checksum" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.DownloadUrlEntry), global::PokemonGoDesktop.API.Proto.DownloadUrlEntry.Parser, new[]{ "AssetId", "Url", "Size", "Checksum" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +43,7 @@ namespace Data {
     public static pb::MessageParser<DownloadUrlEntry> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.DownloadUrlEntryReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.DownloadUrlEntryReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

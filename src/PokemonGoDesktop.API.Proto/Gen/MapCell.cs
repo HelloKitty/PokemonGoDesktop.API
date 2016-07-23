@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/MapCell.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -37,11 +37,11 @@ namespace Map {
             "BSADKAsyGC5NYXAuUG9rZW1vbi5XaWxkUG9rZW1vbhIzChJjYXRjaGFibGVf",
             "cG9rZW1vbnMYCiADKAsyFy5NYXAuUG9rZW1vbi5NYXBQb2tlbW9uEjMKD25l",
             "YXJieV9wb2tlbW9ucxgLIAMoCzIaLk1hcC5Qb2tlbW9uLk5lYXJieVBva2Vt",
-            "b25iBnByb3RvMw=="));
+            "b25CHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Map.SpawnPointReflection.Descriptor, global::Map.Fort.FortDataReflection.Descriptor, global::Map.Fort.FortSummaryReflection.Descriptor, global::Map.Pokemon.NearbyPokemonReflection.Descriptor, global::Map.Pokemon.WildPokemonReflection.Descriptor, global::Map.Pokemon.MapPokemonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.SpawnPointReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.FortSummaryReflection.Descriptor, global::PokemonGoDesktop.API.Proto.NearbyPokemonReflection.Descriptor, global::PokemonGoDesktop.API.Proto.WildPokemonReflection.Descriptor, global::PokemonGoDesktop.API.Proto.MapPokemonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.MapCell), global::Map.MapCell.Parser, new[]{ "S2CellId", "CurrentTimestampMs", "Forts", "SpawnPoints", "DeletedObjects", "IsTruncatedList", "FortSummaries", "DecimatedSpawnPoints", "WildPokemons", "CatchablePokemons", "NearbyPokemons" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.MapCell), global::PokemonGoDesktop.API.Proto.MapCell.Parser, new[]{ "S2CellId", "CurrentTimestampMs", "Forts", "SpawnPoints", "DeletedObjects", "IsTruncatedList", "FortSummaries", "DecimatedSpawnPoints", "WildPokemons", "CatchablePokemons", "NearbyPokemons" }, null, null, null)
           }));
     }
     #endregion
@@ -57,7 +57,7 @@ namespace Map {
     public static pb::MessageParser<MapCell> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.MapCellReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.MapCellReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -113,19 +113,19 @@ namespace Map {
 
     /// <summary>Field number for the "forts" field.</summary>
     public const int FortsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Map.Fort.FortData> _repeated_forts_codec
-        = pb::FieldCodec.ForMessage(26, global::Map.Fort.FortData.Parser);
-    private readonly pbc::RepeatedField<global::Map.Fort.FortData> forts_ = new pbc::RepeatedField<global::Map.Fort.FortData>();
-    public pbc::RepeatedField<global::Map.Fort.FortData> Forts {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.FortData> _repeated_forts_codec
+        = pb::FieldCodec.ForMessage(26, global::PokemonGoDesktop.API.Proto.FortData.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortData> forts_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortData>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortData> Forts {
       get { return forts_; }
     }
 
     /// <summary>Field number for the "spawn_points" field.</summary>
     public const int SpawnPointsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Map.SpawnPoint> _repeated_spawnPoints_codec
-        = pb::FieldCodec.ForMessage(34, global::Map.SpawnPoint.Parser);
-    private readonly pbc::RepeatedField<global::Map.SpawnPoint> spawnPoints_ = new pbc::RepeatedField<global::Map.SpawnPoint>();
-    public pbc::RepeatedField<global::Map.SpawnPoint> SpawnPoints {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.SpawnPoint> _repeated_spawnPoints_codec
+        = pb::FieldCodec.ForMessage(34, global::PokemonGoDesktop.API.Proto.SpawnPoint.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.SpawnPoint> spawnPoints_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.SpawnPoint>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.SpawnPoint> SpawnPoints {
       get { return spawnPoints_; }
     }
 
@@ -150,55 +150,55 @@ namespace Map {
 
     /// <summary>Field number for the "fort_summaries" field.</summary>
     public const int FortSummariesFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Map.Fort.FortSummary> _repeated_fortSummaries_codec
-        = pb::FieldCodec.ForMessage(66, global::Map.Fort.FortSummary.Parser);
-    private readonly pbc::RepeatedField<global::Map.Fort.FortSummary> fortSummaries_ = new pbc::RepeatedField<global::Map.Fort.FortSummary>();
-    public pbc::RepeatedField<global::Map.Fort.FortSummary> FortSummaries {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.FortSummary> _repeated_fortSummaries_codec
+        = pb::FieldCodec.ForMessage(66, global::PokemonGoDesktop.API.Proto.FortSummary.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortSummary> fortSummaries_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortSummary>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortSummary> FortSummaries {
       get { return fortSummaries_; }
     }
 
     /// <summary>Field number for the "decimated_spawn_points" field.</summary>
     public const int DecimatedSpawnPointsFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Map.SpawnPoint> _repeated_decimatedSpawnPoints_codec
-        = pb::FieldCodec.ForMessage(74, global::Map.SpawnPoint.Parser);
-    private readonly pbc::RepeatedField<global::Map.SpawnPoint> decimatedSpawnPoints_ = new pbc::RepeatedField<global::Map.SpawnPoint>();
-    public pbc::RepeatedField<global::Map.SpawnPoint> DecimatedSpawnPoints {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.SpawnPoint> _repeated_decimatedSpawnPoints_codec
+        = pb::FieldCodec.ForMessage(74, global::PokemonGoDesktop.API.Proto.SpawnPoint.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.SpawnPoint> decimatedSpawnPoints_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.SpawnPoint>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.SpawnPoint> DecimatedSpawnPoints {
       get { return decimatedSpawnPoints_; }
     }
 
     /// <summary>Field number for the "wild_pokemons" field.</summary>
     public const int WildPokemonsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Map.Pokemon.WildPokemon> _repeated_wildPokemons_codec
-        = pb::FieldCodec.ForMessage(42, global::Map.Pokemon.WildPokemon.Parser);
-    private readonly pbc::RepeatedField<global::Map.Pokemon.WildPokemon> wildPokemons_ = new pbc::RepeatedField<global::Map.Pokemon.WildPokemon>();
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.WildPokemon> _repeated_wildPokemons_codec
+        = pb::FieldCodec.ForMessage(42, global::PokemonGoDesktop.API.Proto.WildPokemon.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.WildPokemon> wildPokemons_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.WildPokemon>();
     /// <summary>
     ///  Pokemon within 2 steps or less.
     /// </summary>
-    public pbc::RepeatedField<global::Map.Pokemon.WildPokemon> WildPokemons {
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.WildPokemon> WildPokemons {
       get { return wildPokemons_; }
     }
 
     /// <summary>Field number for the "catchable_pokemons" field.</summary>
     public const int CatchablePokemonsFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Map.Pokemon.MapPokemon> _repeated_catchablePokemons_codec
-        = pb::FieldCodec.ForMessage(82, global::Map.Pokemon.MapPokemon.Parser);
-    private readonly pbc::RepeatedField<global::Map.Pokemon.MapPokemon> catchablePokemons_ = new pbc::RepeatedField<global::Map.Pokemon.MapPokemon>();
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.MapPokemon> _repeated_catchablePokemons_codec
+        = pb::FieldCodec.ForMessage(82, global::PokemonGoDesktop.API.Proto.MapPokemon.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.MapPokemon> catchablePokemons_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.MapPokemon>();
     /// <summary>
     ///  Pokemon within 1 step or none.
     /// </summary>
-    public pbc::RepeatedField<global::Map.Pokemon.MapPokemon> CatchablePokemons {
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.MapPokemon> CatchablePokemons {
       get { return catchablePokemons_; }
     }
 
     /// <summary>Field number for the "nearby_pokemons" field.</summary>
     public const int NearbyPokemonsFieldNumber = 11;
-    private static readonly pb::FieldCodec<global::Map.Pokemon.NearbyPokemon> _repeated_nearbyPokemons_codec
-        = pb::FieldCodec.ForMessage(90, global::Map.Pokemon.NearbyPokemon.Parser);
-    private readonly pbc::RepeatedField<global::Map.Pokemon.NearbyPokemon> nearbyPokemons_ = new pbc::RepeatedField<global::Map.Pokemon.NearbyPokemon>();
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.NearbyPokemon> _repeated_nearbyPokemons_codec
+        = pb::FieldCodec.ForMessage(90, global::PokemonGoDesktop.API.Proto.NearbyPokemon.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.NearbyPokemon> nearbyPokemons_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.NearbyPokemon>();
     /// <summary>
     ///  Pokemon farther away than 2 steps, but still in the area.
     /// </summary>
-    public pbc::RepeatedField<global::Map.Pokemon.NearbyPokemon> NearbyPokemons {
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.NearbyPokemon> NearbyPokemons {
       get { return nearbyPokemons_; }
     }
 

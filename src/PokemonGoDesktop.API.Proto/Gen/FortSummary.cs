@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map.Fort {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/Fort/FortSummary.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Map.Fort {
             "ChpNYXAvRm9ydC9Gb3J0U3VtbWFyeS5wcm90bxIITWFwLkZvcnQibwoLRm9y",
             "dFN1bW1hcnkSFwoPZm9ydF9zdW1tYXJ5X2lkGAEgASgFEiIKGmxhc3RfbW9k",
             "aWZpZWRfdGltZXN0YW1wX21zGAIgASgFEhAKCGxhdGl0dWRlGAMgASgFEhEK",
-            "CWxvbmdpdHVkZRgEIAEoBWIGcHJvdG8z"));
+            "CWxvbmdpdHVkZRgEIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Map.Fort.FortSummary), global::Map.Fort.FortSummary.Parser, new[]{ "FortSummaryId", "LastModifiedTimestampMs", "Latitude", "Longitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortSummary), global::PokemonGoDesktop.API.Proto.FortSummary.Parser, new[]{ "FortSummaryId", "LastModifiedTimestampMs", "Latitude", "Longitude" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Map.Fort {
     public static pb::MessageParser<FortSummary> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Map.Fort.FortSummaryReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortSummaryReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

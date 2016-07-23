@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattleParticipant.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,11 +31,12 @@ namespace Data.Battle {
             "b2ZpbGUYAiABKAsyIC5EYXRhLlBsYXllci5QbGF5ZXJQdWJsaWNQcm9maWxl",
             "EjcKD3JldmVyc2VfcG9rZW1vbhgDIAMoCzIeLkRhdGEuQmF0dGxlLkJhdHRs",
             "ZVBva2Vtb25JbmZvEjgKEGRlZmVhdGVkX3Bva2Vtb24YBCADKAsyHi5EYXRh",
-            "LkJhdHRsZS5CYXR0bGVQb2tlbW9uSW5mb2IGcHJvdG8z"));
+            "LkJhdHRsZS5CYXR0bGVQb2tlbW9uSW5mb0IdqgIaUG9rZW1vbkdvRGVza3Rv",
+            "cC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Battle.BattlePokemonInfoReflection.Descriptor, global::Data.Player.PlayerPublicProfileReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BattlePokemonInfoReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerPublicProfileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Battle.BattleParticipant), global::Data.Battle.BattleParticipant.Parser, new[]{ "ActivePokemon", "TrainerPublicProfile", "ReversePokemon", "DefeatedPokemon" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.BattleParticipant), global::PokemonGoDesktop.API.Proto.BattleParticipant.Parser, new[]{ "ActivePokemon", "TrainerPublicProfile", "ReversePokemon", "DefeatedPokemon" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +49,7 @@ namespace Data.Battle {
     public static pb::MessageParser<BattleParticipant> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Battle.BattleParticipantReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.BattleParticipantReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -74,8 +75,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "active_pokemon" field.</summary>
     public const int ActivePokemonFieldNumber = 1;
-    private global::Data.Battle.BattlePokemonInfo activePokemon_;
-    public global::Data.Battle.BattlePokemonInfo ActivePokemon {
+    private global::PokemonGoDesktop.API.Proto.BattlePokemonInfo activePokemon_;
+    public global::PokemonGoDesktop.API.Proto.BattlePokemonInfo ActivePokemon {
       get { return activePokemon_; }
       set {
         activePokemon_ = value;
@@ -84,8 +85,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "trainer_public_profile" field.</summary>
     public const int TrainerPublicProfileFieldNumber = 2;
-    private global::Data.Player.PlayerPublicProfile trainerPublicProfile_;
-    public global::Data.Player.PlayerPublicProfile TrainerPublicProfile {
+    private global::PokemonGoDesktop.API.Proto.PlayerPublicProfile trainerPublicProfile_;
+    public global::PokemonGoDesktop.API.Proto.PlayerPublicProfile TrainerPublicProfile {
       get { return trainerPublicProfile_; }
       set {
         trainerPublicProfile_ = value;
@@ -94,19 +95,19 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "reverse_pokemon" field.</summary>
     public const int ReversePokemonFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Data.Battle.BattlePokemonInfo> _repeated_reversePokemon_codec
-        = pb::FieldCodec.ForMessage(26, global::Data.Battle.BattlePokemonInfo.Parser);
-    private readonly pbc::RepeatedField<global::Data.Battle.BattlePokemonInfo> reversePokemon_ = new pbc::RepeatedField<global::Data.Battle.BattlePokemonInfo>();
-    public pbc::RepeatedField<global::Data.Battle.BattlePokemonInfo> ReversePokemon {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo> _repeated_reversePokemon_codec
+        = pb::FieldCodec.ForMessage(26, global::PokemonGoDesktop.API.Proto.BattlePokemonInfo.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo> reversePokemon_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo> ReversePokemon {
       get { return reversePokemon_; }
     }
 
     /// <summary>Field number for the "defeated_pokemon" field.</summary>
     public const int DefeatedPokemonFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Data.Battle.BattlePokemonInfo> _repeated_defeatedPokemon_codec
-        = pb::FieldCodec.ForMessage(34, global::Data.Battle.BattlePokemonInfo.Parser);
-    private readonly pbc::RepeatedField<global::Data.Battle.BattlePokemonInfo> defeatedPokemon_ = new pbc::RepeatedField<global::Data.Battle.BattlePokemonInfo>();
-    public pbc::RepeatedField<global::Data.Battle.BattlePokemonInfo> DefeatedPokemon {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo> _repeated_defeatedPokemon_codec
+        = pb::FieldCodec.ForMessage(34, global::PokemonGoDesktop.API.Proto.BattlePokemonInfo.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo> defeatedPokemon_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattlePokemonInfo> DefeatedPokemon {
       get { return defeatedPokemon_; }
     }
 
@@ -173,13 +174,13 @@ namespace Data.Battle {
       }
       if (other.activePokemon_ != null) {
         if (activePokemon_ == null) {
-          activePokemon_ = new global::Data.Battle.BattlePokemonInfo();
+          activePokemon_ = new global::PokemonGoDesktop.API.Proto.BattlePokemonInfo();
         }
         ActivePokemon.MergeFrom(other.ActivePokemon);
       }
       if (other.trainerPublicProfile_ != null) {
         if (trainerPublicProfile_ == null) {
-          trainerPublicProfile_ = new global::Data.Player.PlayerPublicProfile();
+          trainerPublicProfile_ = new global::PokemonGoDesktop.API.Proto.PlayerPublicProfile();
         }
         TrainerPublicProfile.MergeFrom(other.TrainerPublicProfile);
       }
@@ -196,14 +197,14 @@ namespace Data.Battle {
             break;
           case 10: {
             if (activePokemon_ == null) {
-              activePokemon_ = new global::Data.Battle.BattlePokemonInfo();
+              activePokemon_ = new global::PokemonGoDesktop.API.Proto.BattlePokemonInfo();
             }
             input.ReadMessage(activePokemon_);
             break;
           }
           case 18: {
             if (trainerPublicProfile_ == null) {
-              trainerPublicProfile_ = new global::Data.Player.PlayerPublicProfile();
+              trainerPublicProfile_ = new global::PokemonGoDesktop.API.Proto.PlayerPublicProfile();
             }
             input.ReadMessage(trainerPublicProfile_);
             break;

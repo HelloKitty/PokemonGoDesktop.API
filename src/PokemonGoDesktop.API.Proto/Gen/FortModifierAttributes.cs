@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/FortModifierAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,12 +26,12 @@ namespace Settings.Master.Item {
             "CjFTZXR0aW5ncy9NYXN0ZXIvSXRlbS9Gb3J0TW9kaWZpZXJBdHRyaWJ1dGVz",
             "LnByb3RvEhRTZXR0aW5ncy5NYXN0ZXIuSXRlbSJiChZGb3J0TW9kaWZpZXJB",
             "dHRyaWJ1dGVzEiEKGW1vZGlmaWVyX2xpZmV0aW1lX3NlY29uZHMYASABKAUS",
-            "JQoddHJveV9kaXNrX251bV9wb2tlbW9uX3NwYXduZWQYAiABKAViBnByb3Rv",
-            "Mw=="));
+            "JQoddHJveV9kaXNrX251bV9wb2tlbW9uX3NwYXduZWQYAiABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.FortModifierAttributes), global::Settings.Master.Item.FortModifierAttributes.Parser, new[]{ "ModifierLifetimeSeconds", "TroyDiskNumPokemonSpawned" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortModifierAttributes), global::PokemonGoDesktop.API.Proto.FortModifierAttributes.Parser, new[]{ "ModifierLifetimeSeconds", "TroyDiskNumPokemonSpawned" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<FortModifierAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.FortModifierAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortModifierAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

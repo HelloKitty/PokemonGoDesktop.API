@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/SetAvatarMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,11 @@ namespace Networking.Requests.Messages {
             "Z2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2FnZXMaHkRhdGEv",
             "UGxheWVyL1BsYXllckF2YXRhci5wcm90byJEChBTZXRBdmF0YXJNZXNzYWdl",
             "EjAKDXBsYXllcl9hdmF0YXIYAiABKAsyGS5EYXRhLlBsYXllci5QbGF5ZXJB",
-            "dmF0YXJiBnByb3RvMw=="));
+            "dmF0YXJCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Player.PlayerAvatarReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PlayerAvatarReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.SetAvatarMessage), global::Networking.Requests.Messages.SetAvatarMessage.Parser, new[]{ "PlayerAvatar" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.SetAvatarMessage), global::PokemonGoDesktop.API.Proto.SetAvatarMessage.Parser, new[]{ "PlayerAvatar" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<SetAvatarMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.SetAvatarMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.SetAvatarMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -67,8 +67,8 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "player_avatar" field.</summary>
     public const int PlayerAvatarFieldNumber = 2;
-    private global::Data.Player.PlayerAvatar playerAvatar_;
-    public global::Data.Player.PlayerAvatar PlayerAvatar {
+    private global::PokemonGoDesktop.API.Proto.PlayerAvatar playerAvatar_;
+    public global::PokemonGoDesktop.API.Proto.PlayerAvatar PlayerAvatar {
       get { return playerAvatar_; }
       set {
         playerAvatar_ = value;
@@ -121,7 +121,7 @@ namespace Networking.Requests.Messages {
       }
       if (other.playerAvatar_ != null) {
         if (playerAvatar_ == null) {
-          playerAvatar_ = new global::Data.Player.PlayerAvatar();
+          playerAvatar_ = new global::PokemonGoDesktop.API.Proto.PlayerAvatar();
         }
         PlayerAvatar.MergeFrom(other.PlayerAvatar);
       }
@@ -136,7 +136,7 @@ namespace Networking.Requests.Messages {
             break;
           case 18: {
             if (playerAvatar_ == null) {
-              playerAvatar_ = new global::Data.Player.PlayerAvatar();
+              playerAvatar_ = new global::PokemonGoDesktop.API.Proto.PlayerAvatar();
             }
             input.ReadMessage(playerAvatar_);
             break;

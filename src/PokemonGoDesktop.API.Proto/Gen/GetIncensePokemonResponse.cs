@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetIncensePokemonResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,11 +32,12 @@ namespace Networking.Responses {
             "CgxlbmNvdW50ZXJfaWQYBiABKAQSHgoWZGlzYXBwZWFyX3RpbWVzdGFtcF9t",
             "cxgHIAEoAyJtCgZSZXN1bHQSHQoZSU5DRU5TRV9FTkNPVU5URVJfVU5LTk9X",
             "ThAAEh8KG0lOQ0VOU0VfRU5DT1VOVEVSX0FWQUlMQUJMRRABEiMKH0lOQ0VO",
-            "U0VfRU5DT1VOVEVSX05PVF9BVkFJTEFCTEUQAmIGcHJvdG8z"));
+            "U0VfRU5DT1VOVEVSX05PVF9BVkFJTEFCTEUQAkIdqgIaUG9rZW1vbkdvRGVz",
+            "a3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetIncensePokemonResponse), global::Networking.Responses.GetIncensePokemonResponse.Parser, new[]{ "Result", "PokemonTypeId", "Latitude", "Longitude", "EncounterLocation", "EncounterId", "DisappearTimestampMs" }, null, new[]{ typeof(global::Networking.Responses.GetIncensePokemonResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponse), global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponse.Parser, new[]{ "Result", "PokemonTypeId", "Latitude", "Longitude", "EncounterLocation", "EncounterId", "DisappearTimestampMs" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -49,7 +50,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetIncensePokemonResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetIncensePokemonResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -78,8 +79,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Networking.Responses.GetIncensePokemonResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.GetIncensePokemonResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -278,7 +279,7 @@ namespace Networking.Responses {
             input.SkipLastField();
             break;
           case 8: {
-            result_ = (global::Networking.Responses.GetIncensePokemonResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.GetIncensePokemonResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 16: {

@@ -25,7 +25,7 @@ namespace PokemonGoDesktop.API.Proto.Compiler
 				builder.Append($"{GetRelativePath(s, Directory.GetCurrentDirectory())} ");
 			}
 
-			//This could be task-based and threaded but having 200 protocs running can suck.
+			//create a process to call invoke protoc
 			using (var p = new System.Diagnostics.Process())
 			{
 				//protoc --proto_path=src --csharp_out=build/gen src/*.proto

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Capture {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Capture/CaptureProbability.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Data.Capture {
             "LkNhcHR1cmUaFkludmVudG9yeS9JdGVtSWQucHJvdG8ifQoSQ2FwdHVyZVBy",
             "b2JhYmlsaXR5EigKDXBva2ViYWxsX3R5cGUYASADKA4yES5JbnZlbnRvcnku",
             "SXRlbUlkEhsKE2NhcHR1cmVfcHJvYmFiaWxpdHkYAiADKAISIAoYcmV0aWNs",
-            "ZV9kaWZmaWN1bHR5X3NjYWxlGAwgASgBYgZwcm90bzM="));
+            "ZV9kaWZmaWN1bHR5X3NjYWxlGAwgASgBQh2qAhpQb2tlbW9uR29EZXNrdG9w",
+            "LkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Inventory.ItemIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Capture.CaptureProbability), global::Data.Capture.CaptureProbability.Parser, new[]{ "PokeballType", "CaptureProbability_", "ReticleDifficultyScale" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CaptureProbability), global::PokemonGoDesktop.API.Proto.CaptureProbability.Parser, new[]{ "PokeballType", "CaptureProbability_", "ReticleDifficultyScale" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Data.Capture {
     public static pb::MessageParser<CaptureProbability> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Capture.CaptureProbabilityReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.CaptureProbabilityReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,10 +70,10 @@ namespace Data.Capture {
 
     /// <summary>Field number for the "pokeball_type" field.</summary>
     public const int PokeballTypeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Inventory.ItemId> _repeated_pokeballType_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Inventory.ItemId) x);
-    private readonly pbc::RepeatedField<global::Inventory.ItemId> pokeballType_ = new pbc::RepeatedField<global::Inventory.ItemId>();
-    public pbc::RepeatedField<global::Inventory.ItemId> PokeballType {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.ItemId> _repeated_pokeballType_codec
+        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.ItemId) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId> pokeballType_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemId> PokeballType {
       get { return pokeballType_; }
     }
 

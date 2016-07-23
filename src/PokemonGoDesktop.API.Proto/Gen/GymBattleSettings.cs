@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/GymBattleSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -34,11 +34,12 @@ namespace Settings.Master {
             "bGllchgJIAEoAhIWCg5tYXhpbXVtX2VuZXJneRgKIAEoBRIkChxlbmVyZ3lf",
             "ZGVsdGFfcGVyX2hlYWx0aF9sb3N0GAsgASgCEhkKEWRvZGdlX2R1cmF0aW9u",
             "X21zGAwgASgFEhwKFG1pbmltdW1fcGxheWVyX2xldmVsGA0gASgFEhgKEHN3",
-            "YXBfZHVyYXRpb25fbXMYDiABKAViBnByb3RvMw=="));
+            "YXBfZHVyYXRpb25fbXMYDiABKAVCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJ",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.GymBattleSettings), global::Settings.Master.GymBattleSettings.Parser, new[]{ "EnergyPerSec", "DodgeEnergyCost", "RetargetSeconds", "EnemyAttackInterval", "AttackServerInterval", "RoundDurationSeconds", "BonusTimePerAllySeconds", "MaximumAttackersPerBattle", "SameTypeAttackBonusMultiplier", "MaximumEnergy", "EnergyDeltaPerHealthLost", "DodgeDurationMs", "MinimumPlayerLevel", "SwapDurationMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GymBattleSettings), global::PokemonGoDesktop.API.Proto.GymBattleSettings.Parser, new[]{ "EnergyPerSec", "DodgeEnergyCost", "RetargetSeconds", "EnemyAttackInterval", "AttackServerInterval", "RoundDurationSeconds", "BonusTimePerAllySeconds", "MaximumAttackersPerBattle", "SameTypeAttackBonusMultiplier", "MaximumEnergy", "EnergyDeltaPerHealthLost", "DodgeDurationMs", "MinimumPlayerLevel", "SwapDurationMs" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +52,7 @@ namespace Settings.Master {
     public static pb::MessageParser<GymBattleSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.GymBattleSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GymBattleSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

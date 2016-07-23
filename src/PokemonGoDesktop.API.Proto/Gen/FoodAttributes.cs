@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master.Item {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/Item/FoodAttributes.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Settings.Master.Item {
             "U2V0dGluZ3MuTWFzdGVyLkl0ZW0aFkVudW1zL0l0ZW1FZmZlY3QucHJvdG8i",
             "bQoORm9vZEF0dHJpYnV0ZXMSJgoLaXRlbV9lZmZlY3QYASADKA4yES5FbnVt",
             "cy5JdGVtRWZmZWN0EhsKE2l0ZW1fZWZmZWN0X3BlcmNlbnQYAiADKAISFgoO",
-            "Z3Jvd3RoX3BlcmNlbnQYAyABKAJiBnByb3RvMw=="));
+            "Z3Jvd3RoX3BlcmNlbnQYAyABKAJCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJ",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.ItemEffectReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemEffectReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.Item.FoodAttributes), global::Settings.Master.Item.FoodAttributes.Parser, new[]{ "ItemEffect", "ItemEffectPercent", "GrowthPercent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FoodAttributes), global::PokemonGoDesktop.API.Proto.FoodAttributes.Parser, new[]{ "ItemEffect", "ItemEffectPercent", "GrowthPercent" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Settings.Master.Item {
     public static pb::MessageParser<FoodAttributes> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.Item.FoodAttributesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FoodAttributesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,10 +70,10 @@ namespace Settings.Master.Item {
 
     /// <summary>Field number for the "item_effect" field.</summary>
     public const int ItemEffectFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Enums.ItemEffect> _repeated_itemEffect_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Enums.ItemEffect) x);
-    private readonly pbc::RepeatedField<global::Enums.ItemEffect> itemEffect_ = new pbc::RepeatedField<global::Enums.ItemEffect>();
-    public pbc::RepeatedField<global::Enums.ItemEffect> ItemEffect {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.ItemEffect> _repeated_itemEffect_codec
+        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.ItemEffect) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemEffect> itemEffect_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemEffect>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.ItemEffect> ItemEffect {
       get { return itemEffect_; }
     }
 

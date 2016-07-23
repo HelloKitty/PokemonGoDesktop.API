@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/EncounterMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests.Messages {
             "Z2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2FnZXMicwoQRW5j",
             "b3VudGVyTWVzc2FnZRIUCgxlbmNvdW50ZXJfaWQYASABKAYSFgoOc3Bhd25f",
             "cG9pbnRfaWQYAiABKAkSFwoPcGxheWVyX2xhdGl0dWRlGAMgASgBEhgKEHBs",
-            "YXllcl9sb25naXR1ZGUYBCABKAFiBnByb3RvMw=="));
+            "YXllcl9sb25naXR1ZGUYBCABKAFCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJ",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.EncounterMessage), global::Networking.Requests.Messages.EncounterMessage.Parser, new[]{ "EncounterId", "SpawnPointId", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.EncounterMessage), global::PokemonGoDesktop.API.Proto.EncounterMessage.Parser, new[]{ "EncounterId", "SpawnPointId", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<EncounterMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.EncounterMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.EncounterMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

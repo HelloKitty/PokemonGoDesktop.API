@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Envelopes {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Envelopes/RequestEnvelope.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -37,12 +37,12 @@ namespace Networking.Envelopes {
             "dmVsb3Blcy5BdXRoVGlja2V0EhEKCXVua25vd24xMhgMIAEoAxqKAQoIQXV0",
             "aEluZm8SEAoIcHJvdmlkZXIYASABKAkSQQoFdG9rZW4YAiABKAsyMi5OZXR3",
             "b3JraW5nLkVudmVsb3Blcy5SZXF1ZXN0RW52ZWxvcGUuQXV0aEluZm8uSldU",
-            "GikKA0pXVBIQCghjb250ZW50cxgBIAEoCRIQCgh1bmtub3duMhgCIAEoBWIG",
-            "cHJvdG8z"));
+            "GikKA0pXVBIQCghjb250ZW50cxgBIAEoCRIQCgh1bmtub3duMhgCIAEoBUId",
+            "qgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Networking.Requests.RequestReflection.Descriptor, global::Networking.Envelopes.AuthTicketReflection.Descriptor, global::Networking.Envelopes.Unknown6Reflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.RequestReflection.Descriptor, global::PokemonGoDesktop.API.Proto.AuthTicketReflection.Descriptor, global::PokemonGoDesktop.API.Proto.Unknown6Reflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Envelopes.RequestEnvelope), global::Networking.Envelopes.RequestEnvelope.Parser, new[]{ "StatusCode", "RequestId", "Requests", "Unknown6", "Latitude", "Longitude", "Altitude", "AuthInfo", "AuthTicket", "Unknown12" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo), global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Parser, new[]{ "Provider", "Token" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT), global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT.Parser, new[]{ "Contents", "Unknown2" }, null, null, null)})})
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.RequestEnvelope), global::PokemonGoDesktop.API.Proto.RequestEnvelope.Parser, new[]{ "StatusCode", "RequestId", "Requests", "Unknown6", "Latitude", "Longitude", "Altitude", "AuthInfo", "AuthTicket", "Unknown12" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo), global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Parser, new[]{ "Provider", "Token" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Types.JWT), global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Types.JWT.Parser, new[]{ "Contents", "Unknown2" }, null, null, null)})})
           }));
     }
     #endregion
@@ -55,7 +55,7 @@ namespace Networking.Envelopes {
     public static pb::MessageParser<RequestEnvelope> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Envelopes.RequestEnvelopeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.RequestEnvelopeReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -98,6 +98,9 @@ namespace Networking.Envelopes {
     /// <summary>Field number for the "request_id" field.</summary>
     public const int RequestIdFieldNumber = 3;
     private ulong requestId_;
+    /// <summary>
+    /// Also called RPC_ID in Rocket-API
+    /// </summary>
     public ulong RequestId {
       get { return requestId_; }
       set {
@@ -107,17 +110,17 @@ namespace Networking.Envelopes {
 
     /// <summary>Field number for the "requests" field.</summary>
     public const int RequestsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Networking.Requests.Request> _repeated_requests_codec
-        = pb::FieldCodec.ForMessage(34, global::Networking.Requests.Request.Parser);
-    private readonly pbc::RepeatedField<global::Networking.Requests.Request> requests_ = new pbc::RepeatedField<global::Networking.Requests.Request>();
-    public pbc::RepeatedField<global::Networking.Requests.Request> Requests {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.Request> _repeated_requests_codec
+        = pb::FieldCodec.ForMessage(34, global::PokemonGoDesktop.API.Proto.Request.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.Request> requests_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.Request>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.Request> Requests {
       get { return requests_; }
     }
 
     /// <summary>Field number for the "unknown6" field.</summary>
     public const int Unknown6FieldNumber = 6;
-    private global::Networking.Envelopes.Unknown6 unknown6_;
-    public global::Networking.Envelopes.Unknown6 Unknown6 {
+    private global::PokemonGoDesktop.API.Proto.Unknown6 unknown6_;
+    public global::PokemonGoDesktop.API.Proto.Unknown6 Unknown6 {
       get { return unknown6_; }
       set {
         unknown6_ = value;
@@ -156,8 +159,8 @@ namespace Networking.Envelopes {
 
     /// <summary>Field number for the "auth_info" field.</summary>
     public const int AuthInfoFieldNumber = 10;
-    private global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo authInfo_;
-    public global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo AuthInfo {
+    private global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo authInfo_;
+    public global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo AuthInfo {
       get { return authInfo_; }
       set {
         authInfo_ = value;
@@ -166,8 +169,8 @@ namespace Networking.Envelopes {
 
     /// <summary>Field number for the "auth_ticket" field.</summary>
     public const int AuthTicketFieldNumber = 11;
-    private global::Networking.Envelopes.AuthTicket authTicket_;
-    public global::Networking.Envelopes.AuthTicket AuthTicket {
+    private global::PokemonGoDesktop.API.Proto.AuthTicket authTicket_;
+    public global::PokemonGoDesktop.API.Proto.AuthTicket AuthTicket {
       get { return authTicket_; }
       set {
         authTicket_ = value;
@@ -313,7 +316,7 @@ namespace Networking.Envelopes {
       requests_.Add(other.requests_);
       if (other.unknown6_ != null) {
         if (unknown6_ == null) {
-          unknown6_ = new global::Networking.Envelopes.Unknown6();
+          unknown6_ = new global::PokemonGoDesktop.API.Proto.Unknown6();
         }
         Unknown6.MergeFrom(other.Unknown6);
       }
@@ -328,13 +331,13 @@ namespace Networking.Envelopes {
       }
       if (other.authInfo_ != null) {
         if (authInfo_ == null) {
-          authInfo_ = new global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo();
+          authInfo_ = new global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo();
         }
         AuthInfo.MergeFrom(other.AuthInfo);
       }
       if (other.authTicket_ != null) {
         if (authTicket_ == null) {
-          authTicket_ = new global::Networking.Envelopes.AuthTicket();
+          authTicket_ = new global::PokemonGoDesktop.API.Proto.AuthTicket();
         }
         AuthTicket.MergeFrom(other.AuthTicket);
       }
@@ -364,7 +367,7 @@ namespace Networking.Envelopes {
           }
           case 50: {
             if (unknown6_ == null) {
-              unknown6_ = new global::Networking.Envelopes.Unknown6();
+              unknown6_ = new global::PokemonGoDesktop.API.Proto.Unknown6();
             }
             input.ReadMessage(unknown6_);
             break;
@@ -383,14 +386,14 @@ namespace Networking.Envelopes {
           }
           case 82: {
             if (authInfo_ == null) {
-              authInfo_ = new global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo();
+              authInfo_ = new global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo();
             }
             input.ReadMessage(authInfo_);
             break;
           }
           case 90: {
             if (authTicket_ == null) {
-              authTicket_ = new global::Networking.Envelopes.AuthTicket();
+              authTicket_ = new global::PokemonGoDesktop.API.Proto.AuthTicket();
             }
             input.ReadMessage(authTicket_);
             break;
@@ -413,7 +416,7 @@ namespace Networking.Envelopes {
         public static pb::MessageParser<AuthInfo> Parser { get { return _parser; } }
 
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Networking.Envelopes.RequestEnvelope.Descriptor.NestedTypes[0]; }
+          get { return global::PokemonGoDesktop.API.Proto.RequestEnvelope.Descriptor.NestedTypes[0]; }
         }
 
         pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -447,8 +450,8 @@ namespace Networking.Envelopes {
 
         /// <summary>Field number for the "token" field.</summary>
         public const int TokenFieldNumber = 2;
-        private global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT token_;
-        public global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT Token {
+        private global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Types.JWT token_;
+        public global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Types.JWT Token {
           get { return token_; }
           set {
             token_ = value;
@@ -513,7 +516,7 @@ namespace Networking.Envelopes {
           }
           if (other.token_ != null) {
             if (token_ == null) {
-              token_ = new global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT();
+              token_ = new global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Types.JWT();
             }
             Token.MergeFrom(other.Token);
           }
@@ -532,7 +535,7 @@ namespace Networking.Envelopes {
               }
               case 18: {
                 if (token_ == null) {
-                  token_ = new global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Types.JWT();
+                  token_ = new global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Types.JWT();
                 }
                 input.ReadMessage(token_);
                 break;
@@ -551,7 +554,7 @@ namespace Networking.Envelopes {
             public static pb::MessageParser<JWT> Parser { get { return _parser; } }
 
             public static pbr::MessageDescriptor Descriptor {
-              get { return global::Networking.Envelopes.RequestEnvelope.Types.AuthInfo.Descriptor.NestedTypes[0]; }
+              get { return global::PokemonGoDesktop.API.Proto.RequestEnvelope.Types.AuthInfo.Descriptor.NestedTypes[0]; }
             }
 
             pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Envelopes {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Envelopes/Unknown6Response.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Envelopes {
             "EhROZXR3b3JraW5nLkVudmVsb3BlcyKFAQoQVW5rbm93bjZSZXNwb25zZRIQ",
             "Cgh1bmtub3duMRgBIAEoBRJBCgh1bmtub3duMhgCIAEoCzIvLk5ldHdvcmtp",
             "bmcuRW52ZWxvcGVzLlVua25vd242UmVzcG9uc2UuVW5rbm93bjIaHAoIVW5r",
-            "bm93bjISEAoIdW5rbm93bjEYASABKARiBnByb3RvMw=="));
+            "bm93bjISEAoIdW5rbm93bjEYASABKARCHaoCGlBva2Vtb25Hb0Rlc2t0b3Au",
+            "QVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Envelopes.Unknown6Response), global::Networking.Envelopes.Unknown6Response.Parser, new[]{ "Unknown1", "Unknown2" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Envelopes.Unknown6Response.Types.Unknown2), global::Networking.Envelopes.Unknown6Response.Types.Unknown2.Parser, new[]{ "Unknown1" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.Unknown6Response), global::PokemonGoDesktop.API.Proto.Unknown6Response.Parser, new[]{ "Unknown1", "Unknown2" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.Unknown6Response.Types.Unknown2), global::PokemonGoDesktop.API.Proto.Unknown6Response.Types.Unknown2.Parser, new[]{ "Unknown1" }, null, null, null)})
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Envelopes {
     public static pb::MessageParser<Unknown6Response> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Envelopes.Unknown6ResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.Unknown6ResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -81,8 +82,8 @@ namespace Networking.Envelopes {
 
     /// <summary>Field number for the "unknown2" field.</summary>
     public const int Unknown2FieldNumber = 2;
-    private global::Networking.Envelopes.Unknown6Response.Types.Unknown2 unknown2_;
-    public global::Networking.Envelopes.Unknown6Response.Types.Unknown2 Unknown2 {
+    private global::PokemonGoDesktop.API.Proto.Unknown6Response.Types.Unknown2 unknown2_;
+    public global::PokemonGoDesktop.API.Proto.Unknown6Response.Types.Unknown2 Unknown2 {
       get { return unknown2_; }
       set {
         unknown2_ = value;
@@ -147,7 +148,7 @@ namespace Networking.Envelopes {
       }
       if (other.unknown2_ != null) {
         if (unknown2_ == null) {
-          unknown2_ = new global::Networking.Envelopes.Unknown6Response.Types.Unknown2();
+          unknown2_ = new global::PokemonGoDesktop.API.Proto.Unknown6Response.Types.Unknown2();
         }
         Unknown2.MergeFrom(other.Unknown2);
       }
@@ -166,7 +167,7 @@ namespace Networking.Envelopes {
           }
           case 18: {
             if (unknown2_ == null) {
-              unknown2_ = new global::Networking.Envelopes.Unknown6Response.Types.Unknown2();
+              unknown2_ = new global::PokemonGoDesktop.API.Proto.Unknown6Response.Types.Unknown2();
             }
             input.ReadMessage(unknown2_);
             break;
@@ -185,7 +186,7 @@ namespace Networking.Envelopes {
         public static pb::MessageParser<Unknown2> Parser { get { return _parser; } }
 
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Networking.Envelopes.Unknown6Response.Descriptor.NestedTypes[0]; }
+          get { return global::PokemonGoDesktop.API.Proto.Unknown6Response.Descriptor.NestedTypes[0]; }
         }
 
         pbr::MessageDescriptor pb::IMessage.Descriptor {

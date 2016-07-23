@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/DownloadSettingsAction.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24,12 +24,12 @@ namespace Settings {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiVTZXR0aW5ncy9Eb3dubG9hZFNldHRpbmdzQWN0aW9uLnByb3RvEghTZXR0",
-            "aW5ncyImChZEb3dubG9hZFNldHRpbmdzQWN0aW9uEgwKBGhhc2gYASABKAli",
-            "BnByb3RvMw=="));
+            "aW5ncyImChZEb3dubG9hZFNldHRpbmdzQWN0aW9uEgwKBGhhc2gYASABKAlC",
+            "HaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.DownloadSettingsAction), global::Settings.DownloadSettingsAction.Parser, new[]{ "Hash" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.DownloadSettingsAction), global::PokemonGoDesktop.API.Proto.DownloadSettingsAction.Parser, new[]{ "Hash" }, null, null, null)
           }));
     }
     #endregion
@@ -42,7 +42,7 @@ namespace Settings {
     public static pb::MessageParser<DownloadSettingsAction> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.DownloadSettingsActionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.DownloadSettingsActionReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

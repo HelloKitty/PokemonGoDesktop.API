@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattleLog.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,11 +31,12 @@ namespace Data.Battle {
             "LkJhdHRsZVR5cGUSEQoJc2VydmVyX21zGAMgASgDEjEKDmJhdHRsZV9hY3Rp",
             "b25zGAQgAygLMhkuRGF0YS5CYXR0bGUuQmF0dGxlQWN0aW9uEiEKGWJhdHRs",
             "ZV9zdGFydF90aW1lc3RhbXBfbXMYBSABKAMSHwoXYmF0dGxlX2VuZF90aW1l",
-            "c3RhbXBfbXMYBiABKANiBnByb3RvMw=="));
+            "c3RhbXBfbXMYBiABKANCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Battle.BattleStateReflection.Descriptor, global::Data.Battle.BattleTypeReflection.Descriptor, global::Data.Battle.BattleActionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BattleStateReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.BattleActionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Battle.BattleLog), global::Data.Battle.BattleLog.Parser, new[]{ "State", "BattleType", "ServerMs", "BattleActions", "BattleStartTimestampMs", "BattleEndTimestampMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.BattleLog), global::PokemonGoDesktop.API.Proto.BattleLog.Parser, new[]{ "State", "BattleType", "ServerMs", "BattleActions", "BattleStartTimestampMs", "BattleEndTimestampMs" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +49,7 @@ namespace Data.Battle {
     public static pb::MessageParser<BattleLog> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Battle.BattleLogReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.BattleLogReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -76,8 +77,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 1;
-    private global::Data.Battle.BattleState state_ = 0;
-    public global::Data.Battle.BattleState State {
+    private global::PokemonGoDesktop.API.Proto.BattleState state_ = 0;
+    public global::PokemonGoDesktop.API.Proto.BattleState State {
       get { return state_; }
       set {
         state_ = value;
@@ -86,8 +87,8 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "battle_type" field.</summary>
     public const int BattleTypeFieldNumber = 2;
-    private global::Data.Battle.BattleType battleType_ = 0;
-    public global::Data.Battle.BattleType BattleType {
+    private global::PokemonGoDesktop.API.Proto.BattleType battleType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.BattleType BattleType {
       get { return battleType_; }
       set {
         battleType_ = value;
@@ -106,10 +107,10 @@ namespace Data.Battle {
 
     /// <summary>Field number for the "battle_actions" field.</summary>
     public const int BattleActionsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Data.Battle.BattleAction> _repeated_battleActions_codec
-        = pb::FieldCodec.ForMessage(34, global::Data.Battle.BattleAction.Parser);
-    private readonly pbc::RepeatedField<global::Data.Battle.BattleAction> battleActions_ = new pbc::RepeatedField<global::Data.Battle.BattleAction>();
-    public pbc::RepeatedField<global::Data.Battle.BattleAction> BattleActions {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.BattleAction> _repeated_battleActions_codec
+        = pb::FieldCodec.ForMessage(34, global::PokemonGoDesktop.API.Proto.BattleAction.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleAction> battleActions_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleAction>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleAction> BattleActions {
       get { return battleActions_; }
     }
 
@@ -243,11 +244,11 @@ namespace Data.Battle {
             input.SkipLastField();
             break;
           case 8: {
-            state_ = (global::Data.Battle.BattleState) input.ReadEnum();
+            state_ = (global::PokemonGoDesktop.API.Proto.BattleState) input.ReadEnum();
             break;
           }
           case 16: {
-            battleType_ = (global::Data.Battle.BattleType) input.ReadEnum();
+            battleType_ = (global::PokemonGoDesktop.API.Proto.BattleType) input.ReadEnum();
             break;
           }
           case 24: {

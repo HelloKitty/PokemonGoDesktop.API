@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Settings.Master {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Settings/Master/TypeEffectiveSettings.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,12 +26,12 @@ namespace Settings.Master {
             "CitTZXR0aW5ncy9NYXN0ZXIvVHlwZUVmZmVjdGl2ZVNldHRpbmdzLnByb3Rv",
             "Eg9TZXR0aW5ncy5NYXN0ZXIaF0VudW1zL1Bva2Vtb25UeXBlLnByb3RvIlcK",
             "FVR5cGVFZmZlY3RpdmVTZXR0aW5ncxIVCg1hdHRhY2tfc2NhbGFyGAEgAygC",
-            "EicKC2F0dGFja190eXBlGAIgASgOMhIuRW51bXMuUG9rZW1vblR5cGViBnBy",
-            "b3RvMw=="));
+            "EicKC2F0dGFja190eXBlGAIgASgOMhIuRW51bXMuUG9rZW1vblR5cGVCHaoC",
+            "GlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.PokemonTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Settings.Master.TypeEffectiveSettings), global::Settings.Master.TypeEffectiveSettings.Parser, new[]{ "AttackScalar", "AttackType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.TypeEffectiveSettings), global::PokemonGoDesktop.API.Proto.TypeEffectiveSettings.Parser, new[]{ "AttackScalar", "AttackType" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Settings.Master {
     public static pb::MessageParser<TypeEffectiveSettings> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Settings.Master.TypeEffectiveSettingsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.TypeEffectiveSettingsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -77,8 +77,8 @@ namespace Settings.Master {
 
     /// <summary>Field number for the "attack_type" field.</summary>
     public const int AttackTypeFieldNumber = 2;
-    private global::Enums.PokemonType attackType_ = 0;
-    public global::Enums.PokemonType AttackType {
+    private global::PokemonGoDesktop.API.Proto.PokemonType attackType_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonType AttackType {
       get { return attackType_; }
       set {
         attackType_ = value;
@@ -152,7 +152,7 @@ namespace Settings.Master {
             break;
           }
           case 16: {
-            attackType_ = (global::Enums.PokemonType) input.ReadEnum();
+            attackType_ = (global::PokemonGoDesktop.API.Proto.PokemonType) input.ReadEnum();
             break;
           }
         }

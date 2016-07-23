@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Gym {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Gym/GymMembership.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,11 @@ namespace Data.Gym {
             "UHJvZmlsZS5wcm90byJ6Cg1HeW1NZW1iZXJzaGlwEicKDHBva2Vtb25fZGF0",
             "YRgBIAEoCzIRLkRhdGEuUG9rZW1vbkRhdGESQAoWdHJhaW5lcl9wdWJsaWNf",
             "cHJvZmlsZRgCIAEoCzIgLkRhdGEuUGxheWVyLlBsYXllclB1YmxpY1Byb2Zp",
-            "bGViBnByb3RvMw=="));
+            "bGVCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.PokemonDataReflection.Descriptor, global::Data.Player.PlayerPublicProfileReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerPublicProfileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Gym.GymMembership), global::Data.Gym.GymMembership.Parser, new[]{ "PokemonData", "TrainerPublicProfile" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GymMembership), global::PokemonGoDesktop.API.Proto.GymMembership.Parser, new[]{ "PokemonData", "TrainerPublicProfile" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Data.Gym {
     public static pb::MessageParser<GymMembership> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Gym.GymMembershipReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GymMembershipReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -69,8 +69,8 @@ namespace Data.Gym {
 
     /// <summary>Field number for the "pokemon_data" field.</summary>
     public const int PokemonDataFieldNumber = 1;
-    private global::Data.PokemonData pokemonData_;
-    public global::Data.PokemonData PokemonData {
+    private global::PokemonGoDesktop.API.Proto.PokemonData pokemonData_;
+    public global::PokemonGoDesktop.API.Proto.PokemonData PokemonData {
       get { return pokemonData_; }
       set {
         pokemonData_ = value;
@@ -79,8 +79,8 @@ namespace Data.Gym {
 
     /// <summary>Field number for the "trainer_public_profile" field.</summary>
     public const int TrainerPublicProfileFieldNumber = 2;
-    private global::Data.Player.PlayerPublicProfile trainerPublicProfile_;
-    public global::Data.Player.PlayerPublicProfile TrainerPublicProfile {
+    private global::PokemonGoDesktop.API.Proto.PlayerPublicProfile trainerPublicProfile_;
+    public global::PokemonGoDesktop.API.Proto.PlayerPublicProfile TrainerPublicProfile {
       get { return trainerPublicProfile_; }
       set {
         trainerPublicProfile_ = value;
@@ -142,13 +142,13 @@ namespace Data.Gym {
       }
       if (other.pokemonData_ != null) {
         if (pokemonData_ == null) {
-          pokemonData_ = new global::Data.PokemonData();
+          pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
         }
         PokemonData.MergeFrom(other.PokemonData);
       }
       if (other.trainerPublicProfile_ != null) {
         if (trainerPublicProfile_ == null) {
-          trainerPublicProfile_ = new global::Data.Player.PlayerPublicProfile();
+          trainerPublicProfile_ = new global::PokemonGoDesktop.API.Proto.PlayerPublicProfile();
         }
         TrainerPublicProfile.MergeFrom(other.TrainerPublicProfile);
       }
@@ -163,14 +163,14 @@ namespace Data.Gym {
             break;
           case 10: {
             if (pokemonData_ == null) {
-              pokemonData_ = new global::Data.PokemonData();
+              pokemonData_ = new global::PokemonGoDesktop.API.Proto.PokemonData();
             }
             input.ReadMessage(pokemonData_);
             break;
           }
           case 18: {
             if (trainerPublicProfile_ == null) {
-              trainerPublicProfile_ = new global::Data.Player.PlayerPublicProfile();
+              trainerPublicProfile_ = new global::PokemonGoDesktop.API.Proto.PlayerPublicProfile();
             }
             input.ReadMessage(trainerPublicProfile_);
             break;

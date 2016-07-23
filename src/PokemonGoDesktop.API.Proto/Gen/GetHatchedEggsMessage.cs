@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/GetHatchedEggsMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Networking.Requests.Messages {
           string.Concat(
             "CjhOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0dldEhhdGNoZWRFZ2dz",
             "TWVzc2FnZS5wcm90bxIcTmV0d29ya2luZy5SZXF1ZXN0cy5NZXNzYWdlcyIX",
-            "ChVHZXRIYXRjaGVkRWdnc01lc3NhZ2ViBnByb3RvMw=="));
+            "ChVHZXRIYXRjaGVkRWdnc01lc3NhZ2VCHaoCGlBva2Vtb25Hb0Rlc2t0b3Au",
+            "QVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.GetHatchedEggsMessage), global::Networking.Requests.Messages.GetHatchedEggsMessage.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetHatchedEggsMessage), global::PokemonGoDesktop.API.Proto.GetHatchedEggsMessage.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<GetHatchedEggsMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.GetHatchedEggsMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetHatchedEggsMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/GetSuggestedCodenamesMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,12 @@ namespace Networking.Requests.Messages {
           string.Concat(
             "Cj9OZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0dldFN1Z2dlc3RlZENv",
             "ZGVuYW1lc01lc3NhZ2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVz",
-            "c2FnZXMiHgocR2V0U3VnZ2VzdGVkQ29kZW5hbWVzTWVzc2FnZWIGcHJvdG8z"));
+            "c2FnZXMiHgocR2V0U3VnZ2VzdGVkQ29kZW5hbWVzTWVzc2FnZUIdqgIaUG9r",
+            "ZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.GetSuggestedCodenamesMessage), global::Networking.Requests.Messages.GetSuggestedCodenamesMessage.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetSuggestedCodenamesMessage), global::PokemonGoDesktop.API.Proto.GetSuggestedCodenamesMessage.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<GetSuggestedCodenamesMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.GetSuggestedCodenamesMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetSuggestedCodenamesMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

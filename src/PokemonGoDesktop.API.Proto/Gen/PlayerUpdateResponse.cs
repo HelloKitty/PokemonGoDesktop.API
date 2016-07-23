@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/PlayerUpdateResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,11 +28,12 @@ namespace Networking.Responses {
             "LnByb3RvGh1NYXAvUG9rZW1vbi9XaWxkUG9rZW1vbi5wcm90byKAAQoUUGxh",
             "eWVyVXBkYXRlUmVzcG9uc2USLwoNd2lsZF9wb2tlbW9ucxgBIAMoCzIYLk1h",
             "cC5Qb2tlbW9uLldpbGRQb2tlbW9uEiEKBWZvcnRzGAIgAygLMhIuTWFwLkZv",
-            "cnQuRm9ydERhdGESFAoMZm9ydHNfbmVhcmJ5GAMgASgFYgZwcm90bzM="));
+            "cnQuRm9ydERhdGESFAoMZm9ydHNfbmVhcmJ5GAMgASgFQh2qAhpQb2tlbW9u",
+            "R29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Map.Fort.FortDataReflection.Descriptor, global::Map.Pokemon.WildPokemonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.FortDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.WildPokemonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.PlayerUpdateResponse), global::Networking.Responses.PlayerUpdateResponse.Parser, new[]{ "WildPokemons", "Forts", "FortsNearby" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerUpdateResponse), global::PokemonGoDesktop.API.Proto.PlayerUpdateResponse.Parser, new[]{ "WildPokemons", "Forts", "FortsNearby" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +46,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<PlayerUpdateResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.PlayerUpdateResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerUpdateResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,19 +71,19 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "wild_pokemons" field.</summary>
     public const int WildPokemonsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Map.Pokemon.WildPokemon> _repeated_wildPokemons_codec
-        = pb::FieldCodec.ForMessage(10, global::Map.Pokemon.WildPokemon.Parser);
-    private readonly pbc::RepeatedField<global::Map.Pokemon.WildPokemon> wildPokemons_ = new pbc::RepeatedField<global::Map.Pokemon.WildPokemon>();
-    public pbc::RepeatedField<global::Map.Pokemon.WildPokemon> WildPokemons {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.WildPokemon> _repeated_wildPokemons_codec
+        = pb::FieldCodec.ForMessage(10, global::PokemonGoDesktop.API.Proto.WildPokemon.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.WildPokemon> wildPokemons_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.WildPokemon>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.WildPokemon> WildPokemons {
       get { return wildPokemons_; }
     }
 
     /// <summary>Field number for the "forts" field.</summary>
     public const int FortsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Map.Fort.FortData> _repeated_forts_codec
-        = pb::FieldCodec.ForMessage(18, global::Map.Fort.FortData.Parser);
-    private readonly pbc::RepeatedField<global::Map.Fort.FortData> forts_ = new pbc::RepeatedField<global::Map.Fort.FortData>();
-    public pbc::RepeatedField<global::Map.Fort.FortData> Forts {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.FortData> _repeated_forts_codec
+        = pb::FieldCodec.ForMessage(18, global::PokemonGoDesktop.API.Proto.FortData.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortData> forts_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortData>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.FortData> Forts {
       get { return forts_; }
     }
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Map {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Map/MapObjectsStatus.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,10 +25,11 @@ namespace Map {
           string.Concat(
             "ChpNYXAvTWFwT2JqZWN0c1N0YXR1cy5wcm90bxIDTWFwKkUKEE1hcE9iamVj",
             "dHNTdGF0dXMSEAoMVU5TRVRfU1RBVFVTEAASCwoHU1VDQ0VTUxABEhIKDkxP",
-            "Q0FUSU9OX1VOU0VUEAJiBnByb3RvMw=="));
+            "Q0FUSU9OX1VOU0VUEAJCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Map.MapObjectsStatus), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.MapObjectsStatus), }, null));
     }
     #endregion
 

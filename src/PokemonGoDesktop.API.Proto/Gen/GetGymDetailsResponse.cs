@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetGymDetailsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -30,11 +30,12 @@ namespace Networking.Responses {
             "dXJscxgDIAMoCRJCCgZyZXN1bHQYBCABKA4yMi5OZXR3b3JraW5nLlJlc3Bv",
             "bnNlcy5HZXRHeW1EZXRhaWxzUmVzcG9uc2UuUmVzdWx0EhMKC2Rlc2NyaXB0",
             "aW9uGAUgASgJIjgKBlJlc3VsdBIJCgVVTlNFVBAAEgsKB1NVQ0NFU1MQARIW",
-            "ChJFUlJPUl9OT1RfSU5fUkFOR0UQAmIGcHJvdG8z"));
+            "ChJFUlJPUl9OT1RfSU5fUkFOR0UQAkIdqgIaUG9rZW1vbkdvRGVza3RvcC5B",
+            "UEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Gym.GymStateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.GymStateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetGymDetailsResponse), global::Networking.Responses.GetGymDetailsResponse.Parser, new[]{ "GymState", "Name", "Urls", "Result", "Description" }, null, new[]{ typeof(global::Networking.Responses.GetGymDetailsResponse.Types.Result) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetGymDetailsResponse), global::PokemonGoDesktop.API.Proto.GetGymDetailsResponse.Parser, new[]{ "GymState", "Name", "Urls", "Result", "Description" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.GetGymDetailsResponse.Types.Result) }, null)
           }));
     }
     #endregion
@@ -47,7 +48,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetGymDetailsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetGymDetailsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetGymDetailsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -74,8 +75,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "gym_state" field.</summary>
     public const int GymStateFieldNumber = 1;
-    private global::Data.Gym.GymState gymState_;
-    public global::Data.Gym.GymState GymState {
+    private global::PokemonGoDesktop.API.Proto.GymState gymState_;
+    public global::PokemonGoDesktop.API.Proto.GymState GymState {
       get { return gymState_; }
       set {
         gymState_ = value;
@@ -103,8 +104,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 4;
-    private global::Networking.Responses.GetGymDetailsResponse.Types.Result result_ = 0;
-    public global::Networking.Responses.GetGymDetailsResponse.Types.Result Result {
+    private global::PokemonGoDesktop.API.Proto.GetGymDetailsResponse.Types.Result result_ = 0;
+    public global::PokemonGoDesktop.API.Proto.GetGymDetailsResponse.Types.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -198,7 +199,7 @@ namespace Networking.Responses {
       }
       if (other.gymState_ != null) {
         if (gymState_ == null) {
-          gymState_ = new global::Data.Gym.GymState();
+          gymState_ = new global::PokemonGoDesktop.API.Proto.GymState();
         }
         GymState.MergeFrom(other.GymState);
       }
@@ -223,7 +224,7 @@ namespace Networking.Responses {
             break;
           case 10: {
             if (gymState_ == null) {
-              gymState_ = new global::Data.Gym.GymState();
+              gymState_ = new global::PokemonGoDesktop.API.Proto.GymState();
             }
             input.ReadMessage(gymState_);
             break;
@@ -237,7 +238,7 @@ namespace Networking.Responses {
             break;
           }
           case 32: {
-            result_ = (global::Networking.Responses.GetGymDetailsResponse.Types.Result) input.ReadEnum();
+            result_ = (global::PokemonGoDesktop.API.Proto.GetGymDetailsResponse.Types.Result) input.ReadEnum();
             break;
           }
           case 42: {

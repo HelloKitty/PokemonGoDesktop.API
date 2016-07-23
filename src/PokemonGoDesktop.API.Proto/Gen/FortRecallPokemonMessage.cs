@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/FortRecallPokemonMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests.Messages {
             "bW9uTWVzc2FnZS5wcm90bxIcTmV0d29ya2luZy5SZXF1ZXN0cy5NZXNzYWdl",
             "cyJyChhGb3J0UmVjYWxsUG9rZW1vbk1lc3NhZ2USDwoHZm9ydF9pZBgBIAEo",
             "CRISCgpwb2tlbW9uX2lkGAIgASgEEhcKD3BsYXllcl9sYXRpdHVkZRgDIAEo",
-            "ARIYChBwbGF5ZXJfbG9uZ2l0dWRlGAQgASgBYgZwcm90bzM="));
+            "ARIYChBwbGF5ZXJfbG9uZ2l0dWRlGAQgASgBQh2qAhpQb2tlbW9uR29EZXNr",
+            "dG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.FortRecallPokemonMessage), global::Networking.Requests.Messages.FortRecallPokemonMessage.Parser, new[]{ "FortId", "PokemonId", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortRecallPokemonMessage), global::PokemonGoDesktop.API.Proto.FortRecallPokemonMessage.Parser, new[]{ "FortId", "PokemonId", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<FortRecallPokemonMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.FortRecallPokemonMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.FortRecallPokemonMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

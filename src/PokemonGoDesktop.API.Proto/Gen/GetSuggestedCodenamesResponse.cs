@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetSuggestedCodenamesResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +26,12 @@ namespace Networking.Responses {
             "CjhOZXR3b3JraW5nL1Jlc3BvbnNlcy9HZXRTdWdnZXN0ZWRDb2RlbmFtZXNS",
             "ZXNwb25zZS5wcm90bxIUTmV0d29ya2luZy5SZXNwb25zZXMiQwodR2V0U3Vn",
             "Z2VzdGVkQ29kZW5hbWVzUmVzcG9uc2USEQoJY29kZW5hbWVzGAEgAygJEg8K",
-            "B3N1Y2Nlc3MYAiABKAhiBnByb3RvMw=="));
+            "B3N1Y2Nlc3MYAiABKAhCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetSuggestedCodenamesResponse), global::Networking.Responses.GetSuggestedCodenamesResponse.Parser, new[]{ "Codenames", "Success" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetSuggestedCodenamesResponse), global::PokemonGoDesktop.API.Proto.GetSuggestedCodenamesResponse.Parser, new[]{ "Codenames", "Success" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetSuggestedCodenamesResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetSuggestedCodenamesResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetSuggestedCodenamesResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/AttackGymMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -30,11 +30,12 @@ namespace Networking.Requests.Messages {
             "a19hY3Rpb25zGAMgAygLMhkuRGF0YS5CYXR0bGUuQmF0dGxlQWN0aW9uEjkK",
             "Fmxhc3RfcmV0cmlldmVkX2FjdGlvbnMYBCABKAsyGS5EYXRhLkJhdHRsZS5C",
             "YXR0bGVBY3Rpb24SFwoPcGxheWVyX2xhdGl0dWRlGAUgASgBEhgKEHBsYXll",
-            "cl9sb25naXR1ZGUYBiABKAFiBnByb3RvMw=="));
+            "cl9sb25naXR1ZGUYBiABKAFCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlBy",
+            "b3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.Battle.BattleActionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.BattleActionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.AttackGymMessage), global::Networking.Requests.Messages.AttackGymMessage.Parser, new[]{ "GymId", "BattleId", "AttackActions", "LastRetrievedActions", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.AttackGymMessage), global::PokemonGoDesktop.API.Proto.AttackGymMessage.Parser, new[]{ "GymId", "BattleId", "AttackActions", "LastRetrievedActions", "PlayerLatitude", "PlayerLongitude" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +48,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<AttackGymMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.AttackGymMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.AttackGymMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -95,17 +96,17 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "attack_actions" field.</summary>
     public const int AttackActionsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Data.Battle.BattleAction> _repeated_attackActions_codec
-        = pb::FieldCodec.ForMessage(26, global::Data.Battle.BattleAction.Parser);
-    private readonly pbc::RepeatedField<global::Data.Battle.BattleAction> attackActions_ = new pbc::RepeatedField<global::Data.Battle.BattleAction>();
-    public pbc::RepeatedField<global::Data.Battle.BattleAction> AttackActions {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.BattleAction> _repeated_attackActions_codec
+        = pb::FieldCodec.ForMessage(26, global::PokemonGoDesktop.API.Proto.BattleAction.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleAction> attackActions_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleAction>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.BattleAction> AttackActions {
       get { return attackActions_; }
     }
 
     /// <summary>Field number for the "last_retrieved_actions" field.</summary>
     public const int LastRetrievedActionsFieldNumber = 4;
-    private global::Data.Battle.BattleAction lastRetrievedActions_;
-    public global::Data.Battle.BattleAction LastRetrievedActions {
+    private global::PokemonGoDesktop.API.Proto.BattleAction lastRetrievedActions_;
+    public global::PokemonGoDesktop.API.Proto.BattleAction LastRetrievedActions {
       get { return lastRetrievedActions_; }
       set {
         lastRetrievedActions_ = value;
@@ -225,7 +226,7 @@ namespace Networking.Requests.Messages {
       attackActions_.Add(other.attackActions_);
       if (other.lastRetrievedActions_ != null) {
         if (lastRetrievedActions_ == null) {
-          lastRetrievedActions_ = new global::Data.Battle.BattleAction();
+          lastRetrievedActions_ = new global::PokemonGoDesktop.API.Proto.BattleAction();
         }
         LastRetrievedActions.MergeFrom(other.LastRetrievedActions);
       }
@@ -258,7 +259,7 @@ namespace Networking.Requests.Messages {
           }
           case 34: {
             if (lastRetrievedActions_ == null) {
-              lastRetrievedActions_ = new global::Data.Battle.BattleAction();
+              lastRetrievedActions_ = new global::PokemonGoDesktop.API.Proto.BattleAction();
             }
             input.ReadMessage(lastRetrievedActions_);
             break;

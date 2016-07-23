@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/ClaimCodenameResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,11 +31,12 @@ namespace Networking.Responses {
             "YXR1cyKIAQoGU3RhdHVzEgkKBVVOU0VUEAASCwoHU1VDQ0VTUxABEhoKFkNP",
             "REVOQU1FX05PVF9BVkFJTEFCTEUQAhIWChJDT0RFTkFNRV9OT1RfVkFMSUQQ",
             "AxIRCg1DVVJSRU5UX09XTkVSEAQSHwobQ09ERU5BTUVfQ0hBTkdFX05PVF9B",
-            "TExPV0VEEAViBnByb3RvMw=="));
+            "TExPV0VEEAVCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.ClaimCodenameResponse), global::Networking.Responses.ClaimCodenameResponse.Parser, new[]{ "Codename", "UserMessage", "IsAssignable", "Status" }, null, new[]{ typeof(global::Networking.Responses.ClaimCodenameResponse.Types.Status) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.ClaimCodenameResponse), global::PokemonGoDesktop.API.Proto.ClaimCodenameResponse.Parser, new[]{ "Codename", "UserMessage", "IsAssignable", "Status" }, null, new[]{ typeof(global::PokemonGoDesktop.API.Proto.ClaimCodenameResponse.Types.Status) }, null)
           }));
     }
     #endregion
@@ -51,7 +52,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<ClaimCodenameResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.ClaimCodenameResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.ClaimCodenameResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -107,8 +108,8 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private global::Networking.Responses.ClaimCodenameResponse.Types.Status status_ = 0;
-    public global::Networking.Responses.ClaimCodenameResponse.Types.Status Status {
+    private global::PokemonGoDesktop.API.Proto.ClaimCodenameResponse.Types.Status status_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ClaimCodenameResponse.Types.Status Status {
       get { return status_; }
       set {
         status_ = value;
@@ -220,7 +221,7 @@ namespace Networking.Responses {
             break;
           }
           case 32: {
-            status_ = (global::Networking.Responses.ClaimCodenameResponse.Types.Status) input.ReadEnum();
+            status_ = (global::PokemonGoDesktop.API.Proto.ClaimCodenameResponse.Types.Status) input.ReadEnum();
             break;
           }
         }

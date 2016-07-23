@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Responses {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Responses/GetDownloadUrlsResponse.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,12 +26,12 @@ namespace Networking.Responses {
             "CjJOZXR3b3JraW5nL1Jlc3BvbnNlcy9HZXREb3dubG9hZFVybHNSZXNwb25z",
             "ZS5wcm90bxIUTmV0d29ya2luZy5SZXNwb25zZXMaG0RhdGEvRG93bmxvYWRV",
             "cmxFbnRyeS5wcm90byJIChdHZXREb3dubG9hZFVybHNSZXNwb25zZRItCg1k",
-            "b3dubG9hZF91cmxzGAEgAygLMhYuRGF0YS5Eb3dubG9hZFVybEVudHJ5YgZw",
-            "cm90bzM="));
+            "b3dubG9hZF91cmxzGAEgAygLMhYuRGF0YS5Eb3dubG9hZFVybEVudHJ5Qh2q",
+            "AhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Data.DownloadUrlEntryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.DownloadUrlEntryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Responses.GetDownloadUrlsResponse), global::Networking.Responses.GetDownloadUrlsResponse.Parser, new[]{ "DownloadUrls" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetDownloadUrlsResponse), global::PokemonGoDesktop.API.Proto.GetDownloadUrlsResponse.Parser, new[]{ "DownloadUrls" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Networking.Responses {
     public static pb::MessageParser<GetDownloadUrlsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Responses.GetDownloadUrlsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetDownloadUrlsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -70,10 +70,10 @@ namespace Networking.Responses {
 
     /// <summary>Field number for the "download_urls" field.</summary>
     public const int DownloadUrlsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Data.DownloadUrlEntry> _repeated_downloadUrls_codec
-        = pb::FieldCodec.ForMessage(10, global::Data.DownloadUrlEntry.Parser);
-    private readonly pbc::RepeatedField<global::Data.DownloadUrlEntry> downloadUrls_ = new pbc::RepeatedField<global::Data.DownloadUrlEntry>();
-    public pbc::RepeatedField<global::Data.DownloadUrlEntry> DownloadUrls {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.DownloadUrlEntry> _repeated_downloadUrls_codec
+        = pb::FieldCodec.ForMessage(10, global::PokemonGoDesktop.API.Proto.DownloadUrlEntry.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.DownloadUrlEntry> downloadUrls_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.DownloadUrlEntry>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.DownloadUrlEntry> DownloadUrls {
       get { return downloadUrls_; }
     }
 

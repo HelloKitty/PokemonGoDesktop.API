@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Player {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Player/PlayerStats.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -37,12 +37,12 @@ namespace Data.Player {
             "ZV90cmFpbmluZ190b3RhbBgSIAEoBRIdChVwcmVzdGlnZV9yYWlzZWRfdG90",
             "YWwYEyABKAUSHgoWcHJlc3RpZ2VfZHJvcHBlZF90b3RhbBgUIAEoBRIYChBw",
             "b2tlbW9uX2RlcGxveWVkGBUgASgFEh4KFnBva2Vtb25fY2F1Z2h0X2J5X3R5",
-            "cGUYFiABKAwSHAoUc21hbGxfcmF0dGF0YV9jYXVnaHQYFyABKAViBnByb3Rv",
-            "Mw=="));
+            "cGUYFiABKAwSHAoUc21hbGxfcmF0dGF0YV9jYXVnaHQYFyABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Data.Player.PlayerStats), global::Data.Player.PlayerStats.Parser, new[]{ "Level", "Experience", "PrevLevelXp", "NextLevelXp", "KmWalked", "PokemonsEncountered", "UniquePokedexEntries", "PokemonsCaptured", "Evolutions", "PokeStopVisits", "PokeballsThrown", "EggsHatched", "BigMagikarpCaught", "BattleAttackWon", "BattleAttackTotal", "BattleDefendedWon", "BattleTrainingWon", "BattleTrainingTotal", "PrestigeRaisedTotal", "PrestigeDroppedTotal", "PokemonDeployed", "PokemonCaughtByType", "SmallRattataCaught" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerStats), global::PokemonGoDesktop.API.Proto.PlayerStats.Parser, new[]{ "Level", "Experience", "PrevLevelXp", "NextLevelXp", "KmWalked", "PokemonsEncountered", "UniquePokedexEntries", "PokemonsCaptured", "Evolutions", "PokeStopVisits", "PokeballsThrown", "EggsHatched", "BigMagikarpCaught", "BattleAttackWon", "BattleAttackTotal", "BattleDefendedWon", "BattleTrainingWon", "BattleTrainingTotal", "PrestigeRaisedTotal", "PrestigeDroppedTotal", "PokemonDeployed", "PokemonCaughtByType", "SmallRattataCaught" }, null, null, null)
           }));
     }
     #endregion
@@ -55,7 +55,7 @@ namespace Data.Player {
     public static pb::MessageParser<PlayerStats> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Data.Player.PlayerStatsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.PlayerStatsReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/MarkTutorialCompleteMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28,12 +28,12 @@ namespace Networking.Requests.Messages {
             "YWdlcxoZRW51bXMvVHV0b3JpYWxTdGF0ZS5wcm90byKQAQobTWFya1R1dG9y",
             "aWFsQ29tcGxldGVNZXNzYWdlEjEKE3R1dG9yaWFsc19jb21wbGV0ZWQYASAD",
             "KA4yFC5FbnVtcy5UdXRvcmlhbFN0YXRlEh0KFXNlbmRfbWFya2V0aW5nX2Vt",
-            "YWlscxgCIAEoCBIfChdzZW5kX3B1c2hfbm90aWZpY2F0aW9ucxgDIAEoCGIG",
-            "cHJvdG8z"));
+            "YWlscxgCIAEoCBIfChdzZW5kX3B1c2hfbm90aWZpY2F0aW9ucxgDIAEoCEId",
+            "qgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Enums.TutorialStateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.TutorialStateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.MarkTutorialCompleteMessage), global::Networking.Requests.Messages.MarkTutorialCompleteMessage.Parser, new[]{ "TutorialsCompleted", "SendMarketingEmails", "SendPushNotifications" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.MarkTutorialCompleteMessage), global::PokemonGoDesktop.API.Proto.MarkTutorialCompleteMessage.Parser, new[]{ "TutorialsCompleted", "SendMarketingEmails", "SendPushNotifications" }, null, null, null)
           }));
     }
     #endregion
@@ -46,7 +46,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<MarkTutorialCompleteMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.MarkTutorialCompleteMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.MarkTutorialCompleteMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -71,10 +71,10 @@ namespace Networking.Requests.Messages {
 
     /// <summary>Field number for the "tutorials_completed" field.</summary>
     public const int TutorialsCompletedFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Enums.TutorialState> _repeated_tutorialsCompleted_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Enums.TutorialState) x);
-    private readonly pbc::RepeatedField<global::Enums.TutorialState> tutorialsCompleted_ = new pbc::RepeatedField<global::Enums.TutorialState>();
-    public pbc::RepeatedField<global::Enums.TutorialState> TutorialsCompleted {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.TutorialState> _repeated_tutorialsCompleted_codec
+        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::PokemonGoDesktop.API.Proto.TutorialState) x);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.TutorialState> tutorialsCompleted_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.TutorialState>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.TutorialState> TutorialsCompleted {
       get { return tutorialsCompleted_; }
     }
 

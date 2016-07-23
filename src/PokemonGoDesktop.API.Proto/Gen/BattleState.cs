@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Data.Battle {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Data/Battle/BattleState.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25,11 +25,11 @@ namespace Data.Battle {
           string.Concat(
             "Ch1EYXRhL0JhdHRsZS9CYXR0bGVTdGF0ZS5wcm90bxILRGF0YS5CYXR0bGUq",
             "VAoLQmF0dGxlU3RhdGUSDwoLU1RBVEVfVU5TRVQQABIKCgZBQ1RJVkUQARIL",
-            "CgdWSUNUT1JZEAISDAoIREVGRUFURUQQAxINCglUSU1FRF9PVVQQBGIGcHJv",
-            "dG8z"));
+            "CgdWSUNUT1JZEAISDAoIREVGRUFURUQQAxINCglUSU1FRF9PVVQQBEIdqgIa",
+            "UG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Data.Battle.BattleState), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PokemonGoDesktop.API.Proto.BattleState), }, null));
     }
     #endregion
 

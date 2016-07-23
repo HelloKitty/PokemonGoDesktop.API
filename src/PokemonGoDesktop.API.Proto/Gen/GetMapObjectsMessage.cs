@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Networking.Requests.Messages {
+namespace PokemonGoDesktop.API.Proto {
 
   /// <summary>Holder for reflection information generated from Networking/Requests/Messages/GetMapObjectsMessage.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27,11 +27,12 @@ namespace Networking.Requests.Messages {
             "ZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzInAK",
             "FEdldE1hcE9iamVjdHNNZXNzYWdlEhMKB2NlbGxfaWQYASADKARCAhABEh4K",
             "EnNpbmNlX3RpbWVzdGFtcF9tcxgCIAMoA0ICEAESEAoIbGF0aXR1ZGUYAyAB",
-            "KAESEQoJbG9uZ2l0dWRlGAQgASgBYgZwcm90bzM="));
+            "KAESEQoJbG9uZ2l0dWRlGAQgASgBQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQ",
+            "SS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Networking.Requests.Messages.GetMapObjectsMessage), global::Networking.Requests.Messages.GetMapObjectsMessage.Parser, new[]{ "CellId", "SinceTimestampMs", "Latitude", "Longitude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.GetMapObjectsMessage), global::PokemonGoDesktop.API.Proto.GetMapObjectsMessage.Parser, new[]{ "CellId", "SinceTimestampMs", "Latitude", "Longitude" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +45,7 @@ namespace Networking.Requests.Messages {
     public static pb::MessageParser<GetMapObjectsMessage> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Networking.Requests.Messages.GetMapObjectsMessageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PokemonGoDesktop.API.Proto.GetMapObjectsMessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
