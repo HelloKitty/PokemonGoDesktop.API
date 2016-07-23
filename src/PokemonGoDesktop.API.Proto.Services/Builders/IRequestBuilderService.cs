@@ -21,7 +21,7 @@ namespace PokemonGoDesktop.API.Proto.Services
 		/// <param name="messageInstance"></param>
 		/// <returns></returns>
 		Request Build<TRequestMessageType>(TRequestMessageType messageInstance)
-			where TRequestMessageType : IRequestMessage;
+			where TRequestMessageType : IRequestMessage, IMessage<TRequestMessageType>, IMessage;
 
 		//TODO: Use code generation to map payloads to valid types (I don't think always 1:1)
 		/// <summary>
@@ -33,6 +33,6 @@ namespace PokemonGoDesktop.API.Proto.Services
 		/// <param name="requestType"><see cref="RequestType"/> enum value to put in the message.</param>
 		/// <returns></returns>
 		Request Build<TRequestMessageType>(RequestType requestType, TRequestMessageType messageInstance)
-			where TRequestMessageType : IRequestMessage;
+			where TRequestMessageType : IRequestMessage, IMessage<TRequestMessageType>, IMessage;
 	}
 }
