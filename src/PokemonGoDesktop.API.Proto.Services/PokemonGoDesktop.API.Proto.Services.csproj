@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\IRequestBuilderService.cs" />
+    <Compile Include="Builders\IResponseEnvelopeParserService.cs" />
     <Compile Include="Extensions\RequestEnvelopeExtensions.cs" />
     <Compile Include="Extensions\RequestExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
