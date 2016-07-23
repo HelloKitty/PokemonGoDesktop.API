@@ -1,4 +1,5 @@
-﻿using Networking.Requests;
+﻿using Google.Protobuf;
+using Networking.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,23 +15,24 @@ namespace PokemonGoDesktop.API.Proto.Services
 	{
 		/// <summary>
 		/// Builds a serializable <see cref="Request"/> message with the provided 
-		/// <typeparamref name="TPayloadType"/>.
+		/// <typeparamref name="TRequestMessageType"/>.
 		/// </summary>
-		/// <typeparam name="TPayloadType"></typeparam>
-		/// <param name="payloadType"></param>
+		/// <typeparam name="TRequestMessageType"></typeparam>
+		/// <param name="messageInstance"></param>
 		/// <returns></returns>
-		Request Build<TPayloadType>(TPayloadType payloadType)
-			where TPayloadType : IRequestMessage;
+		Request Build<TRequestMessageType>(TRequestMessageType messageInstance)
+			where TRequestMessageType : IRequestMessage, IMessage<TRequestMessageType>, IMessage;
 
 		//TODO: Use code generation to map payloads to valid types (I don't think always 1:1)
 		/// <summary>
 		/// Builds a serializable <see cref="Request"/> message with the provided 
-		/// <typeparamref name="TPayloadType"/>.
+		/// <typeparamref name="TRequestMessageType"/>.
 		/// </summary>
-		/// <typeparam name="TPayloadType"></typeparam>
-		/// <param name="payloadType"></param>
+		/// <typeparam name="TRequestMessageType"></typeparam>
+		/// <param name="messageInstance">Inner contained payload of the <see cref="Request"/>.</param>
+		/// <param name="requestType"><see cref="RequestType"/> enum value to put in the message.</param>
 		/// <returns></returns>
-		Request Build<TPayloadType>(RequestType requestType, TPayloadType payloadType)
-			where TPayloadType : IRequestMessage;
+		Request Build<TRequestMessageType>(RequestType requestType, TRequestMessageType messageInstance)
+			where TRequestMessageType : IRequestMessage, IMessage<TRequestMessageType>, IMessage;
 	}
 }
