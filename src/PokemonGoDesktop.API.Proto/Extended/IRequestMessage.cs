@@ -8,6 +8,7 @@ namespace PokemonGoDesktop.API.Proto
 	/// <summary>
 	/// Meta-data interface marker (like java) for safer type usage of
 	/// network messages (payloads).
+	/// Applied to request message/payload types with code generation.
 	/// </summary>
 	public interface IRequestMessage
 	{

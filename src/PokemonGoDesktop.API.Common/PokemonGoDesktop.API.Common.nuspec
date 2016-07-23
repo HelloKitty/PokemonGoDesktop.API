@@ -12,4 +12,7 @@
     <copyright>Copyright 2015-2016</copyright>
     <tags>Pokemon Go PokemonGO Proto Protobuf Protocolbuffers Protocol buffers Desktop API Services Common</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\PokemonGoDesktop.API.Common.xml" target="lib\net35"/>
+  </files>
 </package>
