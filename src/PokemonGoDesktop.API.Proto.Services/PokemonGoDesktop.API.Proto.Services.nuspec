@@ -18,6 +18,7 @@
     </dependencies>
   </metadata>
   <files>
+    <file src="bin\Release\PokemonGoDesktop.API.Proto.Services.xml" target="lib\net35"/>
     <file src="bin\Release\Google.Protobuf.dll" target="lib\net35"/>
   </files>
 </package>
