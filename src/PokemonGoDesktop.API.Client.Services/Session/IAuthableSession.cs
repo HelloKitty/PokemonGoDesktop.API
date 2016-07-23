@@ -14,6 +14,6 @@ namespace PokemonGoDesktop.API.Client.Services
 		/// <summary>
 		/// Represents the current <see cref="AuthToken"/>.
 		/// </summary>
-		AuthToken Token { get; }
+		IAuthToken Token { get; }
 	}
 }

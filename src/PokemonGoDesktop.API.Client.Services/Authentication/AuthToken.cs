@@ -26,5 +26,12 @@ namespace PokemonGoDesktop.API.Client.Services
 		/// String token ID issued by the authentication
 		/// </summary>
 		public string TokenID { get; }
+
+		public AuthToken(AuthType authType, bool valid, string tokenID)
+		{
+			TokenType = authType;
+			isValid = valid;
+			TokenID = tokenID;
+		}
 	}
 }
