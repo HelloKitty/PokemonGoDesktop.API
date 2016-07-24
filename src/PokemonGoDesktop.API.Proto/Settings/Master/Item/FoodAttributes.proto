@@ -5,7 +5,7 @@ package Settings.Master.Item;
 import "Enums/ItemEffect.proto";
 
 message FoodAttributes {
-	repeated.Enums.ItemEffect item_effect = 1;
+	repeated Enums.ItemEffect item_effect = 1;
 	repeated float item_effect_percent = 2;
 	float growth_percent = 3;
 }

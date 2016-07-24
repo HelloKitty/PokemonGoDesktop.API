@@ -9,7 +9,6 @@ import "Networking/Envelopes/Unknown6.proto";
 message RequestEnvelope {
 	int32 status_code = 1;
 
-	//Also called RPC_ID in Rocket-API
 	uint64 request_id = 3;
 	repeated .Networking.Requests.Request requests = 4;
 

@@ -3,7 +3,7 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Settings.Master;
 
 import "Enums/PokemonId.proto";
-import "Enums/PokemonClass.proto";
+import "Enums/PokemonRarity.proto";
 import "Enums/PokemonType.proto";
 import "Enums/PokemonMove.proto";
 import "Enums/PokemonFamilyId.proto";
@@ -24,7 +24,7 @@ message PokemonSettings {
 	repeated float animation_time = 11;
 	repeated .Enums.PokemonId evolution_ids = 12;
 	int32 evolution_pips = 13;
-	.Enums.PokemonClass class = 14;
+	.Enums.PokemonRarity rarity = 14;
 	float pokedex_height_m = 15;
 	float pokedex_weight_kg = 16;
 	.Enums.PokemonId parent_pokemon_id = 17;

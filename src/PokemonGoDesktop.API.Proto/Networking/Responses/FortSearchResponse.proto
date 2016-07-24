@@ -3,11 +3,11 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
 import "Data/PokemonData.proto";
-import "Inventory/ItemAward.proto";
+import "Inventory/Item/ItemAward.proto";
 
 message FortSearchResponse {
 	.Networking.Responses.FortSearchResponse.Result result = 1;
-	repeated .Inventory.ItemAward items_awarded = 2;
+	repeated .Inventory.Item.ItemAward items_awarded = 2;
 	int32 gems_awarded = 3;
 	.Data.PokemonData pokemon_data_egg = 4;
 	int32 experience_awarded = 5;

@@ -24,12 +24,12 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBJbnZlbnRvcnkvSW52ZW50b3J5VXBncmFkZS5wcm90bxIJSW52ZW50b3J5",
-            "GhZJbnZlbnRvcnkvSXRlbUlkLnByb3RvGiRJbnZlbnRvcnkvSW52ZW50b3J5",
-            "VXBncmFkZVR5cGUucHJvdG8iiQEKEEludmVudG9yeVVwZ3JhZGUSIgoHaXRl",
-            "bV9pZBgBIAEoDjIRLkludmVudG9yeS5JdGVtSWQSNQoMdXBncmFkZV90eXBl",
-            "GAIgASgOMh8uSW52ZW50b3J5LkludmVudG9yeVVwZ3JhZGVUeXBlEhoKEmFk",
-            "ZGl0aW9uYWxfc3RvcmFnZRgDIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5B",
-            "UEkuUHJvdG9iBnByb3RvMw=="));
+            "GhtJbnZlbnRvcnkvSXRlbS9JdGVtSWQucHJvdG8aJEludmVudG9yeS9JbnZl",
+            "bnRvcnlVcGdyYWRlVHlwZS5wcm90byKOAQoQSW52ZW50b3J5VXBncmFkZRIn",
+            "CgdpdGVtX2lkGAEgASgOMhYuSW52ZW50b3J5Lkl0ZW0uSXRlbUlkEjUKDHVw",
+            "Z3JhZGVfdHlwZRgCIAEoDjIfLkludmVudG9yeS5JbnZlbnRvcnlVcGdyYWRl",
+            "VHlwZRIaChJhZGRpdGlvbmFsX3N0b3JhZ2UYAyABKAVCHaoCGlBva2Vtb25H",
+            "b0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventoryUpgradeTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

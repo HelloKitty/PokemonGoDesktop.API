@@ -24,17 +24,18 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjZOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0NhdGNoUG9rZW1vbk1l",
-            "c3NhZ2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2FnZXMixQEK",
-            "E0NhdGNoUG9rZW1vbk1lc3NhZ2USFAoMZW5jb3VudGVyX2lkGAEgASgGEhAK",
-            "CHBva2ViYWxsGAIgASgFEh8KF25vcm1hbGl6ZWRfcmV0aWNsZV9zaXplGAMg",
-            "ASgBEhgKEHNwYXduX3BvaW50X2d1aWQYBCABKAkSEwoLaGl0X3Bva2Vtb24Y",
-            "BSABKAgSFQoNc3Bpbl9tb2RpZmllchgGIAEoARIfChdub3JtYWxpemVkX2hp",
-            "dF9wb3NpdGlvbhgHIAEoAUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
-            "dG9iBnByb3RvMw=="));
+            "c3NhZ2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2FnZXMaG0lu",
+            "dmVudG9yeS9JdGVtL0l0ZW1JZC5wcm90byLbAQoTQ2F0Y2hQb2tlbW9uTWVz",
+            "c2FnZRIUCgxlbmNvdW50ZXJfaWQYASABKAYSKAoIcG9rZWJhbGwYAiABKA4y",
+            "Fi5JbnZlbnRvcnkuSXRlbS5JdGVtSWQSHwoXbm9ybWFsaXplZF9yZXRpY2xl",
+            "X3NpemUYAyABKAESFgoOc3Bhd25fcG9pbnRfaWQYBCABKAkSEwoLaGl0X3Bv",
+            "a2Vtb24YBSABKAgSFQoNc3Bpbl9tb2RpZmllchgGIAEoARIfChdub3JtYWxp",
+            "emVkX2hpdF9wb3NpdGlvbhgHIAEoAUIdqgIaUG9rZW1vbkdvRGVza3RvcC5B",
+            "UEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CatchPokemonMessage), global::PokemonGoDesktop.API.Proto.CatchPokemonMessage.Parser, new[]{ "EncounterId", "Pokeball", "NormalizedReticleSize", "SpawnPointGuid", "HitPokemon", "SpinModifier", "NormalizedHitPosition" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.CatchPokemonMessage), global::PokemonGoDesktop.API.Proto.CatchPokemonMessage.Parser, new[]{ "EncounterId", "Pokeball", "NormalizedReticleSize", "SpawnPointId", "HitPokemon", "SpinModifier", "NormalizedHitPosition" }, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +65,7 @@ namespace PokemonGoDesktop.API.Proto {
       encounterId_ = other.encounterId_;
       pokeball_ = other.pokeball_;
       normalizedReticleSize_ = other.normalizedReticleSize_;
-      spawnPointGuid_ = other.spawnPointGuid_;
+      spawnPointId_ = other.spawnPointId_;
       hitPokemon_ = other.hitPokemon_;
       spinModifier_ = other.spinModifier_;
       normalizedHitPosition_ = other.normalizedHitPosition_;
@@ -86,8 +87,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "pokeball" field.</summary>
     public const int PokeballFieldNumber = 2;
-    private int pokeball_;
-    public int Pokeball {
+    private global::PokemonGoDesktop.API.Proto.ItemId pokeball_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId Pokeball {
       get { return pokeball_; }
       set {
         pokeball_ = value;
@@ -104,13 +105,13 @@ namespace PokemonGoDesktop.API.Proto {
       }
     }
 
-    /// <summary>Field number for the "spawn_point_guid" field.</summary>
-    public const int SpawnPointGuidFieldNumber = 4;
-    private string spawnPointGuid_ = "";
-    public string SpawnPointGuid {
-      get { return spawnPointGuid_; }
+    /// <summary>Field number for the "spawn_point_id" field.</summary>
+    public const int SpawnPointIdFieldNumber = 4;
+    private string spawnPointId_ = "";
+    public string SpawnPointId {
+      get { return spawnPointId_; }
       set {
-        spawnPointGuid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        spawnPointId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -158,7 +159,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (EncounterId != other.EncounterId) return false;
       if (Pokeball != other.Pokeball) return false;
       if (NormalizedReticleSize != other.NormalizedReticleSize) return false;
-      if (SpawnPointGuid != other.SpawnPointGuid) return false;
+      if (SpawnPointId != other.SpawnPointId) return false;
       if (HitPokemon != other.HitPokemon) return false;
       if (SpinModifier != other.SpinModifier) return false;
       if (NormalizedHitPosition != other.NormalizedHitPosition) return false;
@@ -170,7 +171,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (EncounterId != 0UL) hash ^= EncounterId.GetHashCode();
       if (Pokeball != 0) hash ^= Pokeball.GetHashCode();
       if (NormalizedReticleSize != 0D) hash ^= NormalizedReticleSize.GetHashCode();
-      if (SpawnPointGuid.Length != 0) hash ^= SpawnPointGuid.GetHashCode();
+      if (SpawnPointId.Length != 0) hash ^= SpawnPointId.GetHashCode();
       if (HitPokemon != false) hash ^= HitPokemon.GetHashCode();
       if (SpinModifier != 0D) hash ^= SpinModifier.GetHashCode();
       if (NormalizedHitPosition != 0D) hash ^= NormalizedHitPosition.GetHashCode();
@@ -188,15 +189,15 @@ namespace PokemonGoDesktop.API.Proto {
       }
       if (Pokeball != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(Pokeball);
+        output.WriteEnum((int) Pokeball);
       }
       if (NormalizedReticleSize != 0D) {
         output.WriteRawTag(25);
         output.WriteDouble(NormalizedReticleSize);
       }
-      if (SpawnPointGuid.Length != 0) {
+      if (SpawnPointId.Length != 0) {
         output.WriteRawTag(34);
-        output.WriteString(SpawnPointGuid);
+        output.WriteString(SpawnPointId);
       }
       if (HitPokemon != false) {
         output.WriteRawTag(40);
@@ -218,13 +219,13 @@ namespace PokemonGoDesktop.API.Proto {
         size += 1 + 8;
       }
       if (Pokeball != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Pokeball);
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Pokeball);
       }
       if (NormalizedReticleSize != 0D) {
         size += 1 + 8;
       }
-      if (SpawnPointGuid.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpawnPointGuid);
+      if (SpawnPointId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpawnPointId);
       }
       if (HitPokemon != false) {
         size += 1 + 1;
@@ -251,8 +252,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (other.NormalizedReticleSize != 0D) {
         NormalizedReticleSize = other.NormalizedReticleSize;
       }
-      if (other.SpawnPointGuid.Length != 0) {
-        SpawnPointGuid = other.SpawnPointGuid;
+      if (other.SpawnPointId.Length != 0) {
+        SpawnPointId = other.SpawnPointId;
       }
       if (other.HitPokemon != false) {
         HitPokemon = other.HitPokemon;
@@ -277,7 +278,7 @@ namespace PokemonGoDesktop.API.Proto {
             break;
           }
           case 16: {
-            Pokeball = input.ReadInt32();
+            pokeball_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 25: {
@@ -285,7 +286,7 @@ namespace PokemonGoDesktop.API.Proto {
             break;
           }
           case 34: {
-            SpawnPointGuid = input.ReadString();
+            SpawnPointId = input.ReadString();
             break;
           }
           case 40: {

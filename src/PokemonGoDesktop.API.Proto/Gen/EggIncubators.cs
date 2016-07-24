@@ -25,7 +25,7 @@ namespace PokemonGoDesktop.API.Proto {
           string.Concat(
             "Ch1JbnZlbnRvcnkvRWdnSW5jdWJhdG9ycy5wcm90bxIJSW52ZW50b3J5GhxJ",
             "bnZlbnRvcnkvRWdnSW5jdWJhdG9yLnByb3RvIj8KDUVnZ0luY3ViYXRvcnMS",
-            "LgoNZWdnX2luY3ViYXRvchgBIAEoCzIXLkludmVudG9yeS5FZ2dJbmN1YmF0",
+            "LgoNZWdnX2luY3ViYXRvchgBIAMoCzIXLkludmVudG9yeS5FZ2dJbmN1YmF0",
             "b3JCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.EggIncubatorReflection.Descriptor, },
@@ -57,7 +57,7 @@ namespace PokemonGoDesktop.API.Proto {
     partial void OnConstruction();
 
     public EggIncubators(EggIncubators other) : this() {
-      EggIncubator = other.eggIncubator_ != null ? other.EggIncubator.Clone() : null;
+      eggIncubator_ = other.eggIncubator_.Clone();
     }
 
     public EggIncubators Clone() {
@@ -66,12 +66,11 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "egg_incubator" field.</summary>
     public const int EggIncubatorFieldNumber = 1;
-    private global::PokemonGoDesktop.API.Proto.EggIncubator eggIncubator_;
-    public global::PokemonGoDesktop.API.Proto.EggIncubator EggIncubator {
+    private static readonly pb::FieldCodec<global::PokemonGoDesktop.API.Proto.EggIncubator> _repeated_eggIncubator_codec
+        = pb::FieldCodec.ForMessage(10, global::PokemonGoDesktop.API.Proto.EggIncubator.Parser);
+    private readonly pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.EggIncubator> eggIncubator_ = new pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.EggIncubator>();
+    public pbc::RepeatedField<global::PokemonGoDesktop.API.Proto.EggIncubator> EggIncubator {
       get { return eggIncubator_; }
-      set {
-        eggIncubator_ = value;
-      }
     }
 
     public override bool Equals(object other) {
@@ -85,13 +84,13 @@ namespace PokemonGoDesktop.API.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(EggIncubator, other.EggIncubator)) return false;
+      if(!eggIncubator_.Equals(other.eggIncubator_)) return false;
       return true;
     }
 
     public override int GetHashCode() {
       int hash = 1;
-      if (eggIncubator_ != null) hash ^= EggIncubator.GetHashCode();
+      hash ^= eggIncubator_.GetHashCode();
       return hash;
     }
 
@@ -100,17 +99,12 @@ namespace PokemonGoDesktop.API.Proto {
     }
 
     public void WriteTo(pb::CodedOutputStream output) {
-      if (eggIncubator_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(EggIncubator);
-      }
+      eggIncubator_.WriteTo(output, _repeated_eggIncubator_codec);
     }
 
     public int CalculateSize() {
       int size = 0;
-      if (eggIncubator_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EggIncubator);
-      }
+      size += eggIncubator_.CalculateSize(_repeated_eggIncubator_codec);
       return size;
     }
 
@@ -118,12 +112,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (other == null) {
         return;
       }
-      if (other.eggIncubator_ != null) {
-        if (eggIncubator_ == null) {
-          eggIncubator_ = new global::PokemonGoDesktop.API.Proto.EggIncubator();
-        }
-        EggIncubator.MergeFrom(other.EggIncubator);
-      }
+      eggIncubator_.Add(other.eggIncubator_);
     }
 
     public void MergeFrom(pb::CodedInputStream input) {
@@ -134,10 +123,7 @@ namespace PokemonGoDesktop.API.Proto {
             input.SkipLastField();
             break;
           case 10: {
-            if (eggIncubator_ == null) {
-              eggIncubator_ = new global::PokemonGoDesktop.API.Proto.EggIncubator();
-            }
-            input.ReadMessage(eggIncubator_);
+            eggIncubator_.AddEntriesFrom(input, _repeated_eggIncubator_codec);
             break;
           }
         }

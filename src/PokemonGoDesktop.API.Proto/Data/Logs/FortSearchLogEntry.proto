@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Data.Logs;
+
+import "Inventory/Item/ItemData.proto";
+import "Enums/PokemonId.proto";
+
+message FortSearchLogEntry {
+	.Data.Logs.FortSearchLogEntry.Result result = 1;
+	string fort_id = 2;
+	repeated .Inventory.Item.ItemData items = 3;
+	int32 eggs = 4;
+
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+}

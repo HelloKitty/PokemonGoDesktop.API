@@ -3,8 +3,8 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Settings.Master;
 
 import "Enums/ItemCategory.proto";
-import "Inventory/ItemId.proto";
-import "Inventory/ItemType.proto";
+import "Inventory/Item/ItemId.proto";
+import "Inventory/Item/ItemType.proto";
 
 import "Settings/Master/Item/FoodAttributes.proto";
 import "Settings/Master/Item/PotionAttributes.proto";
@@ -18,8 +18,8 @@ import "Settings/Master/Item/ExperienceBoostAttributes.proto";
 import "Settings/Master/Item/InventoryUpgradeAttributes.proto";
 
 message ItemSettings {
-	.Inventory.ItemId item_id = 1;
-	.Inventory.ItemType item_type = 2;
+	.Inventory.Item.ItemId item_id = 1;
+	.Inventory.Item.ItemType item_type = 2;
 	.Enums.ItemCategory category = 3;
 	float drop_freq = 4;
 	int32 drop_trainer_level = 5;

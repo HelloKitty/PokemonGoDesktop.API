@@ -3,7 +3,7 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
 message DiskEncounterMessage {
-	fixed64 encounter_id = 1;
+	uint64 encounter_id = 1;
 	string fort_id = 2;
 	double player_latitude = 3;
 	double player_longitude = 4;

@@ -48,6 +48,7 @@
     <Compile Include="Extended\Implementation\IEncounterableImplementation.cs" />
     <Compile Include="Extended\IResponseMessage.cs" />
     <Compile Include="Extended\IRequestMessage.cs" />
+    <Compile Include="Gen\ActionLogEntry.cs" />
     <Compile Include="Gen\ActivityType.cs" />
     <Compile Include="Gen\AddFortModifierMessage.cs" />
     <Compile Include="Gen\AddFortModifierResponse.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Gen\CameraTarget.cs" />
     <Compile Include="Gen\CaptureAward.cs" />
     <Compile Include="Gen\CaptureProbability.cs" />
+    <Compile Include="Gen\CatchPokemonLogEntry.cs" />
     <Compile Include="Gen\CatchPokemonMessage.cs" />
     <Compile Include="Gen\CatchPokemonResponse.cs" />
     <Compile Include="Gen\CheckAwardedBadgesMessage.cs" />
@@ -130,6 +132,7 @@
     <Compile Include="Gen\FortRecallPokemonMessage.cs" />
     <Compile Include="Gen\FortRecallPokemonResponse.cs" />
     <Compile Include="Gen\FortRenderingType.cs" />
+    <Compile Include="Gen\FortSearchLogEntry.cs" />
     <Compile Include="Gen\FortSearchMessage.cs" />
     <Compile Include="Gen\FortSearchResponse.cs" />
     <Compile Include="Gen\FortSettings.cs" />
@@ -176,9 +179,9 @@
     <Compile Include="Gen\InventoryUpgradeAttributes.cs" />
     <Compile Include="Gen\InventoryUpgrades.cs" />
     <Compile Include="Gen\InventoryUpgradeType.cs" />
-    <Compile Include="Gen\Item.cs" />
     <Compile Include="Gen\ItemAward.cs" />
     <Compile Include="Gen\ItemCategory.cs" />
+    <Compile Include="Gen\ItemData.cs" />
     <Compile Include="Gen\ItemEffect.cs" />
     <Compile Include="Gen\ItemId.cs" />
     <Compile Include="Gen\ItemSettings.cs" />
@@ -210,13 +213,13 @@
     <Compile Include="Gen\PlayerUpdateResponse.cs" />
     <Compile Include="Gen\PokeballAttributes.cs" />
     <Compile Include="Gen\PokedexEntry.cs" />
-    <Compile Include="Gen\PokemonClass.cs" />
     <Compile Include="Gen\PokemonData.cs" />
     <Compile Include="Gen\PokemonFamily.cs" />
     <Compile Include="Gen\PokemonFamilyId.cs" />
     <Compile Include="Gen\PokemonId.cs" />
     <Compile Include="Gen\PokemonMove.cs" />
     <Compile Include="Gen\PokemonMovementType.cs" />
+    <Compile Include="Gen\PokemonRarity.cs" />
     <Compile Include="Gen\PokemonSettings.cs" />
     <Compile Include="Gen\PokemonType.cs" />
     <Compile Include="Gen\PokemonUpgradeSettings.cs" />
@@ -240,6 +243,8 @@
     <Compile Include="Gen\SetFavoritePokemonResponse.cs" />
     <Compile Include="Gen\SetPlayerTeamMessage.cs" />
     <Compile Include="Gen\SetPlayerTeamResponse.cs" />
+    <Compile Include="Gen\SfidaActionLogMessage.cs" />
+    <Compile Include="Gen\SfidaActionLogResponse.cs" />
     <Compile Include="Gen\SpawnPoint.cs" />
     <Compile Include="Gen\StartGymBattleMessage.cs" />
     <Compile Include="Gen\StartGymBattleResponse.cs" />
@@ -284,6 +289,9 @@
     <None Include="Data\DownloadUrlEntry.proto" />
     <None Include="Data\Gym\GymMembership.proto" />
     <None Include="Data\Gym\GymState.proto" />
+    <None Include="Data\Logs\ActionLogEntry.proto" />
+    <None Include="Data\Logs\CatchPokemonLogEntry.proto" />
+    <None Include="Data\Logs\FortSearchLogEntry.proto" />
     <None Include="Data\PlayerBadge.proto" />
     <None Include="Data\PlayerData.proto" />
     <None Include="Data\Player\ContactSettings.proto" />
@@ -306,11 +314,11 @@
     <None Include="Enums\ItemCategory.proto" />
     <None Include="Enums\ItemEffect.proto" />
     <None Include="Enums\Platform.proto" />
-    <None Include="Enums\PokemonClass.proto" />
     <None Include="Enums\PokemonFamilyId.proto" />
     <None Include="Enums\PokemonId.proto" />
     <None Include="Enums\PokemonMove.proto" />
     <None Include="Enums\PokemonMovementType.proto" />
+    <None Include="Enums\PokemonRarity.proto" />
     <None Include="Enums\PokemonType.proto" />
     <None Include="Enums\TeamColor.proto" />
     <None Include="Enums\TutorialState.proto" />
@@ -325,10 +333,10 @@
     <None Include="Inventory\InventoryUpgrade.proto" />
     <None Include="Inventory\InventoryUpgrades.proto" />
     <None Include="Inventory\InventoryUpgradeType.proto" />
-    <None Include="Inventory\Item.proto" />
-    <None Include="Inventory\ItemAward.proto" />
-    <None Include="Inventory\ItemId.proto" />
-    <None Include="Inventory\ItemType.proto" />
+    <None Include="Inventory\Item\ItemAward.proto" />
+    <None Include="Inventory\Item\ItemData.proto" />
+    <None Include="Inventory\Item\ItemId.proto" />
+    <None Include="Inventory\Item\ItemType.proto" />
     <None Include="Inventory\PokemonFamily.proto" />
     <None Include="Map\Fort\FortData.proto" />
     <None Include="Map\Fort\FortLureInfo.proto" />
@@ -390,6 +398,7 @@
     <None Include="Networking\Requests\Messages\SetContactSettingsMessage.proto" />
     <None Include="Networking\Requests\Messages\SetFavoritePokemonMessage.proto" />
     <None Include="Networking\Requests\Messages\SetPlayerTeamMessage.proto" />
+    <None Include="Networking\Requests\Messages\SfidaActionLogMessage.proto" />
     <None Include="Networking\Requests\Messages\StartGymBattleMessage.proto" />
     <None Include="Networking\Requests\Messages\UpgradePokemonMessage.proto" />
     <None Include="Networking\Requests\Messages\UseIncenseMessage.proto" />
@@ -443,6 +452,7 @@
     <None Include="Networking\Responses\SetContactSettingsResponse.proto" />
     <None Include="Networking\Responses\SetFavoritePokemonResponse.proto" />
     <None Include="Networking\Responses\SetPlayerTeamResponse.proto" />
+    <None Include="Networking\Responses\SfidaActionLogResponse.proto" />
     <None Include="Networking\Responses\StartGymBattleResponse.proto" />
     <None Include="Networking\Responses\UpgradePokemonResponse.proto" />
     <None Include="Networking\Responses\UseIncenseResponse.proto" />

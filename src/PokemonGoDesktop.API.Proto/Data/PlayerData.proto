@@ -8,12 +8,13 @@ import "Data/Player/DailyBonus.proto";
 import "Data/Player/EquippedBadge.proto";
 import "Data/Player/ContactSettings.proto";
 import "Data/Player/Currency.proto";
+import "Enums/TeamColor.proto";
 
 message PlayerData {
 	int64 creation_timestamp_ms  = 1;
 	string username = 2;
-	int32 team = 5;
-	repeated .Enums.TutorialState tutorial_state = 7;
+	.Enums.TeamColor team = 5;
+	repeated .Enums.TutorialState tutorial_state = 7 [packed=true];
 	.Data.Player.PlayerAvatar avatar = 8;
 	int32 max_pokemon_storage = 9;
 	int32 max_item_storage = 10;

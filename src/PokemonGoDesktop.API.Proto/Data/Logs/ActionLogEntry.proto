@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Data.Logs;
+
+import "Data/Logs/CatchPokemonLogEntry.proto";
+import "Data/Logs/FortSearchLogEntry.proto";
+
+message ActionLogEntry {
+	int64 timestamp_ms = 1;
+	bool sfida = 2;
+
+	oneof Action {
+		.Data.Logs.CatchPokemonLogEntry catch_pokemon = 3;
+		.Data.Logs.FortSearchLogEntry fort_search = 4;
+	}
+}

@@ -7,7 +7,7 @@ import "Data/Capture/CaptureAward.proto";
 message CatchPokemonResponse {
 	.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;
 	double miss_percent = 2;
-	uint64 captured_pokemon_id = 3;
+	fixed64 captured_pokemon_id = 3;
 	.Data.Capture.CaptureAward capture_award = 4;
 
 	enum CatchStatus {

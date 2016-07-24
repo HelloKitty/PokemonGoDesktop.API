@@ -25,17 +25,17 @@ namespace PokemonGoDesktop.API.Proto {
           string.Concat(
             "Ci1OZXR3b3JraW5nL1Jlc3BvbnNlcy9Gb3J0U2VhcmNoUmVzcG9uc2UucHJv",
             "dG8SFE5ldHdvcmtpbmcuUmVzcG9uc2VzGhZEYXRhL1Bva2Vtb25EYXRhLnBy",
-            "b3RvGhlJbnZlbnRvcnkvSXRlbUF3YXJkLnByb3RvIpUDChJGb3J0U2VhcmNo",
-            "UmVzcG9uc2USPwoGcmVzdWx0GAEgASgOMi8uTmV0d29ya2luZy5SZXNwb25z",
-            "ZXMuRm9ydFNlYXJjaFJlc3BvbnNlLlJlc3VsdBIrCg1pdGVtc19hd2FyZGVk",
-            "GAIgAygLMhQuSW52ZW50b3J5Lkl0ZW1Bd2FyZBIUCgxnZW1zX2F3YXJkZWQY",
-            "AyABKAUSKwoQcG9rZW1vbl9kYXRhX2VnZxgEIAEoCzIRLkRhdGEuUG9rZW1v",
-            "bkRhdGESGgoSZXhwZXJpZW5jZV9hd2FyZGVkGAUgASgFEiYKHmNvb2xkb3du",
-            "X2NvbXBsZXRlX3RpbWVzdGFtcF9tcxgGIAEoAxIiChpjaGFpbl9oYWNrX3Nl",
-            "cXVlbmNlX251bWJlchgHIAEoBSJmCgZSZXN1bHQSEQoNTk9fUkVTVUxUX1NF",
-            "VBAAEgsKB1NVQ0NFU1MQARIQCgxPVVRfT0ZfUkFOR0UQAhIWChJJTl9DT09M",
-            "RE9XTl9QRVJJT0QQAxISCg5JTlZFTlRPUllfRlVMTBAEQh2qAhpQb2tlbW9u",
-            "R29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
+            "b3RvGh5JbnZlbnRvcnkvSXRlbS9JdGVtQXdhcmQucHJvdG8imgMKEkZvcnRT",
+            "ZWFyY2hSZXNwb25zZRI/CgZyZXN1bHQYASABKA4yLy5OZXR3b3JraW5nLlJl",
+            "c3BvbnNlcy5Gb3J0U2VhcmNoUmVzcG9uc2UuUmVzdWx0EjAKDWl0ZW1zX2F3",
+            "YXJkZWQYAiADKAsyGS5JbnZlbnRvcnkuSXRlbS5JdGVtQXdhcmQSFAoMZ2Vt",
+            "c19hd2FyZGVkGAMgASgFEisKEHBva2Vtb25fZGF0YV9lZ2cYBCABKAsyES5E",
+            "YXRhLlBva2Vtb25EYXRhEhoKEmV4cGVyaWVuY2VfYXdhcmRlZBgFIAEoBRIm",
+            "Ch5jb29sZG93bl9jb21wbGV0ZV90aW1lc3RhbXBfbXMYBiABKAMSIgoaY2hh",
+            "aW5faGFja19zZXF1ZW5jZV9udW1iZXIYByABKAUiZgoGUmVzdWx0EhEKDU5P",
+            "X1JFU1VMVF9TRVQQABILCgdTVUNDRVNTEAESEAoMT1VUX09GX1JBTkdFEAIS",
+            "FgoSSU5fQ09PTERPV05fUEVSSU9EEAMSEgoOSU5WRU5UT1JZX0ZVTEwQBEId",
+            "qgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemAwardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

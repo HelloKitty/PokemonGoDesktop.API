@@ -1,9 +1,0 @@
-syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Enums;
-
-enum PokemonClass {
-	NORMAL = 0;
-	LEGENDARY = 1;
-	MYTHIC = 2;
-}

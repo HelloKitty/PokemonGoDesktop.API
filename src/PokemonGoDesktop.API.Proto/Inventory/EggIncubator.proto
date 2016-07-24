@@ -2,12 +2,12 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Inventory;
 
-import "Inventory/ItemId.proto";
+import "Inventory/Item/ItemId.proto";
 import "Inventory/EggIncubatorType.proto";
 
 message EggIncubator {
 	string id = 1;
-	.Inventory.ItemId item_id = 2;
+	.Inventory.Item.ItemId item_id = 2;
 	.Inventory.EggIncubatorType incubator_type = 3;
 	int32 uses_remaining = 4;
 	uint64 pokemon_id = 5; // TODO: Check if is PokemonType

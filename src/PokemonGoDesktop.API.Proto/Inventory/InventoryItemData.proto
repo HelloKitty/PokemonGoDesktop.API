@@ -2,7 +2,7 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Inventory;
 
-import "Inventory/Item.proto";
+import "Inventory/Item/ItemData.proto";
 import "Inventory/AppliedItems.proto";
 import "Inventory/EggIncubators.proto";
 import "Inventory/PokemonFamily.proto";
@@ -15,7 +15,7 @@ import "Data/Player/PlayerCamera.proto";
 
 message InventoryItemData {
 	.Data.PokemonData pokemon_data = 1;
-	.Inventory.Item item = 2;
+	.Inventory.Item.ItemData item = 2;
 	.Data.PokedexEntry pokedex_entry = 3;
 	.Data.Player.PlayerStats player_stats = 4;
 	.Data.Player.PlayerCurrency player_currency = 5;

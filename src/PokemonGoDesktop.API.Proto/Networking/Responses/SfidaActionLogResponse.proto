@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Networking.Responses;
+
+import "Data/Logs/ActionLogEntry.proto";
+
+message SfidaActionLogResponse {
+	.Networking.Responses.SfidaActionLogResponse.Result result = 1;
+	repeated .Data.Logs.ActionLogEntry log_entries = 2;
+
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+	}
+}

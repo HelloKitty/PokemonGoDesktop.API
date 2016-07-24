@@ -25,7 +25,7 @@ namespace PokemonGoDesktop.API.Proto {
           string.Concat(
             "CjdOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL0Rpc2tFbmNvdW50ZXJN",
             "ZXNzYWdlLnByb3RvEhxOZXR3b3JraW5nLlJlcXVlc3RzLk1lc3NhZ2VzInAK",
-            "FERpc2tFbmNvdW50ZXJNZXNzYWdlEhQKDGVuY291bnRlcl9pZBgBIAEoBhIP",
+            "FERpc2tFbmNvdW50ZXJNZXNzYWdlEhQKDGVuY291bnRlcl9pZBgBIAEoBBIP",
             "Cgdmb3J0X2lkGAIgASgJEhcKD3BsYXllcl9sYXRpdHVkZRgDIAEoARIYChBw",
             "bGF5ZXJfbG9uZ2l0dWRlGAQgASgBQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQ",
             "SS5Qcm90b2IGcHJvdG8z"));
@@ -142,8 +142,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     public void WriteTo(pb::CodedOutputStream output) {
       if (EncounterId != 0UL) {
-        output.WriteRawTag(9);
-        output.WriteFixed64(EncounterId);
+        output.WriteRawTag(8);
+        output.WriteUInt64(EncounterId);
       }
       if (FortId.Length != 0) {
         output.WriteRawTag(18);
@@ -162,7 +162,7 @@ namespace PokemonGoDesktop.API.Proto {
     public int CalculateSize() {
       int size = 0;
       if (EncounterId != 0UL) {
-        size += 1 + 8;
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(EncounterId);
       }
       if (FortId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FortId);
@@ -201,8 +201,8 @@ namespace PokemonGoDesktop.API.Proto {
           default:
             input.SkipLastField();
             break;
-          case 9: {
-            EncounterId = input.ReadFixed64();
+          case 8: {
+            EncounterId = input.ReadUInt64();
             break;
           }
           case 18: {

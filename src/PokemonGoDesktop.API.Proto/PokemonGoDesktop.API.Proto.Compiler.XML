@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PokemonGoDesktop.API.Proto.Compiler</name>
+    </assembly>
+    <members>
+        <member name="M:PokemonGoDesktop.API.Proto.Compiler.IRequestMarkersGenerator.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new request market code generator with the provided
+            request proto/file names.
+            </summary>
+            <param name="requestFileNames"></param>
+        </member>
+        <member name="M:PokemonGoDesktop.API.Proto.Compiler.IResponseMarkersGenerator.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new response market code generator with the provided
+            response proto/file names.
+            </summary>
+            <param name="responseFileNames"></param>
+        </member>
+        <member name="P:PokemonGoDesktop.API.Proto.Compiler.MessageMarkersGenerator.messageFileMessageNames">
+            <summary>
+            Collection of request message names.
+            </summary>
+        </member>
+        <member name="P:PokemonGoDesktop.API.Proto.Compiler.MessageMarkersGenerator.networkMessageNamespace">
+            <summary>
+            Indicates the namespace of the messages
+            </summary>
+        </member>
+        <member name="P:PokemonGoDesktop.API.Proto.Compiler.MessageMarkersGenerator.markerInterfaceName">
+            <summary>
+            Implementer should indicate the string name of the message/payload marker interface name.
+            </summary>
+        </member>
+        <member name="M:PokemonGoDesktop.API.Proto.Compiler.MessageMarkersGenerator.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new request market code generator with the provided
+            request proto/file names.
+            </summary>
+            <param name="messageFileNames"></param>
+        </member>
+        <member name="M:PokemonGoDesktop.API.Proto.ICodeGenerator.Generate">
+            <summary>
+            Generatesa a string of code that has been setup.
+            </summary>
+            <returns>String that represents the .cs file.</returns>
+        </member>
+    </members>
+</doc>

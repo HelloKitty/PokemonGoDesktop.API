@@ -5,5 +5,5 @@ package Inventory;
 import "Inventory/EggIncubator.proto";
 
 message EggIncubators {
-	.Inventory.EggIncubator egg_incubator = 1;
+	repeated .Inventory.EggIncubator egg_incubator = 1;
 }

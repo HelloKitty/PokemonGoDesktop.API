@@ -170,6 +170,10 @@ namespace PokemonGoDesktop.API.Proto
     {
 
     }
+    public sealed partial class SfidaActionLogMessage : IRequestMessage
+    {
+
+    }
     public sealed partial class StartGymBattleMessage : IRequestMessage
     {
 

@@ -3,8 +3,8 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Map.Fort;
 
 message FortSummary {
-	int32 fort_summary_id = 1;
-	int32 last_modified_timestamp_ms = 2;
-	int32 latitude = 3;
-	int32 longitude = 4;
+	string fort_summary_id = 1;
+	int64 last_modified_timestamp_ms = 2;
+	double latitude = 3;
+	double longitude = 4;
 }
