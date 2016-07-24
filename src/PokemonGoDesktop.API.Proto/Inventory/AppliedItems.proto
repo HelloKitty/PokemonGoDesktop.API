@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Inventory;
 
-import "POGOProtos/Inventory/AppliedItem.proto";
+import "Inventory/AppliedItem.proto";
 
 message AppliedItems {
-	repeated .POGOProtos.Inventory.AppliedItem item = 4;
+	repeated .Inventory.AppliedItem item = 4;
 }

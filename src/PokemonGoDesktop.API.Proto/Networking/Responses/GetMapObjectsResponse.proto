@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Map/MapCell.proto";
-import "POGOProtos/Map/MapObjectsStatus.proto";
+import "Map/MapCell.proto";
+import "Map/MapObjectsStatus.proto";
 
 message GetMapObjectsResponse {
-	repeated .POGOProtos.Map.MapCell map_cells = 1;
-	.POGOProtos.Map.MapObjectsStatus status = 2;
+	repeated .Map.MapCell map_cells = 1;
+	.Map.MapObjectsStatus status = 2;
 }

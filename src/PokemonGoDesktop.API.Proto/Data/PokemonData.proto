@@ -2,18 +2,18 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data;
 
-import "POGOProtos/Enums/PokemonId.proto";
-import "POGOProtos/Enums/PokemonMove.proto";
-import "POGOProtos/Inventory/Item/ItemId.proto";
+import "Enums/PokemonId.proto";
+import "Enums/PokemonMove.proto";
+import "Inventory/Item/ItemId.proto";
 
 message PokemonData {
 	fixed64 id = 1;
-	.POGOProtos.Enums.PokemonId pokemon_id = 2;
+	.Enums.PokemonId pokemon_id = 2;
 	int32 cp = 3;
 	int32 stamina = 4;
 	int32 stamina_max = 5;
-	.POGOProtos.Enums.PokemonMove move_1 = 6;
-	.POGOProtos.Enums.PokemonMove move_2 = 7;
+	.Enums.PokemonMove move_1 = 6;
+	.Enums.PokemonMove move_2 = 7;
 	string deployed_fort_id = 8;
 	string owner_name = 9;
 	bool is_egg = 10;
@@ -26,7 +26,7 @@ message PokemonData {
 	int32 individual_defense = 18;
 	int32 individual_stamina = 19;
 	float cp_multiplier = 20;
-	.POGOProtos.Inventory.Item.ItemId pokeball = 21;
+	.Inventory.Item.ItemId pokeball = 21;
 	uint64 captured_cell_id = 22;
 	int32 battles_attacked = 23;
 	int32 battles_defended = 24;

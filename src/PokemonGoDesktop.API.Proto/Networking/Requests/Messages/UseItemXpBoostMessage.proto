@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "POGOProtos/Inventory/Item/ItemId.proto";
+import "Inventory/Item/ItemId.proto";
 
 message UseItemXpBoostMessage {
-	.POGOProtos.Inventory.Item.ItemId item_id = 1;
+	.Inventory.Item.ItemId item_id = 1;
 }

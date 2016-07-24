@@ -3,7 +3,7 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
 message DownloadRemoteConfigVersionResponse {
-	.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;
+	.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;
 	uint64 item_templates_timestamp_ms = 2; // Latest available?
 	uint64 asset_digest_timestamp_ms = 3;
 

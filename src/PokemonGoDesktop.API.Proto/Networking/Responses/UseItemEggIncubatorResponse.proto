@@ -2,11 +2,11 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Inventory/EggIncubator.proto";
+import "Inventory/EggIncubator.proto";
 
 message UseItemEggIncubatorResponse {
-	.POGOProtos.Networking.Responses.UseItemEggIncubatorResponse.Result result = 1;
-	.POGOProtos.Inventory.EggIncubator egg_incubator = 2;
+	.Networking.Responses.UseItemEggIncubatorResponse.Result result = 1;
+	.Inventory.EggIncubator egg_incubator = 2;
 
 	enum Result {
 		UNSET = 0;

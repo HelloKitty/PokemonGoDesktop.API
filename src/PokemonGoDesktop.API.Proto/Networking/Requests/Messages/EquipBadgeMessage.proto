@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "POGOProtos/Enums/BadgeType.proto";
+import "Enums/BadgeType.proto";
 
 message EquipBadgeMessage {
-	.POGOProtos.Enums.BadgeType badge_type = 1;
+	.Enums.BadgeType badge_type = 1;
 }

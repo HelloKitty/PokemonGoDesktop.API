@@ -2,10 +2,10 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Gym;
 
-import "POGOProtos/Map/Fort/FortData.proto";
-import "POGOProtos/Data/Gym/GymMembership.proto";
+import "Map/Fort/FortData.proto";
+import "Data/Gym/GymMembership.proto";
 
 message GymState {
-	.POGOProtos.Map.Fort.FortData fort_data = 1;
-	repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;
+	.Map.Fort.FortData fort_data = 1;
+	repeated .Data.Gym.GymMembership memberships = 2;
 }

@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data;
 
-import "POGOProtos/Enums/PokemonId.proto";
+import "Enums/PokemonId.proto";
 
 message PokedexEntry {
-	.POGOProtos.Enums.PokemonId pokemon_id = 1;
+	.Enums.PokemonId pokemon_id = 1;
 	int32 times_encountered = 2;
 	int32 times_captured = 3;
 	int32 evolution_stone_pieces = 4;

@@ -2,9 +2,9 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "POGOProtos/Inventory/Item/ItemId.proto";
+import "Inventory/Item/ItemId.proto";
 
 message UseItemReviveMessage {
-	.POGOProtos.Inventory.Item.ItemId item_id = 1;
+	.Inventory.Item.ItemId item_id = 1;
 	uint64 pokemon_id = 2;
 }

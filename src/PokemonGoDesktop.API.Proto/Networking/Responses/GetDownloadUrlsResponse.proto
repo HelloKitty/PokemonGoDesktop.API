@@ -2,9 +2,9 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Data/DownloadUrlEntry.proto";
+import "Data/DownloadUrlEntry.proto";
 
 // UNTESTED
 message GetDownloadUrlsResponse {
-	repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;
+	repeated .Data.DownloadUrlEntry download_urls = 1;
 }

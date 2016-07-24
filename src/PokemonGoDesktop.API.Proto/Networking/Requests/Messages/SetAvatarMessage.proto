@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "POGOProtos/Data/Player/PlayerAvatar.proto";
+import "Data/Player/PlayerAvatar.proto";
 
 message SetAvatarMessage {
-	.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;
+	.Data.Player.PlayerAvatar player_avatar = 2;
 }

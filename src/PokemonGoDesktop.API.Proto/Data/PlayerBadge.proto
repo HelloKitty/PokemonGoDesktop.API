@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data;
 
-import "POGOProtos/Enums/BadgeType.proto";
+import "Enums/BadgeType.proto";
 
 message PlayerBadge {
-	.POGOProtos.Enums.BadgeType badge_type = 1;
+	.Enums.BadgeType badge_type = 1;
 	int32 rank = 2;
 	int32 start_value = 3;
 	int32 end_value = 4;

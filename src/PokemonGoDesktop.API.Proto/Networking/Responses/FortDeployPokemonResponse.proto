@@ -2,15 +2,15 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Data/PokemonData.proto";
-import "POGOProtos/Data/Gym/GymState.proto";
-import "POGOProtos/Networking/Responses/FortDetailsResponse.proto";
+import "Data/PokemonData.proto";
+import "Data/Gym/GymState.proto";
+import "Networking/Responses/FortDetailsResponse.proto";
 
 message FortDeployPokemonResponse {
-	.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;
-	.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;
-	.POGOProtos.Data.PokemonData pokemon_data = 3;
-	.POGOProtos.Data.Gym.GymState gym_state = 4;
+	.Networking.Responses.FortDeployPokemonResponse.Result result = 1;
+	.Networking.Responses.FortDetailsResponse fort_details = 2;
+	.Data.PokemonData pokemon_data = 3;
+	.Data.Gym.GymState gym_state = 4;
 
 	enum Result {
 		NO_RESULT_SET = 0;

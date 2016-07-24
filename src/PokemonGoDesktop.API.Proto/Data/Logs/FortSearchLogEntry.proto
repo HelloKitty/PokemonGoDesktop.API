@@ -2,13 +2,13 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Logs;
 
-import "POGOProtos/Inventory/Item/ItemData.proto";
-import "POGOProtos/Enums/PokemonId.proto";
+import "Inventory/Item/ItemData.proto";
+import "Enums/PokemonId.proto";
 
 message FortSearchLogEntry {
-	.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;
+	.Data.Logs.FortSearchLogEntry.Result result = 1;
 	string fort_id = 2;
-	repeated .POGOProtos.Inventory.Item.ItemData items = 3;
+	repeated .Inventory.Item.ItemData items = 3;
 	int32 eggs = 4;
 
 	enum Result {

@@ -3,7 +3,7 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
 message CollectDailyDefenderBonusResponse {
-	.POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse.Result result = 1;
+	.Networking.Responses.CollectDailyDefenderBonusResponse.Result result = 1;
 	repeated string currency_type = 2;
 	repeated int32 currency_awarded = 3;
 	int32 defenders_count = 4;

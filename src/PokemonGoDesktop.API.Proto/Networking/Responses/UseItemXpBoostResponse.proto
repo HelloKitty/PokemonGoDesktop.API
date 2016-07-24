@@ -2,11 +2,11 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Inventory/AppliedItems.proto";
+import "Inventory/AppliedItems.proto";
 
 message UseItemXpBoostResponse {
-	.POGOProtos.Networking.Responses.UseItemXpBoostResponse.Result result = 1;
-	.POGOProtos.Inventory.AppliedItems applied_items = 2;
+	.Networking.Responses.UseItemXpBoostResponse.Result result = 1;
+	.Inventory.AppliedItems applied_items = 2;
 
 	enum Result {
 		UNSET = 0;

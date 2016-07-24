@@ -2,9 +2,9 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Data/PlayerData.proto";
+import "Data/PlayerData.proto";
 
 message MarkTutorialCompleteResponse {
 	bool success = 1;
-	.POGOProtos.Data.PlayerData player_data = 2;
+	.Data.PlayerData player_data = 2;
 }

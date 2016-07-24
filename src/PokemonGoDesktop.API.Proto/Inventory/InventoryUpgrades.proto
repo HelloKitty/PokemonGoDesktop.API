@@ -2,7 +2,7 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Inventory;
 
-import "POGOProtos/Inventory/InventoryUpgrade.proto";
+import "Inventory/InventoryUpgrade.proto";
 
 message InventoryUpgrades {
 	repeated InventoryUpgrade inventory_upgrades = 1;

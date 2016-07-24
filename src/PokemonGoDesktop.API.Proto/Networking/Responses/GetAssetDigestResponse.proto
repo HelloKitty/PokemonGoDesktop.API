@@ -2,9 +2,9 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "POGOProtos/Data/AssetDigestEntry.proto";
+import "Data/AssetDigestEntry.proto";
 
 message GetAssetDigestResponse {
-	repeated .POGOProtos.Data.AssetDigestEntry digest = 1;
+	repeated .Data.AssetDigestEntry digest = 1;
 	uint64 timestamp_ms = 2;
 }

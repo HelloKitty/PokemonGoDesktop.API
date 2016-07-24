@@ -2,11 +2,11 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Logs;
 
-import "POGOProtos/Enums/PokemonId.proto";
+import "Enums/PokemonId.proto";
 
 message CatchPokemonLogEntry {
-	.POGOProtos.Data.Logs.CatchPokemonLogEntry.Result result = 1;
-	.POGOProtos.Enums.PokemonId pokemon_id = 2;
+	.Data.Logs.CatchPokemonLogEntry.Result result = 1;
+	.Enums.PokemonId pokemon_id = 2;
 	int32 combat_points = 3;
 	uint64 pokemon_data_id = 4;
 

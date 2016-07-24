@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "POGOProtos/Inventory/Item/ItemId.proto";
+import "Inventory/Item/ItemId.proto";
 
 message UseIncenseMessage {
-	.POGOProtos.Inventory.Item.ItemId incense_type = 1;
+	.Inventory.Item.ItemId incense_type = 1;
 }
