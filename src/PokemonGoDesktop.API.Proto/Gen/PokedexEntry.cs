@@ -23,16 +23,16 @@ namespace PokemonGoDesktop.API.Proto {
     static PokedexEntryReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdEYXRhL1Bva2VkZXhFbnRyeS5wcm90bxIERGF0YSKZAQoMUG9rZWRleEVu",
-            "dHJ5EhwKFHBva2VkZXhfZW50cnlfbnVtYmVyGAEgASgFEhkKEXRpbWVzX2Vu",
-            "Y291bnRlcmVkGAIgASgFEhYKDnRpbWVzX2NhcHR1cmVkGAMgASgFEh4KFmV2",
-            "b2x1dGlvbl9zdG9uZV9waWVjZXMYBCABKAUSGAoQZXZvbHV0aW9uX3N0b25l",
-            "cxgFIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3Rv",
-            "Mw=="));
+            "ChdEYXRhL1Bva2VkZXhFbnRyeS5wcm90bxIERGF0YRoVRW51bXMvUG9rZW1v",
+            "bklkLnByb3RvIqEBCgxQb2tlZGV4RW50cnkSJAoKcG9rZW1vbl9pZBgBIAEo",
+            "DjIQLkVudW1zLlBva2Vtb25JZBIZChF0aW1lc19lbmNvdW50ZXJlZBgCIAEo",
+            "BRIWCg50aW1lc19jYXB0dXJlZBgDIAEoBRIeChZldm9sdXRpb25fc3RvbmVf",
+            "cGllY2VzGAQgASgFEhgKEGV2b2x1dGlvbl9zdG9uZXMYBSABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokedexEntry), global::PokemonGoDesktop.API.Proto.PokedexEntry.Parser, new[]{ "PokedexEntryNumber", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokedexEntry), global::PokemonGoDesktop.API.Proto.PokedexEntry.Parser, new[]{ "PokemonId", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones" }, null, null, null)
           }));
     }
     #endregion
@@ -59,7 +59,7 @@ namespace PokemonGoDesktop.API.Proto {
     partial void OnConstruction();
 
     public PokedexEntry(PokedexEntry other) : this() {
-      pokedexEntryNumber_ = other.pokedexEntryNumber_;
+      pokemonId_ = other.pokemonId_;
       timesEncountered_ = other.timesEncountered_;
       timesCaptured_ = other.timesCaptured_;
       evolutionStonePieces_ = other.evolutionStonePieces_;
@@ -70,13 +70,13 @@ namespace PokemonGoDesktop.API.Proto {
       return new PokedexEntry(this);
     }
 
-    /// <summary>Field number for the "pokedex_entry_number" field.</summary>
-    public const int PokedexEntryNumberFieldNumber = 1;
-    private int pokedexEntryNumber_;
-    public int PokedexEntryNumber {
-      get { return pokedexEntryNumber_; }
+    /// <summary>Field number for the "pokemon_id" field.</summary>
+    public const int PokemonIdFieldNumber = 1;
+    private global::PokemonGoDesktop.API.Proto.PokemonId pokemonId_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonId PokemonId {
+      get { return pokemonId_; }
       set {
-        pokedexEntryNumber_ = value;
+        pokemonId_ = value;
       }
     }
 
@@ -131,7 +131,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (PokedexEntryNumber != other.PokedexEntryNumber) return false;
+      if (PokemonId != other.PokemonId) return false;
       if (TimesEncountered != other.TimesEncountered) return false;
       if (TimesCaptured != other.TimesCaptured) return false;
       if (EvolutionStonePieces != other.EvolutionStonePieces) return false;
@@ -141,7 +141,7 @@ namespace PokemonGoDesktop.API.Proto {
 
     public override int GetHashCode() {
       int hash = 1;
-      if (PokedexEntryNumber != 0) hash ^= PokedexEntryNumber.GetHashCode();
+      if (PokemonId != 0) hash ^= PokemonId.GetHashCode();
       if (TimesEncountered != 0) hash ^= TimesEncountered.GetHashCode();
       if (TimesCaptured != 0) hash ^= TimesCaptured.GetHashCode();
       if (EvolutionStonePieces != 0) hash ^= EvolutionStonePieces.GetHashCode();
@@ -154,9 +154,9 @@ namespace PokemonGoDesktop.API.Proto {
     }
 
     public void WriteTo(pb::CodedOutputStream output) {
-      if (PokedexEntryNumber != 0) {
+      if (PokemonId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(PokedexEntryNumber);
+        output.WriteEnum((int) PokemonId);
       }
       if (TimesEncountered != 0) {
         output.WriteRawTag(16);
@@ -178,8 +178,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     public int CalculateSize() {
       int size = 0;
-      if (PokedexEntryNumber != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PokedexEntryNumber);
+      if (PokemonId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PokemonId);
       }
       if (TimesEncountered != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimesEncountered);
@@ -200,8 +200,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (other == null) {
         return;
       }
-      if (other.PokedexEntryNumber != 0) {
-        PokedexEntryNumber = other.PokedexEntryNumber;
+      if (other.PokemonId != 0) {
+        PokemonId = other.PokemonId;
       }
       if (other.TimesEncountered != 0) {
         TimesEncountered = other.TimesEncountered;
@@ -225,7 +225,7 @@ namespace PokemonGoDesktop.API.Proto {
             input.SkipLastField();
             break;
           case 8: {
-            PokedexEntryNumber = input.ReadInt32();
+            pokemonId_ = (global::PokemonGoDesktop.API.Proto.PokemonId) input.ReadEnum();
             break;
           }
           case 16: {

@@ -1,5 +1,6 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master;
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Settings.Master;
 
 message MoveSequenceSettings {
 	repeated string sequence = 1;

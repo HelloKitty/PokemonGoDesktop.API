@@ -1,5 +1,6 @@
 ﻿syntax = "proto3";
-package POGOProtos.Settings.Master.Item;
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Settings.Master.Item;
 
 message FortModifierAttributes {
 	int32 modifier_lifetime_seconds = 1;

@@ -1,5 +1,6 @@
 syntax = "proto3";
-package POGOProtos.Settings;
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Settings;
 
 message InventorySettings {
 	int32 max_pokemon = 1;

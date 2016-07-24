@@ -27,10 +27,11 @@ namespace PokemonGoDesktop.API.Proto {
             "U3RhdGUucHJvdG8aHkRhdGEvUGxheWVyL1BsYXllckF2YXRhci5wcm90bxoc",
             "RGF0YS9QbGF5ZXIvRGFpbHlCb251cy5wcm90bxofRGF0YS9QbGF5ZXIvRXF1",
             "aXBwZWRCYWRnZS5wcm90bxohRGF0YS9QbGF5ZXIvQ29udGFjdFNldHRpbmdz",
-            "LnByb3RvGhpEYXRhL1BsYXllci9DdXJyZW5jeS5wcm90byKgAwoKUGxheWVy",
-            "RGF0YRIdChVjcmVhdGlvbl90aW1lc3RhbXBfbXMYASABKAMSEAoIdXNlcm5h",
-            "bWUYAiABKAkSDAoEdGVhbRgFIAEoBRIsCg50dXRvcmlhbF9zdGF0ZRgHIAMo",
-            "DjIULkVudW1zLlR1dG9yaWFsU3RhdGUSKQoGYXZhdGFyGAggASgLMhkuRGF0",
+            "LnByb3RvGhpEYXRhL1BsYXllci9DdXJyZW5jeS5wcm90bxoVRW51bXMvVGVh",
+            "bUNvbG9yLnByb3RvIrYDCgpQbGF5ZXJEYXRhEh0KFWNyZWF0aW9uX3RpbWVz",
+            "dGFtcF9tcxgBIAEoAxIQCgh1c2VybmFtZRgCIAEoCRIeCgR0ZWFtGAUgASgO",
+            "MhAuRW51bXMuVGVhbUNvbG9yEjAKDnR1dG9yaWFsX3N0YXRlGAcgAygOMhQu",
+            "RW51bXMuVHV0b3JpYWxTdGF0ZUICEAESKQoGYXZhdGFyGAggASgLMhkuRGF0",
             "YS5QbGF5ZXIuUGxheWVyQXZhdGFyEhsKE21heF9wb2tlbW9uX3N0b3JhZ2UY",
             "CSABKAUSGAoQbWF4X2l0ZW1fc3RvcmFnZRgKIAEoBRIsCgtkYWlseV9ib251",
             "cxgLIAEoCzIXLkRhdGEuUGxheWVyLkRhaWx5Qm9udXMSMgoOZXF1aXBwZWRf",
@@ -39,7 +40,7 @@ namespace PokemonGoDesktop.API.Proto {
             "dGluZ3MSKQoKY3VycmVuY2llcxgOIAMoCzIVLkRhdGEuUGxheWVyLkN1cnJl",
             "bmN5Qh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.TutorialStateReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerAvatarReflection.Descriptor, global::PokemonGoDesktop.API.Proto.DailyBonusReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EquippedBadgeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ContactSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CurrencyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.TutorialStateReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerAvatarReflection.Descriptor, global::PokemonGoDesktop.API.Proto.DailyBonusReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EquippedBadgeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ContactSettingsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CurrencyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.TeamColorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PlayerData), global::PokemonGoDesktop.API.Proto.PlayerData.Parser, new[]{ "CreationTimestampMs", "Username", "Team", "TutorialState", "Avatar", "MaxPokemonStorage", "MaxItemStorage", "DailyBonus", "EquippedBadge", "ContactSettings", "Currencies" }, null, null, null)
           }));
@@ -107,8 +108,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "team" field.</summary>
     public const int TeamFieldNumber = 5;
-    private int team_;
-    public int Team {
+    private global::PokemonGoDesktop.API.Proto.TeamColor team_ = 0;
+    public global::PokemonGoDesktop.API.Proto.TeamColor Team {
       get { return team_; }
       set {
         team_ = value;
@@ -249,7 +250,7 @@ namespace PokemonGoDesktop.API.Proto {
       }
       if (Team != 0) {
         output.WriteRawTag(40);
-        output.WriteInt32(Team);
+        output.WriteEnum((int) Team);
       }
       tutorialState_.WriteTo(output, _repeated_tutorialState_codec);
       if (avatar_ != null) {
@@ -288,7 +289,7 @@ namespace PokemonGoDesktop.API.Proto {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
       }
       if (Team != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Team);
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Team);
       }
       size += tutorialState_.CalculateSize(_repeated_tutorialState_codec);
       if (avatar_ != null) {
@@ -376,7 +377,7 @@ namespace PokemonGoDesktop.API.Proto {
             break;
           }
           case 40: {
-            Team = input.ReadInt32();
+            team_ = (global::PokemonGoDesktop.API.Proto.TeamColor) input.ReadEnum();
             break;
           }
           case 58:

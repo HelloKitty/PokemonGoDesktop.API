@@ -24,27 +24,27 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFJbnZlbnRvcnkvSW52ZW50b3J5SXRlbURhdGEucHJvdG8SCUludmVudG9y",
-            "eRoUSW52ZW50b3J5L0l0ZW0ucHJvdG8aHEludmVudG9yeS9BcHBsaWVkSXRl",
-            "bXMucHJvdG8aHUludmVudG9yeS9FZ2dJbmN1YmF0b3JzLnByb3RvGh1JbnZl",
-            "bnRvcnkvUG9rZW1vbkZhbWlseS5wcm90bxohSW52ZW50b3J5L0ludmVudG9y",
-            "eVVwZ3JhZGVzLnByb3RvGhZEYXRhL1Bva2Vtb25EYXRhLnByb3RvGhdEYXRh",
-            "L1Bva2VkZXhFbnRyeS5wcm90bxodRGF0YS9QbGF5ZXIvUGxheWVyU3RhdHMu",
-            "cHJvdG8aIERhdGEvUGxheWVyL1BsYXllckN1cnJlbmN5LnByb3RvGh5EYXRh",
-            "L1BsYXllci9QbGF5ZXJDYW1lcmEucHJvdG8i7AMKEUludmVudG9yeUl0ZW1E",
-            "YXRhEicKDHBva2Vtb25fZGF0YRgBIAEoCzIRLkRhdGEuUG9rZW1vbkRhdGES",
-            "HQoEaXRlbRgCIAEoCzIPLkludmVudG9yeS5JdGVtEikKDXBva2VkZXhfZW50",
-            "cnkYAyABKAsyEi5EYXRhLlBva2VkZXhFbnRyeRIuCgxwbGF5ZXJfc3RhdHMY",
-            "BCABKAsyGC5EYXRhLlBsYXllci5QbGF5ZXJTdGF0cxI0Cg9wbGF5ZXJfY3Vy",
-            "cmVuY3kYBSABKAsyGy5EYXRhLlBsYXllci5QbGF5ZXJDdXJyZW5jeRIwCg1w",
-            "bGF5ZXJfY2FtZXJhGAYgASgLMhkuRGF0YS5QbGF5ZXIuUGxheWVyQ2FtZXJh",
-            "EjgKEmludmVudG9yeV91cGdyYWRlcxgHIAEoCzIcLkludmVudG9yeS5JbnZl",
-            "bnRvcnlVcGdyYWRlcxIuCg1hcHBsaWVkX2l0ZW1zGAggASgLMhcuSW52ZW50",
-            "b3J5LkFwcGxpZWRJdGVtcxIwCg5lZ2dfaW5jdWJhdG9ycxgJIAEoCzIYLklu",
-            "dmVudG9yeS5FZ2dJbmN1YmF0b3JzEjAKDnBva2Vtb25fZmFtaWx5GAogASgL",
-            "MhguSW52ZW50b3J5LlBva2Vtb25GYW1pbHlCHaoCGlBva2Vtb25Hb0Rlc2t0",
-            "b3AuQVBJLlByb3RvYgZwcm90bzM="));
+            "eRodSW52ZW50b3J5L0l0ZW0vSXRlbURhdGEucHJvdG8aHEludmVudG9yeS9B",
+            "cHBsaWVkSXRlbXMucHJvdG8aHUludmVudG9yeS9FZ2dJbmN1YmF0b3JzLnBy",
+            "b3RvGh1JbnZlbnRvcnkvUG9rZW1vbkZhbWlseS5wcm90bxohSW52ZW50b3J5",
+            "L0ludmVudG9yeVVwZ3JhZGVzLnByb3RvGhZEYXRhL1Bva2Vtb25EYXRhLnBy",
+            "b3RvGhdEYXRhL1Bva2VkZXhFbnRyeS5wcm90bxodRGF0YS9QbGF5ZXIvUGxh",
+            "eWVyU3RhdHMucHJvdG8aIERhdGEvUGxheWVyL1BsYXllckN1cnJlbmN5LnBy",
+            "b3RvGh5EYXRhL1BsYXllci9QbGF5ZXJDYW1lcmEucHJvdG8i9QMKEUludmVu",
+            "dG9yeUl0ZW1EYXRhEicKDHBva2Vtb25fZGF0YRgBIAEoCzIRLkRhdGEuUG9r",
+            "ZW1vbkRhdGESJgoEaXRlbRgCIAEoCzIYLkludmVudG9yeS5JdGVtLkl0ZW1E",
+            "YXRhEikKDXBva2VkZXhfZW50cnkYAyABKAsyEi5EYXRhLlBva2VkZXhFbnRy",
+            "eRIuCgxwbGF5ZXJfc3RhdHMYBCABKAsyGC5EYXRhLlBsYXllci5QbGF5ZXJT",
+            "dGF0cxI0Cg9wbGF5ZXJfY3VycmVuY3kYBSABKAsyGy5EYXRhLlBsYXllci5Q",
+            "bGF5ZXJDdXJyZW5jeRIwCg1wbGF5ZXJfY2FtZXJhGAYgASgLMhkuRGF0YS5Q",
+            "bGF5ZXIuUGxheWVyQ2FtZXJhEjgKEmludmVudG9yeV91cGdyYWRlcxgHIAEo",
+            "CzIcLkludmVudG9yeS5JbnZlbnRvcnlVcGdyYWRlcxIuCg1hcHBsaWVkX2l0",
+            "ZW1zGAggASgLMhcuSW52ZW50b3J5LkFwcGxpZWRJdGVtcxIwCg5lZ2dfaW5j",
+            "dWJhdG9ycxgJIAEoCzIYLkludmVudG9yeS5FZ2dJbmN1YmF0b3JzEjAKDnBv",
+            "a2Vtb25fZmFtaWx5GAogASgLMhguSW52ZW50b3J5LlBva2Vtb25GYW1pbHlC",
+            "HaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemReflection.Descriptor, global::PokemonGoDesktop.API.Proto.AppliedItemsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EggIncubatorsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonFamilyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventoryUpgradesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokedexEntryReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerStatsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerCurrencyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerCameraReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.ItemDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.AppliedItemsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EggIncubatorsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonFamilyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.InventoryUpgradesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonDataReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokedexEntryReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerStatsReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerCurrencyReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PlayerCameraReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.InventoryItemData), global::PokemonGoDesktop.API.Proto.InventoryItemData.Parser, new[]{ "PokemonData", "Item", "PokedexEntry", "PlayerStats", "PlayerCurrency", "PlayerCamera", "InventoryUpgrades", "AppliedItems", "EggIncubators", "PokemonFamily" }, null, null, null)
           }));
@@ -101,8 +101,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "item" field.</summary>
     public const int ItemFieldNumber = 2;
-    private global::PokemonGoDesktop.API.Proto.Item item_;
-    public global::PokemonGoDesktop.API.Proto.Item Item {
+    private global::PokemonGoDesktop.API.Proto.ItemData item_;
+    public global::PokemonGoDesktop.API.Proto.ItemData Item {
       get { return item_; }
       set {
         item_ = value;
@@ -322,7 +322,7 @@ namespace PokemonGoDesktop.API.Proto {
       }
       if (other.item_ != null) {
         if (item_ == null) {
-          item_ = new global::PokemonGoDesktop.API.Proto.Item();
+          item_ = new global::PokemonGoDesktop.API.Proto.ItemData();
         }
         Item.MergeFrom(other.Item);
       }
@@ -392,7 +392,7 @@ namespace PokemonGoDesktop.API.Proto {
           }
           case 18: {
             if (item_ == null) {
-              item_ = new global::PokemonGoDesktop.API.Proto.Item();
+              item_ = new global::PokemonGoDesktop.API.Proto.ItemData();
             }
             input.ReadMessage(item_);
             break;

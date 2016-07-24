@@ -28,7 +28,7 @@ namespace PokemonGoDesktop.API.Proto {
             "dXJlQXdhcmQucHJvdG8iqwIKFENhdGNoUG9rZW1vblJlc3BvbnNlEkYKBnN0",
             "YXR1cxgBIAEoDjI2Lk5ldHdvcmtpbmcuUmVzcG9uc2VzLkNhdGNoUG9rZW1v",
             "blJlc3BvbnNlLkNhdGNoU3RhdHVzEhQKDG1pc3NfcGVyY2VudBgCIAEoARIb",
-            "ChNjYXB0dXJlZF9wb2tlbW9uX2lkGAMgASgEEjEKDWNhcHR1cmVfYXdhcmQY",
+            "ChNjYXB0dXJlZF9wb2tlbW9uX2lkGAMgASgGEjEKDWNhcHR1cmVfYXdhcmQY",
             "BCABKAsyGi5EYXRhLkNhcHR1cmUuQ2FwdHVyZUF3YXJkImUKC0NhdGNoU3Rh",
             "dHVzEg8KC0NBVENIX0VSUk9SEAASEQoNQ0FUQ0hfU1VDQ0VTUxABEhAKDENB",
             "VENIX0VTQ0FQRRACEg4KCkNBVENIX0ZMRUUQAxIQCgxDQVRDSF9NSVNTRUQQ",
@@ -154,8 +154,8 @@ namespace PokemonGoDesktop.API.Proto {
         output.WriteDouble(MissPercent);
       }
       if (CapturedPokemonId != 0UL) {
-        output.WriteRawTag(24);
-        output.WriteUInt64(CapturedPokemonId);
+        output.WriteRawTag(25);
+        output.WriteFixed64(CapturedPokemonId);
       }
       if (captureAward_ != null) {
         output.WriteRawTag(34);
@@ -172,7 +172,7 @@ namespace PokemonGoDesktop.API.Proto {
         size += 1 + 8;
       }
       if (CapturedPokemonId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CapturedPokemonId);
+        size += 1 + 8;
       }
       if (captureAward_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CaptureAward);
@@ -216,8 +216,8 @@ namespace PokemonGoDesktop.API.Proto {
             MissPercent = input.ReadDouble();
             break;
           }
-          case 24: {
-            CapturedPokemonId = input.ReadUInt64();
+          case 25: {
+            CapturedPokemonId = input.ReadFixed64();
             break;
           }
           case 34: {

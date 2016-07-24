@@ -2,10 +2,10 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Battle;
 
-import "POGOProtos/Data/PokemonData.proto";
+import "Data/PokemonData.proto";
 
 message BattlePokemonInfo {
-	.POGOProtos.Data.PokemonData pokemon_data = 1;
+	.Data.PokemonData pokemon_data = 1;
 	int32 current_health = 2;
 	int32 current_energy = 3;
 }

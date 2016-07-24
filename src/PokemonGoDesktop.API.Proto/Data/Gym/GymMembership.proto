@@ -2,10 +2,10 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Gym;
 
-import "POGOProtos/Data/PokemonData.proto";
-import "POGOProtos/Data/Player/PlayerPublicProfile.proto";
+import "Data/PokemonData.proto";
+import "Data/Player/PlayerPublicProfile.proto";
 
 message GymMembership {
-	.POGOProtos.Data.PokemonData pokemon_data = 1;
-	.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;
+	.Data.PokemonData pokemon_data = 1;
+	.Data.Player.PlayerPublicProfile trainer_public_profile = 2;
 }

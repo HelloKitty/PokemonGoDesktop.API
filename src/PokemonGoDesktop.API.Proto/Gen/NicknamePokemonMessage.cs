@@ -25,7 +25,7 @@ namespace PokemonGoDesktop.API.Proto {
           string.Concat(
             "CjlOZXR3b3JraW5nL1JlcXVlc3RzL01lc3NhZ2VzL05pY2tuYW1lUG9rZW1v",
             "bk1lc3NhZ2UucHJvdG8SHE5ldHdvcmtpbmcuUmVxdWVzdHMuTWVzc2FnZXMi",
-            "PgoWTmlja25hbWVQb2tlbW9uTWVzc2FnZRISCgpwb2tlbW9uX2lkGAEgASgE",
+            "PgoWTmlja25hbWVQb2tlbW9uTWVzc2FnZRISCgpwb2tlbW9uX2lkGAEgASgG",
             "EhAKCG5pY2tuYW1lGAIgASgJQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Q",
             "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -115,8 +115,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     public void WriteTo(pb::CodedOutputStream output) {
       if (PokemonId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(PokemonId);
+        output.WriteRawTag(9);
+        output.WriteFixed64(PokemonId);
       }
       if (Nickname.Length != 0) {
         output.WriteRawTag(18);
@@ -127,7 +127,7 @@ namespace PokemonGoDesktop.API.Proto {
     public int CalculateSize() {
       int size = 0;
       if (PokemonId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(PokemonId);
+        size += 1 + 8;
       }
       if (Nickname.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
@@ -154,8 +154,8 @@ namespace PokemonGoDesktop.API.Proto {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            PokemonId = input.ReadUInt64();
+          case 9: {
+            PokemonId = input.ReadFixed64();
             break;
           }
           case 18: {

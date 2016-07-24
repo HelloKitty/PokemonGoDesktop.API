@@ -24,26 +24,27 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChZEYXRhL1Bva2Vtb25EYXRhLnByb3RvEgREYXRhGhVFbnVtcy9Qb2tlbW9u",
-            "SWQucHJvdG8aF0VudW1zL1Bva2Vtb25Nb3ZlLnByb3RvItQFCgtQb2tlbW9u",
-            "RGF0YRIKCgJpZBgBIAEoBhIkCgpwb2tlbW9uX2lkGAIgASgOMhAuRW51bXMu",
-            "UG9rZW1vbklkEgoKAmNwGAMgASgFEg8KB3N0YW1pbmEYBCABKAUSEwoLc3Rh",
-            "bWluYV9tYXgYBSABKAUSIgoGbW92ZV8xGAYgASgOMhIuRW51bXMuUG9rZW1v",
-            "bk1vdmUSIgoGbW92ZV8yGAcgASgOMhIuRW51bXMuUG9rZW1vbk1vdmUSGAoQ",
-            "ZGVwbG95ZWRfZm9ydF9pZBgIIAEoBRISCgpvd25lcl9uYW1lGAkgASgJEg4K",
-            "BmlzX2VnZxgKIAEoCBIcChRlZ2dfa21fd2Fsa2VkX3RhcmdldBgLIAEoARIb",
-            "ChNlZ2dfa21fd2Fsa2VkX3N0YXJ0GAwgASgBEg4KBm9yaWdpbhgOIAEoBRIQ",
-            "CghoZWlnaHRfbRgPIAEoAhIRCgl3ZWlnaHRfa2cYECABKAISGQoRaW5kaXZp",
-            "ZHVhbF9hdHRhY2sYESABKAUSGgoSaW5kaXZpZHVhbF9kZWZlbnNlGBIgASgF",
-            "EhoKEmluZGl2aWR1YWxfc3RhbWluYRgTIAEoBRIVCg1jcF9tdWx0aXBsaWVy",
-            "GBQgASgCEhAKCHBva2ViYWxsGBUgASgFEhgKEGNhcHR1cmVkX2NlbGxfaWQY",
-            "FiABKAQSGAoQYmF0dGxlc19hdHRhY2tlZBgXIAEoBRIYChBiYXR0bGVzX2Rl",
-            "ZmVuZGVkGBggASgFEhgKEGVnZ19pbmN1YmF0b3JfaWQYGSABKAkSGAoQY3Jl",
-            "YXRpb25fdGltZV9tcxgaIAEoBBIUCgxudW1fdXBncmFkZXMYGyABKAUSIAoY",
-            "YWRkaXRpb25hbF9jcF9tdWx0aXBsaWVyGBwgASgFEhAKCGZhdm9yaXRlGB0g",
-            "ASgFEhAKCG5pY2tuYW1lGB4gASgJEhEKCWZyb21fZm9ydBgfIAEoBUIdqgIa",
-            "UG9rZW1vbkdvRGVza3RvcC5BUEkuUHJvdG9iBnByb3RvMw=="));
+            "SWQucHJvdG8aF0VudW1zL1Bva2Vtb25Nb3ZlLnByb3RvGhtJbnZlbnRvcnkv",
+            "SXRlbS9JdGVtSWQucHJvdG8i7AUKC1Bva2Vtb25EYXRhEgoKAmlkGAEgASgG",
+            "EiQKCnBva2Vtb25faWQYAiABKA4yEC5FbnVtcy5Qb2tlbW9uSWQSCgoCY3AY",
+            "AyABKAUSDwoHc3RhbWluYRgEIAEoBRITCgtzdGFtaW5hX21heBgFIAEoBRIi",
+            "CgZtb3ZlXzEYBiABKA4yEi5FbnVtcy5Qb2tlbW9uTW92ZRIiCgZtb3ZlXzIY",
+            "ByABKA4yEi5FbnVtcy5Qb2tlbW9uTW92ZRIYChBkZXBsb3llZF9mb3J0X2lk",
+            "GAggASgJEhIKCm93bmVyX25hbWUYCSABKAkSDgoGaXNfZWdnGAogASgIEhwK",
+            "FGVnZ19rbV93YWxrZWRfdGFyZ2V0GAsgASgBEhsKE2VnZ19rbV93YWxrZWRf",
+            "c3RhcnQYDCABKAESDgoGb3JpZ2luGA4gASgFEhAKCGhlaWdodF9tGA8gASgC",
+            "EhEKCXdlaWdodF9rZxgQIAEoAhIZChFpbmRpdmlkdWFsX2F0dGFjaxgRIAEo",
+            "BRIaChJpbmRpdmlkdWFsX2RlZmVuc2UYEiABKAUSGgoSaW5kaXZpZHVhbF9z",
+            "dGFtaW5hGBMgASgFEhUKDWNwX211bHRpcGxpZXIYFCABKAISKAoIcG9rZWJh",
+            "bGwYFSABKA4yFi5JbnZlbnRvcnkuSXRlbS5JdGVtSWQSGAoQY2FwdHVyZWRf",
+            "Y2VsbF9pZBgWIAEoBBIYChBiYXR0bGVzX2F0dGFja2VkGBcgASgFEhgKEGJh",
+            "dHRsZXNfZGVmZW5kZWQYGCABKAUSGAoQZWdnX2luY3ViYXRvcl9pZBgZIAEo",
+            "CRIYChBjcmVhdGlvbl90aW1lX21zGBogASgEEhQKDG51bV91cGdyYWRlcxgb",
+            "IAEoBRIgChhhZGRpdGlvbmFsX2NwX211bHRpcGxpZXIYHCABKAISEAoIZmF2",
+            "b3JpdGUYHSABKAUSEAoIbmlja25hbWUYHiABKAkSEQoJZnJvbV9mb3J0GB8g",
+            "ASgFQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMoveReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMoveReflection.Descriptor, global::PokemonGoDesktop.API.Proto.ItemIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonData), global::PokemonGoDesktop.API.Proto.PokemonData.Parser, new[]{ "Id", "PokemonId", "Cp", "Stamina", "StaminaMax", "Move1", "Move2", "DeployedFortId", "OwnerName", "IsEgg", "EggKmWalkedTarget", "EggKmWalkedStart", "Origin", "HeightM", "WeightKg", "IndividualAttack", "IndividualDefense", "IndividualStamina", "CpMultiplier", "Pokeball", "CapturedCellId", "BattlesAttacked", "BattlesDefended", "EggIncubatorId", "CreationTimeMs", "NumUpgrades", "AdditionalCpMultiplier", "Favorite", "Nickname", "FromFort" }, null, null, null)
           }));
@@ -180,11 +181,11 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "deployed_fort_id" field.</summary>
     public const int DeployedFortIdFieldNumber = 8;
-    private int deployedFortId_;
-    public int DeployedFortId {
+    private string deployedFortId_ = "";
+    public string DeployedFortId {
       get { return deployedFortId_; }
       set {
-        deployedFortId_ = value;
+        deployedFortId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -300,8 +301,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "pokeball" field.</summary>
     public const int PokeballFieldNumber = 21;
-    private int pokeball_;
-    public int Pokeball {
+    private global::PokemonGoDesktop.API.Proto.ItemId pokeball_ = 0;
+    public global::PokemonGoDesktop.API.Proto.ItemId Pokeball {
       get { return pokeball_; }
       set {
         pokeball_ = value;
@@ -370,8 +371,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "additional_cp_multiplier" field.</summary>
     public const int AdditionalCpMultiplierFieldNumber = 28;
-    private int additionalCpMultiplier_;
-    public int AdditionalCpMultiplier {
+    private float additionalCpMultiplier_;
+    public float AdditionalCpMultiplier {
       get { return additionalCpMultiplier_; }
       set {
         additionalCpMultiplier_ = value;
@@ -461,7 +462,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (StaminaMax != 0) hash ^= StaminaMax.GetHashCode();
       if (Move1 != 0) hash ^= Move1.GetHashCode();
       if (Move2 != 0) hash ^= Move2.GetHashCode();
-      if (DeployedFortId != 0) hash ^= DeployedFortId.GetHashCode();
+      if (DeployedFortId.Length != 0) hash ^= DeployedFortId.GetHashCode();
       if (OwnerName.Length != 0) hash ^= OwnerName.GetHashCode();
       if (IsEgg != false) hash ^= IsEgg.GetHashCode();
       if (EggKmWalkedTarget != 0D) hash ^= EggKmWalkedTarget.GetHashCode();
@@ -480,7 +481,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (EggIncubatorId.Length != 0) hash ^= EggIncubatorId.GetHashCode();
       if (CreationTimeMs != 0UL) hash ^= CreationTimeMs.GetHashCode();
       if (NumUpgrades != 0) hash ^= NumUpgrades.GetHashCode();
-      if (AdditionalCpMultiplier != 0) hash ^= AdditionalCpMultiplier.GetHashCode();
+      if (AdditionalCpMultiplier != 0F) hash ^= AdditionalCpMultiplier.GetHashCode();
       if (Favorite != 0) hash ^= Favorite.GetHashCode();
       if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
       if (FromFort != 0) hash ^= FromFort.GetHashCode();
@@ -520,9 +521,9 @@ namespace PokemonGoDesktop.API.Proto {
         output.WriteRawTag(56);
         output.WriteEnum((int) Move2);
       }
-      if (DeployedFortId != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(DeployedFortId);
+      if (DeployedFortId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(DeployedFortId);
       }
       if (OwnerName.Length != 0) {
         output.WriteRawTag(74);
@@ -570,7 +571,7 @@ namespace PokemonGoDesktop.API.Proto {
       }
       if (Pokeball != 0) {
         output.WriteRawTag(168, 1);
-        output.WriteInt32(Pokeball);
+        output.WriteEnum((int) Pokeball);
       }
       if (CapturedCellId != 0UL) {
         output.WriteRawTag(176, 1);
@@ -596,9 +597,9 @@ namespace PokemonGoDesktop.API.Proto {
         output.WriteRawTag(216, 1);
         output.WriteInt32(NumUpgrades);
       }
-      if (AdditionalCpMultiplier != 0) {
-        output.WriteRawTag(224, 1);
-        output.WriteInt32(AdditionalCpMultiplier);
+      if (AdditionalCpMultiplier != 0F) {
+        output.WriteRawTag(229, 1);
+        output.WriteFloat(AdditionalCpMultiplier);
       }
       if (Favorite != 0) {
         output.WriteRawTag(232, 1);
@@ -637,8 +638,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (Move2 != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Move2);
       }
-      if (DeployedFortId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DeployedFortId);
+      if (DeployedFortId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeployedFortId);
       }
       if (OwnerName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerName);
@@ -674,7 +675,7 @@ namespace PokemonGoDesktop.API.Proto {
         size += 2 + 4;
       }
       if (Pokeball != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(Pokeball);
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Pokeball);
       }
       if (CapturedCellId != 0UL) {
         size += 2 + pb::CodedOutputStream.ComputeUInt64Size(CapturedCellId);
@@ -694,8 +695,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (NumUpgrades != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumUpgrades);
       }
-      if (AdditionalCpMultiplier != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(AdditionalCpMultiplier);
+      if (AdditionalCpMultiplier != 0F) {
+        size += 2 + 4;
       }
       if (Favorite != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(Favorite);
@@ -734,7 +735,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (other.Move2 != 0) {
         Move2 = other.Move2;
       }
-      if (other.DeployedFortId != 0) {
+      if (other.DeployedFortId.Length != 0) {
         DeployedFortId = other.DeployedFortId;
       }
       if (other.OwnerName.Length != 0) {
@@ -791,7 +792,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (other.NumUpgrades != 0) {
         NumUpgrades = other.NumUpgrades;
       }
-      if (other.AdditionalCpMultiplier != 0) {
+      if (other.AdditionalCpMultiplier != 0F) {
         AdditionalCpMultiplier = other.AdditionalCpMultiplier;
       }
       if (other.Favorite != 0) {
@@ -840,8 +841,8 @@ namespace PokemonGoDesktop.API.Proto {
             move2_ = (global::PokemonGoDesktop.API.Proto.PokemonMove) input.ReadEnum();
             break;
           }
-          case 64: {
-            DeployedFortId = input.ReadInt32();
+          case 66: {
+            DeployedFortId = input.ReadString();
             break;
           }
           case 74: {
@@ -889,7 +890,7 @@ namespace PokemonGoDesktop.API.Proto {
             break;
           }
           case 168: {
-            Pokeball = input.ReadInt32();
+            pokeball_ = (global::PokemonGoDesktop.API.Proto.ItemId) input.ReadEnum();
             break;
           }
           case 176: {
@@ -916,8 +917,8 @@ namespace PokemonGoDesktop.API.Proto {
             NumUpgrades = input.ReadInt32();
             break;
           }
-          case 224: {
-            AdditionalCpMultiplier = input.ReadInt32();
+          case 229: {
+            AdditionalCpMultiplier = input.ReadFloat();
             break;
           }
           case 232: {

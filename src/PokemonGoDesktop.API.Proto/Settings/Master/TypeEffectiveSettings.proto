@@ -1,9 +1,10 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master;
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Settings.Master;
 
-import "POGOProtos/Enums/PokemonType.proto";
+import "Enums/PokemonType.proto";
 
 message TypeEffectiveSettings {
 	repeated float attack_scalar = 1;
-	.POGOProtos.Enums.PokemonType attack_type = 2;
+	.Enums.PokemonType attack_type = 2;
 }

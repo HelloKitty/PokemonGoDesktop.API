@@ -1,5 +1,6 @@
 syntax = "proto3";
-package POGOProtos.Settings.Master.Pokemon;
+option csharp_namespace = "PokemonGoDesktop.API.Proto";
+package Settings.Master.Pokemon;
 
 message StatsAttributes {
 	int32 base_stamina = 1;

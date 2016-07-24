@@ -24,15 +24,15 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChtNYXAvRm9ydC9Gb3J0THVyZUluZm8ucHJvdG8SCE1hcC5Gb3J0GhVFbnVt",
-            "cy9Qb2tlbW9uSWQucHJvdG8igQEKDEZvcnRMdXJlSW5mbxIPCgdmb3J0X2lk",
-            "GAEgASgJEhAKCHVua25vd24yGAIgASgBEisKEWFjdGl2ZV9wb2tlbW9uX2lk",
-            "GAMgASgOMhAuRW51bXMuUG9rZW1vbklkEiEKGWx1cmVfZXhwaXJlc190aW1l",
-            "c3RhbXBfbXMYBCABKANCHaoCGlBva2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3Rv",
-            "YgZwcm90bzM="));
+            "cy9Qb2tlbW9uSWQucHJvdG8ihQEKDEZvcnRMdXJlSW5mbxIPCgdmb3J0X2lk",
+            "GAEgASgJEhQKDGVuY291bnRlcl9pZBgCIAEoBhIrChFhY3RpdmVfcG9rZW1v",
+            "bl9pZBgDIAEoDjIQLkVudW1zLlBva2Vtb25JZBIhChlsdXJlX2V4cGlyZXNf",
+            "dGltZXN0YW1wX21zGAQgASgDQh2qAhpQb2tlbW9uR29EZXNrdG9wLkFQSS5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortLureInfo), global::PokemonGoDesktop.API.Proto.FortLureInfo.Parser, new[]{ "FortId", "Unknown2", "ActivePokemonId", "LureExpiresTimestampMs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.FortLureInfo), global::PokemonGoDesktop.API.Proto.FortLureInfo.Parser, new[]{ "FortId", "EncounterId", "ActivePokemonId", "LureExpiresTimestampMs" }, null, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace PokemonGoDesktop.API.Proto {
 
     public FortLureInfo(FortLureInfo other) : this() {
       fortId_ = other.fortId_;
-      unknown2_ = other.unknown2_;
+      encounterId_ = other.encounterId_;
       activePokemonId_ = other.activePokemonId_;
       lureExpiresTimestampMs_ = other.lureExpiresTimestampMs_;
     }
@@ -79,13 +79,13 @@ namespace PokemonGoDesktop.API.Proto {
       }
     }
 
-    /// <summary>Field number for the "unknown2" field.</summary>
-    public const int Unknown2FieldNumber = 2;
-    private double unknown2_;
-    public double Unknown2 {
-      get { return unknown2_; }
+    /// <summary>Field number for the "encounter_id" field.</summary>
+    public const int EncounterIdFieldNumber = 2;
+    private ulong encounterId_;
+    public ulong EncounterId {
+      get { return encounterId_; }
       set {
-        unknown2_ = value;
+        encounterId_ = value;
       }
     }
 
@@ -121,7 +121,7 @@ namespace PokemonGoDesktop.API.Proto {
         return true;
       }
       if (FortId != other.FortId) return false;
-      if (Unknown2 != other.Unknown2) return false;
+      if (EncounterId != other.EncounterId) return false;
       if (ActivePokemonId != other.ActivePokemonId) return false;
       if (LureExpiresTimestampMs != other.LureExpiresTimestampMs) return false;
       return true;
@@ -130,7 +130,7 @@ namespace PokemonGoDesktop.API.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (FortId.Length != 0) hash ^= FortId.GetHashCode();
-      if (Unknown2 != 0D) hash ^= Unknown2.GetHashCode();
+      if (EncounterId != 0UL) hash ^= EncounterId.GetHashCode();
       if (ActivePokemonId != 0) hash ^= ActivePokemonId.GetHashCode();
       if (LureExpiresTimestampMs != 0L) hash ^= LureExpiresTimestampMs.GetHashCode();
       return hash;
@@ -145,9 +145,9 @@ namespace PokemonGoDesktop.API.Proto {
         output.WriteRawTag(10);
         output.WriteString(FortId);
       }
-      if (Unknown2 != 0D) {
+      if (EncounterId != 0UL) {
         output.WriteRawTag(17);
-        output.WriteDouble(Unknown2);
+        output.WriteFixed64(EncounterId);
       }
       if (ActivePokemonId != 0) {
         output.WriteRawTag(24);
@@ -164,7 +164,7 @@ namespace PokemonGoDesktop.API.Proto {
       if (FortId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FortId);
       }
-      if (Unknown2 != 0D) {
+      if (EncounterId != 0UL) {
         size += 1 + 8;
       }
       if (ActivePokemonId != 0) {
@@ -183,8 +183,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (other.FortId.Length != 0) {
         FortId = other.FortId;
       }
-      if (other.Unknown2 != 0D) {
-        Unknown2 = other.Unknown2;
+      if (other.EncounterId != 0UL) {
+        EncounterId = other.EncounterId;
       }
       if (other.ActivePokemonId != 0) {
         ActivePokemonId = other.ActivePokemonId;
@@ -206,7 +206,7 @@ namespace PokemonGoDesktop.API.Proto {
             break;
           }
           case 17: {
-            Unknown2 = input.ReadDouble();
+            EncounterId = input.ReadFixed64();
             break;
           }
           case 24: {

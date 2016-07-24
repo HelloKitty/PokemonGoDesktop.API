@@ -24,35 +24,35 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiVTZXR0aW5ncy9NYXN0ZXIvUG9rZW1vblNldHRpbmdzLnByb3RvEg9TZXR0",
-            "aW5ncy5NYXN0ZXIaFUVudW1zL1Bva2Vtb25JZC5wcm90bxoYRW51bXMvUG9r",
-            "ZW1vbkNsYXNzLnByb3RvGhdFbnVtcy9Qb2tlbW9uVHlwZS5wcm90bxoXRW51",
-            "bXMvUG9rZW1vbk1vdmUucHJvdG8aG0VudW1zL1Bva2Vtb25GYW1pbHlJZC5w",
-            "cm90bxotU2V0dGluZ3MvTWFzdGVyL1Bva2Vtb24vU3RhdHNBdHRyaWJ1dGVz",
-            "LnByb3RvGi5TZXR0aW5ncy9NYXN0ZXIvUG9rZW1vbi9DYW1lcmFBdHRyaWJ1",
-            "dGVzLnByb3RvGjFTZXR0aW5ncy9NYXN0ZXIvUG9rZW1vbi9FbmNvdW50ZXJB",
-            "dHRyaWJ1dGVzLnByb3RvIo4GCg9Qb2tlbW9uU2V0dGluZ3MSJAoKcG9rZW1v",
-            "bl9pZBgBIAEoDjIQLkVudW1zLlBva2Vtb25JZBITCgttb2RlbF9zY2FsZRgD",
-            "IAEoAhIgCgR0eXBlGAQgASgOMhIuRW51bXMuUG9rZW1vblR5cGUSIgoGdHlw",
-            "ZV8yGAUgASgOMhIuRW51bXMuUG9rZW1vblR5cGUSOQoGY2FtZXJhGAYgASgL",
-            "MikuU2V0dGluZ3MuTWFzdGVyLlBva2Vtb24uQ2FtZXJhQXR0cmlidXRlcxI/",
-            "CgllbmNvdW50ZXIYByABKAsyLC5TZXR0aW5ncy5NYXN0ZXIuUG9rZW1vbi5F",
-            "bmNvdW50ZXJBdHRyaWJ1dGVzEjcKBXN0YXRzGAggASgLMiguU2V0dGluZ3Mu",
-            "TWFzdGVyLlBva2Vtb24uU3RhdHNBdHRyaWJ1dGVzEicKC3F1aWNrX21vdmVz",
-            "GAkgAygOMhIuRW51bXMuUG9rZW1vbk1vdmUSKwoPY2luZW1hdGljX21vdmVz",
-            "GAogAygOMhIuRW51bXMuUG9rZW1vbk1vdmUSFgoOYW5pbWF0aW9uX3RpbWUY",
-            "CyADKAISJwoNZXZvbHV0aW9uX2lkcxgMIAMoDjIQLkVudW1zLlBva2Vtb25J",
-            "ZBIWCg5ldm9sdXRpb25fcGlwcxgNIAEoBRIiCgVjbGFzcxgOIAEoDjITLkVu",
-            "dW1zLlBva2Vtb25DbGFzcxIYChBwb2tlZGV4X2hlaWdodF9tGA8gASgCEhkK",
-            "EXBva2VkZXhfd2VpZ2h0X2tnGBAgASgCEisKEXBhcmVudF9wb2tlbW9uX2lk",
-            "GBEgASgOMhAuRW51bXMuUG9rZW1vbklkEhYKDmhlaWdodF9zdGRfZGV2GBIg",
-            "ASgCEhYKDndlaWdodF9zdGRfZGV2GBMgASgCEhwKFGttX2Rpc3RhbmNlX3Rv",
-            "X2hhdGNoGBQgASgCEikKCWZhbWlseV9pZBgVIAEoDjIWLkVudW1zLlBva2Vt",
-            "b25GYW1pbHlJZBIXCg9jYW5keV90b19ldm9sdmUYFiABKAVCHaoCGlBva2Vt",
-            "b25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
+            "aW5ncy5NYXN0ZXIaFUVudW1zL1Bva2Vtb25JZC5wcm90bxoZRW51bXMvUG9r",
+            "ZW1vblJhcml0eS5wcm90bxoXRW51bXMvUG9rZW1vblR5cGUucHJvdG8aF0Vu",
+            "dW1zL1Bva2Vtb25Nb3ZlLnByb3RvGhtFbnVtcy9Qb2tlbW9uRmFtaWx5SWQu",
+            "cHJvdG8aLVNldHRpbmdzL01hc3Rlci9Qb2tlbW9uL1N0YXRzQXR0cmlidXRl",
+            "cy5wcm90bxouU2V0dGluZ3MvTWFzdGVyL1Bva2Vtb24vQ2FtZXJhQXR0cmli",
+            "dXRlcy5wcm90bxoxU2V0dGluZ3MvTWFzdGVyL1Bva2Vtb24vRW5jb3VudGVy",
+            "QXR0cmlidXRlcy5wcm90byKQBgoPUG9rZW1vblNldHRpbmdzEiQKCnBva2Vt",
+            "b25faWQYASABKA4yEC5FbnVtcy5Qb2tlbW9uSWQSEwoLbW9kZWxfc2NhbGUY",
+            "AyABKAISIAoEdHlwZRgEIAEoDjISLkVudW1zLlBva2Vtb25UeXBlEiIKBnR5",
+            "cGVfMhgFIAEoDjISLkVudW1zLlBva2Vtb25UeXBlEjkKBmNhbWVyYRgGIAEo",
+            "CzIpLlNldHRpbmdzLk1hc3Rlci5Qb2tlbW9uLkNhbWVyYUF0dHJpYnV0ZXMS",
+            "PwoJZW5jb3VudGVyGAcgASgLMiwuU2V0dGluZ3MuTWFzdGVyLlBva2Vtb24u",
+            "RW5jb3VudGVyQXR0cmlidXRlcxI3CgVzdGF0cxgIIAEoCzIoLlNldHRpbmdz",
+            "Lk1hc3Rlci5Qb2tlbW9uLlN0YXRzQXR0cmlidXRlcxInCgtxdWlja19tb3Zl",
+            "cxgJIAMoDjISLkVudW1zLlBva2Vtb25Nb3ZlEisKD2NpbmVtYXRpY19tb3Zl",
+            "cxgKIAMoDjISLkVudW1zLlBva2Vtb25Nb3ZlEhYKDmFuaW1hdGlvbl90aW1l",
+            "GAsgAygCEicKDWV2b2x1dGlvbl9pZHMYDCADKA4yEC5FbnVtcy5Qb2tlbW9u",
+            "SWQSFgoOZXZvbHV0aW9uX3BpcHMYDSABKAUSJAoGcmFyaXR5GA4gASgOMhQu",
+            "RW51bXMuUG9rZW1vblJhcml0eRIYChBwb2tlZGV4X2hlaWdodF9tGA8gASgC",
+            "EhkKEXBva2VkZXhfd2VpZ2h0X2tnGBAgASgCEisKEXBhcmVudF9wb2tlbW9u",
+            "X2lkGBEgASgOMhAuRW51bXMuUG9rZW1vbklkEhYKDmhlaWdodF9zdGRfZGV2",
+            "GBIgASgCEhYKDndlaWdodF9zdGRfZGV2GBMgASgCEhwKFGttX2Rpc3RhbmNl",
+            "X3RvX2hhdGNoGBQgASgCEikKCWZhbWlseV9pZBgVIAEoDjIWLkVudW1zLlBv",
+            "a2Vtb25GYW1pbHlJZBIXCg9jYW5keV90b19ldm9sdmUYFiABKAVCHaoCGlBv",
+            "a2Vtb25Hb0Rlc2t0b3AuQVBJLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonClassReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMoveReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonFamilyIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.StatsAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CameraAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EncounterAttributesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PokemonGoDesktop.API.Proto.PokemonIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonRarityReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonTypeReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonMoveReflection.Descriptor, global::PokemonGoDesktop.API.Proto.PokemonFamilyIdReflection.Descriptor, global::PokemonGoDesktop.API.Proto.StatsAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.CameraAttributesReflection.Descriptor, global::PokemonGoDesktop.API.Proto.EncounterAttributesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonSettings), global::PokemonGoDesktop.API.Proto.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Class", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PokemonGoDesktop.API.Proto.PokemonSettings), global::PokemonGoDesktop.API.Proto.PokemonSettings.Parser, new[]{ "PokemonId", "ModelScale", "Type", "Type2", "Camera", "Encounter", "Stats", "QuickMoves", "CinematicMoves", "AnimationTime", "EvolutionIds", "EvolutionPips", "Rarity", "PokedexHeightM", "PokedexWeightKg", "ParentPokemonId", "HeightStdDev", "WeightStdDev", "KmDistanceToHatch", "FamilyId", "CandyToEvolve" }, null, null, null)
           }));
     }
     #endregion
@@ -91,7 +91,7 @@ namespace PokemonGoDesktop.API.Proto {
       animationTime_ = other.animationTime_.Clone();
       evolutionIds_ = other.evolutionIds_.Clone();
       evolutionPips_ = other.evolutionPips_;
-      class_ = other.class_;
+      rarity_ = other.rarity_;
       pokedexHeightM_ = other.pokedexHeightM_;
       pokedexWeightKg_ = other.pokedexWeightKg_;
       parentPokemonId_ = other.parentPokemonId_;
@@ -222,13 +222,13 @@ namespace PokemonGoDesktop.API.Proto {
       }
     }
 
-    /// <summary>Field number for the "class" field.</summary>
-    public const int ClassFieldNumber = 14;
-    private global::PokemonGoDesktop.API.Proto.PokemonClass class_ = 0;
-    public global::PokemonGoDesktop.API.Proto.PokemonClass Class {
-      get { return class_; }
+    /// <summary>Field number for the "rarity" field.</summary>
+    public const int RarityFieldNumber = 14;
+    private global::PokemonGoDesktop.API.Proto.PokemonRarity rarity_ = 0;
+    public global::PokemonGoDesktop.API.Proto.PokemonRarity Rarity {
+      get { return rarity_; }
       set {
-        class_ = value;
+        rarity_ = value;
       }
     }
 
@@ -335,7 +335,7 @@ namespace PokemonGoDesktop.API.Proto {
       if(!animationTime_.Equals(other.animationTime_)) return false;
       if(!evolutionIds_.Equals(other.evolutionIds_)) return false;
       if (EvolutionPips != other.EvolutionPips) return false;
-      if (Class != other.Class) return false;
+      if (Rarity != other.Rarity) return false;
       if (PokedexHeightM != other.PokedexHeightM) return false;
       if (PokedexWeightKg != other.PokedexWeightKg) return false;
       if (ParentPokemonId != other.ParentPokemonId) return false;
@@ -361,7 +361,7 @@ namespace PokemonGoDesktop.API.Proto {
       hash ^= animationTime_.GetHashCode();
       hash ^= evolutionIds_.GetHashCode();
       if (EvolutionPips != 0) hash ^= EvolutionPips.GetHashCode();
-      if (Class != 0) hash ^= Class.GetHashCode();
+      if (Rarity != 0) hash ^= Rarity.GetHashCode();
       if (PokedexHeightM != 0F) hash ^= PokedexHeightM.GetHashCode();
       if (PokedexWeightKg != 0F) hash ^= PokedexWeightKg.GetHashCode();
       if (ParentPokemonId != 0) hash ^= ParentPokemonId.GetHashCode();
@@ -414,9 +414,9 @@ namespace PokemonGoDesktop.API.Proto {
         output.WriteRawTag(104);
         output.WriteInt32(EvolutionPips);
       }
-      if (Class != 0) {
+      if (Rarity != 0) {
         output.WriteRawTag(112);
-        output.WriteEnum((int) Class);
+        output.WriteEnum((int) Rarity);
       }
       if (PokedexHeightM != 0F) {
         output.WriteRawTag(125);
@@ -482,8 +482,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (EvolutionPips != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EvolutionPips);
       }
-      if (Class != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Class);
+      if (Rarity != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Rarity);
       }
       if (PokedexHeightM != 0F) {
         size += 1 + 4;
@@ -553,8 +553,8 @@ namespace PokemonGoDesktop.API.Proto {
       if (other.EvolutionPips != 0) {
         EvolutionPips = other.EvolutionPips;
       }
-      if (other.Class != 0) {
-        Class = other.Class;
+      if (other.Rarity != 0) {
+        Rarity = other.Rarity;
       }
       if (other.PokedexHeightM != 0F) {
         PokedexHeightM = other.PokedexHeightM;
@@ -651,7 +651,7 @@ namespace PokemonGoDesktop.API.Proto {
             break;
           }
           case 112: {
-            class_ = (global::PokemonGoDesktop.API.Proto.PokemonClass) input.ReadEnum();
+            rarity_ = (global::PokemonGoDesktop.API.Proto.PokemonRarity) input.ReadEnum();
             break;
           }
           case 125: {

@@ -98,9 +98,6 @@ namespace PokemonGoDesktop.API.Proto {
     /// <summary>Field number for the "request_id" field.</summary>
     public const int RequestIdFieldNumber = 3;
     private ulong requestId_;
-    /// <summary>
-    /// Also called RPC_ID in Rocket-API
-    /// </summary>
     public ulong RequestId {
       get { return requestId_; }
       set {

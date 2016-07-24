@@ -24,9 +24,9 @@ namespace PokemonGoDesktop.API.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChpNYXAvRm9ydC9Gb3J0U3VtbWFyeS5wcm90bxIITWFwLkZvcnQibwoLRm9y",
-            "dFN1bW1hcnkSFwoPZm9ydF9zdW1tYXJ5X2lkGAEgASgFEiIKGmxhc3RfbW9k",
-            "aWZpZWRfdGltZXN0YW1wX21zGAIgASgFEhAKCGxhdGl0dWRlGAMgASgFEhEK",
-            "CWxvbmdpdHVkZRgEIAEoBUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
+            "dFN1bW1hcnkSFwoPZm9ydF9zdW1tYXJ5X2lkGAEgASgJEiIKGmxhc3RfbW9k",
+            "aWZpZWRfdGltZXN0YW1wX21zGAIgASgDEhAKCGxhdGl0dWRlGAMgASgBEhEK",
+            "CWxvbmdpdHVkZRgEIAEoAUIdqgIaUG9rZW1vbkdvRGVza3RvcC5BUEkuUHJv",
             "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
@@ -70,18 +70,18 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "fort_summary_id" field.</summary>
     public const int FortSummaryIdFieldNumber = 1;
-    private int fortSummaryId_;
-    public int FortSummaryId {
+    private string fortSummaryId_ = "";
+    public string FortSummaryId {
       get { return fortSummaryId_; }
       set {
-        fortSummaryId_ = value;
+        fortSummaryId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "last_modified_timestamp_ms" field.</summary>
     public const int LastModifiedTimestampMsFieldNumber = 2;
-    private int lastModifiedTimestampMs_;
-    public int LastModifiedTimestampMs {
+    private long lastModifiedTimestampMs_;
+    public long LastModifiedTimestampMs {
       get { return lastModifiedTimestampMs_; }
       set {
         lastModifiedTimestampMs_ = value;
@@ -90,8 +90,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "latitude" field.</summary>
     public const int LatitudeFieldNumber = 3;
-    private int latitude_;
-    public int Latitude {
+    private double latitude_;
+    public double Latitude {
       get { return latitude_; }
       set {
         latitude_ = value;
@@ -100,8 +100,8 @@ namespace PokemonGoDesktop.API.Proto {
 
     /// <summary>Field number for the "longitude" field.</summary>
     public const int LongitudeFieldNumber = 4;
-    private int longitude_;
-    public int Longitude {
+    private double longitude_;
+    public double Longitude {
       get { return longitude_; }
       set {
         longitude_ = value;
@@ -128,10 +128,10 @@ namespace PokemonGoDesktop.API.Proto {
 
     public override int GetHashCode() {
       int hash = 1;
-      if (FortSummaryId != 0) hash ^= FortSummaryId.GetHashCode();
-      if (LastModifiedTimestampMs != 0) hash ^= LastModifiedTimestampMs.GetHashCode();
-      if (Latitude != 0) hash ^= Latitude.GetHashCode();
-      if (Longitude != 0) hash ^= Longitude.GetHashCode();
+      if (FortSummaryId.Length != 0) hash ^= FortSummaryId.GetHashCode();
+      if (LastModifiedTimestampMs != 0L) hash ^= LastModifiedTimestampMs.GetHashCode();
+      if (Latitude != 0D) hash ^= Latitude.GetHashCode();
+      if (Longitude != 0D) hash ^= Longitude.GetHashCode();
       return hash;
     }
 
@@ -140,37 +140,37 @@ namespace PokemonGoDesktop.API.Proto {
     }
 
     public void WriteTo(pb::CodedOutputStream output) {
-      if (FortSummaryId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(FortSummaryId);
+      if (FortSummaryId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(FortSummaryId);
       }
-      if (LastModifiedTimestampMs != 0) {
+      if (LastModifiedTimestampMs != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt32(LastModifiedTimestampMs);
+        output.WriteInt64(LastModifiedTimestampMs);
       }
-      if (Latitude != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Latitude);
+      if (Latitude != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(Latitude);
       }
-      if (Longitude != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Longitude);
+      if (Longitude != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(Longitude);
       }
     }
 
     public int CalculateSize() {
       int size = 0;
-      if (FortSummaryId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FortSummaryId);
+      if (FortSummaryId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FortSummaryId);
       }
-      if (LastModifiedTimestampMs != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LastModifiedTimestampMs);
+      if (LastModifiedTimestampMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastModifiedTimestampMs);
       }
-      if (Latitude != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Latitude);
+      if (Latitude != 0D) {
+        size += 1 + 8;
       }
-      if (Longitude != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Longitude);
+      if (Longitude != 0D) {
+        size += 1 + 8;
       }
       return size;
     }
@@ -179,16 +179,16 @@ namespace PokemonGoDesktop.API.Proto {
       if (other == null) {
         return;
       }
-      if (other.FortSummaryId != 0) {
+      if (other.FortSummaryId.Length != 0) {
         FortSummaryId = other.FortSummaryId;
       }
-      if (other.LastModifiedTimestampMs != 0) {
+      if (other.LastModifiedTimestampMs != 0L) {
         LastModifiedTimestampMs = other.LastModifiedTimestampMs;
       }
-      if (other.Latitude != 0) {
+      if (other.Latitude != 0D) {
         Latitude = other.Latitude;
       }
-      if (other.Longitude != 0) {
+      if (other.Longitude != 0D) {
         Longitude = other.Longitude;
       }
     }
@@ -200,20 +200,20 @@ namespace PokemonGoDesktop.API.Proto {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            FortSummaryId = input.ReadInt32();
+          case 10: {
+            FortSummaryId = input.ReadString();
             break;
           }
           case 16: {
-            LastModifiedTimestampMs = input.ReadInt32();
+            LastModifiedTimestampMs = input.ReadInt64();
             break;
           }
-          case 24: {
-            Latitude = input.ReadInt32();
+          case 25: {
+            Latitude = input.ReadDouble();
             break;
           }
-          case 32: {
-            Longitude = input.ReadInt32();
+          case 33: {
+            Longitude = input.ReadDouble();
             break;
           }
         }
