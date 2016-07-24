@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings;
+package POGOProtos.Settings;
 
 message MapSettings {
 	double pokemon_visible_range = 1;

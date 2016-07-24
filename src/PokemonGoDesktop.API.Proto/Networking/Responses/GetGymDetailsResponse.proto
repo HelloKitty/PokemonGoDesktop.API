@@ -2,13 +2,13 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/Gym/GymState.proto";
+import "POGOProtos/Data/Gym/GymState.proto";
 
 message GetGymDetailsResponse {
-	.Data.Gym.GymState gym_state = 1;
+	.POGOProtos.Data.Gym.GymState gym_state = 1;
 	string name = 2;
 	repeated string urls = 3;
-.Networking.Responses.GetGymDetailsResponse.Result result = 4;
+	POGOProtos.Networking.Responses.GetGymDetailsResponse.Result result = 4;
 	string description = 5;
 
 	enum Result {

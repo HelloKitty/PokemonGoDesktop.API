@@ -7,7 +7,7 @@ message ClaimCodenameResponse {
 	string codename = 1;
 	string user_message = 2;
 	bool is_assignable = 3;
-	.Networking.Responses.ClaimCodenameResponse.Status status = 4;
+	.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;
 
 	enum Status {
 		UNSET = 0;

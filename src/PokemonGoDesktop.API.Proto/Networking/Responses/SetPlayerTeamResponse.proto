@@ -2,11 +2,11 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/PlayerData.proto";
+import "POGOProtos/Data/PlayerData.proto";
 
 message SetPlayerTeamResponse {
-	.Networking.Responses.SetPlayerTeamResponse.Status status = 1;
-	.Data.PlayerData player_data = 2;
+	.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;
+	.POGOProtos.Data.PlayerData player_data = 2;
 
 	enum Status {
 		UNSET = 0;

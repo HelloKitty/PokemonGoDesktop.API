@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings;
+package POGOProtos.Settings;
 
 message LevelSettings {
 	double trainer_cp_modifier = 2;

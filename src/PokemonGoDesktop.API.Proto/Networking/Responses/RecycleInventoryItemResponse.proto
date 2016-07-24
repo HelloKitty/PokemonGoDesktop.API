@@ -3,7 +3,7 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
 message RecycleInventoryItemResponse {
-	.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;
+	.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;
 	int32 new_count = 2;
 
 	enum Result {

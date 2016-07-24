@@ -1,12 +1,11 @@
 ﻿syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master.Item;
+package POGOProtos.Settings.Master.Item;
 
-import "Enums/PokemonType.proto";
+import "POGOProtos/Enums/PokemonType.proto";
 
 message IncenseAttributes {
 	int32 incense_lifetime_seconds = 1;
-	repeated .Enums.PokemonType pokemon_type = 2;
+	repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;
 	float pokemon_incense_type_probability = 3;
 	int32 standing_time_between_encounters_seconds = 4;
 	int32 moving_time_between_encounter_seconds = 5;

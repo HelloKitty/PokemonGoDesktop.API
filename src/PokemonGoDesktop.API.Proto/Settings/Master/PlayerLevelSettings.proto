@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master;
+package POGOProtos.Settings.Master;
 
 message PlayerLevelSettings {
 	repeated int32 rank_num = 1;

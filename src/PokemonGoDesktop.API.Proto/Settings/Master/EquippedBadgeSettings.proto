@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master;
+package POGOProtos.Settings.Master;
 
 message EquippedBadgeSettings {
 	int64 equip_badge_cooldown_ms = 1;

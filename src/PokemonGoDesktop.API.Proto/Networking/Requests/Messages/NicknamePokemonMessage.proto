@@ -3,6 +3,6 @@ option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
 message NicknamePokemonMessage {
-	uint64 pokemon_id = 1;
+	fixed64 pokemon_id = 1;
 	string nickname = 2;
 }

@@ -2,11 +2,11 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/PokemonData.proto";
+import "POGOProtos/Data/PokemonData.proto";
 
 message EvolvePokemonResponse {
-	.Networking.Responses.EvolvePokemonResponse.Result result = 1;
-	.Data.PokemonData evolved_pokemon_data = 2;
+	.POGOProtos.Networking.Responses.EvolvePokemonResponse.Result result = 1;
+	.POGOProtos.Data.PokemonData evolved_pokemon_data = 2;
 	int32 experience_awarded = 3;
 	int32 candy_awarded = 4;
 

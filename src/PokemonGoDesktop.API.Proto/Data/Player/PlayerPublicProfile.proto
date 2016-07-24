@@ -2,10 +2,10 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Player;
 
-import "Data/Player/PlayerAvatar.proto";
+import "POGOProtos/Data/Player/PlayerAvatar.proto";
 
 message PlayerPublicProfile {
 	string name = 1;
 	int32 level = 2;
-	.Data.Player.PlayerAvatar avatar = 3;
+	.POGOProtos.Data.Player.PlayerAvatar avatar = 3;
 }

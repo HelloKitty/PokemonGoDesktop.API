@@ -2,13 +2,13 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/PokemonData.proto";
-import "Data/Capture/CaptureAward.proto";
+import "POGOProtos/Data/PokemonData.proto";
+import "POGOProtos/Data/Capture/CaptureAward.proto";
 
 message EncounterTutorialCompleteResponse {
-	.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;
-	.Data.PokemonData pokemon_data = 2;
-	.Data.Capture.CaptureAward capture_award = 3;
+	.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;
+	.POGOProtos.Data.PokemonData pokemon_data = 2;
+	.POGOProtos.Data.Capture.CaptureAward capture_award = 3;
 
 	enum Result {
 		UNSET = 0;

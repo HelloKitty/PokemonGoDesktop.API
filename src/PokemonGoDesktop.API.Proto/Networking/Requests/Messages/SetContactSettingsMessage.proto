@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "Data/Player/ContactSettings.proto";
+import "POGOProtos/Data/Player/ContactSettings.proto";
 
 message SetContactSettingsMessage {
-	.Data.Player.ContactSettings contact_settings = 1;
+	.POGOProtos.Data.Player.ContactSettings contact_settings = 1;
 }

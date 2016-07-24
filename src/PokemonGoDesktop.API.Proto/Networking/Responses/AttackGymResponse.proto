@@ -2,15 +2,15 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/Battle/BattleLog.proto";
-import "Data/Battle/BattlePokemonInfo.proto";
+import "POGOProtos/Data/Battle/BattleLog.proto";
+import "POGOProtos/Data/Battle/BattlePokemonInfo.proto";
 
 message AttackGymResponse {
-	.Networking.Responses.AttackGymResponse.Result result = 1;
-	.Data.Battle.BattleLog battle_log = 2;
+	.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;
+	.POGOProtos.Data.Battle.BattleLog battle_log = 2;
 	string battle_id = 3;
-	.Data.Battle.BattlePokemonInfo active_defender = 4;
-	.Data.Battle.BattlePokemonInfo active_attacker = 5;
+	.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;
+	.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;
 
     enum Result {
 		UNSET = 0;

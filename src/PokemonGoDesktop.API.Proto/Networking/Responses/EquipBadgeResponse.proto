@@ -2,11 +2,11 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/Player/EquippedBadge.proto";
+import "POGOProtos/Data/Player/EquippedBadge.proto";
 
 message EquipBadgeResponse {
-	.Networking.Responses.EquipBadgeResponse.Result result = 1;
-	.Data.Player.EquippedBadge equipped = 2;
+	.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;
+	.POGOProtos.Data.Player.EquippedBadge equipped = 2;
 
 	enum Result {
 		UNSET = 0;

@@ -2,13 +2,13 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Inventory/ItemId.proto";
-import "Inventory/ItemAward.proto";
+import "POGOProtos/Inventory/Item/ItemId.proto";
+import "POGOProtos/Inventory/Item/ItemAward.proto";
 
 message LevelUpRewardsResponse {
-	.Networking.Responses.LevelUpRewardsResponse.Result result = 1;
-	repeated .Inventory.ItemAward items_awarded = 2;
-	repeated .Inventory.ItemId items_unlocked = 4;
+	.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;
+	repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;
+	repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;
 
 	enum Result {
 		UNSET = 0;

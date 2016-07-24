@@ -2,7 +2,7 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Data.Player;
 
-import "Enums/Gender.proto";
+import "POGOProtos/Enums/Gender.proto";
 
 message PlayerAvatar {
 	int32 skin = 2;
@@ -11,7 +11,7 @@ message PlayerAvatar {
 	int32 pants = 5;
 	int32 hat = 6;
 	int32 shoes = 7;
-	.Enums.Gender gender = 8;
+	.POGOProtos.Enums.Gender gender = 8;
 	int32 eyes = 9;
 	int32 backpack = 10;
 }

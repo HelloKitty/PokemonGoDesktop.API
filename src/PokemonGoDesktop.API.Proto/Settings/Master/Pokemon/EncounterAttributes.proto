@@ -1,8 +1,7 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master.Pokemon;
+package POGOProtos.Settings.Master.Pokemon;
 
-import "Enums/PokemonMovementType.proto";
+import "POGOProtos/Enums/PokemonMovementType.proto";
 
 message EncounterAttributes {
 	float base_capture_rate = 1;
@@ -10,7 +9,7 @@ message EncounterAttributes {
 	float collision_radius_m = 3;
 	float collision_height_m = 4;
 	float collision_head_radius_m = 5;
-	.Enums.PokemonMovementType movement_type = 6;
+	.POGOProtos.Enums.PokemonMovementType movement_type = 6;
 	float movement_timer_s = 7;
 	float jump_time_s = 8;
 	float attack_timer_s = 9;

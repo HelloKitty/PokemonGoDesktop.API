@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master;
+package POGOProtos.Settings.Master;
 
 message PokemonUpgradeSettings {
 	int32 upgrades_per_level = 1;

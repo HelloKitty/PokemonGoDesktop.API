@@ -2,14 +2,14 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/Capture/CaptureProbability.proto";
-import "Map/Pokemon/WildPokemon.proto";
+import "POGOProtos/Data/Capture/CaptureProbability.proto";
+import "POGOProtos/Map/Pokemon/WildPokemon.proto";
 
 message EncounterResponse {
-	.Map.Pokemon.WildPokemon wild_pokemon = 1;
+	.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;
 	Background background = 2;
 	Status status = 3;
-	.Data.Capture.CaptureProbability capture_probability = 4;
+	.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;
 
 	enum Background {
 		PARK = 0;

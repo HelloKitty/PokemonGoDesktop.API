@@ -1,6 +1,5 @@
 ﻿syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master.Item;
+package POGOProtos.Settings.Master.Item;
 
 message ExperienceBoostAttributes {
 	float xp_multiplier = 1;

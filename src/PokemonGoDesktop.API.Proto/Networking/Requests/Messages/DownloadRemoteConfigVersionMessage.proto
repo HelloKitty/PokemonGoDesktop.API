@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "Enums/Platform.proto";
+import "POGOProtos/Enums/Platform.proto";
 
 message DownloadRemoteConfigVersionMessage {
-	.Enums.Platform platform = 1;
+	.POGOProtos.Enums.Platform platform = 1;
 	string device_manufacturer = 2;
 	string device_model = 3;
 	string locale = 4;

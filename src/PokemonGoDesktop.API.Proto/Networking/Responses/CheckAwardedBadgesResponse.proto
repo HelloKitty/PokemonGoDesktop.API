@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Enums/BadgeType.proto";
+import "POGOProtos/Enums/BadgeType.proto";
 
 message CheckAwardedBadgesResponse {
 	bool success = 1;
-	repeated .Enums.BadgeType awarded_badges = 2;
+	repeated .POGOProtos.Enums.BadgeType awarded_badges = 2;
 	repeated int32 awarded_badge_levels = 3;
 }

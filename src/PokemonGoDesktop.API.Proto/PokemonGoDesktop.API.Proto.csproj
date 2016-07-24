@@ -268,7 +268,9 @@
     <Compile Include="Gen\WildPokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Settings\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Data\AssetDigestEntry.proto" />
     <None Include="Data\Battle\BattleAction.proto" />
@@ -284,6 +286,9 @@
     <None Include="Data\DownloadUrlEntry.proto" />
     <None Include="Data\Gym\GymMembership.proto" />
     <None Include="Data\Gym\GymState.proto" />
+    <None Include="Data\Logs\ActionLogEntry.proto" />
+    <None Include="Data\Logs\CatchPokemonLogEntry.proto" />
+    <None Include="Data\Logs\FortSearchLogEntry.proto" />
     <None Include="Data\PlayerBadge.proto" />
     <None Include="Data\PlayerData.proto" />
     <None Include="Data\Player\ContactSettings.proto" />
@@ -306,11 +311,11 @@
     <None Include="Enums\ItemCategory.proto" />
     <None Include="Enums\ItemEffect.proto" />
     <None Include="Enums\Platform.proto" />
-    <None Include="Enums\PokemonClass.proto" />
     <None Include="Enums\PokemonFamilyId.proto" />
     <None Include="Enums\PokemonId.proto" />
     <None Include="Enums\PokemonMove.proto" />
     <None Include="Enums\PokemonMovementType.proto" />
+    <None Include="Enums\PokemonRarity.proto" />
     <None Include="Enums\PokemonType.proto" />
     <None Include="Enums\TeamColor.proto" />
     <None Include="Enums\TutorialState.proto" />
@@ -325,10 +330,10 @@
     <None Include="Inventory\InventoryUpgrade.proto" />
     <None Include="Inventory\InventoryUpgrades.proto" />
     <None Include="Inventory\InventoryUpgradeType.proto" />
-    <None Include="Inventory\Item.proto" />
-    <None Include="Inventory\ItemAward.proto" />
-    <None Include="Inventory\ItemId.proto" />
-    <None Include="Inventory\ItemType.proto" />
+    <None Include="Inventory\Item\ItemAward.proto" />
+    <None Include="Inventory\Item\ItemData.proto" />
+    <None Include="Inventory\Item\ItemId.proto" />
+    <None Include="Inventory\Item\ItemType.proto" />
     <None Include="Inventory\PokemonFamily.proto" />
     <None Include="Map\Fort\FortData.proto" />
     <None Include="Map\Fort\FortLureInfo.proto" />
@@ -390,6 +395,7 @@
     <None Include="Networking\Requests\Messages\SetContactSettingsMessage.proto" />
     <None Include="Networking\Requests\Messages\SetFavoritePokemonMessage.proto" />
     <None Include="Networking\Requests\Messages\SetPlayerTeamMessage.proto" />
+    <None Include="Networking\Requests\Messages\SfidaActionLogMessage.proto" />
     <None Include="Networking\Requests\Messages\StartGymBattleMessage.proto" />
     <None Include="Networking\Requests\Messages\UpgradePokemonMessage.proto" />
     <None Include="Networking\Requests\Messages\UseIncenseMessage.proto" />
@@ -443,6 +449,7 @@
     <None Include="Networking\Responses\SetContactSettingsResponse.proto" />
     <None Include="Networking\Responses\SetFavoritePokemonResponse.proto" />
     <None Include="Networking\Responses\SetPlayerTeamResponse.proto" />
+    <None Include="Networking\Responses\SfidaActionLogResponse.proto" />
     <None Include="Networking\Responses\StartGymBattleResponse.proto" />
     <None Include="Networking\Responses\UpgradePokemonResponse.proto" />
     <None Include="Networking\Responses\UseIncenseResponse.proto" />
@@ -452,40 +459,6 @@
     <None Include="Networking\Responses\UseItemPotionResponse.proto" />
     <None Include="Networking\Responses\UseItemReviveResponse.proto" />
     <None Include="Networking\Responses\UseItemXpBoostResponse.proto" />
-    <None Include="Settings\DownloadSettingsAction.proto" />
-    <None Include="Settings\FortSettings.proto" />
-    <None Include="Settings\GlobalSettings.proto" />
-    <None Include="Settings\InventorySettings.proto" />
-    <None Include="Settings\LevelSettings.proto" />
-    <None Include="Settings\MapSettings.proto" />
-    <None Include="Settings\Master\BadgeSettings.proto" />
-    <None Include="Settings\Master\CameraSettings.proto" />
-    <None Include="Settings\Master\EncounterSettings.proto" />
-    <None Include="Settings\Master\EquippedBadgeSettings.proto" />
-    <None Include="Settings\Master\GymBattleSettings.proto" />
-    <None Include="Settings\Master\GymLevelSettings.proto" />
-    <None Include="Settings\Master\IapItemDisplay.proto" />
-    <None Include="Settings\Master\IapSettings.proto" />
-    <None Include="Settings\Master\ItemSettings.proto" />
-    <None Include="Settings\Master\Item\BattleAttributes.proto" />
-    <None Include="Settings\Master\Item\EggIncubatorAttributes.proto" />
-    <None Include="Settings\Master\Item\ExperienceBoostAttributes.proto" />
-    <None Include="Settings\Master\Item\FoodAttributes.proto" />
-    <None Include="Settings\Master\Item\FortModifierAttributes.proto" />
-    <None Include="Settings\Master\Item\IncenseAttributes.proto" />
-    <None Include="Settings\Master\Item\InventoryUpgradeAttributes.proto" />
-    <None Include="Settings\Master\Item\PokeballAttributes.proto" />
-    <None Include="Settings\Master\Item\PotionAttributes.proto" />
-    <None Include="Settings\Master\Item\ReviveAttributes.proto" />
-    <None Include="Settings\Master\MoveSequenceSettings.proto" />
-    <None Include="Settings\Master\MoveSettings.proto" />
-    <None Include="Settings\Master\PlayerLevelSettings.proto" />
-    <None Include="Settings\Master\PokemonSettings.proto" />
-    <None Include="Settings\Master\PokemonUpgradeSettings.proto" />
-    <None Include="Settings\Master\Pokemon\CameraAttributes.proto" />
-    <None Include="Settings\Master\Pokemon\EncounterAttributes.proto" />
-    <None Include="Settings\Master\Pokemon\StatsAttributes.proto" />
-    <None Include="Settings\Master\TypeEffectiveSettings.proto" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

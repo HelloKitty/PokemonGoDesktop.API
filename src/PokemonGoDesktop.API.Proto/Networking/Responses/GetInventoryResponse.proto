@@ -2,9 +2,9 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Inventory/InventoryDelta.proto";
+import "POGOProtos/Inventory/InventoryDelta.proto";
 
 message GetInventoryResponse {
 	bool success = 1;
-	.Inventory.InventoryDelta inventory_delta = 2;
+	.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;
 }

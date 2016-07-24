@@ -2,8 +2,8 @@
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "Enums/PokemonId.proto";
+import "POGOProtos/Enums/PokemonId.proto";
 
 message EncounterTutorialCompleteMessage {
-	.Enums.PokemonId pokemon_id = 1;
+	.POGOProtos.Enums.PokemonId pokemon_id = 1;
 }

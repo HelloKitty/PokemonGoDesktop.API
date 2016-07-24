@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings;
+package POGOProtos.Settings;
 
 message FortSettings {
 	double interaction_range_meters = 1;

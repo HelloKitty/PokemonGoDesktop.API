@@ -1,11 +1,10 @@
 ﻿syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master.Item;
+package POGOProtos.Settings.Master.Item;
 
-import "Enums/ItemEffect.proto";
+import "POGOProtos/Enums/ItemEffect.proto";
 
 message PokeballAttributes {
-	.Enums.ItemEffect item_effect = 1;
+	.POGOProtos.Enums.ItemEffect item_effect = 1;
 	float capture_multi = 2;
 	float capture_multi_effect = 3;
 	float item_effect_mod = 4;

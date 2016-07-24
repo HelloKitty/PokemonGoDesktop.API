@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Inventory;
 
-import "Inventory/EggIncubator.proto";
+import "POGOProtos/Inventory/EggIncubator.proto";
 
 message EggIncubators {
-	.Inventory.EggIncubator egg_incubator = 1;
+	repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;
 }

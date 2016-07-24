@@ -2,13 +2,13 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/PokemonData.proto";
-import "Data/Capture/CaptureProbability.proto";
+import "POGOProtos/Data/PokemonData.proto";
+import "POGOProtos/Data/Capture/CaptureProbability.proto";
 
 message DiskEncounterResponse {
 	Result result = 1;
-	.Data.PokemonData pokemon_data = 2;
-	.Data.Capture.CaptureProbability capture_probability = 3;
+	.POGOProtos.Data.PokemonData pokemon_data = 2;
+	.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;
 
 	enum Result {
 		UNKNOWN = 0;

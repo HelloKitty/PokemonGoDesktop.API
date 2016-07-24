@@ -2,8 +2,8 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "Enums/TeamColor.proto";
+import "POGOProtos/Enums/TeamColor.proto";
 
 message SetPlayerTeamMessage {
-	.Enums.TeamColor team = 1;
+	.POGOProtos.Enums.TeamColor team = 1;
 }

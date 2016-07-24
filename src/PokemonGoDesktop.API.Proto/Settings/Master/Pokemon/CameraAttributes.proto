@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings.Master.Pokemon;
+package POGOProtos.Settings.Master.Pokemon;
 
 message CameraAttributes {
 	float disk_radius_m = 1;

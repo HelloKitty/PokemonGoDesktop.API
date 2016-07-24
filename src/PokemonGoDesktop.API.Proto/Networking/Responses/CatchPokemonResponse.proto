@@ -2,13 +2,13 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Data/Capture/CaptureAward.proto";
+import "POGOProtos/Data/Capture/CaptureAward.proto";
 
 message CatchPokemonResponse {
-	.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;
+	.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;
 	double miss_percent = 2;
-	uint64 captured_pokemon_id = 3;
-	.Data.Capture.CaptureAward capture_award = 4;
+	fixed64 captured_pokemon_id = 3;
+	.POGOProtos.Data.Capture.CaptureAward capture_award = 4;
 
 	enum CatchStatus {
 		CATCH_ERROR = 0;

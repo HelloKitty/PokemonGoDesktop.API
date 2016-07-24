@@ -2,9 +2,9 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Requests.Messages;
 
-import "Inventory/ItemId.proto";
+import "POGOProtos/Inventory/Item/ItemId.proto";
 
 message RecycleInventoryItemMessage {
-	.Inventory.ItemId item_id = 1;
+	.POGOProtos.Inventory.Item.ItemId item_id = 1;
 	int32 count = 2;
 }

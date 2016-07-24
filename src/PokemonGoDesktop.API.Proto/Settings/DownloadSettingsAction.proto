@@ -1,6 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "PokemonGoDesktop.API.Proto";
-package Settings;
+package POGOProtos.Settings;
 
 message DownloadSettingsAction {
 	string hash = 1;

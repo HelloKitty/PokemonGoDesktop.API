@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Networking.Responses;
 
-import "Settings/GlobalSettings.proto";
+import "POGOProtos/Settings/GlobalSettings.proto";
 
 message DownloadSettingsResponse {
 	string error = 1;
 	string hash = 2;
-	.Settings.GlobalSettings settings = 3;
+	.POGOProtos.Settings.GlobalSettings settings = 3;
 }

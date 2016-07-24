@@ -2,10 +2,10 @@ syntax = "proto3";
 option csharp_namespace = "PokemonGoDesktop.API.Proto";
 package Inventory;
 
-import "Inventory/InventoryItemData.proto";
+import "POGOProtos/Inventory/InventoryItemData.proto";
 
 message InventoryItem {
 	int64 modified_timestamp_ms = 1;
 	int64 deleted_item_key = 2;
-	.Inventory.InventoryItemData inventory_item_data = 3;
+	.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;
 }
