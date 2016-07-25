@@ -44,6 +44,11 @@
     <Compile Include="Authentication\AuthToken.cs" />
     <Compile Include="Authentication\IAuthToken.cs" />
     <Compile Include="Authentication\IUserAuthenticationService.cs" />
+    <Compile Include="Entity\IPosition.cs" />
+    <Compile Include="Entity\IWorldObject.cs" />
+    <Compile Include="Entity\Player\IPlayer.cs" />
+    <Compile Include="Entity\Trainer\ITrainer.cs" />
+    <Compile Include="Entity\RealWorldPosition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session\IAuthableSession.cs" />
     <Compile Include="Session\ISession.cs" />
@@ -63,6 +68,7 @@
       <Name>PokemonGoDesktop.API.Proto</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

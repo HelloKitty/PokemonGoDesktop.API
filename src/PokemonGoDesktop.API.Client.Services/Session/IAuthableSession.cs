@@ -1,4 +1,5 @@
 ﻿using PokemonGoDesktop.API.Common;
+using PokemonGoDesktop.API.Proto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,14 @@ namespace PokemonGoDesktop.API.Client.Services
 	public interface IAuthableSession : ISession
 	{
 		/// <summary>
-		/// Represents the current <see cref="AuthToken"/>.
+		/// Represents the current <see cref="IAuthToken"/>.
 		/// </summary>
 		IAuthToken Token { get; }
+
+		/// <summary>
+		/// Represents the current <see cref="AuthTicket"/>
+		/// (See .proto def)
+		/// </summary>
+		AuthTicket AuthTicket { get; }
 	}
 }
