@@ -135,6 +135,10 @@ namespace PokemonGoDesktop.API.Proto.Services
 				Unknown2 = 14,
 				Contents = authTokenContent
 			};
+
+			//Things that the user can't really deal with, because the community doesn't know what they really are, are initialized below.
+			env.StatusCode = 2; //Rocket-API sets it to 2:  https://github.com/FeroxRev/Pokemon-Go-Rocket-API/blob/bca2166d72aaa9799c64965cc4f94748231283eb/PokemonGo.RocketAPI/Helpers/RequestBuilder.cs
+			env.Unknown12 = 989; //Required otherwise we receive incompatible protocol as indicated in Rocket-API: https://github.com/FeroxRev/Pokemon-Go-Rocket-API/blob/bca2166d72aaa9799c64965cc4f94748231283eb/PokemonGo.RocketAPI/Helpers/RequestBuilder.cs
 		}
 
 		/// <summary>
@@ -147,6 +151,10 @@ namespace PokemonGoDesktop.API.Proto.Services
 
 			//This holds data from the server auth resposne that we use as a ticket for other messages
 			env.AuthTicket = ticket;
+
+			//Things that the user can't really deal with, because the community doesn't know what they really are, are initialized below.
+			env.StatusCode = 2; //Rocket-API sets it to 2:  https://github.com/FeroxRev/Pokemon-Go-Rocket-API/blob/bca2166d72aaa9799c64965cc4f94748231283eb/PokemonGo.RocketAPI/Helpers/RequestBuilder.cs
+			env.Unknown12 = 989; //Required otherwise we receive incompatible protocol as indicated in Rocket-API: https://github.com/FeroxRev/Pokemon-Go-Rocket-API/blob/bca2166d72aaa9799c64965cc4f94748231283eb/PokemonGo.RocketAPI/Helpers/RequestBuilder.cs
 		}
 	}
 }
