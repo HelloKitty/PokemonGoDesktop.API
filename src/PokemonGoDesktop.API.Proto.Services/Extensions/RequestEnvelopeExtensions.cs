@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PokemonGoDesktop.API.Proto.Services
+namespace PokemonGoDesktop.API.Proto
 {
 	/// <summary>
 	/// Extension methods for the <see cref="RequestEnvelope"/> type.
