@@ -46,8 +46,12 @@
   <ItemGroup>
     <Compile Include="Extended\IEncounterable.cs" />
     <Compile Include="Extended\Implementation\IEncounterableImplementation.cs" />
+    <Compile Include="Extended\Implementation\IPokemonIdentitfiableImplementation.cs" />
+    <Compile Include="Extended\Implementation\IWorldObjectImplementation.cs" />
+    <Compile Include="Extended\IPokemonDataContainer.cs" />
     <Compile Include="Extended\IResponseMessage.cs" />
     <Compile Include="Extended\IRequestMessage.cs" />
+    <Compile Include="Extended\IWorldObject.cs" />
     <Compile Include="Gen\ActionLogEntry.cs" />
     <Compile Include="Gen\ActivityType.cs" />
     <Compile Include="Gen\AddFortModifierMessage.cs" />
