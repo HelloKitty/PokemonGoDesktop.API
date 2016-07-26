@@ -18,9 +18,9 @@ namespace PokemonGoDesktop.API.Client.Services
 		IAuthToken Token { get; }
 
 		/// <summary>
-		/// Represents the current <see cref="AuthTicket"/>
+		/// Represents the current <see cref="AuthTicket"/> and API Url
 		/// (See .proto def)
 		/// </summary>
-		AuthTicket AuthTicket { get; }
+		AuthTicketContainer AuthenticationTicketContainer { get; }
 	}
 }
