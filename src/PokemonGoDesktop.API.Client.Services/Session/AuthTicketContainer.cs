@@ -11,9 +11,15 @@ namespace PokemonGoDesktop.API.Client.Services
 	/// </summary>
 	public class AuthTicketContainer
 	{
-		AuthTicket Ticket { get; }
+		/// <summary>
+		/// The <see cref="AuthTicket"/> instance.
+		/// </summary>
+		public AuthTicket Ticket { get; }
 
-		string ApiUrl { get; }
+		/// <summary>
+		/// The API URL associated with the token.
+		/// </summary>
+		public string ApiUrl { get; }
 
 		/// <summary>
 		/// Creates a new container for the <see cref="AuthTicket"/> and a paired
