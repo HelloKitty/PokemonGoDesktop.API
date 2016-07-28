@@ -5,12 +5,12 @@ using System.Text;
 
 namespace PokemonGoDesktop.API.Proto
 {
-	public sealed partial class WildPokemon : IWorldObject
+	public sealed partial class WildPokemon : IMapCellObject
 	{
 
 	}
 
-	public sealed partial class MapPokemon : IWorldObject //Ferox' CatchablePokemon
+	public sealed partial class MapPokemon : IMapCellObject //Ferox' CatchablePokemon
 	{
 
 	}

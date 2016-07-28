@@ -8,7 +8,7 @@ namespace PokemonGoDesktop.API.Proto
 	/// <summary>
 	/// Contracts for all objects that appear in the world.
 	/// </summary>
-	public interface IWorldObject
+	public interface IMapCellObject
 	{
 		/// <summary>
 		/// Latitude of the object.
